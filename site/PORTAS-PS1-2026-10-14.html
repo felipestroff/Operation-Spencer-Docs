@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="pt_BR" data-bs-theme="dark">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://felipestroff.github.io/Operation-Spencer-Docs/PORTAS-PS1-2026-10-14.html">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Portas PS1 e passagem em primeira pessoa · 14/10/2026 - Operation Spencer · 0.1.0-alpha</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/brands.min.css" rel="stylesheet">
+        <link href="css/solid.min.css" rel="stylesheet">
+        <link href="css/v4-font-face.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" disabled>
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" >
+        <link href="stylesheets/spencer.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Operation Spencer · 0.1.0-alpha</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Início</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Jogar</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="INSTALACAO-WINDOWS.html" class="dropdown-item">Instalação</a>
+</li>
+                                    
+<li>
+    <a href="CONTROLES.html" class="dropdown-item">Controles</a>
+</li>
+                                    
+<li>
+    <a href="MENU-ESC-2026-10-15.html" class="dropdown-item">Menu Esc</a>
+</li>
+                                    
+<li>
+    <a href="CONTROLES-EDITAVEIS-2026-10-15.html" class="dropdown-item">Configurações</a>
+</li>
+                                    
+<li>
+    <a href="REGRAS-E-BALANCEAMENTO.html" class="dropdown-item">Regras</a>
+</li>
+                                    
+<li>
+    <a href="MULTIPLAYER-E-SERVIDOR.html" class="dropdown-item">Cooperativo</a>
+</li>
+                                    
+<li>
+    <a href="MANSAO-E-MISSAO.html" class="dropdown-item">Missão (spoilers)</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="GALERIAS.html" class="nav-link">Galerias</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Desenvolvimento</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="ARQUITETURA.html" class="dropdown-item">Arquitetura</a>
+</li>
+                                    
+<li>
+    <a href="TIROS-OBSTACULOS-2026-10-15.html" class="dropdown-item">Tiros e obstáculos</a>
+</li>
+                                    
+<li>
+    <a href="ASSETS-E-AUDIO.html" class="dropdown-item">Assets e áudio</a>
+</li>
+                                    
+<li>
+    <a href="JILL-PORTRAITS-2026-10-15.html" class="dropdown-item">Portraits de Jill</a>
+</li>
+                                    
+<li>
+    <a href="TEXTURAS-ARQUITETURA-2026-10-15.html" class="dropdown-item">Texturas arquitetônicas</a>
+</li>
+                                    
+<li>
+    <a href="VERSIONAMENTO.html" class="dropdown-item">Versões e publicação</a>
+</li>
+                                    
+<li>
+    <a href="DOCUMENTACAO.html" class="dropdown-item">Documentação</a>
+</li>
+                                    
+<li>
+    <a href="INVENTARIO-DOCUMENTACAO.html" class="dropdown-item">Inventário documental</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="TESTES-E-LIMITACOES.html" class="nav-link">Evidências</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="FONTES-E-ADAPTACOES.html" class="nav-link">Créditos e referências</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="VERSAO.html" class="nav-link">Versão</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/felipestroff/Operation-Spencer-Docs" class="nav-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <button id="theme-menu" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle">
+                                <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                <span class="d-lg-none ms-2">Toggle theme</span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                                    <i class="fa-solid fa-sun fa-fw"></i>
+                                    <span class="ms-2">Light</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="true">
+                                    <i class="fa-solid fa-moon fa-fw"></i>
+                                    <span class="ms-2">Dark</span>
+                                    <i class="fa-solid fa-check ms-auto"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                                    <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                    <span class="ms-2">Auto</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                              </ul>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="js/darkmode.js"></script>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#portas-ps1-e-passagem-em-primeira-pessoa--14102026" class="nav-link">Portas PS1 e passagem em primeira pessoa · 14/10/2026</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#regra-permanente-de-áudio--15102026" class="nav-link">Regra permanente de áudio · 15/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#modelos-e-fontes" class="nav-link">Modelos e fontes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#evidências-e-limites" class="nav-link">Evidências e limites</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="portas-ps1-e-passagem-em-primeira-pessoa--14102026">Portas PS1 e passagem em primeira pessoa · 14/10/2026</h1>
+<p><strong>Encaixe nas paredes corrigido em 15/10/2026:</strong> as molduras deixam de flutuar
+15,5–16 cm à frente da alvenaria; 70 lados das conexões e entrada principal
+medidos/renderizados no Godot. <a href="ENCAIXE-PORTAS-2026-10-15.html">Correção, galeria e testes</a>.</p>
+<h2 id="regra-permanente-de-áudio--15102026">Regra permanente de áudio · 15/10/2026</h2>
+<p><strong>TODA porta, sem exceção, toca um SFX de abertura durante a animação de
+abertura e um SFX de fechamento ao final da animação de entrada/travessia.</strong>
+Vale para todos os modelos, materiais, chaves e conexões, inclusive escadas
+e patamares, nos dois sentidos. Cada efeito toca uma única vez; o fechamento
+aguarda a conclusão visual e a confirmação da transferência, com fundo preto.
+Cancelamento, reset e desconexão não disparam fechamento. Passos/transição
+de escada não substituem o SFX de abertura da porta.</p>
+<p>Esta regra prevalece sobre exceções descritas nas evidências históricas abaixo.
+Contrato completo e critérios de validação em
+<a href="ASSETS-E-AUDIO.html#regra-obrigatória-sfx-de-todas-as-portas">Assets e áudio</a>,
+também obrigatório no <code>AGENTS.md</code>.</p>
+<p><code>DoorCinematic</code> abre a folha em 0,8 s, mantém a abertura de aproximadamente
+96° e avança a câmera a 1,52 m de altura através do vão. Não existe fase de
+fechamento. O fundo é preto, sem carregar geometria, objetos ou personagens
+do cômodo seguinte. O usuário cancelou explicitamente essa prévia para
+preservar o mistério. Após a confirmação da transferência pelo servidor,
+a animação termina e retorna à câmera fixa normal.</p>
+<p>A transferência central continua em 2 s, individual, com autoridade e regras
+de chave existentes. A abertura é uma apresentação da travessia, não um novo
+estado persistente de porta aberta/passável no mapa. Não houve alteração de
+Core, protocolo ou save nesta tarefa. Eventos históricos <code>door_close</code> deixam
+de produzir áudio de fechamento na apresentação; o SFX local de fechamento
+é disparado uma única vez pelo evento <code>DoorCinematic.Completed</code>, depois do
+término visual e da confirmação da transferência. Cancelamento, reset e
+desconexão não emitem esse evento. Portas em conexões de escada também emitem
+fechamento, conforme correção de 15/10/2026 abaixo.
+Bancos/master existentes
+foram preservados, sem novos SFX. Reset e desconexão cancelam a animação.</p>
+<h2 id="modelos-e-fontes">Modelos e fontes</h2>
+<p><code>Game/DoorArt.cs</code> compartilha largura, altura, pivôs e modelo entre cenário,
+inspeção e animação. <code>Tools/generate_assets.py --doors</code> regenera somente as
+quatro folhas e o manifesto <code>Assets/Models/door-art-manifest.json</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Modelo</th>
+<th>Aparência</th>
+<th style="text-align: right;">Triângulos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>door_leaf</td>
+<td>Madeira, quatro painéis, ferragens e maçaneta</td>
+<td style="text-align: right;">988</td>
+</tr>
+<tr>
+<td>door_sword</td>
+<td>Emblemas de espada, frisos dourados, placa de fechadura maior</td>
+<td style="text-align: right;">1.332</td>
+</tr>
+<tr>
+<td>door_shield</td>
+<td>Painéis bordô, escudos e placa de fechadura maior</td>
+<td style="text-align: right;">1.308</td>
+</tr>
+<tr>
+<td>door_service</td>
+<td>Metal envelhecido e travessas de reforço</td>
+<td style="text-align: right;">1.036</td>
+</tr>
+</tbody>
+</table>
+<p>As folhas têm acabamento dos dois lados. Espada e escudo correspondem às
+duas chaves especiais do catálogo atual; não foram inventadas novas regras
+ou chaves. As variantes especiais usam alguns polígonos além da referência
+de 1.268 dos itens para seus relevos/ferragens nos dois lados. Faces facetadas,
+texturas originais 64² e nearest são preservados. Modelos normalizados recebem
+escala de 1,3 × 2,55 m no jogo; portas duplas usam duas folhas de 1,1 m.</p>
+<p>A porta comum anterior tinha 1.636 triângulos. Campos elevados passam a usar
+uma face e quatro facetas visíveis, eliminando faces internas e tampas de
+caixas chanfradas completas: redução de 648 triângulos (39,6%). Essa contagem
+não comprova ganho de FPS; profiling não foi realizado.</p>
+<p>Referências ingame usadas apenas para orientação visual, sem copiar arquivos
+ou extrair assets: <a href="https://ameblo.jp/next-chance-to-move-on/entry-12911749975.html">portas e corredor</a>
+e <a href="https://retro.gg/game/resident-evil/549">capturas da mansão de 1996</a>.
+O gerador e as texturas do projeto são as fontes editáveis; o manifesto
+registra os hashes dos GLBs/texturas e a proveniência.</p>
+<h2 id="evidências-e-limites">Evidências e limites</h2>
+<h3 id="auditoria-de-abertura-e-fechamento-pela-aplicação--15102026">Auditoria de abertura e fechamento pela aplicação · 15/10/2026</h3>
+<p><code>Tools/DoorAudioAudit.tscn</code> executa o App real em sessão solo isolada, posiciona
+o jogador em cada lado das 35 portas e envia o comando à autoridade. Verifica
+playback de exatamente um SFX de porta abrindo durante a animação e um SFX de
+porta fechando somente após ela terminar. Também verifica destino confirmado,
+WAV existente, fundo preto e ausência de replay em frames/prontidão posteriores.
+<code>--stairs-only</code> limita a auditoria às oito travessias de escadas;
+<code>--entry-only</code> confere separadamente os dois SFX da entrada principal.</p>
+<p>A reprodução anterior ao patch encontrou <code>stair_transition</code> nas quatro portas
+de escada, nos dois sentidos. Esse banco contém somente passos de concreto,
+segundo <code>Tools/AudioSources/manifest.json</code>; portanto não atende à regra de
+abertura de porta. A reprodução gerou 16 falhas: oito aberturas incorretas e
+oito verificações do par abertura/fechamento sem um SFX de abertura válido.
+O fechamento já estava presente nesses oito casos.</p>
+<p><code>AudioPresentation.DoorBank</code> agora seleciona abertura e fechamento de porta
+pelo material em todas as categorias. Bancos <code>door_open</code>/<code>door_close</code> e
+<code>door_metal_open</code>/<code>door_metal_close</code> existentes foram reutilizados. Nenhum WAV,
+gerador, master ou manifesto de áudio foi alterado. Fontes e registros por
+porta/sentido ficam em <code>Build/door-audio-audit-2026-10-15/</code>.</p>
+<p>A fixture usa posições dirigidas, com desbloqueios/requisitos preparados pelo
+teste, e volume de efeitos habilitado. Não é campanha manual nem audição crítica.
+Câmeras, tetos, mapa, autoridade, protocolo e saves de produção não mudaram.</p>
+<p>Auditoria final pela aplicação: <strong>35 portas, 70 travessias, 560 checks e zero
+falhas</strong>. Cada travessia registrou exatamente os dois playbacks esperados;
+os únicos bancos observados foram <code>door_open</code>, <code>door_close</code>, <code>door_metal_open</code>
+e <code>door_metal_close</code>. A entrada principal passou separadamente em três checks
+de abertura, fechamento e ausência de repetição. Relatórios <code>report.json</code> e
+<code>entry-report.json</code> listam os resultados; os WAVs originais foram preservados.</p>
+<p>Regressões finais: 679 checks da animação (incluindo cancelamentos e espera
+pela autoridade), 370 checks de áudio, 15 checks Python e 60 CoreTests passaram.
+Rebuild C# sem avisos/erros e importação Godot 4.7.2 .NET concluída. Os eventos
+de playback confirmam execução no engine; audição crítica e controle físico
+permanecem pendentes. Sem nova homologação multiplayer/matriz de rede.</p>
+<h3 id="correção-das-portas-em-escadas--15102026">Correção das portas em escadas · 15/10/2026</h3>
+<p>A porta do patamar do hall (<code>hall__balcony</code>) e outras três conexões usam
+<code>Kind=stairs</code>, embora todas tenham folhas renderizadas. <code>DoorBank</code> retornava
+banco vazio no fechamento dessa categoria. O banco agora usa o material do
+destino/origem também nessas portas. Naquela correção a abertura ainda usava
+<code>stair_transition</code>; a auditoria completa abaixo elimina essa substituição por passos.
+<code>tea__passage</code> usa <code>door_metal_close</code>; as outras três usam <code>door_close</code>.
+O evento local de conclusão continua único e cancelamentos continuam silenciosos.
+Não houve alteração de câmera, teto, modelos, WAVs, dados, Core, rede ou save.</p>
+<p>A regressão reproduziu 12 falhas antes da correção: quatro bancos vazios e
+oito passagens sem playback. Logs antes/depois e gates em
+<code>Build/door-stairs-close-2026-10-15/</code>. A primeira execução incremental carregou
+uma assembly antiga; a reprodução válida e a rodada final usam rebuild completo.
+As contagens de 14/10 abaixo são evidências históricas da regra anterior.</p>
+<p>Rodada final: 679 checks gráficos de portas e 370 de áudio aprovados; incluem
+playback efetivo dos bancos existentes, ambos os sentidos, ausência de repetição
+e cancelamentos. 15 checks Python e 60 CoreTests passaram; rebuild C# sem
+erros/avisos e importação Godot concluídos. Capturas usam o mesmo fundo preto.
+Não foram executados controle físico, audição crítica ou novo smoke/matriz
+de rede/save, pois a alteração é somente seleção de SFX na apresentação.</p>
+<p>Ajuste de SFX ao término da entrada: logs em <code>Build/door-close-2026-10-14/</code>.
+15 checks Python, 40 CoreTests, build sem erros/avisos e importação concluídos.
+<code>DoorAcceptance</code> ampliado: 675 checks renderizados, zero falhas, incluindo
+playback do banco integrado somente ao concluir, espera por autoridade,
+ausência de repetição em frames/RoomReady posteriores e cancelamentos antes,
+durante e após a duração nominal. Fundo preto preservado. Audição crítica e
+controle físico não executados; rede/save não mudaram, sem novo smoke/matriz.</p>
+<p>Capturas finais: <code>Build/doors-mystery-2026-10-14/index.html</code>.
+Logs: <code>Build/doors-2026-10-14/</code>, com sufixo <code>final</code> quando aplicável.</p>
+<ul>
+<li>Validador Python: 14 checks aprovados, incluindo integridade dos modelos.</li>
+<li>CoreTests: 40 aprovados, zero falhas.</li>
+<li>Build C#: zero erros/avisos; importação Godot 4.7.2 .NET concluída.</li>
+<li><code>DoorAcceptance</code>: 462 checks, zero falhas; 35 portas/70 entradas dirigidas,
+  quatro modelos, nearest, abertura mantida, câmera atravessando, ausência de
+  RoomView/atores na animação, pixels pretos após passagem, espera por
+  confirmação atrasada, cancelamento e descarte do mundo de renderização.</li>
+<li><code>InspectionAcceptance</code>: 320 checks, zero falhas; inspeção e travessias
+  comuns/com chave, retorno, cliente ENet real, pausa/menu/reinício.</li>
+<li><code>AudioAcceptance</code>: 351 checks, zero falhas; evento legado de fechamento
+  silencioso para companheiros e regressão de áudio existente.</li>
+<li>Capturas reais do Compatibility inspecionadas: proporções, emblemas,
+  fechaduras, faces e abertura para preto. Galeria contém três ângulos de
+  cada modelo e quatro fases de doze passagens representativas.</li>
+</ul>
+<p>Fixtures usam estados/câmeras e entradas sintéticas. Controle físico,
+audição crítica, campanha manual completa, export e profiling não foram
+executados. Smoke de quatro clientes e matriz de concorrência/reconexão/restore
+não foram repetidos: os contratos de rede/save não mudaram. Os testes citados
+não constituem homologação multiplayer completa ou aprovação artística humana.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js"></script>
+        <script src="search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

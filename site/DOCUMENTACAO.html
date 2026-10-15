@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="pt_BR" data-bs-theme="dark">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://felipestroff.github.io/Operation-Spencer-Docs/DOCUMENTACAO.html">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Documentação - Operation Spencer · 0.1.0-alpha</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/brands.min.css" rel="stylesheet">
+        <link href="css/solid.min.css" rel="stylesheet">
+        <link href="css/v4-font-face.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" disabled>
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" >
+        <link href="stylesheets/spencer.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Operation Spencer · 0.1.0-alpha</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Início</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Jogar</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="INSTALACAO-WINDOWS.html" class="dropdown-item">Instalação</a>
+</li>
+                                    
+<li>
+    <a href="CONTROLES.html" class="dropdown-item">Controles</a>
+</li>
+                                    
+<li>
+    <a href="MENU-ESC-2026-10-15.html" class="dropdown-item">Menu Esc</a>
+</li>
+                                    
+<li>
+    <a href="CONTROLES-EDITAVEIS-2026-10-15.html" class="dropdown-item">Configurações</a>
+</li>
+                                    
+<li>
+    <a href="REGRAS-E-BALANCEAMENTO.html" class="dropdown-item">Regras</a>
+</li>
+                                    
+<li>
+    <a href="MULTIPLAYER-E-SERVIDOR.html" class="dropdown-item">Cooperativo</a>
+</li>
+                                    
+<li>
+    <a href="MANSAO-E-MISSAO.html" class="dropdown-item">Missão (spoilers)</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="GALERIAS.html" class="nav-link">Galerias</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Desenvolvimento</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="ARQUITETURA.html" class="dropdown-item">Arquitetura</a>
+</li>
+                                    
+<li>
+    <a href="TIROS-OBSTACULOS-2026-10-15.html" class="dropdown-item">Tiros e obstáculos</a>
+</li>
+                                    
+<li>
+    <a href="ASSETS-E-AUDIO.html" class="dropdown-item">Assets e áudio</a>
+</li>
+                                    
+<li>
+    <a href="JILL-PORTRAITS-2026-10-15.html" class="dropdown-item">Portraits de Jill</a>
+</li>
+                                    
+<li>
+    <a href="TEXTURAS-ARQUITETURA-2026-10-15.html" class="dropdown-item">Texturas arquitetônicas</a>
+</li>
+                                    
+<li>
+    <a href="VERSIONAMENTO.html" class="dropdown-item">Versões e publicação</a>
+</li>
+                                    
+<li>
+    <a href="DOCUMENTACAO.html" class="dropdown-item active" aria-current="page">Documentação</a>
+</li>
+                                    
+<li>
+    <a href="INVENTARIO-DOCUMENTACAO.html" class="dropdown-item">Inventário documental</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="TESTES-E-LIMITACOES.html" class="nav-link">Evidências</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="FONTES-E-ADAPTACOES.html" class="nav-link">Créditos e referências</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="VERSAO.html" class="nav-link">Versão</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="VERSIONAMENTO.html" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="INVENTARIO-DOCUMENTACAO.html" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/felipestroff/Operation-Spencer-Docs" class="nav-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <button id="theme-menu" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle">
+                                <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                <span class="d-lg-none ms-2">Toggle theme</span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                                    <i class="fa-solid fa-sun fa-fw"></i>
+                                    <span class="ms-2">Light</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="true">
+                                    <i class="fa-solid fa-moon fa-fw"></i>
+                                    <span class="ms-2">Dark</span>
+                                    <i class="fa-solid fa-check ms-auto"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                                    <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                    <span class="ms-2">Auto</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                              </ul>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="js/darkmode.js"></script>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#manutenção-da-documentação-visual" class="nav-link">Manutenção da documentação visual</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#regra-obrigatória-atualização-de-todas-as-referências" class="nav-link">Regra obrigatória: atualização de todas as referências</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#gerar-o-portal" class="nav-link">Gerar o portal</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#coleção-pública-e-acervo-local" class="nav-link">Coleção pública e acervo local</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#evidência-e-histórico" class="nav-link">Evidência e histórico</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#publicação-automática-em-repositório-separado" class="nav-link">Publicação automática em repositório separado</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="manutenção-da-documentação-visual">Manutenção da documentação visual</h1>
+<p>O README apresenta o jogo; os guias explicam como executar e manter; documentos
+datados registram evidências de uma implementação. Consultar o
+<a href="INVENTARIO-DOCUMENTACAO.html">inventário documental</a> e o <a href="TESTES-E-LIMITACOES.html">estado dos testes</a>.</p>
+<h2 id="regra-obrigatória-atualização-de-todas-as-referências">Regra obrigatória: atualização de todas as referências</h2>
+<p>Qualquer alteração que afete documentação, páginas ou apresentação do jogo deve
+atualizar <strong>todas as referências afetadas na mesma entrega</strong>, conforme a regra
+em <a href="https://github.com/felipestroff/Projeto-Mansao/blob/main/AGENTS.md">AGENTS.md</a>.
+Isso também se aplica quando uma mudança de código, dados, arte, áudio ou versão
+torna uma descrição, instrução ou captura desatualizada.</p>
+<ol>
+<li>Identificar os conceitos, nomes, caminhos e comportamentos alterados. Pesquisar
+   suas ocorrências e dependências no repositório e consultar o inventário
+   documental; a busca literal sozinha não identifica todas as referências.</li>
+<li>Atualizar README, guias, portal, HTMLs, galerias e apresentação afetados,
+   incluindo navegação, links, âncoras, exemplos, instalação, controles, versões
+   exibidas, imagens, legendas, créditos e manifestos. Revisar também referências
+   de entrada para arquivos ou seções renomeados, movidos ou removidos.</li>
+<li>Alterar a fonte e o gerador correspondente antes de regenerar os derivados.
+   Conferir hashes, origem e contexto quando houver troca de mídia. Preservar
+   registros históricos datados e tags publicadas; marcar conteúdo substituído
+   e indicar a referência atual sem falsificar evidências antigas.</li>
+<li>Conferir sincronização de versão, links, âncoras e dependências com os comandos
+   abaixo; revisar o resultado renderizado das páginas e mídias alteradas.
+   Registrar evidências e limitações de validação, inclusive pendências locais
+   que não possam ser verificadas em um clone limpo.</li>
+</ol>
+<p>A entrega só está completa quando as referências afetadas estão coerentes com
+o estado descrito. Alterações exclusivamente documentais continuam sem incremento
+da versão do jogo.</p>
+<h2 id="gerar-o-portal">Gerar o portal</h2>
+<pre><code class="language-powershell">python -m pip install -r Tools/requirements-docs.txt
+python -B Tools/release_version.py check
+python -B Tools/build_public_galleries.py
+python -B Tools/validate_docs.py
+python -m mkdocs build --strict
+python -m mkdocs serve
+</code></pre>
+<p>Para recapturas locais do painel de configurações, execute a fixture indicada em
+<a href="CONTROLES-EDITAVEIS-2026-10-15.html">Controles editáveis</a> e depois
+<code>python -B Tools/build_public_galleries.py --refresh-settings</code>. O exportador
+preserva as imagens anteriores em <code>media/history/pre-bindings-2026-10-15/</code>
+e atualiza o acervo e hashes; <code>--curate</code> também conserva os registros históricos.
+As capturas mais recentes vêm de <code>Build/ui-accents-2026-10-15/</code>, usando
+também <code>--restore-suite --style-suite --accent-suite</code>. <code>--refresh-ui-style</code> publica também
+inventário/mapa/baú e os destaques do teclado. O estado anterior aos novos
+estilos fica em <code>media/history/pre-ui-style-2026-10-15/</code>, com originais e hashes.
+<a href="INTERFACE-AZUL-2026-10-15.html">Critérios e resultados</a>.
+O estado anterior a vínculos verdes/hover vermelho e detalhes do baú fica em
+<code>media/history/pre-accents-2026-10-15/</code>. <a href="DESTAQUES-E-BAU-2026-10-15.html">Revisão atual</a>.
+O estado anterior ao botão de restauração fica preservado em
+<code>media/history/pre-restore-2026-10-15/</code>.</p>
+<p>A seleção de itens da lista do baú é recapturada pela fixture com
+<code>--style-suite --chest-list-suite</code>, em <code>Build/chest-list-details-2026-10-15/</code>.
+<code>python -B Tools/build_public_galleries.py --refresh-chest-list</code> publica as duas
+capturas específicas e atualiza a imagem genérica do baú, preservando a anterior
+em <code>media/history/pre-chest-list-2026-10-15/</code>. <a href="BAU-LISTA-DETALHES-2026-10-15.html">Evidências</a>.</p>
+<p>O complemento de navegação usa também <code>--chest-navigation-suite</code>, com saída em
+<code>Build/chest-navigation-2026-10-15/</code>. <code>--refresh-chest-navigation</code> publica três
+capturas próprias de foco nos painéis/lista vazia, sem substituir as evidências
+anteriores de clique/retirada. <a href="BAU-LISTA-DETALHES-2026-10-15.html#navegação-entre-os-painéis--complemento-de-1510">Navegação</a>.</p>
+<p><code>--chest-enter-suite</code> acrescenta transferências por Enter/Enter numérico, Echo,
+vazios, versões e pausa; saída em <code>Build/chest-enter-2026-10-15/</code>.
+<code>--refresh-chest-enter</code> publica duas capturas próprias com hashes no manifesto.
+<a href="BAU-LISTA-DETALHES-2026-10-15.html#transferência-por-enter--complemento-de-1510">Transferências</a>.</p>
+<p>O site é gerado em <code>Build/docs-site</code>, com busca em português e caminhos próprios
+para GitHub Pages de projeto. Markdown e mídias versionadas bastam para um
+clone limpo. A variável <code>PAGES_BASE_URL</code> permite usar o endereço retornado pelo
+GitHub; o padrão é <code>https://felipestroff.github.io/Operation-Spencer-Docs/</code>.</p>
+<h2 id="coleção-pública-e-acervo-local">Coleção pública e acervo local</h2>
+<p>Os retratos atuais de Jill são recapturados por <code>Tools/JillPortraitPreview.tscn</code>
+e publicados por <code>python -B Tools/build_public_galleries.py --refresh-jill</code>.
+Cartão, inventário e baú anteriores ficam em
+<code>media/history/pre-jill-2026-10-15/</code>, com hashes e contexto preservados.
+<code>--curate</code> usa as novas fontes. <a href="JILL-PORTRAITS-2026-10-15.html">Reprodução e limites</a>.</p>
+<p><code>Docs/media-manifest.json</code> registra fonte, contexto, hashes, direitos e edições.
+Capturas são cópias binárias do acervo; não há recomposição, alteração da luz ou
+redimensionamento. <code>source_commit=null</code> significa que o SHA da captura não foi
+registrado originalmente; o HEAD atual não foi inventado como origem.</p>
+<p><code>Build/</code> continua ignorada. Somente na máquina que possui o acervo, executar:</p>
+<pre><code class="language-powershell">python -B Tools/build_public_galleries.py --curate
+</code></pre>
+<p>Esse comando reconstrói a seleção explícita e exporta as galerias existentes
+de conceitos, portas e lareiras com suas dependências visuais. Os geradores
+originais continuam em Tools; o exportador não substitui modelagem ou renders.
+O limite da coleção é 200 MiB. Para atualizar, revisar a seleção no gerador,
+conferir o conteúdo no navegador e revisar o diff do manifesto.</p>
+<p>Para a revisão arquitetônica de 15/10/2026, gerar primeiro os renders de
+<code>ArchitectureArtAcceptance</code>, <code>ArchitectureUiPreview</code> e <code>InspectionAcceptance
+--rain-only --rain-output=res://Build/architecture-ps1-2026-10-15/rain</code>, sempre
+com perfil/campanha de fixture isolados no App. Em seguida executar
+<code>python -B Tools/build_public_galleries.py --refresh-architecture</code>.
+O exportador preserva as dez imagens anteriores em <code>Docs/media/history/</code>,
+atualiza a fonte do acervo, publica 43 pares antes/depois e regrava os hashes.
+<code>--curate</code> também usa as novas fontes e preserva os registros históricos.
+Ver <a href="TEXTURAS-ARQUITETURA-2026-10-15.html">reprodução, evidências e limites</a>.</p>
+<p>Classificar cada imagem: cena de gameplay/fixture no Godot, inspeção de GLB,
+interface ou conceito image_gen. Partida manual exige evidência própria.
+Protótipos não são apresentados como arte implementada. Inspirações externas
+permanecem como links identificados em <a href="FONTES-E-ADAPTACOES.html">fontes</a>.</p>
+<p>O catálogo sonoro público expõe metadados e três derivados de gravações CC0 já
+integrados. Os demais bancos têm links/créditos, sem masters nem áudio embutido.
+Nunca copiar as galerias locais de áudio indiscriminadamente: algumas contêm
+Mixkit/Pixabay e comparações históricas em base64. A regra de origem dos novos
+SFX em AGENTS.md continua obrigatória.</p>
+<h2 id="evidência-e-histórico">Evidência e histórico</h2>
+<p>Não substituir testes reais por badges. Cada resultado deve indicar data,
+SHA-base, condições e limites. Preservar registros antigos e corrigir o estado
+atual na entrada correspondente, sem reescrever resultados históricos.</p>
+<p>Links de evidências locais antigas são identificados como locais; as galerias
+públicas são uma seleção, não o arquivo completo de logs. Mudanças somente em
+documentação atualizam o portal, sem incrementar a versão do jogo.</p>
+<h2 id="publicação-automática-em-repositório-separado">Publicação automática em repositório separado</h2>
+<p>O portal fica em <a href="https://felipestroff.github.io/Operation-Spencer-Docs/">https://felipestroff.github.io/Operation-Spencer-Docs/</a> e seu
+repositório público é <a href="https://github.com/felipestroff/Operation-Spencer-Docs">Operation-Spencer-Docs</a>.
+O repositório do jogo permanece privado. <code>docs-publication.json</code> registra o destino.
+Referências a fontes, commits e Actions do jogo exigem acesso ao repositório privado;
+esses arquivos não são copiados para o portal.</p>
+<p>Depois de cada integração validada na main, o workflow Release and documentation
+chama Documentation Pages explicitamente, inclusive após commits de versão do bot.
+O job gera o MkDocs, valida hashes/links e usa <code>Tools/publish_docs.py</code> para copiar
+somente arquivos estáticos permitidos ao diretório <code>site/</code> de um checkout separado.
+Não há clone/mirror do histórico privado, código do jogo, masters, saves ou binários.
+As fontes web são as fornecidas pelo tema MkDocs, sem fontes do sistema.</p>
+<p>Uma deploy key exclusiva do repositório público, com escrita, fica no secret
+<code>DOCS_PUBLISH_KEY</code> do repositório privado. <code>GITHUB_TOKEN</code> permanece restrito ao
+próprio repositório; a chave permite enviar o site ao outro destino. O push por SSH
+aciona o workflow público Deploy public documentation, que publica o Pages.
+Nenhuma credencial é gravada nos arquivos ou no histórico do portal.</p>
+<p>A variável privada <code>PAGES_ENABLED=true</code> habilita a chamada automática. O preparo
+<code>python -B Tools/github_release_setup.py --apply</code> configura Pages no destino
+público já criado; não muda a visibilidade do jogo nem o plano da conta.
+Para repetir apenas a documentação, executar Documentation Pages manualmente.
+Mudanças exclusivamente documentais não criam uma versão do jogo.</p>
+<p>Para ensaiar sem envio: <code>python -B Tools/publish_docs.py</code>. Para preparar o checkout
+público: <code>python -B Tools/publish_docs.py --destination Build/public-docs</code>.
+O comando recusa remote diferente do destino configurado, links simbólicos,
+fontes/bibliotecas do jogo, arquivos ocultos e chaves privadas reconhecíveis.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js"></script>
+        <script src="search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

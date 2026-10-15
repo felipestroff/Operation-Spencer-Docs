@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="pt_BR" data-bs-theme="dark">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://felipestroff.github.io/Operation-Spencer-Docs/TEXTURAS-ARQUITETURA-2026-10-15.html">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Texturas arquitetônicas - Operation Spencer · 0.1.0-alpha</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/brands.min.css" rel="stylesheet">
+        <link href="css/solid.min.css" rel="stylesheet">
+        <link href="css/v4-font-face.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" disabled>
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" >
+        <link href="stylesheets/spencer.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Operation Spencer · 0.1.0-alpha</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Início</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Jogar</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="INSTALACAO-WINDOWS.html" class="dropdown-item">Instalação</a>
+</li>
+                                    
+<li>
+    <a href="CONTROLES.html" class="dropdown-item">Controles</a>
+</li>
+                                    
+<li>
+    <a href="MENU-ESC-2026-10-15.html" class="dropdown-item">Menu Esc</a>
+</li>
+                                    
+<li>
+    <a href="CONTROLES-EDITAVEIS-2026-10-15.html" class="dropdown-item">Configurações</a>
+</li>
+                                    
+<li>
+    <a href="REGRAS-E-BALANCEAMENTO.html" class="dropdown-item">Regras</a>
+</li>
+                                    
+<li>
+    <a href="MULTIPLAYER-E-SERVIDOR.html" class="dropdown-item">Cooperativo</a>
+</li>
+                                    
+<li>
+    <a href="MANSAO-E-MISSAO.html" class="dropdown-item">Missão (spoilers)</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="GALERIAS.html" class="nav-link">Galerias</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Desenvolvimento</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="ARQUITETURA.html" class="dropdown-item">Arquitetura</a>
+</li>
+                                    
+<li>
+    <a href="TIROS-OBSTACULOS-2026-10-15.html" class="dropdown-item">Tiros e obstáculos</a>
+</li>
+                                    
+<li>
+    <a href="ASSETS-E-AUDIO.html" class="dropdown-item">Assets e áudio</a>
+</li>
+                                    
+<li>
+    <a href="JILL-PORTRAITS-2026-10-15.html" class="dropdown-item">Portraits de Jill</a>
+</li>
+                                    
+<li>
+    <a href="TEXTURAS-ARQUITETURA-2026-10-15.html" class="dropdown-item active" aria-current="page">Texturas arquitetônicas</a>
+</li>
+                                    
+<li>
+    <a href="VERSIONAMENTO.html" class="dropdown-item">Versões e publicação</a>
+</li>
+                                    
+<li>
+    <a href="DOCUMENTACAO.html" class="dropdown-item">Documentação</a>
+</li>
+                                    
+<li>
+    <a href="INVENTARIO-DOCUMENTACAO.html" class="dropdown-item">Inventário documental</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="TESTES-E-LIMITACOES.html" class="nav-link">Evidências</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="FONTES-E-ADAPTACOES.html" class="nav-link">Créditos e referências</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="VERSAO.html" class="nav-link">Versão</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="JILL-PORTRAITS-2026-10-15.html" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="VERSIONAMENTO.html" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/felipestroff/Operation-Spencer-Docs" class="nav-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <button id="theme-menu" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle">
+                                <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                <span class="d-lg-none ms-2">Toggle theme</span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                                    <i class="fa-solid fa-sun fa-fw"></i>
+                                    <span class="ms-2">Light</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="true">
+                                    <i class="fa-solid fa-moon fa-fw"></i>
+                                    <span class="ms-2">Dark</span>
+                                    <i class="fa-solid fa-check ms-auto"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                                    <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                    <span class="ms-2">Auto</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                              </ul>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="js/darkmode.js"></script>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#texturas-arquitetônicas-ps1--15102026" class="nav-link">Texturas arquitetônicas PS1 — 15/10/2026</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#materiais-e-locais" class="nav-link">Materiais e locais</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#causa-e-autoria" class="nav-link">Causa e autoria</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#evidências-desta-rodada" class="nav-link">Evidências desta rodada</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#referências-visuais-e-limites" class="nav-link">Referências visuais e limites</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="texturas-arquitetônicas-ps1--15102026">Texturas arquitetônicas PS1 — 15/10/2026</h1>
+<p>As oito texturas do catálogo inicial ainda usadas no cenário foram substituídas
+por albedos originais de 64/128 pixels, nearest, com UVs proporcionais. A revisão
+começou pelo patamar e pelas seis colunas do hall. A geometria existente continua
+facetada; iluminação, câmeras, piso/patamar, passagem e regras de jogo foram preservados.</p>
+<p><a href="galerias/arquitetura/index.html">Comparação pública antes/depois</a> ·
+<a href="galerias/acervo/index.html">Acervo atual</a> · <a href="TESTES-E-LIMITACOES.html">Estado dos testes</a>.</p>
+<h2 id="materiais-e-locais">Materiais e locais</h2>
+<table>
+<thead>
+<tr>
+<th>Anterior</th>
+<th>Albedo atual</th>
+<th>Locais</th>
+<th>Superfícies migradas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>marble</code></td>
+<td><code>architecture_ps1_marble</code></td>
+<td>Laje, frente/base e duas faixas do patamar; apoios, bases, fustes, golas e capitéis das seis colunas do hall</td>
+<td>34</td>
+</tr>
+<tr>
+<td><code>oak</code></td>
+<td><code>architecture_ps1_wood</code></td>
+<td>Dois postes do patamar, viga do lustre, quatro peças de rebaixo em cada uma das seis janelas</td>
+<td>27</td>
+</tr>
+<tr>
+<td><code>brass</code></td>
+<td><code>architecture_ps1_brass</code></td>
+<td>68 arandelas nas 34 salas; lustre, seis detalhes de capitel e dois arremates de postes no hall</td>
+<td>598</td>
+</tr>
+<tr>
+<td><code>metal</code></td>
+<td><code>architecture_ps1_iron</code></td>
+<td>Fechos das seis janelas externas no Doghall, corredor leste superior e estufa</td>
+<td>6</td>
+</tr>
+<tr>
+<td><code>checker</code></td>
+<td><code>floor_ps1_checker</code></td>
+<td>Hall, patamar do hall e galeria superior do saguão</td>
+<td>3</td>
+</tr>
+<tr>
+<td><code>parquet</code></td>
+<td><code>floor_ps1_parquet</code></td>
+<td>Pisos dos 25 ambientes com acabamento de madeira</td>
+<td>25</td>
+</tr>
+<tr>
+<td><code>ceramic</code></td>
+<td><code>floor_ps1_ceramic</code></td>
+<td>Banheiro, cozinha subterrânea e arquivo de contenção</td>
+<td>3</td>
+</tr>
+<tr>
+<td><code>stone</code></td>
+<td><code>floor_ps1_stone</code></td>
+<td>Estufa, terraço, passagem de serviço e sala do gerador</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+<p>São 700 superfícies de malha/material, não 700 objetos ou pixels visíveis.
+<code>parquet</code> cobre jantar, primeiro encontro, música, oeste, medicamentos, zelador,
+tigre, galeria de entrada, Doghall, estar, espingarda, leste, costura, retratos,
+mezanino do jantar, oeste superior, escritório, biblioteca, troféus, galeria
+superior oeste, leste superior, armaduras, pesquisador, leitura e depósito superior.</p>
+<p>Os PNGs anteriores continuam disponíveis para reproduzir as evidências históricas.
+Não há fallback de apresentação para eles. Também não se devem confundir
+<code>prop_marble</code> dos degraus/balaústres e os albedos revisados dos GLBs com <code>marble</code>
+do catálogo inicial. Os 80 GLBs, ícones e seus hashes de bake não mudaram.</p>
+<h2 id="causa-e-autoria">Causa e autoria</h2>
+<p><code>WallArt.Apply</code> migrou as 16 superfícies de parede de cada sala, mas não alcançava
+pisos e componentes aninhados da arquitetura. O patamar ainda esticava o atlas
+3×2 do BoxMesh; as colunas distribuíam V pelo número de anéis do perfil.</p>
+<p><code>Game/ArchitectureArt.cs</code> projeta cada face em metros e mantém todos os vértices,
+triângulos e transformações. O patamar e o piso usam a mesma origem física;
+fibras de madeira acompanham o comprimento de postes, vigas e travessas.
+<code>RoomArchitecture</code> calcula V dos fustes pela altura real, U pela circunferência
+do perfil e projeção plana nas tampas. Os materiais de cera/pavio aprovados
+mantêm o mapeamento anterior. As placas das arandelas usam o mesmo UV métrico no
+centro e no contorno, sem distorção em leque.</p>
+<p>Os quatro pisos têm juntas e desgaste em pequenos grupos de pixels; o parquet
+alterna cestos de réguas. Mármore tem veios discretos, carvalho tem fibras/nós,
+latão e ferro têm pátina agrupada. Não foram usadas fotografias, normal maps,
+imagens externas, fontes, PBR fotorealista ou mapas HD.</p>
+<p>Fonte: <code>Tools/generate_architecture_art.py</code>, chamada por
+<code>Tools/generate_assets.py --architecture</code>, por <code>--textures</code> e pela geração completa.
+O manifesto <code>Assets/Textures/architecture-art-manifest.json</code> registra dimensões,
+períodos em metros, substituições e SHA-256 dos PNGs e do gerador.</p>
+<pre><code class="language-powershell">python -B Tools/generate_assets.py --architecture
+python -B Tools/validate_project.py --report Build/architecture-ps1-2026-10-15/validation.json
+dotnet build OperationSpencer.csproj -c Debug
+&amp; $env:GODOT_DOTNET --headless --path . --editor --import --quit
+&amp; $env:GODOT_DOTNET --path . --scene res://Tools/ArchitectureArtAcceptance.tscn
+python -B Tools/build_public_galleries.py --refresh-architecture
+</code></pre>
+<p>A fixture usa <code>--output=res://Build/architecture-ps1-2026-10-15</code> por padrão;
+<code>--room=hall</code> limita a sala. A baseline foi capturada <strong>antes</strong> da migração com
+<code>--baseline</code>; esse modo recusa sobrescrever assinaturas já existentes e não deve
+ser usado para inventar um novo “antes” com os materiais revisados.
+Assinaturas e relatórios completos permanecem locais em <code>Build/</code>.</p>
+<h2 id="evidências-desta-rodada">Evidências desta rodada</h2>
+<p>SHA-base: <code>e05938359ab33c41a2db236f130582c23b44d205</code>, com alterações locais
+preexistentes e concorrentes. A captura corresponde ao diretório de trabalho;
+não é atribuída a uma tag ou commit publicado. Hashes iniciais e logs estão em
+<code>Build/architecture-ps1-2026-10-15/</code>.</p>
+<ul>
+<li>Baseline real: 34 salas, 199 PNGs, 268 checks; nenhuma falha.</li>
+<li>Conferência de migração, UVs, geometria, transformações, luzes e nearest:
+  607 checks aprovados, zero falhas; 208 PNGs, sendo 190 câmeras autoradas,
+  nove detalhes, quatro cenas com personagem e cinco poses na escadaria.</li>
+<li>Interfaces recapturadas no App: abertura, inventário, mapa, pausa solo e pausa
+  de um host cooperativo localhost; cinco PNGs, exit 0.</li>
+<li>Janelas no App: 176 checks aprovados, incluindo floresta, chuva ativa,
+  escorrimento, estiagem/textos, inspeção em primeira pessoa, pausa offline,
+  loops gravados, atenuação e cauda de reverberação do mixer real.</li>
+<li>Rebuild C# completo (<code>--no-incremental</code>) e importação Godot 4.7.2 stable .NET aprovados; build sem avisos
+  nem erros. Validador Python: 16 checks aprovados. CoreTests: 77 aprovados.
+  Testes Python de release: 21 aprovados; versão exibida preservada.</li>
+<li>Reprodução determinística: os oito PNGs e o manifesto foram regenerados com
+  <code>--architecture</code> e permaneceram byte a byte idênticos.</li>
+</ul>
+<p>Os hashes iniciais também confirmam que 1.604 arquivos de Core, dados, GLBs,
+ícones, áudio e shaders permaneceram byte a byte idênticos nesta tarefa.
+Não foi criado pacote ou tag: <code>CHECKSUMS.sha256</code> permanece como registro da
+distribuição anterior, sem certificar a árvore alterada. Os hashes atuais desta
+revisão estão em <code>architecture-art-manifest.json</code> e <code>Docs/media-manifest.json</code>.</p>
+<p>Os registros iniciais desta tarefa incluem uma compilação bloqueada por edição
+concorrente de <code>ShowOptions</code>, depois integrada, e um check de UV que incluía
+incorretamente as tampas planas dos fustes. A correção desse check separa as
+tampas dos lados; os resultados finais são registrados separadamente.</p>
+<h2 id="referências-visuais-e-limites">Referências visuais e limites</h2>
+<p>README, portal, entrada HTML, acervo e dez imagens de cenário/interfaces foram
+atualizados pela fonte de curadoria. As versões anteriores dessas imagens estão
+preservadas em <code>Docs/media/history/pre-architecture-2026-10-15/</code>, com contexto e
+hashes no manifesto. As galerias datadas de portas/lareiras e relatórios de
+14/10 continuam históricos; suas evidências não são reescritas.</p>
+<p>As capturas da fixture usam RoomView, 640×480 internos, brilho 1,1 e nearest,
+sem CRT/vertex snap. Emissores ficam congelados apenas nos stills de comparação;
+a chuva/áudio foi conferida separadamente no App. Os cinco personagens têm
+poses dirigidas na escadaria. A revisão das pranchas e detalhes no Godot não é
+uma partida com controles físicos, aprovação artística do usuário, teste de
+Internet, multiplayer completo ou medição de desempenho. Rede/save não foram
+alterados; smoke de rede, concorrência, reconexão e restore não foram reexecutados
+nesta rodada de materiais.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js"></script>
+        <script src="search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

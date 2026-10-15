@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="pt_BR" data-bs-theme="dark">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://felipestroff.github.io/Operation-Spencer-Docs/CARREGAR-SAVES-2026-10-14.html">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Carregamento de slots · 14/10/2026 - Operation Spencer · 0.1.0-alpha</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/brands.min.css" rel="stylesheet">
+        <link href="css/solid.min.css" rel="stylesheet">
+        <link href="css/v4-font-face.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" disabled>
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" >
+        <link href="stylesheets/spencer.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Operation Spencer · 0.1.0-alpha</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Início</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Jogar</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="INSTALACAO-WINDOWS.html" class="dropdown-item">Instalação</a>
+</li>
+                                    
+<li>
+    <a href="CONTROLES.html" class="dropdown-item">Controles</a>
+</li>
+                                    
+<li>
+    <a href="MENU-ESC-2026-10-15.html" class="dropdown-item">Menu Esc</a>
+</li>
+                                    
+<li>
+    <a href="CONTROLES-EDITAVEIS-2026-10-15.html" class="dropdown-item">Configurações</a>
+</li>
+                                    
+<li>
+    <a href="REGRAS-E-BALANCEAMENTO.html" class="dropdown-item">Regras</a>
+</li>
+                                    
+<li>
+    <a href="MULTIPLAYER-E-SERVIDOR.html" class="dropdown-item">Cooperativo</a>
+</li>
+                                    
+<li>
+    <a href="MANSAO-E-MISSAO.html" class="dropdown-item">Missão (spoilers)</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="GALERIAS.html" class="nav-link">Galerias</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Desenvolvimento</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="ARQUITETURA.html" class="dropdown-item">Arquitetura</a>
+</li>
+                                    
+<li>
+    <a href="TIROS-OBSTACULOS-2026-10-15.html" class="dropdown-item">Tiros e obstáculos</a>
+</li>
+                                    
+<li>
+    <a href="ASSETS-E-AUDIO.html" class="dropdown-item">Assets e áudio</a>
+</li>
+                                    
+<li>
+    <a href="JILL-PORTRAITS-2026-10-15.html" class="dropdown-item">Portraits de Jill</a>
+</li>
+                                    
+<li>
+    <a href="TEXTURAS-ARQUITETURA-2026-10-15.html" class="dropdown-item">Texturas arquitetônicas</a>
+</li>
+                                    
+<li>
+    <a href="VERSIONAMENTO.html" class="dropdown-item">Versões e publicação</a>
+</li>
+                                    
+<li>
+    <a href="DOCUMENTACAO.html" class="dropdown-item">Documentação</a>
+</li>
+                                    
+<li>
+    <a href="INVENTARIO-DOCUMENTACAO.html" class="dropdown-item">Inventário documental</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="TESTES-E-LIMITACOES.html" class="nav-link">Evidências</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="FONTES-E-ADAPTACOES.html" class="nav-link">Créditos e referências</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="VERSAO.html" class="nav-link">Versão</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/felipestroff/Operation-Spencer-Docs" class="nav-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <button id="theme-menu" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle">
+                                <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                <span class="d-lg-none ms-2">Toggle theme</span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                                    <i class="fa-solid fa-sun fa-fw"></i>
+                                    <span class="ms-2">Light</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="true">
+                                    <i class="fa-solid fa-moon fa-fw"></i>
+                                    <span class="ms-2">Dark</span>
+                                    <i class="fa-solid fa-check ms-auto"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                                    <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                    <span class="ms-2">Auto</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                              </ul>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="js/darkmode.js"></script>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#carregamento-de-slots--14102026" class="nav-link">Carregamento de slots · 14/10/2026</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#interface-áudio-e-transição" class="nav-link">Interface, áudio e transição</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#compatibilidade" class="nav-link">Compatibilidade</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#reprodução-e-evidências" class="nav-link">Reprodução e evidências</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="carregamento-de-slots--14102026">Carregamento de slots · 14/10/2026</h1>
+<blockquote>
+<p>Revisão de navegação em 15/10/2026: entrar/sair dos slots por VOLTAR/Esc ou
+abrir NOVO JOGO usa clique do inventário e fade de 0,4 s. A tela atual só
+sai no ponto preto. <a href="TRANSICOES-MENUS-2026-10-15.html">Detalhes e testes atuais</a>.
+As descrições de três segundos para abrir o menu abaixo são históricas;
+o fade de três segundos após a máquina de escrever ao carregar continua válido.</p>
+</blockquote>
+<p>Atualização de 15/10: <a href="CAMPANHAS-E-SLOTS-2026-10-15.html">campanhas e slots independentes</a>.
+NOVO JOGO cria outra campanha; cada salvamento manual acrescenta um arquivo
+em slots. Cada aba mostra uma lista contínua, sem separadores de campanha;
+a numeração segue a ordem dos saves na aba. Campanhas continuam independentes.
+Schema atual 3, mantendo leitura dos schemas 1 e 2.</p>
+<p>Escopo: máquina de escrever PS1 existente como fundo sem desfoque, abas Solo/
+Cooperativo, catálogo de checkpoints/recuperações/backups reais, mensagens,
+SFX existentes e retomada exata do slot com autoridade local/host.</p>
+<p>Revisão de 15/10: clicar numa linha apenas seleciona. CARREGAR/EXCLUIR
+aparecem no canto direito da própria linha selecionada; as demais não
+exibem ações. CARREGAR inicia
+o fluxo abaixo; EXCLUIR pede confirmação com fundo desfocado. Cancelar
+preserva arquivos/seleção. Confirmar exclui somente o snapshot escolhido e
+cópias idênticas da mesma campanha, valida hashes/caminhos, relê o catálogo
+e atualiza o status. Trabalho de exclusão/varredura roda em segundo plano;
+input fica bloqueado durante a exclusão. Sem mudança de schema/protocolo.
+<a href="CONFIRMACOES-2026-10-15.html">Componente, escopo e limites</a>.</p>
+<p>Persistência: schema 2 acrescenta modo, contagem manual, personagem/local
+do último salvamento e marca de metadados legados. Schema 1 migra somente
+em memória, sem adivinhar modo ou contagem, mantendo arquivos privados e
+backups. A contagem aumenta só em salvamento manual autorizado na máquina.
+Contagens legadas desconhecidas aparecem como --; salvamentos novos após
+migração aparecem como ≥01 (limite inferior, sem inventar o histórico).</p>
+<p>Catálogo somente lê; deduplica snapshots idênticos, mostra backups e erros.
+Saves de modo desconhecido aparecem nas duas abas; a aba escolhida define
+a retomada e futuros salvamentos. O perfil precisa participar do save para
+carregar, preservando identidade, personagem e inventário sem recriar kit.
+O arquivo escolhido e o checkpoint são verificados de novo após a animação.</p>
+<h2 id="interface-áudio-e-transição">Interface, áudio e transição</h2>
+<p><code>Game/SaveLoadScreen.cs</code> renderiza o GLB existente da máquina em viewport
+próprio. Nenhum modelo ou gerador foi alterado. O shader compartilhado mantém
+azul, névoa, granulação e vinheta; <code>blur_strength=0</code> só nesta tela, preservando
+o desfoque da abertura. O título CARREGAR JOGO fica acima do painel da lista;
+o painel ocupa 1040×720 no quadro 1280×960. Status compacto e nenhum aviso
+permanente de saves antigos. Interface proporcional, centralizada e rolável.</p>
+<p>Cada linha mostra número, personagem do perfil, contagem e localização
+abreviada em pt-BR. Os saves não exibem tooltip. A numeração acompanha a ordenação atual por
+modificação, não cria novos arquivos de histórico. Esc/VOLTAR retomam o
+passeio de cômodos da abertura no ponto em que foi suspenso.
+O botão ATUALIZAR foi removido. Reabrir CARREGAR JOGO relê os arquivos.
+O cartão aparece primeiro; a máquina de escrever é preparada depois do
+primeiro quadro, e a leitura/validação do catálogo roda em segundo plano.
+Enquanto isso, a lista mostra <code>.</code> → <code>..</code> → <code>...</code> em ciclo; o status inferior
+informa “Lendo saves...”. É possível trocar abas ou voltar durante a leitura.
+Quando a aba está vazia, a lista não mostra aviso superior; o status inferior
+diz “Nenhum save disponível.”. VOLTAR fica à esquerda e NOVO JOGO à direita.
+NOVO JOGO abre a escolha SOLO/COOPERATIVO pelo mesmo fade/SFX do menu principal.</p>
+<p>Confirmar CARREGAR JOGO no menu principal também inicia o fade de três
+segundos sincronizado com a gravação existente. O cartão de saves é criado
+no ponto preto; a varredura começa em segundo plano e os controles são
+liberados quando o som e o fade terminam.</p>
+<p>Seleção e confirmação reutilizam <code>menu_move</code>/<code>menu_select</code>; erros reutilizam
+<code>error</code>; botões reutilizam <code>ui_button</code>. A gravação já integrada
+<code>Assets/Audio/Local/typewriter.wav</code> toca inteira (cerca de 1,18 s), com o
+volume de efeitos configurado. Origem/master/edições permanecem no manifesto
+de áudio existente, sem nova gravação, síntese ou redistribuição do master.
+Se faltar esse arquivo local opcional, o carregamento mostra erro; não usa
+fallback sintético. A mensagem de sucesso começa antes do som, animando
+<code>.</code> → <code>..</code> → <code>...</code> no mesmo ritmo da interface de interação. Após o SFX,
+há fade out/in de três segundos; a sessão começa no preto, e o input é
+liberado ao fim. BGM da mansão permanece suprimida até terminar a transição.</p>
+<h2 id="compatibilidade">Compatibilidade</h2>
+<p>Saves antigos não registravam modo nem contagem: aparecem nas duas abas,
+com <code>--</code>; a aba escolhida passa a definir o modo. Isso evita classificar
+cooperativo como solo pelo número de participantes. Arquivos schema 1 são
+lidos e migrados em memória; só uma gravação posterior escreve schema 3.
+Schema 2 também migra em memória, preservando seus metadados. Binários
+antigos que só aceitam schemas 1/2 não leem os novos saves schema 3.
+O diretório de perfis/campanhas e o protocolo de rede permanecem iguais.</p>
+<p>O catálogo não escreve nos saves. Integridade, schema, roster, limites,
+caminho e participação do perfil são validados; snapshots idênticos não
+duplicam linhas. Arquivo selecionado e checkpoint ficam vinculados pelos
+hashes e são relidos após a animação. Uma alteração concorrente retorna
+erro na tela, sem iniciar sessão com dados diferentes dos selecionados.</p>
+<h2 id="reprodução-e-evidências">Reprodução e evidências</h2>
+<p><code>Tools/Test-SaveLoad.ps1</code> executa <code>Solo</code>, <code>Coop</code>, <code>IndexStress</code>, <code>NewGame</code>, <code>Title</code>, <code>Network</code>, <code>Smoke</code>
+ou <code>All</code>. Os drivers gráficos usam perfis de teste exclusivos e campanhas
+sintéticas em <code>Build/save-slots-fixture/</code>; não usam campanhas privadas para
+testar retomada. Logs em <code>Build/save-slots-validation/</code>; capturas em
+<code>Build/save-slots-*.png</code>. O teste gráfico cobre modo vazio, retorno, 4:3,
+16:9, scroll por roda/setas, erros, integridade durante a animação,
+áudio/fade, restauração de inventário e retomada da BGM. O cooperativo cobre
+um cliente ENet real, reconexão e restore após selecionar o slot.
+<code>IndexStress</code> gera 732 arquivos de save sintéticos em 183 campanhas para
+conferir que o clique inicia o fade imediatamente, o cartão aparece no
+ponto preto e os pontos avançam enquanto o catálogo é lido. A leitura
+termina em segundo plano; isso não estima FPS nem o tempo de leitura dos
+arquivos privados.</p>
+<p>Core: 55 testes aprovados; validador Python: 15 checks; build C#: zero
+erros/avisos; importação Godot 4.7.2 .NET concluída. Gate ENet: 49 checks;
+smoke local de 35 segundos aprovado. Logs Core/build/validador:
+<code>Build/save-slots-{core,build,validator}.log</code>.
+Regressão da abertura: 35 checks renderizados aprovados, incluindo fade e
+bloqueio de input ao entrar nos slots. NOVO JOGO na lista vazia passou em
+cinco checks. Tela renderizada: 35 checks solo e 41 cooperativos aprovados,
+incluindo o título acima do painel, os pontos de leitura e o fundo sem
+desfoque. O catálogo grande passou em dez checks. Capturas de solo/cooperativo,
+erro/sucesso, rolagem, 4:3/16:9 e retorno à partida geradas no Godot;
+revisão visual da máquina, abas, quadro 4:3 e mensagem de sucesso.</p>
+<p>Arquivos principais: catálogo/migração em <code>Core/SaveLibrary.cs</code>,
+<code>Persistence.cs</code>, <code>Model.cs</code> e contagem em <code>Simulation.cs</code>; tela e retomada
+em <code>Game/SaveLoadScreen.cs</code>, <code>TitleScreen.cs</code>, <code>TitleRoomBackdrop.cs</code>,
+<code>App.cs</code>, <code>NetSession.cs</code>, <code>GameUi.cs</code>; parâmetro visual no shader
+<code>Assets/Shaders/title_background.gdshader</code>. Drivers e cobertura em
+<code>Tests/SaveLibraryTests.cs</code>, <code>Tools/SaveLoadAcceptance.cs</code>/<code>.tscn</code>,
+<code>Test-SaveLoad.ps1</code> e <code>TitleScreenAcceptance.gd</code>.</p>
+<p>Falhas intermediárias corrigidas no driver: conflito entre o helper Key e
+o enum Godot.Key; comparação de espaços nas linhas; hover de mouse nativo
+enfileirado após redimensionar. O driver repõe a posição antes de cada
+press/release sintético; não altera a lógica de clique do produto.
+Na lista ampliada, a troca de linha sob um cursor parado também interferia
+na seleção por teclado: clique/foco selecionam a linha e setas garantem que
+ela fique visível, sem mudar a seleção quando o conteúdo rola sob o mouse.
+O recálculo de scroll aguarda o passe de layout dos filhos; isso atualiza
+o alcance ao trocar entre abas longas/curtas ou atualizar uma raiz vazia.</p>
+<p>Limites: checks dirigidos com inputs sintéticos e capturas reais no renderer
+Compatibility; sem teclado/mouse físicos, audição crítica, teste pela
+Internet/Linux ou medidas de FPS/latência. Esses gates não comprovam a matriz
+completa de multiplayer em todas as plataformas.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js"></script>
+        <script src="search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

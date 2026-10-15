@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="pt_BR" data-bs-theme="dark">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://felipestroff.github.io/Operation-Spencer-Docs/CONTROLES.html">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Controles - Operation Spencer · 0.1.0-alpha</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/brands.min.css" rel="stylesheet">
+        <link href="css/solid.min.css" rel="stylesheet">
+        <link href="css/v4-font-face.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" disabled>
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" >
+        <link href="stylesheets/spencer.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Operation Spencer · 0.1.0-alpha</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Início</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Jogar</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="INSTALACAO-WINDOWS.html" class="dropdown-item">Instalação</a>
+</li>
+                                    
+<li>
+    <a href="CONTROLES.html" class="dropdown-item active" aria-current="page">Controles</a>
+</li>
+                                    
+<li>
+    <a href="MENU-ESC-2026-10-15.html" class="dropdown-item">Menu Esc</a>
+</li>
+                                    
+<li>
+    <a href="CONTROLES-EDITAVEIS-2026-10-15.html" class="dropdown-item">Configurações</a>
+</li>
+                                    
+<li>
+    <a href="REGRAS-E-BALANCEAMENTO.html" class="dropdown-item">Regras</a>
+</li>
+                                    
+<li>
+    <a href="MULTIPLAYER-E-SERVIDOR.html" class="dropdown-item">Cooperativo</a>
+</li>
+                                    
+<li>
+    <a href="MANSAO-E-MISSAO.html" class="dropdown-item">Missão (spoilers)</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="GALERIAS.html" class="nav-link">Galerias</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Desenvolvimento</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="ARQUITETURA.html" class="dropdown-item">Arquitetura</a>
+</li>
+                                    
+<li>
+    <a href="TIROS-OBSTACULOS-2026-10-15.html" class="dropdown-item">Tiros e obstáculos</a>
+</li>
+                                    
+<li>
+    <a href="ASSETS-E-AUDIO.html" class="dropdown-item">Assets e áudio</a>
+</li>
+                                    
+<li>
+    <a href="JILL-PORTRAITS-2026-10-15.html" class="dropdown-item">Portraits de Jill</a>
+</li>
+                                    
+<li>
+    <a href="TEXTURAS-ARQUITETURA-2026-10-15.html" class="dropdown-item">Texturas arquitetônicas</a>
+</li>
+                                    
+<li>
+    <a href="VERSIONAMENTO.html" class="dropdown-item">Versões e publicação</a>
+</li>
+                                    
+<li>
+    <a href="DOCUMENTACAO.html" class="dropdown-item">Documentação</a>
+</li>
+                                    
+<li>
+    <a href="INVENTARIO-DOCUMENTACAO.html" class="dropdown-item">Inventário documental</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="TESTES-E-LIMITACOES.html" class="nav-link">Evidências</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="FONTES-E-ADAPTACOES.html" class="nav-link">Créditos e referências</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="VERSAO.html" class="nav-link">Versão</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="INSTALACAO-WINDOWS.html" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="MENU-ESC-2026-10-15.html" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/felipestroff/Operation-Spencer-Docs" class="nav-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <button id="theme-menu" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle">
+                                <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                <span class="d-lg-none ms-2">Toggle theme</span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                                    <i class="fa-solid fa-sun fa-fw"></i>
+                                    <span class="ms-2">Light</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="true">
+                                    <i class="fa-solid fa-moon fa-fw"></i>
+                                    <span class="ms-2">Dark</span>
+                                    <i class="fa-solid fa-check ms-auto"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                                    <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                    <span class="ms-2">Auto</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                              </ul>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="js/darkmode.js"></script>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#controles-e-interação" class="nav-link">Controles e interação</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#interface-durante-a-partida" class="nav-link">Interface durante a partida</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#menu-esc" class="nav-link">Menu Esc</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#configurações" class="nav-link">Configurações</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#examinar-objetos" class="nav-link">Examinar objetos</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#teclado-e-mouse" class="nav-link">Teclado e mouse</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#controle-com-layout-xbox" class="nav-link">Controle com layout Xbox</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#inventário" class="nav-link">Inventário</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#sobrevivência-e-pausas" class="nav-link">Sobrevivência e pausas</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="controles-e-interação">Controles e interação</h1>
+<p>Na abertura, pressione qualquer tecla ou botão do mouse para acessar o menu
+NOVO JOGO / CARREGAR JOGO / SAIR. A saída pede confirmação.
+Setas ↑/↓ alternam a seleção (com retorno nas
+extremidades); Enter confirma, ou clique esquerdo na opção. Hover também
+seleciona. A opção selecionada tem a cor normal; as demais ficam cinza apagadas.
+NOVO JOGO abre SOLO/COOPERATIVO com fade/SFX; CARREGAR JOGO abre os slots
+Solo/Cooperativo com o clique de botão do inventário.
+Clique direito não confirma opções.
+A abertura usa Suspense Riser por cerca de 2,74 s, exclusivo dessa primeira
+passagem; as demais telas usam o clique <code>ui_button</code> do inventário e fade rápido
+de 0,4 s. Abertura e confirmação de personagem acompanham o áudio; entradas adicionais não
+reiniciam a transição. Movimento do mouse e soltar teclas não avançam. O volume segue
+a configuração de efeitos; silenciar mantém a duração da transição.
+VOLTAR e Esc nas telas de modos, saves, conexão e cartões também usam clique
+único e fade de 0,4 s. A troca acontece no ponto preto; entradas ficam bloqueadas
+até a tela anterior terminar de aparecer.</p>
+<p>Nos slots, clique nas abas ou use ←/→. ↑/↓ selecionam e acompanham a rolagem;
+Enter ou clique esquerdo no save apenas seleciona e exibe CARREGAR/EXCLUIR
+à direita da própria linha selecionada. As outras linhas não exibem ações.
+Tab alcança as ações; CARREGAR inicia a
+retomada, EXCLUIR pede confirmação. A roda do mouse e a
+barra lateral também rolam a lista. VOLTAR ou Esc retornam ao menu. A lista
+é lida em segundo plano; “Lendo saves...” aparece no status inferior até
+ficar pronta. NOVO JOGO, à direita, abre SOLO/COOPERATIVO.
+A mensagem de sucesso com reticências animadas acompanha o
+SFX gravado da máquina; depois há fade de três segundos para a partida.
+Durante essa sequência, novas entradas ficam bloqueadas. Erros aparecem
+abaixo da lista. <a href="CARREGAR-SAVES-2026-10-14.html">Compatibilidade dos saves</a>.</p>
+<p>Na escolha de modo, ↑/↓ selecionam e Enter ou clique confirmam. SOLO abre
+os cartões; COOPERATIVO abre nome/IP/porta/senha antes da seleção. VOLTAR
+fica abaixo de COOPERATIVO e também pode ser selecionado por ↑/↓. Nos
+cartões, ←/→ ou as setas verdes passam pela pilha; o atual gira e vai para
+baixo ao avançar, e a seta oposta desfaz essa ordem. A troca bloqueia novas
+seleções e confirmação até terminar. Enter ou CONFIRMAR inicia uma transição
+de 3,5 s com Metallic Horror Stinger e fade out sonoro nos últimos 0,8 s,
+desaparecimento gradual e três flashes
+brancos espaçados até o fim do áudio. Uma base preta impede ver a mansão durante
+o efeito; a porta de entrada começa depois dele, inclusive no cliente cooperativo.
+VOLTAR ou Esc retornam. Na conexão cooperativa, também cancelam uma tentativa
+pendente; o passeio de cômodos continua ao fundo sem BGM da mansão.
+Cada NOVO JOGO cria outra campanha, preservando as
+anteriores. Cada salvamento manual acrescenta um slot; retomar um antigo
+e salvar novamente também cria outro slot. Cada aba Solo/Cooperativo tem lista
+contínua sem cabeçalhos de campanha, numerada pela ordem dos saves na aba.
+Durante a partida, SAIR no menu Esc retorna à
+primeira tela com “PRESSIONE QUALQUER TECLA” após confirmar; perder o
+servidor retorna diretamente. Nas confirmações, setas/Tab alternam,
+Enter/Espaço ativam e Esc cancela; CANCELAR tem foco inicial. Clique
+esquerdo confirma o botão escolhido. No cooperativo em partida, o fundo
+fica apenas escurecido; nas demais confirmações, também fica desfocado.</p>
+<p>O jogo inicia em tela cheia na resolução do monitor. O cenário preenche a tela
+mantendo a proporção; a interface permanece centralizada e proporcional.
+As opções <strong>Retrô limpo</strong> e <strong>Pixels maiores</strong> mudam a densidade de pixels 3D,
+sem alterar o tamanho dos controles. <a href="TELA-CHEIA-2026-10-14.html">Validação e limites</a>.</p>
+<h2 id="interface-durante-a-partida">Interface durante a partida</h2>
+<p>No singleplayer não há HUD permanente ou log. No multiplayer,
+apenas o log do servidor aparece no canto inferior esquerdo: texto discreto,
+sem painel de fundo, com até três mensagens e desaparecimento após seis
+segundos sem atualização (fade no último segundo). Snapshots sem mensagem
+não renovam esse prazo. Eventos e respostas do servidor alimentam esse log.
+Os nomes dos aliados não ficam sobre os personagens; continuam disponíveis nos
+painéis abertos por comando e nas mensagens do servidor.</p>
+<p>Inventário, mapa, puzzles, baú, máquina de escrever e menu Esc continuam
+disponíveis por comando. O chat abre por T somente no multiplayer. As
+transições de porta mantêm a animação, sem legenda sobreposta.</p>
+<h2 id="menu-esc">Menu Esc</h2>
+<p>Esc abre um overlay de tela inteira sem painel sólido, título ou texto
+explicativo. CONTINUAR, CONFIGURAÇÕES e SAIR usam o mesmo estilo dos menus
+iniciais: texto cinza com sombra preta e destaque mais claro na seleção.
+Setas cima/baixo alternam, Enter confirma e o mouse também seleciona/ativa.
+CONTINUAR ou Esc fecham o menu. I/M/E/T não substituem esse menu por outro painel.</p>
+<p>No solo, a simulação pausa, o cenário escurece e desfoca, e somente a música
+fica abafada temporariamente; a reprodução continua, sem mudar o volume salvo.
+No cooperativo, o cenário apenas escurece, sem desfoque ou abafamento: servidor,
+equipe, inimigos e relógio continuam ativos. O movimento local fica bloqueado.
+Configurações mantém o efeito do modo; Esc ou SAIR do painel retornam ao menu
+Esc. SAIR pede confirmação antes de desconectar e voltar à abertura. Cancelar
+mantém o menu; continuar/desconectar restaura os efeitos.
+<a href="MENU-ESC-2026-10-15.html">Capturas, testes e limites</a>.</p>
+<h2 id="configurações">Configurações</h2>
+<p>O painel metálico abre em CONTROLES, com teclado/mouse ilustrados e tabelas dos
+comandos reais do jogo. VÍDEO contém resolução interna, filtro CRT,
+instabilidade dos vértices e brilho; SOM contém música e efeitos.
+Setas esquerda/direita alternam as abas quando o cabeçalho tem foco.
+Tab ou cima/baixo navegam pelos campos; esquerda/direita ajustam sliders e
+Enter ativa a seleção. O mouse também permite clicar e arrastar os ajustes.
+Os ajustes são aplicados ao vivo; tanto SAIR quanto Esc salvam e voltam ao menu
+Esc. VÍDEO mostra apenas os campos, com o rótulo RESOLUÇÃO INTERNA; SOM contém
+apenas os volumes. A pausa/desfoque/abafamento seguem ativos
+somente no solo; o cooperativo continua rodando com fundo apenas escurecido.
+<a href="INTERFACE-AZUL-2026-10-15.html">Capturas e evidências atuais</a>.</p>
+<p>Campos de vídeo e trilhas usam o azul do inventário, containers escuros o fundo
+do visor e confirmações o estilo das ações de contexto. Percentuais usam o
+contador verde; os campos de teclas usam esse verde sem preenchimento.
+No desenho, vínculos são verdes e mouse destaca texto/borda no vermelho da
+seleção do inventário. Tab leva o foco ao teclado
+virtual, setas navegam nas teclas e Enter abre a edição; Tab sai do desenho.
+O aviso de captura pulsa em verde com ciclo de dois segundos, como a abertura.
+Não há tooltips no jogo.
+<a href="DESTAQUES-E-BAU-2026-10-15.html">Revisão e evidências</a>.</p>
+<p>Clique em um campo de comando ou numa tecla do desenho para remapear. Se o
+comando tiver duas teclas, escolha qual substituir; se uma tecla pertencer a
+dois contextos, escolha o comando. Teclas livres no desenho oferecem a lista
+de comandos. Pressione a nova tecla; conflitos são avisados sem remover o outro
+vínculo. Esc cancela a captura/lista; fora da edição, salva e volta. Os atalhos
+da interface (Enter, Esc, seleção e rotação do visor) permanecem fixos; mouse e
+controle conservam suas alternativas. Vínculos personalizados são locais e
+persistem ao reiniciar o jogo.</p>
+<p><strong>RESTAURAR TECLAS PADRÃO</strong>, no fim da aba CONTROLES, abre uma confirmação
+com CANCELAR selecionado. Enter ou clique confirma a opção selecionada;
+esquerda/direita alternam. CANCELAR ou Esc preservam todos os vínculos.
+CONFIRMAR restaura as teclas principais e secundárias, incluindo W/S para a
+altura da mira, e atualiza desenho/campos. Vídeo, som, mouse e controle não
+mudam. Esc ou SAIR do painel salvam o resultado. A confirmação conserva a
+pausa apenas no solo e o cooperativo ativo.
+<a href="RESTAURAR-TECLAS-2026-10-15.html">Capturas e validação</a>.</p>
+<h2 id="examinar-objetos">Examinar objetos</h2>
+<p>E age diretamente no primeiro objeto da lista de proximidade, mesmo com vários
+alvos ao alcance. Empates mantêm a ordem da fila; não há seleção intermediária
+de objetos. Se o alvo for uma porta destrancada,
+inicia a passagem diretamente; se for baú, abre o inventário sem caixa de texto.
+Nas demais inspeções, mostra as informações do alvo diretamente
+no canto inferior esquerdo. Fonte branca com sombra preta, sem fundo
+ou borda na caixa de texto. O log multiplayer fica oculto durante a inspeção.
+Quando houver opções, a primeira começa selecionada com uma borda branca fina.
+Setas esquerda/direita percorrem todas as opções, voltando à outra extremidade;
+Enter confirma a opção selecionada. O mouse continua funcionando.</p>
+<p>Descrições sem escolhas aparecem gradualmente e terminam com reticências
+animadas (<code>.</code> → <code>..</code> → <code>...</code>). Clicar durante a escrita mostra o texto inteiro
+sem fechar nem retomar o offline; o clique seguinte fecha, em qualquer fase
+das reticências. Se a escrita terminar naturalmente, um clique já fecha.
+E/Enter também permitem completar/continuar pelo mesmo fluxo.
+Não há botão Fechar nessas descrições. Esc cancela a leitura ou confirmação.</p>
+<p>Itens oferecem Pegar/Deixar antes de qualquer coleta. Pegar aguarda a resposta
+do servidor; inventário cheio, compartimento trancado ou coleta por outro
+jogador não remove nem duplica o item. Portas trancadas mostram pistas da
+fechadura em primeira pessoa, com foco na maçaneta; janelas usam a posição
+real da fachada. Ambas têm enquadramento frontal fixo por objeto, independente
+da posição ou orientação do personagem. Fechar ou interromper a leitura
+restaura a câmera fixa.</p>
+<p>Móveis, quadros, notas, puzzles, cadáveres de zumbis, máquina de escrever
+e portas principais têm descrições. Baú abre o inventário diretamente; salvar
+e recuperar sobreviventes pedem confirmação. A saída explica os requisitos;
+a regra existente de extração automática após oito segundos continua válida.</p>
+<p>Somente offline a leitura pausa simulação, relógio e animação dos atores;
+fechar retoma a partida. No multiplayer a equipe e os inimigos continuam
+ativos. Dano, agarrão, queda, transição, troca de sala/época e desconexão
+interrompem a inspeção, devolvendo câmera e controle local.</p>
+<h2 id="teclado-e-mouse">Teclado e mouse</h2>
+<table>
+<thead>
+<tr>
+<th>Ação</th>
+<th>Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Avançar / recuar</td>
+<td>W / S ou setas para cima / baixo</td>
+</tr>
+<tr>
+<td>Girar o corpo</td>
+<td>A / D ou setas esquerda / direita</td>
+</tr>
+<tr>
+<td>Correr</td>
+<td>Segurar Shift enquanto avança, fora dos degraus</td>
+</tr>
+<tr>
+<td>Giro rápido de 180°</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Preparar mira</td>
+<td>Segurar Espaço ou botão direito do mouse</td>
+</tr>
+<tr>
+<td>Atacar / disparar</td>
+<td>Ctrl ou botão esquerdo; armas de fogo exigem mira</td>
+</tr>
+<tr>
+<td>Mirar alto / baixo</td>
+<td>W / S ou roda do mouse ↑ / ↓ enquanto mira</td>
+</tr>
+<tr>
+<td>Recarregar</td>
+<td>R</td>
+</tr>
+<tr>
+<td>Parry / sair de agarrão com faca defensiva</td>
+<td>Q</td>
+</tr>
+<tr>
+<td>Interagir com o ponto próximo</td>
+<td>E</td>
+</tr>
+<tr>
+<td>Inventário</td>
+<td>I ou Tab</td>
+</tr>
+<tr>
+<td>Mapa no visor do inventário / voltar à inspeção</td>
+<td>M</td>
+</tr>
+<tr>
+<td>Marcação de atenção</td>
+<td>G</td>
+</tr>
+<tr>
+<td>Chat</td>
+<td>T</td>
+</tr>
+<tr>
+<td>Fechar painel / menu</td>
+<td>Esc</td>
+</tr>
+</tbody>
+</table>
+<p>A direção da movimentação é relativa ao corpo, não à câmera. Trocar o enquadramento
+não remapeia o movimento. Não há deslocamento lateral livre, esquiva nem barra de
+fôlego. Mirar imobiliza o deslocamento; ferimentos graves reduzem a velocidade.</p>
+<p>W/S mantêm o nível de mira enquanto pressionadas. O último sentido da roda
+mantém a mira alta ou baixa até soltar a mira; soltar Espaço/botão direito
+restaura o nível neutro. Fora da mira W/S continuam avançar/recuar, e a roda
+não muda a mira. Sem arma, esses comandos não iniciam mira. A tabela apresenta
+os padrões; CONTROLES permite personalizar as teclas.</p>
+<p>Na escadaria central do saguão, os humanos sempre caminham, na subida e na
+descida, mesmo segurando Shift ou o botão de corrida do controle. A restrição
+começa ao entrar nos degraus; mantendo o comando, a corrida volta no piso ou no
+patamar. A velocidade e o estado de caminhada são impostos pela simulação,
+inclusive no cooperativo. <a href="ESCADAS-MOVIMENTO-2026-10-14.html#caminhada-obrigatória-nos-degraus--15102026">Implementação e evidências</a>.</p>
+<h2 id="controle-com-layout-xbox">Controle com layout Xbox</h2>
+<table>
+<thead>
+<tr>
+<th>Ação</th>
+<th>Botão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Avançar, recuar e girar</td>
+<td>Analógico esquerdo</td>
+</tr>
+<tr>
+<td>Correr</td>
+<td>A</td>
+</tr>
+<tr>
+<td>Interagir</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Recarregar</td>
+<td>B</td>
+</tr>
+<tr>
+<td>Parry / faca de defesa</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>Mirar / disparar</td>
+<td>LB / RB</td>
+</tr>
+<tr>
+<td>Inventário / mapa</td>
+<td>Back / Start</td>
+</tr>
+<tr>
+<td>Giro rápido</td>
+<td>Direcional para baixo</td>
+</tr>
+<tr>
+<td>Mirar alto / baixo</td>
+<td>Direcional para cima / esquerda</td>
+</tr>
+<tr>
+<td>Marcar atenção</td>
+<td>Pressionar analógico esquerdo</td>
+</tr>
+</tbody>
+</table>
+<p>Nos painéis, navegue pelo foco e confirme com o botão de aceitação padrão do Godot.
+O chat depende de teclado. Remapeamento completo e navegação com todos os modelos
+de controle ainda não foram implementados/validados; o teste com controle físico
+é obrigatório. Se o foco falhar em um painel, o mouse continua sendo a alternativa
+para a primeira rodada de integração.</p>
+<h2 id="inventário">Inventário</h2>
+<p>O cenário permanece visível atrás do inventário, mapa e baú. No solo, pausa,
+escurece/desfoca e abafa a música; no cooperativo, apenas escurece e a partida
+continua ativa. Nome e descrição do item ficam sobre um bloco preto opaco.
+<a href="INTERFACE-AZUL-2026-10-15.html">Capturas e limites</a>.</p>
+<p>O inventário abre sem item selecionado. Clique em um slot para examinar o item;
+slots vazios mostram uma mensagem e ocultam as setas e o controle de rotação.
+Clique com o botão direito sobre um item para abrir o menu de usar/equipar,
+combinar ou soltar; aliados conectados aparecem como destinatários. Guardar não
+aparece no inventário comum, mesmo perto de um baú. O depósito exige abrir a
+interface do baú e usar Enter, duplo clique ou arraste. O menu fica no canto inferior
+direito do visor, com opções
+azuis separadas por 6 pixels, texto branco e bordas finas azul-claro.
+Esc fecha primeiro o contexto; clicar fora fecha as opções e permite selecionar
+outro item. Com foco no slot, Menu ou Shift+F10 abre o contexto pelo
+teclado; Y abre pelo controle. A validação com controle físico continua pendente.
+Para combinar, escolha Combinar no contexto e selecione o segundo ingrediente.
+Arraste entre slots para reorganizar. Cantos verdes destacam todos os destinos
+válidos durante o arraste; origem, destinos incompatíveis e versões desatualizadas
+não são aceitos. Os destaques desaparecem ao concluir ou cancelar. O servidor valida
+slots, versões e proximidade, podendo recusar uma ação se o inventário mudou
+antes de o comando chegar. Arma equipada continua ocupando um slot.</p>
+<p>A primeira opção do contexto é <strong>Desequipar</strong> para a arma equipada,
+<strong>Equipar</strong> para armas não equipadas e <strong>Usar</strong> para consumíveis. Somente uma delas
+é exibida por vez. Desequipar deixa as mãos e o painel equipado vazios,
+mantendo a arma no mesmo slot e preservando a munição; depois disso, a primeira
+opção volta a Equipar. A ação usa o SFX de botão existente e é validada
+pelo servidor, inclusive slot e versão do inventário.</p>
+<p>Sem arma equipada, os comandos de mirar/atacar ficam inativos: não levantam
+os braços em mira (normal/alta/baixa), não executam animação de ataque e não
+gastam munição. Segurar mira sem arma não impede caminhar. Desequipar, guardar,
+soltar ou entregar a última arma equipada encerra a pose de mira imediatamente.
+Equipar uma arma reativa os comandos; uma arma equipada sem balas continua
+seguindo a regra de arma vazia. A defesa/parry com faca mantém suas regras.</p>
+<p>Ao disparar, a altura da trajetória e a postura do alvo determinam o bloqueio:
+é possível acertar um zumbi em pé por cima da banheira, mas cães, rastejantes
+ou pernas podem continuar encobertos. Relógios e outros móveis altos bloqueiam
+o tiro quando estão na trajetória. <a href="TIROS-OBSTACULOS-2026-10-15.html">Regras e evidências</a>.</p>
+<p>A rolagem do inventário acompanha o foco; seleção/foco usam cantos vermelhos,
+sem borda amarela. O estado de saúde continua atualizando com dano durante o painel.</p>
+<h3 id="baú">Baú</h3>
+<p>E no baú abre o mesmo layout do inventário, com a lista no visor de inspeção.
+MAPA, ARQUIVOS e RÁDIO ficam bloqueados, inclusive o atalho M; SAIR, I/Tab
+ou Esc fecham. Não há título acima da lista nem preview/modelo do item.
+Um clique no inventário seleciona e mostra nome/descrição no painel preto inferior,
+sem depositar. Slot vazio limpa o painel. Dois cliques esquerdos
+guardam a pilha inteira. Arraste do inventário para qualquer linha ou área vazia
+da lista para guardar, ou da lista para o inventário para retirar. O clique
+simples em uma linha do baú seleciona e mostra nome/descrição no painel preto,
+sem retirar. O painel acompanha a última lista usada e suas atualizações;
+setas/roda também atualizam os detalhes. Dois cliques esquerdos retiram a
+pilha inteira para o primeiro slot livre ou pilhas compatíveis. O menu fica fechado
+nesse modo; o inventário comum continua oferecendo suas ações.
+<a href="BAU-LISTA-DETALHES-2026-10-15.html">Capturas e testes da seleção da lista</a>.</p>
+<p>No baú, <strong>←</strong> leva o foco à lista e <strong>→</strong> ao inventário, lembrando a seleção
+de cada lado. <strong>↑/↓</strong> navegam nos itens ocupados da lista ou nos slots do
+inventário em ordem numérica, incluindo vazios; os detalhes acompanham a seleção.
+Funciona sem clique inicial e com a lista vazia. As setas apenas selecionam;
+<strong>Enter</strong> (também no teclado numérico) guarda a pilha selecionada no inventário
+ou retira a selecionada na lista, conforme o painel com foco. Segurar Enter não
+repete transferências; slots/listas vazios não transferem. Duplo clique e arraste
+continuam disponíveis, com as mesmas validações de espaço e versão do servidor.</p>
+<p>A lista mostra somente itens ocupados, com miniatura à esquerda, nome e quantidade
+ou munição. Roda do mouse, setas amarelas e cima/baixo com foco numa linha selecionam
+um item por passo, incluindo os últimos slots do baú. Arrastar o indicador amarelo
+permite saltar vários itens. A lista usa toda a altura do visor.
+Guardar/retirar mantém o agrupamento automático do servidor, sem prometer o índice
+do slot apontado: o item ocupa espaço livre ou pilhas compatíveis. Destinos cheios,
+versões antigas e falta de proximidade continuam recusados. Seleção, início/fim
+e cancelamento de arraste reutilizam os SFX do inventário; abrir/fechar o baú
+preserva os SFX já integrados. Pausa somente offline.</p>
+<p>Guardar a última arma do tipo equipado desequipa o personagem: a arma sai da
+mão e o painel equipado fica vazio, sem ícone ou contador. A faca/arma restante
+não é equipada automaticamente. Retirar uma arma do baú também exige usar
+Equipar no inventário comum. Soltar ou entregar a última arma equipada
+segue a mesma regra. Uma transferência recusada mantém o equipamento atual.</p>
+<p>O visor do item renderiza o GLB em um mundo 3D separado. Arraste com o botão
+esquerdo para girar nos dois eixos ou clique nas quatro setas vermelhas.
+Com foco no visor, as setas do teclado/direcional giram o item; Home restaura
+o ângulo inicial. A navegação direcional entre slots continua funcionando
+quando o foco está nos slots. Em controle, também é possível focar uma seta
+do visor e confirmá-la com a ação de aceitação do Godot.</p>
+<p>O ECG percorre o painel continuamente: Bem em verde, Cuidado em amarelo
+e Perigo em vermelho. Cor, amplitude e ritmo acompanham a proporção de PV
+recebida no snapshot, sem alterar os limiares de saúde. A animação continua
+durante a pausa do solo; no cooperativo acompanha o dano em tempo real.
+Os cinco personagens têm retratos próprios em pixels PS1 para cada condição.
+O painel equipado mostra somente a quantidade de balas/uso, ou infinito para
+arma sem consumo. RÁDIO fica desabilitado no solo e habilitado no multiplayer;
+a transmissão de voz ainda não foi implementada. SAIR, I e Esc fecham o inventário.</p>
+<p>MAPA ou M abre a planta no mesmo visor de inspeção, mantendo os slots e a faixa
+retrato/ECG/equipado. Os botões SUBSOLO, TÉRREO e 2º ANDAR trocam o andar; ao abrir, o mapa
+seleciona o andar atual. Clique em um slot ou pressione M novamente para voltar
+à inspeção. Um slot vazio retorna à mensagem de seleção. SAIR, I e Esc fecham
+todo o inventário, inclusive o mapa. Os botões têm o mesmo acabamento metálico
+dos comandos MAPA, ARQUIVOS, RÁDIO e SAIR. O mapa deixa a área de informações
+do item vazia.</p>
+<p>Todos os cômodos têm contorno: os ainda não explorados ficam sem preenchimento,
+os explorados ficam verdes e o cômodo atual pulsa em vermelho, inclusive na
+pausa solo. A grade azul/verde
+continua visível nos interiores transparentes. Acessos são polígonos amarelos
+quando desbloqueados e vermelhos quando exigem chave ou ativação; possuir a
+chave ainda não destranca a porta no mapa. No mesmo andar, uma passagem liga
+as bordas dos cômodos e tem somente um polígono de acesso. Degraus indicam
+escadas nas duas extremidades, sem setas de direção: branco sutil em cômodo
+não explorado, verde escuro sutil em explorado e vermelho sutil no atual.
+A mesma regra vale para a escadaria central do saguão. Não há marcadores de
+posição dos jogadores. Exploração e bloqueios acompanham o
+snapshot do servidor; salas seguras e itens disponíveis não mudam essas cores.</p>
+<p>Abra o painel do baú ou da máquina de escrever usando E perto do móvel. Trocas
+exigem aliado próximo e espaço no destino. Itens em gavetas não aparecem como
+modelos brilhando no chão; procure o ponto de interação do móvel.</p>
+<h2 id="sobrevivência-e-pausas">Sobrevivência e pausas</h2>
+<p>No solo, painéis de inventário/mapa/menus que bloqueiam controle pausam a simulação.
+No multiplayer eles <strong>não pausam</strong>: escolha um local seguro para organizar itens.
+A animação de porta é individual; abre e mantém a folha aberta enquanto a câmera
+atravessa em primeira pessoa para fundo preto, sem revelar o cômodo seguinte.
+Espere a conclusão antes de enviar outra ação.
+O servidor protege a transferência, não concede uma pausa coletiva.</p>
+<p>Q executa parry temporal quando não há agarrão e você possui a faca principal.
+Durante um agarrão, Q usa uma faca defensiva consumível, se disponível. Aliados
+podem interromper um agarrão atacando o inimigo. Aproximar-se do aliado caído e
+interagir oferece socorro, que exige cura no inventário.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js"></script>
+        <script src="search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

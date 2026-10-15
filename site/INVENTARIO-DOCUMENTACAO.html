@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="pt_BR" data-bs-theme="dark">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://felipestroff.github.io/Operation-Spencer-Docs/INVENTARIO-DOCUMENTACAO.html">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Inventário documental - Operation Spencer · 0.1.0-alpha</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/brands.min.css" rel="stylesheet">
+        <link href="css/solid.min.css" rel="stylesheet">
+        <link href="css/v4-font-face.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" disabled>
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" >
+        <link href="stylesheets/spencer.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Operation Spencer · 0.1.0-alpha</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Início</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Jogar</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="INSTALACAO-WINDOWS.html" class="dropdown-item">Instalação</a>
+</li>
+                                    
+<li>
+    <a href="CONTROLES.html" class="dropdown-item">Controles</a>
+</li>
+                                    
+<li>
+    <a href="MENU-ESC-2026-10-15.html" class="dropdown-item">Menu Esc</a>
+</li>
+                                    
+<li>
+    <a href="CONTROLES-EDITAVEIS-2026-10-15.html" class="dropdown-item">Configurações</a>
+</li>
+                                    
+<li>
+    <a href="REGRAS-E-BALANCEAMENTO.html" class="dropdown-item">Regras</a>
+</li>
+                                    
+<li>
+    <a href="MULTIPLAYER-E-SERVIDOR.html" class="dropdown-item">Cooperativo</a>
+</li>
+                                    
+<li>
+    <a href="MANSAO-E-MISSAO.html" class="dropdown-item">Missão (spoilers)</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="GALERIAS.html" class="nav-link">Galerias</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Desenvolvimento</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="ARQUITETURA.html" class="dropdown-item">Arquitetura</a>
+</li>
+                                    
+<li>
+    <a href="TIROS-OBSTACULOS-2026-10-15.html" class="dropdown-item">Tiros e obstáculos</a>
+</li>
+                                    
+<li>
+    <a href="ASSETS-E-AUDIO.html" class="dropdown-item">Assets e áudio</a>
+</li>
+                                    
+<li>
+    <a href="JILL-PORTRAITS-2026-10-15.html" class="dropdown-item">Portraits de Jill</a>
+</li>
+                                    
+<li>
+    <a href="TEXTURAS-ARQUITETURA-2026-10-15.html" class="dropdown-item">Texturas arquitetônicas</a>
+</li>
+                                    
+<li>
+    <a href="VERSIONAMENTO.html" class="dropdown-item">Versões e publicação</a>
+</li>
+                                    
+<li>
+    <a href="DOCUMENTACAO.html" class="dropdown-item">Documentação</a>
+</li>
+                                    
+<li>
+    <a href="INVENTARIO-DOCUMENTACAO.html" class="dropdown-item active" aria-current="page">Inventário documental</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="TESTES-E-LIMITACOES.html" class="nav-link">Evidências</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="FONTES-E-ADAPTACOES.html" class="nav-link">Créditos e referências</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="VERSAO.html" class="nav-link">Versão</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="DOCUMENTACAO.html" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="TESTES-E-LIMITACOES.html" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/felipestroff/Operation-Spencer-Docs" class="nav-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <button id="theme-menu" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle">
+                                <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                <span class="d-lg-none ms-2">Toggle theme</span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                                    <i class="fa-solid fa-sun fa-fw"></i>
+                                    <span class="ms-2">Light</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="true">
+                                    <i class="fa-solid fa-moon fa-fw"></i>
+                                    <span class="ms-2">Dark</span>
+                                    <i class="fa-solid fa-check ms-auto"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                                    <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                    <span class="ms-2">Auto</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                              </ul>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="js/darkmode.js"></script>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#inventário-da-documentação" class="nav-link">Inventário da documentação</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#correções-de-estado-nesta-revisão" class="nav-link">Correções de estado nesta revisão</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#pendências" class="nav-link">Pendências</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="inventário-da-documentação">Inventário da documentação</h1>
+<p>Revisão editorial de 15/10/2026. Cada documento tem uma entrada explícita.
+Guias atuais descrevem contratos; relatórios datados preservam o estado da tarefa
+correspondente, inclusive falhas e pendências. Uma implementação posterior pode
+substituir uma proposta anterior sem apagar sua evidência. Esta classificação não
+certifica a execução de todos os sistemas.</p>
+<table>
+<thead>
+<tr>
+<th>Documento</th>
+<th>Classificação</th>
+<th>Verificação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="ARQUITETURA.html">Arquitetura técnica</a></td>
+<td>Atual — guia de referência</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="ASSETS-E-AUDIO.html">Assets, estilo e áudio</a></td>
+<td>Atual — guia de referência</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="AUDITORIA-SONORA-2026-10-14.html">Inventário e proposta sonora · 14/10/2026</a></td>
+<td>Histórico — evidência datada</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="BAU-INTERFACE-2026-10-14.html">Interface do baú · 14/10/2026</a></td>
+<td>Histórico — evidência datada</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="BAU-LISTA-DETALHES-2026-10-15.html">Detalhes dos itens armazenados · 15/10/2026</a></td>
+<td>Atual — interface e evidência datada</td>
+<td>Detalhes, setas e transferências por Enter entre baú/inventário; duplo clique/arraste preservados</td>
+</tr>
+<tr>
+<td><a href="CAMERAS-INTEGRADAS-2026-10-14.html">Câmeras interiores integradas — 14/10/2026</a></td>
+<td>Histórico — evidência datada</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="CAMERAS-PREVIAS-2026-10-14.html">Câmeras fixas interiores — prévias de 14/10/2026</a></td>
+<td>Histórico — evidência datada</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="CAMPANHAS-E-SLOTS-2026-10-15.html">Campanhas e slots independentes · 15/10/2026</a></td>
+<td>Histórico — evidência datada</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="CARREGAR-SAVES-2026-10-14.html">Carregamento de slots · 14/10/2026</a></td>
+<td>Histórico — evidência datada</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="CATALOGO-EMISSORES-2026-10-14.html">Emissores de luz · catálogo e protótipos · 14/10/2026</a></td>
+<td>Histórico — evidência datada</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="CHUVA-JANELAS-2026-10-14.html">Chuva leve nas janelas · 14/10/2026</a></td>
+<td>Histórico — evidência datada</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="CLARAO-TROVAO-2026-10-14.html">Clarão do trovão pelas janelas · 14/10/2026</a></td>
+<td>Histórico — evidência datada</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="CODEX-GODOT-DOTNET.html">Godot/.NET disponível para testes no Codex</a></td>
+<td>Atual — guia de referência</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="CONFIGURACOES-2026-10-15.html">Configurações · 15/10/2026</a></td>
+<td>Histórico — evidência datada</td>
+<td>Primeiro painel metálico; substituído pelos controles editáveis e Esc salvando</td>
+</tr>
+<tr>
+<td><a href="CONFIRMACOES-2026-10-15.html">Confirmação de ações · 15/10/2026</a></td>
+<td>Histórico — evidência datada</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="CONTROLES-EDITAVEIS-2026-10-15.html">Configurações e controles editáveis · 15/10/2026</a></td>
+<td>Atual — apresentação e evidência datada</td>
+<td>Remapeamento, Esc/SAIR salvando, W/S/roda e pausa por modo</td>
+</tr>
+<tr>
+<td><a href="CONTROLES.html">Controles e interação</a></td>
+<td>Atual — guia de referência</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="CORRECAO-GODOT-4.7.2.html">Correção R1 — configuração Godot 4.7.2 .NET</a></td>
+<td>Histórico — evidência datada</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="CORRECAO-R2-CS0104.html">Correção R2 — CS0104 em Game/NetSession.cs</a></td>
+<td>Histórico — evidência datada</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="CORRECAO-R4-CS0019.html">Correção R4 — CS0019 em ActorView.cs</a></td>
+<td>Histórico — evidência datada</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="DESTAQUES-E-BAU-2026-10-15.html">Teclas verdes e detalhes no baú · 15/10/2026</a></td>
+<td>Atual — interface e evidência datada</td>
+<td>Detalhes no baú, vínculos verdes, hover vermelho e captura pulsante por modo</td>
+</tr>
+<tr>
+<td><a href="DOCUMENTACAO.html">Manutenção da documentação visual</a></td>
+<td>Atual — guia de referência</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="EMISSORES-ANIMADOS-2026-10-14.html">Emissores animados · integração aprovada · 14/10/2026</a></td>
+<td>Histórico — evidência datada</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="ENCAIXE-LAREIRAS-2026-10-15.html">Lareiras encostadas nas paredes · 15/10/2026</a></td>
+<td>Histórico — evidência datada</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="ENCAIXE-PORTAS-2026-10-15.html">Encaixe das portas nas paredes · 15/10/2026</a></td>
+<td>Histórico — evidência datada</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="ESCADAS-MOVIMENTO-2026-10-14.html">Movimento na escadaria · 14/10/2026</a></td>
+<td>Histórico — evidência datada, com regra atual de 15/10</td>
+<td>Corrida histórica substituída por caminhada obrigatória nos degraus; consultar testes e limites</td>
+</tr>
+<tr>
+<td><a href="FECHADURAS-SFX-2026-10-14.html">SFX de portas trancadas e desbloqueio · 14/10/2026</a></td>
+<td>Histórico — evidência datada</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="FONTES-E-ADAPTACOES.html">Fontes, proveniência e adaptações</a></td>
+<td>Atual — guia de referência</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="GALERIAS.html">Galerias e referências visuais</a></td>
+<td>Atual — guia de referência</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="HISTORICO-CHANGELOG-ATE-2026-10-15.html">Histórico</a></td>
+<td>Histórico — cópia preservada</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="HISTORICO-README-ATE-2026-10-15.html">Operation Spencer · 0.1.0-alpha</a></td>
+<td>Histórico — cópia preservada</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="HISTORICO-TESTES-ATE-2026-10-15.html">Testes, evidências e limitações · 0.1.0-alpha</a></td>
+<td>Histórico — cópia preservada</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="ILUMINACAO-NOTURNA-2026-10-14.html">Iluminação noturna · 14/10/2026</a></td>
+<td>Histórico — evidência datada</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="index.html">Operation Spencer · <!-- game-version -->0.1.0-alpha<!-- /game-version --></a></td>
+<td>Atual — guia de referência</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="INIMIGOS-E-PORTAS-2026-10-15.html">Inimigos após fuga e pressão nas portas · 15/10/2026</a></td>
+<td>Histórico — evidência datada</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="INSPECAO-DE-OBJETOS-2026-10-14.html">Inspeção de objetos · 14/10/2026</a></td>
+<td>Histórico — evidência datada</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="INSTALACAO-WINDOWS.html">Instalação, compilação e execução no Windows</a></td>
+<td>Atual — guia de referência</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="INTEGRACAO-SONORA-2026-10-14.html">Integração sonora · 14/10/2026</a></td>
+<td>Histórico — evidência datada</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="INTERFACE-AZUL-2026-10-15.html">Configurações e inventário · 15/10/2026</a></td>
+<td>Atual — interface e evidência datada</td>
+<td>Estilos azuis/verdes, teclado virtual, remoção de tooltips e cenário atrás do inventário/baú</td>
+</tr>
+<tr>
+<td><a href="INVENTARIO-AUDIO-2026-10-14.html">Sons do inventário · 14/10/2026</a></td>
+<td>Histórico — evidência datada</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="INVENTARIO-DOCUMENTACAO.html">Inventário da documentação</a></td>
+<td>Atual — guia de referência</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="JANELAS-E-FACHADAS-2026-10-14.html">Janelas e fachadas · 14/10/2026</a></td>
+<td>Histórico — evidência datada</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="JILL-PORTRAITS-2026-10-15.html">Portraits de Jill · 15/10/2026</a></td>
+<td>Atual — arte e evidência datada</td>
+<td>Expressão séria no inventário, olhos semicerrados na seleção e fontes image_gen preservadas</td>
+</tr>
+<tr>
+<td><a href="MANSAO-E-MISSAO.html">Mansão e missão — contém spoilers</a></td>
+<td>Atual — guia de referência</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="MATRIZ-ACEITACAO-2026-10-13.html">Matriz de aceitação · revisão local de 13/10/2026</a></td>
+<td>Histórico — evidência datada</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="MENU-ESC-2026-10-15.html">Menu Esc · 15/10/2026</a></td>
+<td>Atual — apresentação e evidência datada</td>
+<td>Overlay solo/cooperativo, áudio, controles e limites</td>
+</tr>
+<tr>
+<td><a href="MULTIPLAYER-E-SERVIDOR.html">Multiplayer e servidor</a></td>
+<td>Atual — guia de referência</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="NOVO-JOGO-CARTOES-2026-10-14.html">Novo jogo e cartões S.T.A.R.S. · 14/10/2026</a></td>
+<td>Histórico — evidência datada</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="PORTAS-PS1-2026-10-14.html">Portas PS1 e passagem em primeira pessoa · 14/10/2026</a></td>
+<td>Histórico — evidência datada</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="REGRAS-E-BALANCEAMENTO.html">Regras e balanceamento da alpha</a></td>
+<td>Atual — guia de referência</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="RELOGIO-E-TIROS-2026-10-14.html">Relógio e disparos baixados · 14/10/2026</a></td>
+<td>Histórico — evidência datada</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="RENOMEACAO-2026-10-14.html">Operation Spencer · renomeação · 14/10/2026</a></td>
+<td>Histórico — evidência datada</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="RESTAURAR-TECLAS-2026-10-15.html">Restaurar teclas padrão · 15/10/2026</a></td>
+<td>Atual — interface e evidência datada</td>
+<td>Confirmação da restauração de teclas, preservação dos demais ajustes e pausa por modo</td>
+</tr>
+<tr>
+<td><a href="SELECAO-SFX-2026-10-14.html">SFX: fontes antes da integração · 14/10/2026</a></td>
+<td>Histórico — evidência datada</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="TELA-CHEIA-2026-10-14.html">Tela cheia · 14/10/2026</a></td>
+<td>Histórico — evidência datada</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="TELA-INICIAL-2026-10-14.html">Tela inicial · 14/10/2026</a></td>
+<td>Histórico — evidência datada</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="TESTES-E-LIMITACOES.html">Testes, evidências e limitações</a></td>
+<td>Atual — guia de referência</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="TETOS-INTEGRADOS-2026-10-14.html">Tetos PS1 integrados · 14/10/2026</a></td>
+<td>Histórico — evidência datada</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="TETOS-PREVIAS-2026-10-14.html">Tetos PS1 · prévias para aprovação · 14/10/2026</a></td>
+<td>Histórico — evidência datada</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="TEXTURAS-ARQUITETURA-2026-10-15.html">Texturas arquitetônicas PS1 — 15/10/2026</a></td>
+<td>Atual — arte e evidência datada</td>
+<td>Oito albedos PS1, UVs proporcionais, comparação das 34 salas e limites</td>
+</tr>
+<tr>
+<td><a href="TIROS-OBSTACULOS-2026-10-15.html">Disparos sobre obstáculos · 15/10/2026</a></td>
+<td>Atual — combate e evidência datada</td>
+<td>Trajetória 3D sobre móveis baixos, cobertura alta, regressões Core e Godot</td>
+</tr>
+<tr>
+<td><a href="TRANSICOES-MENUS-2026-10-15.html">Transições de menus · 15/10/2026</a></td>
+<td>Histórico — evidência datada</td>
+<td>Inclui a rodada de VOLTAR/Esc com fade de 0,4 s; comportamento atual em Controles</td>
+</tr>
+<tr>
+<td><a href="TRILHAS-SONORAS-2026-10-14.html">Trilhas da mansão · 14/10/2026</a></td>
+<td>Histórico — evidência datada</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="VALIDACAO-DOCUMENTACAO-2026-10-15.html">Validação da documentação e versões · 15/10/2026</a></td>
+<td>Atual — guia de referência</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="VERSAO.html">Versão do jogo</a></td>
+<td>Atual — guia de referência</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="VERSIONAMENTO.html">Versões, tags e publicação</a></td>
+<td>Atual — guia de referência</td>
+<td>Consultar data, contexto e limites do documento</td>
+</tr>
+<tr>
+<td><a href="https://github.com/felipestroff/Projeto-Mansao/blob/main/README.md">README.md</a></td>
+<td>Atual — entrada, manutenção ou direitos</td>
+<td>Conteúdo da raiz</td>
+</tr>
+<tr>
+<td><a href="https://github.com/felipestroff/Projeto-Mansao/blob/main/CHANGELOG.md">CHANGELOG.md</a></td>
+<td>Atual — entrada, manutenção ou direitos</td>
+<td>Conteúdo da raiz</td>
+</tr>
+<tr>
+<td><a href="https://github.com/felipestroff/Projeto-Mansao/blob/main/AGENTS.md">AGENTS.md</a></td>
+<td>Atual — entrada, manutenção ou direitos</td>
+<td>Conteúdo da raiz</td>
+</tr>
+<tr>
+<td><a href="https://github.com/felipestroff/Projeto-Mansao/blob/main/THIRD_PARTY_NOTICES.md">THIRD_PARTY_NOTICES.md</a></td>
+<td>Atual — entrada, manutenção ou direitos</td>
+<td>Conteúdo da raiz</td>
+</tr>
+<tr>
+<td><a href="https://github.com/felipestroff/Projeto-Mansao/blob/main/LICENSE-CODE.txt">LICENSE-CODE.txt</a></td>
+<td>Atual — entrada, manutenção ou direitos</td>
+<td>Conteúdo da raiz</td>
+</tr>
+<tr>
+<td><a href="https://github.com/felipestroff/Projeto-Mansao/blob/main/ABRIR-PRIMEIRO.html">ABRIR-PRIMEIRO.html</a></td>
+<td>Atual — entrada, manutenção ou direitos</td>
+<td>Conteúdo da raiz</td>
+</tr>
+</tbody>
+</table>
+<h2 id="correções-de-estado-nesta-revisão">Correções de estado nesta revisão</h2>
+<ul>
+<li>README/HTML de entrada: removidas contagens congeladas e afirmação global de que nunca houve build.</li>
+<li>Guias de rede/instalação: resultados históricos referenciados sem promover smoke a multiplayer homologado.</li>
+<li>Regras: movimento de inimigos em salas vazias alinhado à implementação de 15/10.</li>
+<li>Fontes: sugestões sonoras iniciais separadas das gravações posteriormente integradas.</li>
+<li>Testes/changelog: entradas atuais separadas de registros anteriores às tags.</li>
+<li>Demais guias: contratos e critérios existentes preservados; sem alegar reexecução por revisão editorial.</li>
+</ul>
+<h2 id="pendências">Pendências</h2>
+<p>Partidas com controles físicos, audição crítica, Internet, métricas e aprovação
+visual completa mantêm as limitações registradas em cada relatório. Links para
+Build são evidências locais; o portal identifica essa condição e oferece a
+coleção pública separadamente. Fontes externas históricas não foram reconsultadas
+em massa; suas datas e ressalvas de acesso permanecem registradas.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js"></script>
+        <script src="search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

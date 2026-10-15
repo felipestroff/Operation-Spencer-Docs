@@ -1,0 +1,2817 @@
+<!DOCTYPE html>
+<html lang="pt_BR" data-bs-theme="dark">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://felipestroff.github.io/Operation-Spencer-Docs/HISTORICO-TESTES-ATE-2026-10-15.html">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Testes, evidências e limitações · 0.1.0-alpha - Operation Spencer · 0.1.0-alpha</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/brands.min.css" rel="stylesheet">
+        <link href="css/solid.min.css" rel="stylesheet">
+        <link href="css/v4-font-face.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" disabled>
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" >
+        <link href="stylesheets/spencer.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Operation Spencer · 0.1.0-alpha</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Início</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Jogar</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="INSTALACAO-WINDOWS.html" class="dropdown-item">Instalação</a>
+</li>
+                                    
+<li>
+    <a href="CONTROLES.html" class="dropdown-item">Controles</a>
+</li>
+                                    
+<li>
+    <a href="MENU-ESC-2026-10-15.html" class="dropdown-item">Menu Esc</a>
+</li>
+                                    
+<li>
+    <a href="CONTROLES-EDITAVEIS-2026-10-15.html" class="dropdown-item">Configurações</a>
+</li>
+                                    
+<li>
+    <a href="REGRAS-E-BALANCEAMENTO.html" class="dropdown-item">Regras</a>
+</li>
+                                    
+<li>
+    <a href="MULTIPLAYER-E-SERVIDOR.html" class="dropdown-item">Cooperativo</a>
+</li>
+                                    
+<li>
+    <a href="MANSAO-E-MISSAO.html" class="dropdown-item">Missão (spoilers)</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="GALERIAS.html" class="nav-link">Galerias</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Desenvolvimento</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="ARQUITETURA.html" class="dropdown-item">Arquitetura</a>
+</li>
+                                    
+<li>
+    <a href="TIROS-OBSTACULOS-2026-10-15.html" class="dropdown-item">Tiros e obstáculos</a>
+</li>
+                                    
+<li>
+    <a href="ASSETS-E-AUDIO.html" class="dropdown-item">Assets e áudio</a>
+</li>
+                                    
+<li>
+    <a href="JILL-PORTRAITS-2026-10-15.html" class="dropdown-item">Portraits de Jill</a>
+</li>
+                                    
+<li>
+    <a href="TEXTURAS-ARQUITETURA-2026-10-15.html" class="dropdown-item">Texturas arquitetônicas</a>
+</li>
+                                    
+<li>
+    <a href="VERSIONAMENTO.html" class="dropdown-item">Versões e publicação</a>
+</li>
+                                    
+<li>
+    <a href="DOCUMENTACAO.html" class="dropdown-item">Documentação</a>
+</li>
+                                    
+<li>
+    <a href="INVENTARIO-DOCUMENTACAO.html" class="dropdown-item">Inventário documental</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="TESTES-E-LIMITACOES.html" class="nav-link">Evidências</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="FONTES-E-ADAPTACOES.html" class="nav-link">Créditos e referências</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="VERSAO.html" class="nav-link">Versão</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/felipestroff/Operation-Spencer-Docs" class="nav-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <button id="theme-menu" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle">
+                                <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                <span class="d-lg-none ms-2">Toggle theme</span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                                    <i class="fa-solid fa-sun fa-fw"></i>
+                                    <span class="ms-2">Light</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="true">
+                                    <i class="fa-solid fa-moon fa-fw"></i>
+                                    <span class="ms-2">Dark</span>
+                                    <i class="fa-solid fa-check ms-auto"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                                    <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                    <span class="ms-2">Auto</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                              </ul>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="js/darkmode.js"></script>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#testes-evidências-e-limitações--010-alpha" class="nav-link">Testes, evidências e limitações · 0.1.0-alpha</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#encaixe-das-lareiras-nas-paredes--15102026" class="nav-link">Encaixe das lareiras nas paredes · 15/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#encaixe-das-portas-nas-paredes--15102026" class="nav-link">Encaixe das portas nas paredes · 15/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#inimigos-após-fuga-e-batidas-nas-portas--15102026" class="nav-link">Inimigos após fuga e batidas nas portas · 15/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#menus-flashes-e-lista-contínua--15102026" class="nav-link">Menus, flashes e lista contínua · 15/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#auditoria-de-sfx-de-todas-as-portas--15102026" class="nav-link">Auditoria de SFX de todas as portas · 15/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#primeiro-alvo-sem-seleção-intermediária--15102026" class="nav-link">Primeiro alvo sem seleção intermediária · 15/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#campanhas-e-slots-independentes--15102026" class="nav-link">Campanhas e slots independentes · 15/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#fechamento-das-portas-de-escada--15102026" class="nav-link">Fechamento das portas de escada · 15/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#confirmações-e-ações-de-saves--15102026" class="nav-link">Confirmações e ações de saves · 15/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#novo-jogo-e-cartões-stars--14102026" class="nav-link">Novo jogo e cartões S.T.A.R.S. · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#carregamento-de-slots--14102026" class="nav-link">Carregamento de slots · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#inventário--guardar-somente-com-baú-aberto--14102026" class="nav-link">Inventário · guardar somente com baú aberto · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#operation-spencer--renomeação--14102026" class="nav-link">Operation Spencer · renomeação · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#tela-inicial--14102026" class="nav-link">Tela inicial · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#menu-de-contexto-ancorado-no-visor--14102026" class="nav-link">Menu de contexto ancorado no visor · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#sfx-de-fechaduras--14102026" class="nav-link">SFX de fechaduras · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#emissores-animados-aplicados--14102026" class="nav-link">Emissores animados aplicados · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#tela-cheia-proporcional--14102026" class="nav-link">Tela cheia proporcional · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#mira-e-ataque-bloqueados-sem-arma--14102026" class="nav-link">Mira e ataque bloqueados sem arma · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#rótulos-do-contexto-por-tipo-de-item--14102026" class="nav-link">Rótulos do contexto por tipo de item · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#ação-principal-do-contexto-conforme-equipamento--14102026" class="nav-link">Ação principal do contexto conforme equipamento · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#desequipar-pelo-menu-de-contexto--14102026" class="nav-link">Desequipar pelo menu de contexto · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#arma-equipada-guardada-no-baú--14102026" class="nav-link">Arma equipada guardada no baú · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#postura-dos-humanos-na-escadaria--14102026--revisão-após-os-prints" class="nav-link">Postura dos humanos na escadaria · 14/10/2026 — revisão após os prints</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#retirada-do-baú-por-duplo-clique--14102026" class="nav-link">Retirada do baú por duplo clique · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#interface-do-baú--14102026" class="nav-link">Interface do baú · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#movimento-dos-humanos-na-escadaria--14102026" class="nav-link">Movimento dos humanos na escadaria · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#regra-obrigatória-de-verificação-câmeras-e-tetos" class="nav-link">Regra obrigatória de verificação: câmeras e tetos</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#câmeras-interiores-integradas--14102026" class="nav-link">Câmeras interiores integradas · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#prévias-de-câmeras-interiores--14102026" class="nav-link">Prévias de câmeras interiores · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#opções-de-inspeção-pelo-teclado--14102026" class="nav-link">Opções de inspeção pelo teclado · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#câmera-frontal-de-inspeção--14102026" class="nav-link">Câmera frontal de inspeção · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#tetos-visíveis-nas-câmeras-normais--14102026" class="nav-link">Tetos visíveis nas câmeras normais · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#sfx-de-fechamento-ao-concluir-a-entrada--14102026" class="nav-link">SFX de fechamento ao concluir a entrada · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#tetos-aprovados-e-integrados--14102026" class="nav-link">Tetos aprovados e integrados · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#tetos-ps1--prévias-para-aprovação--14102026" class="nav-link">Tetos PS1 · prévias para aprovação · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#meeting-rebecca-mansion-basement-e-gerador--14102026" class="nav-link">Meeting Rebecca, Mansion Basement e gerador · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#chuva-visual-textos-e-sfx-espacial--14102026" class="nav-link">Chuva visual, textos e SFX espacial · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#portas-ps1-e-passagem-para-preto--14102026" class="nav-link">Portas PS1 e passagem para preto · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#emissores-de-luz--prévias-para-aprovação--14102026" class="nav-link">Emissores de luz · prévias para aprovação · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#inspeção-de-objetos--14102026" class="nav-link">Inspeção de objetos · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#coerência-das-fachadas-externas--14102026" class="nav-link">Coerência das fachadas externas · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#música-contínua-durante-combate--14102026" class="nav-link">Música contínua durante combate · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#quatro-trilhas-e-fade-de-repetição--14102026" class="nav-link">Quatro trilhas e fade de repetição · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#trovões-mais-frequentes-e-fortes--14102026" class="nav-link">Trovões mais frequentes e fortes · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#relógio-baixado-armas-e-novos-tempos-do-trovão--14102026" class="nav-link">Relógio baixado, armas e novos tempos do trovão · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#clarão-do-trovão-nas-janelas--14102026" class="nav-link">Clarão do trovão nas janelas · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#escala-dos-zumbis-corrigida--14102026" class="nav-link">Escala dos zumbis corrigida · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#iluminação-noturna--14102026" class="nav-link">Iluminação noturna · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#trovões-mais-espaçados--14102026" class="nav-link">Trovões mais espaçados · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#corte-da-cauda-vocal-de-facada--14102026" class="nav-link">Corte da cauda vocal de facada · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#complemento-sonoro-do-inventário--14102026" class="nav-link">Complemento sonoro do inventário · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#janelas-noturnas-integradas-para-revisão--14102026" class="nav-link">Janelas noturnas integradas para revisão · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#protótipos-de-janelas-externas--14102026" class="nav-link">Protótipos de janelas externas · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#integração-sonora--14102026" class="nav-link">Integração sonora · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#paredes-aprovadas-e-aplicadas-às-34-salas--14102026" class="nav-link">Paredes aprovadas e aplicadas às 34 salas · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#acabamentos-específicos-de-paredes--14102026" class="nav-link">Acabamentos específicos de paredes · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#prévias-de-paredes-ps1--14102026" class="nav-link">Prévias de paredes PS1 · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#orientação-apoios-e-pisos-do-cenário--14102026" class="nav-link">Orientação, apoios e pisos do cenário · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#aproximação-dos-quinze-atores-às-pranchas--rodada-atual" class="nav-link">Aproximação dos quinze atores às pranchas · rodada atual</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#movimento-dos-atores-ps1--13102026" class="nav-link">Movimento dos atores PS1 · 13/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#atores-ps1-reconstruídos--13102026--fidelidade-visual-em-revisão" class="nav-link">Atores PS1 reconstruídos · 13/10/2026 — fidelidade visual em revisão</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#retratos-da-rebecca--13102026" class="nav-link">Retratos da Rebecca · 13/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#escadas-por-estado-do-cômodo--13102026" class="nav-link">Escadas por estado do cômodo · 13/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#refinamento-da-planta-e-conexões--13102026" class="nav-link">Refinamento da planta e conexões · 13/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#mapa-integrado-ao-inventário--13102026" class="nav-link">Mapa integrado ao inventário · 13/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#modelos-distintos-das-facas--13102026" class="nav-link">Modelos distintos das facas · 13/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#refinamento-da-hud-do-inventário--13102026" class="nav-link">Refinamento da HUD do inventário · 13/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#cenário-detalhado-ps1--13102026" class="nav-link">Cenário detalhado PS1 · 13/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#itens-detalhados-ps1--13102026" class="nav-link">Itens detalhados PS1 · 13/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#inventário-ps1-inspeção-3d-e-ecg--13102026" class="nav-link">Inventário PS1, inspeção 3D e ECG · 13/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#revisão-da-matriz--13102026" class="nav-link">Revisão da matriz · 13/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#mtu-e-encerramento-enet--13102026" class="nav-link">MTU e encerramento ENet · 13/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#chriswesker-e-inputs-pendentes-no-smoke--13102026" class="nav-link">Chris/Wesker e inputs pendentes no smoke · 13/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#interface-durante-a-partida--13102026" class="nav-link">Interface durante a partida · 13/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#correção-do-trajeto-de-wesker-no-smoke--13102026" class="nav-link">Correção do trajeto de Wesker no smoke · 13/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#execução-local-pelo-codex-antes-da-correção-do-smoke--13102026" class="nav-link">Execução local pelo Codex antes da correção do smoke · 13/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#correção-de-código-r2" class="nav-link">Correção de código R2</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#correção-de-configuração-r1" class="nav-link">Correção de configuração R1</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#classificação-da-entrega" class="nav-link">Classificação da entrega</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#o-que-foi-executado" class="nav-link">O que foi executado</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#o-que-foi-escrito-mas-não-executado" class="nav-link">O que foi escrito, mas não executado</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#matriz-manual-de-aceitação" class="nav-link">Matriz manual de aceitação</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#reduções-e-funcionalidades-ainda-ausentes" class="nav-link">Reduções e funcionalidades ainda ausentes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="testes-evidências-e-limitações--010-alpha">Testes, evidências e limitações · 0.1.0-alpha</h1>
+<blockquote>
+<p>Evidências históricas preservadas: os testes do SFX de personagem de 2,5 s
+antecedem a revisão para 3,5 s com fade out de 0,8 s.
+<a href="TRANSICOES-MENUS-2026-10-15.html">Receita e validação atuais</a>.</p>
+</blockquote>
+<h2 id="encaixe-das-lareiras-nas-paredes--15102026">Encaixe das lareiras nas paredes · 15/10/2026</h2>
+<p>Duas lareiras existentes: afastamentos de 129,3 cm/71 cm nas costas dos
+pilares reproduzidos no Godot; corrigidos para sobreposição de 1,5 cm.
+35 checks de encaixe e 25 de emissores passaram, com seis pares de vistas
+frontal/laterais, aproximações de inspeção, fogo/luz animados e áudio gravado
+em loop/volume/mudo/pausa/descarte. Dados regenerados, GLB e fonte revisados.
+15 checks Python e 74 CoreTests aprovados; rebuild sem erros/avisos e importação
+Godot concluídos. Câmeras: 107 checks no jantar e 34 nos troféus, zero falhas;
+30 vistas dos cinco personagens parados/caminhando/mirando nos planos alterados.
+Percurso dirigido com 474 frames e 11 trocas, sem corte/ocultação do personagem.
+Enquadramentos revisados junto aos tetos, incluindo margem de retenção de 0,55 m.
+Recuperação local evita prender posições antigas atrás das lareiras, com
+regressão de restore/movimento autoritativo/reconexão e preservação de inventário.
+Smoke ENet local de quatro clientes aprovado; matriz <code>NetworkAcceptance</code>
+com 53 checks, zero falhas, incluindo concorrência, reconexão e restore.
+Sem controles físicos, audição crítica, profiling ou export.
+Logs em <code>Build/fireplace-wall-fit-2026-10-15/</code>.
+<a href="ENCAIXE-LAREIRAS-2026-10-15.html">Fontes, capturas e limites</a>.</p>
+<h2 id="encaixe-das-portas-nas-paredes--15102026">Encaixe das portas nas paredes · 15/10/2026</h2>
+<p>Baseline no Godot: 561 checks, 211 falhas de encaixe reproduzidas. Batentes
+afastados 15,5–16 cm da alvenaria e moldura ausente na entrada principal.
+Após correção: 568 checks, zero falhas, com 71 pares de capturas sob as mesmas
+câmeras de detalhe (35 conexões nos dois lados e entrada principal).
+Costas dos batentes/travessas encaixadas 3–3,5 cm; frentes visíveis e alturas
+de piso/patamar preservadas. 15 checks Python e 73 CoreTests passaram;
+rebuild sem erros/avisos e importação Godot concluídos.
+Logs/galeria em <code>Build/door-wall-fit-2026-10-15/</code>.
+Regressão final: 474 checks de cenário/202 capturas dos 190 enquadramentos
+atuais e detalhes, 390 de inspeção/câmera, 679 de animação/cancelamentos e
+560 de áudio pelo App real (35 portas, 70 travessias), todos aprovados.
+O checker de materiais foi atualizado para reconhecer os emissores existentes
+e não exigir filtragem de materiais sem textura; falhas intermediárias
+preservadas nos logs. Sem campanha por controles físicos, audição crítica,
+profiling, export ou nova matriz/smoke ENet. Rede/save não alterados nesta tarefa.
+<a href="ENCAIXE-PORTAS-2026-10-15.html">Escopo, fontes e limitações</a>.</p>
+<h2 id="inimigos-após-fuga-e-batidas-nas-portas--15102026">Inimigos após fuga e batidas nas portas · 15/10/2026</h2>
+<p>Duas regressões reproduziram cães/zumbis parados em salas vazias antes do patch.
+Após a correção: 73 CoreTests e 15 checks Python aprovados, rebuild C# sem
+avisos/erros e importação Godot concluída. Movimentação dos 32 inimigos do catálogo
+independe de jogador/câmera local; tentativa limitada à porta, quantidade de
+participantes que chegaram, cadência irregular, retorno, combate com outro
+sobrevivente, morte/stun, cancelamento, desconexão e restore cobertos.</p>
+<p>App Compatibility: 28 checks dirigidos passaram nos dois sentidos entre Doghall
+e sala de estar, incluindo pausa pelo menu, inspeção, tremor amortecido, retorno
+exato da folha e playback espacial leve/forte sem duplicação. Capturas de origem,
+destino, inspeção e movimentação conferidas; câmeras/tetos de produção preservados
+por esta tarefa. Outro trabalho simultâneo de encaixe das portas foi mantido.
+Áudio: 390 checks passaram com 188 clipes carregados, ganho real por força,
+mudo/posição e limpeza. Oito cortes de dois masters de vate, CC0, fornecidos pelo
+desenvolvedor; caminhos/hashes/edições no manifesto. Os 203 WAVs anteriores
+permaneceram idênticos após o bake.</p>
+<p>ENet dirigido: 6 checks aprovados de eventos, quantidade/época, ausência de
+duplicação, inimigos na origem e restore sem efeitos atrasados. Matriz ENet:
+53 checks aprovados de concorrência/reconexão/restart/restore. Smoke local de
+quatro clientes/35 s aprovado (<code>Build/smoke/7d6f2ad6e78e/report.json</code>).
+Regressão dos SFX existentes: 560 checks, 35 portas/70 travessias, ambos os
+sentidos, abertura/fechamento e fundo preto preservados.
+Auditoria de 70 travessias anterior às alterações simultâneas de encaixe;
+rodada final após rebuild: 28 checks gráficos e 6 ENet nos dois cômodos afetados.
+Não foi repetida uma auditoria visual geral do novo encaixe nesta tarefa.</p>
+<p>Logs em <code>Build/enemy-escape-2026-10-15/</code>. Rodadas iniciais registraram um nome
+de tupla C# inválido e uma premissa incorreta de pausa no driver, corrigidos.
+Houve encerramento sem resultado quando o usuário relatou crash do app; causa
+não estabelecida pelos logs. Uma rodada posterior não instanciou a classe C#
+do driver; rebuild completo permitiu concluir os testes finais sem erros de runtime.
+Logs de falhas preservados.
+Fixtures e entradas sintéticas não equivalem a campanha manual ou aprovação
+subjetiva de áudio/tensão. Audição crítica, controles físicos, Internet/dois PCs,
+exports e desempenho permanecem pendentes. Save schema 3 e invariantes preservados;
+os checks não homologam todo o multiplayer.
+<a href="INIMIGOS-E-PORTAS-2026-10-15.html">Implementação, fontes e limites</a>.</p>
+<h2 id="menus-flashes-e-lista-contínua--15102026">Menus, flashes e lista contínua · 15/10/2026</h2>
+<p>15 checks Python e 60 CoreTests passaram. Build C# final sem avisos/erros e
+importação Godot concluída. No app renderizado, 113 checks da abertura/cartões
+passaram: riser exclusivo da abertura, clique do inventário nos demais fades,
+VOLTAR cooperativo em 4:3/16:9 e com transporte pendente, passeio sem BGM,
+SFX de personagem com 2,5 s, último flash no fim do áudio e entrada posterior
+pela porta. Um painel magenta sob a seleção confirmou por pixel que o fundo
+preto impede o viewport da mansão de vazar através dos flashes.</p>
+<p>374 checks de áudio passaram com 180 clipes carregados. Originais preservados,
+hashes/edições registrados e 200 WAVs não relacionados idênticos após bake.
+Campanhas: 29 checks no app, mais dois de proteção de chamada antiga, passaram;
+a lista reúne visualmente duas campanhas com numeração contínua, abas por modo,
+carga/restauração do slot antigo e reconexão ENet sem fabricar kit.
+Retorno/entrada remota: 15 checks passaram com autoridade ENet real, incluindo
+snapshot autenticado sem iniciar porta/BGM durante o stinger, porta somente
+depois do SFX e perda de servidor limpando confirmação pendente.</p>
+<p>Logs: <code>Build/menu-effects-{validator,core,build,import,audio}.log</code> e
+<code>Build/save-slots-validation/{title,campaigns,campaign-guard,title-remote-return}.log</code>.
+Capturas finais de lista, cooperativo e flashes conferidas visualmente.
+Rodadas intermediárias expuseram observações temporais antigas para fades de
+três segundos: a primeira transição rápida é observada com relógio visual
+desacelerado na fixture. Um helper C# colidiu com o nome do enum Key; renomeado.
+Houve também falhas isoladas de input na abertura e no clique de saída;
+a repetição final passou, com diagnóstico de hover/foco e encerramento explícito
+em falha para evitar deixar o driver aberto. Logs intermediários preservados
+em <code>Build/menu-effects-*</code>.</p>
+<p>Mudanças restritas à apresentação; formato de saves, autoridade e protocolo não
+mudaram. Smoke de quatro bots e matriz ENet geral não repetidos nesta rodada;
+carga, restore e reconexão afetados cobertos pelas fixtures acima. Entradas
+sintéticas no app real; audição crítica, controles físicos, exports e Internet
+permanecem pendentes.</p>
+<h2 id="auditoria-de-sfx-de-todas-as-portas--15102026">Auditoria de SFX de todas as portas · 15/10/2026</h2>
+<p>App real, solo isolado: 35 portas nos dois sentidos, 70 travessias e 560 checks,
+sem falhas. Entrada principal: três checks adicionais aprovados. Abertura durante
+a animação, fechamento somente ao terminar, exatamente uma vez cada, com WAVs
+integrados e fundo preto. A reprodução identificou passos de escada substituindo
+abertura nas quatro portas <code>Kind=stairs</code>; agora usam abertura de madeira/metal.
+O fechamento já estava presente e foi preservado.</p>
+<p>Relatórios e logs em <code>Build/door-audio-audit-2026-10-15/</code>. O driver posiciona o
+jogador e prepara desbloqueios/requisitos, depois executa comandos, transferência,
+câmera e playback reais. Não é campanha por controle físico nem audição crítica.
+Rede/save não alterados, sem nova matriz/smoke ENet.</p>
+<p>Regressão desta auditoria: 679 checks da animação/cancelamentos, 370 de áudio,
+15 Python e 60 CoreTests aprovados; rebuild sem avisos/erros e importação Godot
+concluída. Audição crítica permanece pendente.</p>
+<h2 id="primeiro-alvo-sem-seleção-intermediária--15102026">Primeiro alvo sem seleção intermediária · 15/10/2026</h2>
+<p>15 checks Python, 60 CoreTests, build C# sem erros/avisos, importação Godot e
+680 checks renderizados passaram, exit 0, sem erros de runtime/MTU na rodada
+final. Fixture com munição, erva e corpo ao alcance verifica descrição direta,
+empate estável, Deixar sem coleta, próximo item após coleta e corpo quando
+mais próximo. Teclado, portas/baú, câmeras frontais, pausa offline, cliente ENet
+dirigido, retorno à abertura e reinício permanecem cobertos. Duas capturas
+originais conferidas visualmente; entradas sintéticas, sem controle físico.</p>
+<p>Tentativas anteriores expuseram premissas antigas da fixture: abertura ainda
+interceptando input, posição da janela mais perto do canteiro e expectativa
+de ator no menu antigo. Preparação/posições/asserts atualizados ao fluxo atual.
+Uma chamada de teste também excedeu o limite do identificador de campanha;
+corrigida apenas no comando de execução. Logs anteriores mantidos.
+Logs finais e capturas em <code>Build/nearest-interaction-2026-10-15/</code>, especialmente
+<code>python-final.log</code>, <code>core.log</code>, <code>build-final.log</code>, <code>import-final.log</code> e
+<code>renderer-final.log</code>. Esta alteração não muda rede/save/Core; smoke e matriz
+ENet geral não foram repetidos. Campanha manual, controles físicos, exports e
+Internet não executados nesta rodada.</p>
+<h2 id="campanhas-e-slots-independentes--15102026">Campanhas e slots independentes · 15/10/2026</h2>
+<p>NOVO JOGO cria campanha exclusiva por modo. Cada salvamento manual cria
+slot independente; salvar após retomar um antigo preserva o histórico.
+Catálogo agrupado por campanha nas abas Solo/Cooperativo. Schema 3 contém
+identidade e referência do checkpoint; schemas 1/2 migram em memória sem
+reescrever os originais na leitura. Sem mudança de protocolo ou engine.</p>
+<ul>
+<li>Core: 60/60. Migração 1/2, modo/identidade, gravação sem substituir destino,
+  preservação de slots/campanhas, retorno a slot antigo, checkpoint correto
+  da recuperação, corrupção e rejeição de caminhos/metadados inválidos.</li>
+<li><code>CampaignAcceptance</code>: 29/29 checks com menus reais, duas campanhas solo e
+  uma cooperativa, três pontos na primeira, arquivos anteriores idênticos,
+  nova gravação após retomar slot antigo e cliente ENet reconectado sem kit
+  novo. Guard separado: 2/2 checks provam que <code>StartHost(...resume:false)</code>
+  também preserva campanha ocupada, mesmo sem usar o wrapper de NOVO JOGO.</li>
+<li>Regressões gráficas: slots solo 51/51, cooperativo 45/45 e abertura 97/97.
+  Group headers/campanhas renderizados em <code>Build/independent-campaigns-solo.png</code>
+  e inspecionados. Scroll, ações na linha e confirmações preservados.</li>
+<li>ENet: 53/53 (concorrência, reconexão, restart e restore); smoke local de
+  quatro clientes/35 s aprovado. Validador Python, build sem avisos/erros
+  e importação Godot 4.7.2 .NET aprovados.</li>
+</ul>
+<p>Logs: <code>Build/campaigns-{core,build,validator}.log</code> e
+<code>Build/save-slots-validation/{campaigns,campaign-guard,solo,coop,title,enet,smoke,import}.log</code>.
+Fixtures de campanhas/slots em Build. Sem migração ou exclusão de saves
+privados para testar. Controle físico, Internet e partida em dois PCs não
+executados. Históricos crescem por salvamento manual; não há compactação
+automática. Binário antigo não lê novos arquivos schema 3.
+<a href="CAMPANHAS-E-SLOTS-2026-10-15.html">Arquitetura e compatibilidade</a>.</p>
+<h2 id="fechamento-das-portas-de-escada--15102026">Fechamento das portas de escada · 15/10/2026</h2>
+<p>Corrigidas quatro portas <code>Kind=stairs</code> sem SFX de fechamento, incluindo
+<code>hall__balcony</code>. Regressão reproduziu 12 falhas de banco/playback antes do patch.
+Rodada final: 679 checks renderizados de portas, 370 de áudio, 15 Python,
+60 CoreTests, rebuild sem erros/avisos e importação aprovados. Banco de fechamento
+reutilizado uma vez ao concluir; cancelamentos silenciosos e fundo preto.
+Logs em <code>Build/door-stairs-close-2026-10-15/</code>; reprodução válida após rebuild
+completo para descartar assembly incremental antiga. Sem audição crítica ou
+controle físico. Rede/save preservados, sem novo smoke/matriz ENet.</p>
+<h2 id="confirmações-e-ações-de-saves--15102026">Confirmações e ações de saves · 15/10/2026</h2>
+<p>Modal compartilhada com título, CONFIRMAR/CANCELAR, fundo desfocado e
+bloqueio de input subjacente. Usada na saída do menu, desconexão pela pausa
+e exclusão de save. Selecionar linha não carrega; CARREGAR/EXCLUIR aparecem
+somente no canto direito da linha selecionada e acompanham sua rolagem.
+Exclusão e releitura em segundo plano; sem novo schema/protocolo.</p>
+<ul>
+<li>Core: 57/57, incluindo preservação de saves distintos, cópias idênticas,
+  corrupção, seleção alterada e rejeição de caminhos fora da campanha.</li>
+<li>Slots: 51/51 checks gráficos solo e 45/45 cooperativos; seleção sem
+  carregamento automático, ações somente à direita da linha selecionada,
+  confirmação/cancelamento, preservação dos outros arquivos, exclusão e
+  status, modal em 4:3/16:9, scroll e retomada com SFX/fade. Cooperativo
+  inclui entrada ENet, reconexão sem kit novo e restore com avanço de Epoch.</li>
+<li>Build C#: 0 avisos/erros; importação Godot 4.7.2 .NET e validador Python
+  aprovados. Logs <code>Build/confirmation-{build,core,validator,import}.log</code>.</li>
+<li>Abertura: 97/97 checks gráficos, incluindo cancelar/confirmar saída da
+  pausa. Encerramento real do processo por mouse e teclado aprovado após
+  cancelar uma primeira solicitação. ENet de perda remota: 11/11, incluindo
+  descarte da modal pendente, retorno à abertura e progresso preservado.</li>
+<li>Gate ENet: 53/53; smoke local de quatro clientes/35 s aprovado. Casos de
+  concorrência, reconexão e restore mantidos. Log em <code>Build/save-slots-validation/</code>.</li>
+<li>Capturas reais da modal e da pausa inspecionadas. Uma rodada do driver
+  de cartões contou a cauda do som anterior (últimos 8 ms) junto da nova
+  ação; o driver agora separa ações por 50 ms após o movimento, pois o mixer
+  e o relógio da animação podem diferir por um buffer. Repetição: 97/97.</li>
+</ul>
+<p>Saves de teste são sintéticos, isolados em Build. Exclusões privadas não
+foram usadas como teste. Inputs são injetados no Godot; controle físico,
+audição crítica, Internet e partida manual em dois computadores não foram
+executados. Falhas de disco entre exclusões individuais podem deixar uma
+cópia; a releitura mostra erro/estado real. <a href="CONFIRMACOES-2026-10-15.html">Escopo</a>.</p>
+<h2 id="novo-jogo-e-cartões-stars--14102026">Novo jogo e cartões S.T.A.R.S. · 14/10/2026</h2>
+<p>NOVO JOGO abre SOLO/COOPERATIVO; SOLO percorre cartões de Jill, Chris,
+Barry, Rebecca e Wesker antes de criar a sessão. COOPERATIVO abre formulário
+de conexão; o cliente autentica o personagem somente após a escolha.
+Retratos revisados: Jill de azul, quatro feições mais calmas e Wesker frio.</p>
+<ul>
+<li>Validador Python aprovado; CoreTests: 55/55; build C#: 0 avisos/erros;
+  importação Godot 4.7.2 .NET concluída.</li>
+<li>Driver gráfico da abertura: 95/95 checks na revisão de 15/10, incluindo SFX/fade, modos,
+  formulário, cinco cartões, setas por teclado/mouse e início SOLO com Rebecca.
+  Pilha, giro/reordenação, emblema centralizado, input bloqueado durante
+  passagem e enquadramento 4:3 verificados. SFX de cartas integrado:
+  um playback ativo por troca, duração 0,64 s; driver de áudio passou 370
+  checks/178 clipes. Master e 200 WAVs anteriores preservados.
+  Entrada por NOVO JOGO na lista vazia: 5/5 checks.</li>
+<li>Revisão dos menus: VOLTAR abaixo de COOPERATIVO, cinco assinaturas em
+  SVGs independentes e ângulos próprios, emblema em arco com DEP corrigido
+  e faixa próxima do círculo; seleção sem título superior. Capturas dos
+  cinco cartões conferidas no Godot. Desconectar pela pausa retorna à
+  primeira abertura sem BGM/atores; queda real ENet passou 9/9 checks em
+  <code>Tools/TitleReturnAcceptance.cs</code>, preservando recovery sem recriar kit.
+  Encerramento real por SAIR exercitado por mouse e teclado em processos
+  separados (<code>Tools/Test-SaveLoad.ps1 -Stage Quit</code>). Gerador de logo e
+  assinaturas reproduz os mesmos hashes.</li>
+<li>ENet: 53/53 checks, incluindo seleção após expirar o desafio inicial,
+  quatro clientes, concorrência, reconexão e restore; smoke local de quatro
+  clientes por 35 segundos aprovado.</li>
+<li>Capturas reais em <code>Build/title-card-*.png</code>,
+  <code>Build/title-connection.png</code>, <code>Build/title-game-start.png</code>. Inspeção
+  visual dessas capturas feita; audição crítica e partida cooperativa manual
+  em dois computadores não executadas. O smoke e os testes ENet locais não
+  demonstram qualidade de conexão pela Internet.</li>
+</ul>
+<p><a href="NOVO-JOGO-CARTOES-2026-10-14.html">Escopo e assets</a>.</p>
+<h2 id="carregamento-de-slots--14102026">Carregamento de slots · 14/10/2026</h2>
+<p>CARREGAR JOGO abre slots Solo/Cooperativo, com máquina de escrever PS1 sem
+desfoque, título acima do painel transparente, pontos animados na lista
+durante a leitura, mensagem vazia apenas no status inferior e NOVO JOGO à
+direita de VOLTAR. O fade/SFX de três segundos também precede a tela de
+slots. Schema 2 registra
+modo e contagem manual; schema 1 migra em memória sem inventar metadados.
+Carregamento valida identidade e hashes antes/depois da animação; gravação
+existente da máquina, reticências e fade precedem a liberação do jogador.</p>
+<ul>
+<li>15 checks Python e 55 CoreTests aprovados; build sem erros/avisos e
+  importação Godot 4.7.2 .NET concluída.</li>
+<li>35 checks gráficos solo e 41 cooperativos aprovados: raiz vazia, retorno,
+  abas, 4:3/16:9, scroll por roda/setas, corrupção/perfil incorreto/alteração
+  durante o efeito, áudio, status, fade, inventário e BGM na retomada.</li>
+<li>Cliente ENet real no cooperativo: entrada, reconexão sem kit novo e restore
+  com avanço de Epoch. Gate ENet existente: 49 checks aprovados; smoke local
+  de 35 segundos com quatro clientes aprovado.</li>
+<li>Regressão da abertura: 35 checks renderizados aprovados, incluindo fade,
+  ponto preto, bloqueio dos slots e retorno. NOVO JOGO na lista vazia passou
+  em cinco checks e abriu a configuração pelo fluxo existente.</li>
+<li>Catálogo grande: dez checks com 732 arquivos sintéticos em 183 campanhas;
+  o clique iniciou o fade sem varredura síncrona, o cartão apareceu no ponto
+  preto e os pontos avançaram durante a leitura em segundo plano.</li>
+</ul>
+<p>Logs em <code>Build/save-slots-validation/</code> e <code>Build/save-slots-{core,build,validator}.log</code>;
+capturas <code>Build/save-slots-*.png</code>. Fontes, compatibilidade, falhas intermediárias
+e limites em <a href="CARREGAR-SAVES-2026-10-14.html">Carregamento de saves</a>.
+Inputs sintéticos, capturas renderizadas; sem controle físico, audição crítica,
+Internet/Linux ou profiling. Saves schema 2 não são lidos pelo binário antigo.</p>
+<h2 id="inventário--guardar-somente-com-baú-aberto--14102026">Inventário · guardar somente com baú aberto · 14/10/2026</h2>
+<p><code>Game/GameUi.cs</code>: removidos Guardar e seu comando do contexto comum. Arrastes
+entre inventário e baú exigem modo baú; reorganização interna permanece.
+<code>Tools/PresentationAcceptance.cs --chest-equipment</code>: 50 checks renderizados
+aprovados em solo e host local, incluindo ausência de Guardar perto do baú e
+duplo clique no inventário comum sem depósito. <code>--chest-only</code>: 70 checks
+renderizados aprovados, preservando depósito/retirada por duplo clique e
+arraste, sons existentes, lista/scroll e rejeição sem perda quando não há
+espaço. Capturas do contexto e da lista revisadas.
+15 checks Python, 49 CoreTests, build C# sem erros/avisos e importação Godot
+4.7.2 .NET aprovados. Evidências: <code>Build/chest-open-only-*</code>.</p>
+<p>O driver precisou percorrer a nova abertura por Enter antes de testar o
+inventário; a primeira execução parou antes dos checks. A leitura de cor do
+thumb também usava dimensões fixas e falhou em tela cheia; adaptada ao viewport
+real, sem alterar a barra do produto. Controle físico, ENet e network_smoke
+não repetidos nesta alteração de interface; não houve mudança de rede/save.</p>
+<h2 id="operation-spencer--renomeação--14102026">Operation Spencer · renomeação · 14/10/2026</h2>
+<p>Título atualizado na abertura, configuração, janela, documentação, metadados,
+geradores e build/exportação. <code>OperationSpencer.csproj</code>/<code>.sln</code> e assembly com
+o novo nome. Diretório <code>user://</code> anterior preservado explicitamente, sem
+migração de formato nem recriação de perfis. Escopo e exceções de caminhos/
+histórico em <a href="RENOMEACAO-2026-10-14.html">Renomeação</a>.</p>
+<p>Gates aprovados em <code>Build/operation-spencer-rename/</code>:</p>
+<ul>
+<li>Validador Python: 15 checks; configuração da toolchain: 29 checks;
+  22 testes PowerShell; 49 CoreTests.</li>
+<li>Build C#: zero erros/avisos; importação Godot 4.7.2 .NET concluída.</li>
+<li><code>BrandingAcceptance.gd</code>: 3 checks headless e 11 renderizados no Compatibility.
+  Mesmo diretório de dados antes/depois, abertura e configuração com o novo
+  título, transições e enquadramento em 1024×768 e 1280×720. Capturas de ambas
+  as telas revisadas; inputs sintéticos, sem teclado/mouse físicos.</li>
+<li>Bake dos 30 ícones: 180 checks de GLB, rotação/enquadramento e transparência.
+  Miniaturas idênticas às anteriores; manifesto atualizado para os novos hashes
+  dos GLBs. Auditoria: 80 GLBs diferem somente em <code>asset.generator</code>, mantendo
+  os demais campos JSON e chunks binários idênticos; 182 áudios conferidos
+  contra os manifestos anteriores preservam os bytes.</li>
+<li>ENet: 49 checks de concorrência/reconexão/restore e regressões existentes;
+  smoke de quatro clientes por 35 segundos aprovado, com logs limpos.</li>
+</ul>
+<p>Falhas intermediárias e correções da fixture/hash musical descritas na nota
+de renomeação. Gates finais aprovados. O diretório físico do checkout,
+identificadores de invocação das skills e evidências históricas permanecem.
+Não executados controle físico, matriz manual completa, exports Windows/Linux,
+Internet ou profiling. A configuração Linux do caminho foi conferida pelo
+código do engine; runtime de compatibilidade validado somente no Windows.
+Esses resultados locais não homologam todo o multiplayer.</p>
+<h2 id="tela-inicial--14102026">Tela inicial · 14/10/2026</h2>
+<p>Menu intermediário PS1: NOVO JOGO / CARREGAR JOGO substituem o prompt após
+a primeira transição. Seleção por ↑/↓/hover, confirmação por Enter/clique
+esquerdo e cores de seleção renderizadas; CARREGAR toca o SFX da abertura,
+sem carregamento/fade/troca de tela, inclusive ao terminar o som.
+Após incluir SFX nos dois botões: 63 checks renderizados aprovados (31 por
+mouse e 32 com efeitos silenciados, incluindo tela cheia/4:3). <code>Finished</code>
+do som de CARREGAR não muda de tela nem libera BGM. Build/importação,
+15 checks Python e 49 CoreTests finais aprovados; logs
+<code>title-choices-click-sfx.log</code> e <code>title-choices-sfx-muted-final.log</code> em Build.
+Passeio dos seis cômodos continua entre abertura e opções; BGM só é liberada
+ao chegar à configuração atual por NOVO JOGO. <code>Build/title-choices-*</code>:
+15 checks Python, 49 CoreTests, build sem erros/avisos e importação aprovados.
+Reexecução por mouse com ciclo completo: 58 checks renderizados aprovados;
+por teclado inicial: 30. A primeira tentativa por mouse falhou no driver por
+misturar coordenadas da janela e do viewport com stretch; <code>push_input</code> local
+corrigiu o driver, sem alterar a implementação do menu. Projeto renomeado
+em paralelo para Operation Spencer preservado; o build final usa
+<code>OperationSpencer.csproj</code> (uma chamada ao nome anterior falhou antes disso).
+Teste físico, audição crítica, nova matriz ENet, exportações e profiling
+não executados. <a href="TELA-INICIAL-2026-10-14.html">Fluxo, arquivos e reprodução</a>.</p>
+<p>Passeio desfocado: hall, Doghall, jantar, cozinha, biblioteca e galeria leste,
+com dez segundos de permanência e quatro de dissolução. Fontes das câmeras
+fixas 0 reutilizadas, sem mudanças de câmera/teto/dados; capturas fontes e
+desfocadas das seis vistas revisadas no Godot. <code>Build/title-tour-*</code>: 15 checks
+Python, 49 CoreTests, build sem erros/avisos e importação aprovados; 82 checks
+renderizados no ciclo completo, interrupção por mouse durante dissolução e
+mudo. Ausência de BGM, retorno ao hall, descarte do passeio e personagem no
+menu conferidos. Teste físico, matriz geral de gameplay/ENet, exportações e
+profiling não executados. <a href="TELA-INICIAL-2026-10-14.html">Fontes e reprodução</a>.</p>
+<p>Ajuste azul/BGM: fonte do shader em <code>Assets/Shaders/title_background.gdshader</code>,
+com névoa azul lenta, granulação e vinheta; sombra/borda do título revisadas
+no Godot. Reprodução anterior confirmou <code>mansion_ground</code> tocando; supressão
+agora impede a criação da voice antes da prévia e libera BGM só ao terminar
+a transição. <code>Build/title-blue-*</code>: 15 checks Python, 49 CoreTests, build
+sem erros/avisos, importação, 368 checks de áudio e 135 de música aprovados. 47 checks
+renderizados verificam ausência de BGM na abertura/transição, seu retorno
+no menu e o fundo azul. Teste físico/audição crítica não executados.</p>
+<p>Ajuste do prompt: fade in/out contínuo de dois segundos, sem input necessário.
+Revalidação em <code>Build/title-pulse-*</code>: 15 checks Python, 49 CoreTests, build
+sem erros/avisos, importação e 14 checks renderizados aprovados. Amostragem
+confirmou opacidade de 0 a 1; capturas clara/escura revisadas no Godot.
+Transição ao menu continuou sincronizada com o SFX (3,031 s no driver).
+Inputs sintéticos; teste físico e audição crítica não executados.</p>
+<p>Título vermelho sobre preto em tela cheia; qualquer tecla/botão do mouse
+avança com o recorte gravado de três segundos e fade pelo relógio do áudio.
+15 checks Python, 49 CoreTests, build sem erros/avisos e importação passaram.
+36 checks renderizados com teclado, botão direito e áudio silenciado; capturas
+em 1920×1080, 4:3 e 16:9 inspecionadas. Logs <code>Build/title-*</code> e reprodução em
+<a href="TELA-INICIAL-2026-10-14.html">Tela inicial</a>. Master preservado; 199 WAVs anteriores
+idênticos. Sem alterações de Core/rede/save, câmeras/tetos nesta tarefa.
+Teste manual com inputs físicos e audição crítica, smoke/matriz ENet completa,
+exportações e profiling não executados; não são homologados por esses checks.</p>
+<h2 id="menu-de-contexto-ancorado-no-visor--14102026">Menu de contexto ancorado no visor · 14/10/2026</h2>
+<p>O menu anterior era um <code>PopupMenu</code> posicionado pelas coordenadas do clique,
+com opções contíguas. <code>Game/InventoryContextMenu.cs</code> agora desenha botões
+separados dentro do visor de <code>GameUi</code>, ancorados ao canto inferior direito
+com margem de oito pixels. Opções de 44 pixels, intervalo de seis pixels,
+fundo <code>#0b0861</code>, texto branco e borda de um pixel <code>#465f9e</code>; foco/hover usam
+azul mais claro. A ancoragem acompanha a escala da interface. Esc fecha as
+opções antes do inventário; clique fora permite selecionar outro item.
+Ações, versões e comandos autoritativos preservados; o modo de lista do baú
+mantém o fluxo aprovado por duplo clique/arraste e contexto desabilitado.
+Selecionar um item a partir do mapa restaura a inspeção no mesmo visor.</p>
+<p>Gates finais em <code>Build/context-menu-*</code>:</p>
+<ul>
+<li>Validador Python: 15 checks, <code>validator.json</code> / <code>.log</code>.</li>
+<li>49 CoreTests: <code>core.log</code>; build sem erros/avisos: <code>build.log</code>.</li>
+<li>Importação Godot 4.7.2 stable .NET: <code>import.log</code>.</li>
+<li>Compatibility, <code>--hud-only</code>: 111 checks, <code>hud.log</code>. Inclui posição fixa
+  para slots diferentes, estilos/espaçamento, Esc, clique fora, retorno do
+  mapa, cliques nos botões, equipar/usar/combinar/soltar, versões antigas,
+  arraste/baú, cinco personagens e condições de saúde. Sete opções (Guardar
+  e três aliados sintéticos na simulação do anfitrião) cabem dentro do visor;
+  foco por teclado circula pelas opções habilitadas.</li>
+<li>Regressão <code>--chest-equipment</code>: 46 checks, <code>equipment.log</code>, em solo e
+  anfitrião. Equipar/Desequipar por contexto, mão/HUD/munição conservados,
+  bloqueio de mira desarmada e depósito/retirada pelo baú preservados.</li>
+<li>Capturas reais revisadas: <code>Build/manual/fixed-hud-context.png</code> e
+  <code>fixed-hud-context-allies.png</code>, renderizadas em 1920 × 1080.</li>
+</ul>
+<p>Gates aprovados sem falhas nesta revisão; <code>git diff --check</code> aprovado.</p>
+<p>Inputs sintéticos e revisão de capturas não representam controle físico ou
+partida manual completa. Não executados: matriz manual completa, smoke ENet/
+concorrência/reconexão/restore, exportações, Internet/Linux e profiling nesta
+revisão de UI. Core/rede/save, assets, câmeras/tetos e áudio não foram alterados
+por esta tarefa; alterações locais anteriores nesses arquivos foram preservadas.</p>
+<h2 id="sfx-de-fechaduras--14102026">SFX de fechaduras · 14/10/2026</h2>
+<p>Maçaneta travada na inspeção local; chave liberada somente na primeira confirmação
+do servidor. Downloads recebidos preservados, 174 recortes antigos idênticos.
+<code>Build/door-lock-audio-2026-10-14/</code>: 15 checks Python, 49 CoreTests, build sem
+erros/avisos, importação e 366 checks de áudio aprovados; 14 checks renderizados
+de inspeção/pausa/desbloqueio em solo e anfitrião. Smoke ENet local com quatro
+clientes aprovado. Teste específico falhou antes da correção por ausência do evento.
+Core cobre duas pessoas, duplicata, reconexão e restore; matriz completa desses
+casos via ENet, controles físicos e audição crítica não executados. Fontes,
+comportamento e limites em <a href="FECHADURAS-SFX-2026-10-14.html">SFX de fechaduras</a>.</p>
+<h2 id="emissores-animados-aplicados--14102026">Emissores animados aplicados · 14/10/2026</h2>
+<p>Integração aprovada de 76 velas, duas lareiras com fogo/luz/SFX e telas/indicadores
+de painel/gerador conforme power do snapshot. Em
+<code>Build/emitter-rollout-2026-10-14/</code>: 15 checks Python, 48 CoreTests, build sem
+erros/avisos, importação e 430 checks renderizados passaram; 210 capturas das
+190 câmeras/detalhes e 315 quadros de animação. Loop gravado idêntico à prévia,
+limite de luzes, pixels dos visores, snap ligado/desligado, power on/off,
+volume/mudo, pausa, Epoch, menu/stop, reentrada, descarte e coexistência com
+lua/clarão verificados. Regressão de chuva na aplicação: 169 checks aprovados.
+Falhas iniciais do driver e do shader de tela foram corrigidas, com logs e
+diagnóstico em <a href="EMISSORES-ANIMADOS-2026-10-14.html">Emissores animados</a>.
+Sem controle físico, audição crítica, export, profiling ou nova matriz ENet.
+Core/rede/save e câmeras/tetos autorados não foram alterados nesta tarefa.</p>
+<h2 id="tela-cheia-proporcional--14102026">Tela cheia proporcional · 14/10/2026</h2>
+<p>Modo exclusivo na resolução nativa 1920 × 1080 confirmado no Godot .NET 4.7.2
+Compatibility. Câmeras mantêm o quadro original ampliando a projeção; interface
+centralizada com escala uniforme; viewport principal e passagem de portas
+adaptam-se à proporção. Inspeção guarda o FOV de referência para resize/retorno.
+Sem mudanças de dados, geometria de teto, save ou rede neste patch.</p>
+<p>Gates aprovados: 15 checks Python (<code>Build/fullscreen-2026-10-14/validator.json</code>),
+48 CoreTests (<code>core.log</code>), build sem erros/avisos (<code>build.log</code>) e importação
+sem erros (<code>import.log</code>). Render dirigido: <strong>1928 checks</strong>, 190 câmeras dos
+34 ambientes em cinco proporções (<code>render.log</code>), preservando o frustum original
+e tetos físicos. A rodada de 21:9 foi refeita com validação das dimensões de
+cada captura: <strong>591 checks</strong>, todas as 190 imagens em 1260 × 540 (<code>ultrawide.log</code>).
+Os screenshots da primeira rodada de ultrawide tiveram dimensões alteradas
+durante o percurso, por causa não determinada; a rodada final substituiu essas
+imagens e conferiu individualmente as dimensões solicitadas.</p>
+<p>Regressões no Godot: <strong>103 checks</strong> de inventário/HUD/contexto solo/anfitrião
+(<code>hud.log</code>); <strong>75</strong> dos cinco personagens, caminhada/corrida/mira nos ambientes
+de referência (<code>characters.log</code>); <strong>353</strong> de câmeras de portas/janelas, pausa,
+abordagens diferentes e retorno à câmera fixa (<code>inspections.log</code>).
+<strong>194 checks</strong> de layout, resolução retrô, mapa/inventário/configurações e resize
+da inspeção pausada estão em <code>layout.log</code>. <code>../Build/fullscreen-2026-10-14/index.html</code> (evidência local; seleção pública no índice de galerias)
+e <a href="TELA-CHEIA-2026-10-14.html">detalhes/reprodução</a>.</p>
+<p>A fixture inicial de capturas foi interrompida aguardando o sinal de draw;
+o driver passou a forçar um draw real antes de capturar. Outra tentativa parou
+porque o terraço não fazia parte do layout histórico; a fixture agora usa os
+dados de produção e aceita essa referência apenas como auxílio opcional.
+Logs iniciais preservados na pasta de evidências. Gates finais sem erros.</p>
+<p>Não executados controle físico, matriz manual completa de todas as poses e
+posições caminháveis, outros monitores/GPUs/DPI, exports e profiling. As outras
+proporções foram simuladas em janelas no mesmo monitor. Capturas revisadas e
+projeção não homologam toda oclusão/contraste em combate. Rede/save não mudaram;
+smoke ENet e concorrência/reconexão/restore não foram reexecutados nesta tarefa.</p>
+<h2 id="mira-e-ataque-bloqueados-sem-arma--14102026">Mira e ataque bloqueados sem arma · 14/10/2026</h2>
+<p>Causas: <code>Geometry.Move</code> entrava em mira sem consultar o equipamento; a previsão
+local criava <code>PlayerState</code> com a faca padrão ao omitir <code>Equipped</code>. A animação
+podia reaparecer ao reproduzir inputs pendentes mesmo com snapshot desequipado.
+Dois novos CoreTests reproduziram as falhas antes do patch:
+<code>Build/unarmed-controls-before.log</code> (46 aprovados, dois reprovados).</p>
+<p><code>Core/Geometry.cs</code> exige equipamento para aceitar mira; sem arma, caminhar
+continua normal. <code>Core/Simulation.cs</code> limpa a pose normal/alta/baixa ao
+retirar o equipamento. <code>Game/RoomView.cs</code> e <code>Game/SmokeBotNavigation.cs</code> copiam
+o equipamento real ao prever inputs. <code>Game/Controls.cs</code>/<code>Game/App.cs</code> filtram
+mira, altura de mira e envio de ataque quando o snapshot está desequipado.
+Ataque sem arma já era recusado pelo servidor; essa proteção permanece.
+Modelos, clipes-fonte, dados, áudio, câmeras/tetos, defesa/parry, formatos de
+save/protocolo e limites/versões de input preservados.</p>
+<p>Gates executados e aprovados:</p>
+<ul>
+<li>Python: 15 checks, <code>Build/unarmed-controls-validator.json</code> / <code>.log</code>.</li>
+<li>CoreTests: <strong>48</strong>, <code>Build/unarmed-controls-core.log</code>. Mira sem arma não
+  congela caminhada; os três níveis, mira/disparo armado e cancelamento da pose
+  por desequipar/depositar/soltar/entregar são exercitados.</li>
+<li>Build sem erros/avisos: <code>Build/unarmed-controls-build.log</code>; importação
+  Godot .NET 4.7.2 sem erros/avisos: <code>Build/unarmed-controls-import.log</code>.</li>
+<li>Compatibility com inputs sintéticos: <strong>46 checks</strong>, solo/anfitrião,
+  <code>Build/unarmed-controls-render.log</code>. Inputs brutos pendentes não reintroduzem
+  mira na previsão; mira/fire sem arma nos três níveis não animam nem gastam
+  balas. Após Equipar, mira/disparo voltam a funcionar. Regressões de contexto,
+  baú, recusa por capacidade e munição passaram. Capturas
+  <code>Build/manual/fixed-unarmed-controls-{True,False}.png</code> e checks do clip real.</li>
+<li>ENet real: <strong>49 checks</strong>, <code>Build/unarmed-controls-enet.log</code>, incluindo input
+  de mira bruto e ataque sem arma, conservação de munição e matriz existente
+  de concorrência/reconexão/restore.</li>
+</ul>
+<p>Smoke real de quatro clientes por 35 s aprovado, sem erros nos logs:
+<code>Build/unarmed-controls-smoke.log</code>; critérios de conexão/input/destinos atendidos.</p>
+<p>A primeira execução renderizada parou porque a fixture reutilizava um PopupMenu
+liberado ao fechar/reabrir o inventário. O driver agora consulta o menu novo;
+log inicial preservado em <code>Build/unarmed-controls-render-initial.log</code>.
+Gates finais acima sem falhas de runtime; <code>git diff --check</code> aprovado.</p>
+<p>Não executados controle físico, matriz manual completa, exports, Internet/Linux,
+profiling e audição crítica. Validação local não homologa multiplayer completo.</p>
+<h2 id="rótulos-do-contexto-por-tipo-de-item--14102026">Rótulos do contexto por tipo de item · 14/10/2026</h2>
+<p>A primeira ação mostra <strong>Equipar</strong> nas armas não equipadas, <strong>Usar</strong> nos
+consumíveis e <strong>Desequipar</strong> na arma equipada. <code>Game/GameUi.cs</code> mudou somente
+o texto; IDs, validações, comandos e SFX permanecem. Fixtures existentes de
+<code>Tools/PresentationAcceptance.cs</code> foram adaptadas aos rótulos específicos.
+Controles e notas atualizados nos pontos correspondentes.</p>
+<p>Gates aprovados: 15 checks Python (<code>Build/context-labels-validator.json</code>),
+46 CoreTests (<code>Build/context-labels-core.log</code>), build sem erros/avisos
+(<code>Build/context-labels-build.log</code>), importação sem erros/avisos
+(<code>Build/context-labels-import.log</code>) e <strong>165 checks renderizados</strong>: equipamento/
+contexto 30, HUD 103 e áudio/consumo 32, solo/anfitrião. Logs em
+<code>Build/context-labels-{chest-equipment,hud-only,inventory-audio}.log</code>.
+Confirmados os três rótulos e as ações de equipar/desequipar/consumir,
+preservando munição, cura, combinação e feedback existente. Captura de Usar em
+<code>Build/manual/fixed-hud-context.png</code> revisada; <code>git diff --check</code> aprovado.
+Sem falhas nesta revisão. Inputs sintéticos; controle físico e matriz manual
+pendentes. Core/rede/save não alterados neste ajuste; smoke/gate ENet não repetidos.</p>
+<h2 id="ação-principal-do-contexto-conforme-equipamento--14102026">Ação principal do contexto conforme equipamento · 14/10/2026</h2>
+<p>A arma equipada agora mostra <strong>Desequipar</strong> como primeira opção, substituindo
+<strong>Usar / equipar</strong>. Após desequipar, a primeira opção volta a Usar / equipar.
+A opção extra foi removida; os IDs e comandos existentes continuam iguais.
+Mudança localizada em <code>Game/GameUi.cs</code>, com asserts existentes fortalecidos em
+<code>Tools/PresentationAcceptance.cs</code> para conferir posição e ausência de duplicata.</p>
+<p>Gates atuais: 15 checks Python (<code>Build/context-toggle-validator.json</code>),
+46 CoreTests (<code>Build/context-toggle-core.log</code>), build sem erros/avisos
+(<code>Build/context-toggle-build.log</code>), importação Godot sem erros/avisos
+(<code>Build/context-toggle-import.log</code>) e 30 checks renderizados solo/anfitrião
+(<code>Build/context-toggle-render.log</code>), todos aprovados. Captura do menu em
+<code>Build/manual/fixed-unequip-menu-True.png</code> revisada; <code>git diff --check</code> aprovado.
+Sem falhas nesta revisão. Inputs sintéticos; controle físico/matriz manual
+pendentes. Rede/save não alterados neste ajuste; smoke e gate ENet não repetidos.</p>
+<h2 id="desequipar-pelo-menu-de-contexto--14102026">Desequipar pelo menu de contexto · 14/10/2026</h2>
+<p><code>Game/GameUi.cs</code> oferece <strong>Desequipar</strong> somente para a arma atualmente equipada.
+<code>Core/Simulation.cs</code> valida slot, tipo, equipamento e versão do inventário,
+limpa <code>Equipped</code> e incrementa <code>InvVersion</code>, sem mover itens ou alterar munição.
+A ação <code>unequip</code> usa o envelope existente, com Epoch/Sequence/limites preservados.
+Sem mudanças de campos, schema de save, protocolo, modelos ou assets. O feedback
+reutiliza <code>ui_button</code>; mãos e painel equipado usam o estado vazio já integrado.</p>
+<p>Gates executados:</p>
+<ul>
+<li>Python: 15 checks aprovados, <code>Build/unequip-validator.json</code> / <code>.log</code>.</li>
+<li>CoreTests: <strong>46 aprovados</strong>, <code>Build/unequip-core.log</code>. Novos casos cobrem
+  conservação de itens/munição, mãos vazias, ataque/recarga recusados, equipar
+  novamente, slot inválido/vazio, outra arma, consumível, versão antiga e replay.</li>
+<li>Build C#: zero erros/avisos, <code>Build/unequip-build.log</code>; importação Godot .NET
+  4.7.2 sem erros/avisos, <code>Build/unequip-import.log</code>.</li>
+<li>Interface Compatibility com inputs sintéticos: <strong>30 checks</strong> de equipamento/
+  menu e <strong>103</strong> de HUD em solo/anfitrião; <code>Build/unequip-chest-equipment.log</code>
+  e <code>Build/unequip-hud-only.log</code>. A opção aparece somente na arma equipada,
+  limpa a malha anexada à mão e o ícone/contador, preserva o inventário/balas,
+  desaparece após desequipar e permite equipar novamente. Regressões de depósito,
+  retirada e recusa por baú cheio continuam aprovadas.</li>
+<li>ENet real: <strong>48 checks</strong> aprovados, <code>Build/unequip-enet.log</code>. A nova ação
+  preserva arma/balas e todos os quatro clientes recebem equipamento vazio;
+  concorrência, reconexão, restore e demais casos existentes também passaram.</li>
+<li>Smoke real de quatro clientes por 35 s aprovado, <code>Build/unequip-smoke.log</code>;
+  critérios de conexão/input/destinos atendidos e todos os logs limpos.</li>
+<li>Capturas do menu/resultado em <code>Build/manual/fixed-unequip-{menu,result}-{True,False}.png</code>,
+  inspecionadas visualmente; <code>git diff --check</code> aprovado.</li>
+</ul>
+<p>Sem falhas nos gates acima. Controle físico, matriz manual completa, exports,
+Internet/Linux, profiling e audição crítica permanecem pendentes. Os testes
+locais não homologam multiplayer completo. <a href="CONTROLES.html#inventário">Controles</a>.</p>
+<h2 id="arma-equipada-guardada-no-baú--14102026">Arma equipada guardada no baú · 14/10/2026</h2>
+<p>Causa: a remoção da pilha não limpava <code>PlayerState.Equipped</code>. O HUD carregava
+a miniatura desse ID mesmo sem a arma, e o ator seguia o snapshot com a pistola.
+Três regressões Core falharam antes da correção (<code>Build/chest-equipped-before.log</code>).</p>
+<p><code>Core/Simulation.cs</code> limpa referências a armas ausentes após depósito, soltar
+ou entrega bem-sucedidos, e normaliza referências órfãs ao carregar/restaurar
+ou reconectar. Se ainda existe outra arma do mesmo tipo, a referência continua
+válida. Ações recusadas preservam o equipamento; retirar não equipa por conta
+própria. <code>Game/GameUi.cs</code> limpa ícone/contador quando não há arma equipada no
+inventário. O fluxo existente do ator já remove a malha ao receber ID vazio.
+Campos, schema 1, protocolo, kits, capacidades, dados, arte e áudio preservados;
+a normalização compatível corrige o valor legado no campo existente.</p>
+<p>Gates executados, todos com exit 0:</p>
+<ul>
+<li>Python: 15 checks, <code>Build/chest-equipped-validator.json</code> / <code>.log</code>.</li>
+<li>CoreTests: <strong>44 aprovados</strong>, <code>Build/chest-equipped-core.log</code>; remoções,
+  depósitos recusados/versão antiga, arma duplicada, ausência de ataque/recarga,
+  retirada/equipar, estado legado, restore e reconexão sem kit novo.</li>
+<li>Build C#: zero erros/avisos, <code>Build/chest-equipped-build.log</code>.</li>
+<li>Importação Godot 4.7.2 .NET: sem erros/avisos, <code>Build/chest-equipped-import.log</code>.</li>
+<li>Interface Compatibility: <strong>20 checks</strong> <code>--chest-equipment</code>, <strong>103</strong> <code>--hud-only</code>
+  e <strong>70</strong> <code>--chest-only</code>; <code>Build/chest-equipped-&lt;modo&gt;.log</code>. Solo/anfitrião,
+  depósito por duplo clique e arraste, quadro equipado vazio também no inventário
+  comum, remoção real do modelo anexado à mão, retorno à partida, munição
+  preservada, retirada sem equipar, equipar explícito e baú cheio recusado.</li>
+<li>ENet real: <strong>47 checks</strong>, <code>Build/chest-equipped-enet.log</code>; quatro clientes,
+  concorrência, versões, reconexão e restore. Novos casos verificam remoção da
+  arma em todos os snapshots, conservação/munição, retirada, equipar/redepositar,
+  reconexão e restauração sem reintroduzir a arma equipada.</li>
+<li>Smoke real de quatro clientes por 35 s: <strong>aprovado</strong>, zero erros de logs,
+  <code>Build/chest-equipped-smoke.log</code>; critérios de conexão/input/destinos atendidos.</li>
+<li>Capturas reais <code>Build/manual/fixed-chest-unequipped-{True,False}.png</code>,
+  <code>fixed-chest-unequipped-world-{True,False}.png</code> e
+  <code>fixed-chest-unequipped-inventory-{True,False}.png</code>, inspecionadas; gates finais
+  sem erros de runtime e <code>git diff --check</code> aprovado.</li>
+</ul>
+<p>Controle de mouse/teclado sintético e ENet local; não executados partida com
+controles físicos, matriz manual completa, exports, Internet/Linux, profiling
+ou audição crítica. Esses gates não homologam multiplayer completo.
+<a href="BAU-INTERFACE-2026-10-14.html#correção-da-arma-equipada-ao-guardar">Implementação e comportamento</a>.</p>
+<h2 id="postura-dos-humanos-na-escadaria--14102026--revisão-após-os-prints">Postura dos humanos na escadaria · 14/10/2026 — revisão após os prints</h2>
+<p>Removido o offset fixo de -18 cm do quadril e reduzido o arco adicional das botas.
+Correção por alcance do apoio, limite de altura durante retomadas e ancoragem
+de um degrau alcançável. Sem alteração em Core, dados, rede/save, arte, geradores,
+SFX, iluminação, câmeras ou tetos.</p>
+<p>Em <code>Build/stair-posture-2026-10-14/</code>: 264 checks/28 trajetos/234 capturas de
+postura/contato nas câmeras de produção; 75 checks/dez percursos/226 capturas no
+aplicativo real, com input sintético e três câmeras por percurso, incluindo
+paradas/retomadas dos cinco humanos. Jill na caminhada controlada: flexão máxima
+de 152,64° para 92,62° subindo e de 114,55° para 85,05° descendo. 99 checks de
+movimento plano, 15 Python, 40 CoreTests, build sem erros/avisos e importação
+Godot passaram. Logs finais sem erros de runtime; <code>git diff --check</code> aprovado.</p>
+<p>As duas falhas iniciais de altura na retomada (Jill/Barry) foram corrigidas e
+o aplicativo foi repetido com os cinco humanos. Revisão de capturas reais,
+sem controle físico, aprovação perceptiva, campanha/combate completos, exports,
+profiling ou nova matriz/smoke ENet. <code>../Build/stair-posture-2026-10-14/index.html</code> (evidência local; seleção pública no índice de galerias)
+e <a href="ESCADAS-MOVIMENTO-2026-10-14.html">fonte, reprodução, medições e limitações</a>.</p>
+<h2 id="retirada-do-baú-por-duplo-clique--14102026">Retirada do baú por duplo clique · 14/10/2026</h2>
+<p>O evento de duplo clique não estava ligado às linhas do baú. Reproduzido no
+Godot antes do patch: seis falhas nos novos checks em solo/anfitrião,
+<code>Build/chest-doubleclick-before.log</code> (70 checks). <code>Game/GameUi.cs</code> agora usa
+um handler comum de depósito/retirada: valida versão e capacidade e envia
+<code>withdraw</code> para o servidor escolher o primeiro slot livre ou pilhas compatíveis.
+Clique simples permanece seleção; inventário cheio cancela sem perder itens.
+SFX existentes reutilizados; Core, rede/save e layout preservados.</p>
+<p>Gates atuais (exit 0): Python 15 checks (<code>Build/chest-doubleclick-validator.json</code>),
+40 CoreTests (<code>Build/chest-doubleclick-core.log</code>), build sem erros/avisos
+(<code>Build/chest-doubleclick-build.log</code>), importação sem erros/avisos
+(<code>Build/chest-doubleclick-import.log</code>) e <strong>70 checks renderizados</strong> em
+solo/anfitrião (<code>Build/chest-doubleclick-render.log</code>). Os novos checks verificam
+retirada única para um slot livre entre slots ocupados, conservação dos demais
+itens, SFX e rejeição com inventário cheio. Captura conferida em
+<code>Build/manual/fixed-chest-doubleclick-withdraw-True.png</code>; <code>git diff --check</code> passou.</p>
+<p>Inputs sintéticos; não executados controle físico, clientes remotos/smoke ENet,
+concorrência/reconexão/restore remotos, matriz manual completa, exportações,
+Internet/Linux, profiling e audição crítica. Regressores gerais de mapa/HUD
+não repetidos nesta correção localizada; sua evidência anterior segue abaixo.
+<a href="BAU-INTERFACE-2026-10-14.html">Implementação e controles</a>.</p>
+<h2 id="interface-do-baú--14102026">Interface do baú · 14/10/2026</h2>
+<p>Baú integrado ao visor do inventário, em lista com ícone/nome e scroll amarelo.
+Sem título/preview/detalhes; MAPA, ARQUIVOS, RÁDIO e M bloqueados. Clique
+seleciona, duplo clique no inventário guarda; arraste guarda/retira com
+alocação autoritativa. SFX existentes reutilizados. Capacidade/Core/rede/save,
+assets, modelos, câmeras, tetos e geradores preservados.</p>
+<p>Gates executados (exit 0):</p>
+<ul>
+<li>Validador Python: 15 checks, zero falhas; <code>Build/chest-validator.json</code> / <code>.log</code>.</li>
+<li>CoreTests: 40 aprovados; <code>Build/chest-coretests.log</code>.</li>
+<li>Build C# final: zero erros/avisos; <code>Build/chest-build.log</code>.</li>
+<li>Importação Godot .NET 4.7.2: log sem erros/avisos; <code>Build/chest-import.log</code>.</li>
+<li><code>PresentationAcceptance --chest-only</code>: <strong>64 checks</strong> em solo e anfitrião,
+  <code>Build/chest-chest-only.log</code>, sem erros/avisos. Eventos GUI sintéticos:
+  E/SAIR/Esc, bloqueio do mapa, seleção sem detalhes/retirada, duplo clique,
+  arraste nos dois sentidos, feedback sonoro, lista vazia/cheia/esparsa,
+  roda/setas/teclado/arraste do indicador, último slot, versões antigas,
+  destinos cheios, retenção da seleção, preenchimento da altura e pausa.</li>
+<li>Regressões renderizadas: <code>--hud-only</code> <strong>103</strong>, <code>--inspection-only</code> <strong>81</strong>,
+  <code>--map-only</code> <strong>301</strong>, <code>--inventory-audio</code> <strong>32</strong> checks; logs
+  <code>Build/chest-&lt;modo&gt;.log</code>, todos sem erros/avisos. Essas regressões passaram
+  antes do ajuste final de altura das linhas; o baú foi repetido após esse ajuste.</li>
+<li>Capturas reais de baú vazio, início/fim da lista e itens variados em
+  <code>Build/manual/fixed-chest-{empty,list,last,final}-{True,False}.png</code>;
+  capturas finais revisadas visualmente. <code>git diff --check</code> aprovado.</li>
+</ul>
+<p>Primeira rodada renderizada: oito falhas, corrigidas preservando captura do
+mouse/foco das linhas durante atualização. Também corrigidos dois erros de
+compilação iniciais da fixture. Gates finais acima aprovados.
+Não executados: mouse/controle físico, partida manual completa, clientes
+remotos/smoke ENet e nova matriz de concorrência/reconexão/restore, exports,
+Internet/Linux, profiling e audição crítica. A fixture de anfitrião não conecta
+peers remotos; não homologa multiplayer completo.
+<a href="BAU-INTERFACE-2026-10-14.html">Implementação e reprodução</a>.</p>
+<h2 id="movimento-dos-humanos-na-escadaria--14102026">Movimento dos humanos na escadaria · 14/10/2026</h2>
+<p>Rodada histórica de contato: a postura foi rejeitada nos prints posteriores
+do desenvolvedor. Os checks abaixo não homologam naturalidade; a revisão de
+quadril/joelhos e as novas evidências estão na seção de postura acima.</p>
+<p>Corrigidos os saltos de 16,67 cm por degrau e o apoio plano das botas no hall.
+180 checks/28 trajetos/234 capturas no Godot: cinco humanos, subida/descida,
+corrida, marcha à ré, diagonal, paradas/giro/mira/queda/recuperação e pausa.
+Na caminhada a 60 Hz, variação vertical máxima do corpo de 1,69 cm por quadro
+e folga mínima das botas de aproximadamente 1 mm nas amostras finais.
+99 checks de regressão de movimento plano e 88 checks/23 capturas de auditoria
+do hall e 45 de apresentação das salas passaram. 15 Python, 40 CoreTests, build sem erros/avisos e importação
+Godot concluída. Logs e galeria em <code>Build/stair-motion-2026-10-14/</code>.</p>
+<p>Passos/snapshots controlados e revisão de capturas, sem controles físicos,
+aprovação perceptiva, profiling, exports ou nova matriz/smoke ENet geral.
+Core, rede, save, modelos, geradores, áudio, câmeras e tetos preservados.
+<a href="ESCADAS-MOVIMENTO-2026-10-14.html">Implementação, falhas intermediárias e reprodução</a>.</p>
+<h2 id="regra-obrigatória-de-verificação-câmeras-e-tetos">Regra obrigatória de verificação: câmeras e tetos</h2>
+<p>Nenhuma câmera pode quebrar a visualização de um teto; nenhum teto pode quebrar
+a visualização de uma câmera. Toda mudança em um deles exige verificar os dois
+pelos <a href="ASSETS-E-AUDIO.html#regra-obrigatória-compatibilidade-entre-câmeras-e-tetos">critérios de compatibilidade</a>,
+usando os ângulos/tetos aprovados e integrados em 14/10/2026 como referência.
+Conferir limites das zonas e margem de retenção, percursos/trocas, escadas e
+patamares, cinco personagens/inimigos e poses relevantes, inspeções/pausa,
+retorno à vista fixa e saída do menu para a partida. Revisar o resultado
+renderizado no Godot; projeção e raios livres não substituem a inspeção visual.
+Falhas de corte indevido ou obstrução por teto devem ser corrigidas e verificadas
+novamente antes da conclusão. Registrar amostragem e limitações reais dos testes.</p>
+<p>Formalização documental: regras em <code>AGENTS.md</code>, <code>ASSETS-E-AUDIO.md</code>, documentação
+de câmeras/tetos e README; nenhum código, dado ou asset alterado nesta etapa.
+A evidência anterior permanece histórica; a edição das regras não constitui
+uma nova aprovação visual nem homologação de campanha/multiplayer.
+Validação desta edição: regras/referências revisadas, quatro links/âncoras
+conferidos, <code>git diff --check</code>, 15 checks Python, 40 CoreTests, build C# sem
+erros/avisos e importação Godot concluída sem erros. Teste manual de gameplay
+e suítes renderizadas não repetidos nesta edição exclusivamente documental.</p>
+<h2 id="câmeras-interiores-integradas--14102026">Câmeras interiores integradas · 14/10/2026</h2>
+<p>186 zonas nos 33 interiores; quatro câmeras do terraço preservadas. 810 checks
+renderizados/372 capturas, 2.212 checks consolidados de percursos/zonas e 11.248
+posições de animação amostradas sem corte/oclusão simultânea de torso e cabeça.
+75 checks no aplicativo com cinco personagens (entrada, corrida, mira e quatro
+salas aprovadas), 45 nas 34 salas, 353 de inspeção/retorno de câmera e 474 de
+arquitetura passaram. 15 Python, 40 CoreTests, build sem erros/avisos e
+importação Godot final concluída sem erros.</p>
+<p>Falhas intermediárias levaram a ajustes de enquadramento/zonas e à correção da
+câmera de menu retida ao iniciar no hall. O percurso automático do piano não
+alcançava uma faixa mais estreita que sua grade; percurso dirigido pela entrada
+sul passou sem mudar física/IA. Histórico e consolidação preservados em Build.
+Só <code>RoomView.cs</code> e os campos Cameras do cenário mudaram entre 1.191 arquivos
+verificados de runtime/Core/dados/arte/áudio. Fonte do gerador atualizada;
+cenário reproduzido byte a byte. Iluminação e trechos escuros preservados.</p>
+<p><code>../Build/camera-integration-2026-10-14/index.html</code> (evidência local; seleção pública no índice de galerias) e
+<a href="CAMERAS-INTEGRADAS-2026-10-14.html">fontes, comandos e limites</a>. Entradas sintéticas
+e inspeção visual de capturas; sem controles físicos, campanha/combate completo,
+quatro jogadores, export ou profiling. Matriz/smoke ENet geral não repetidos;
+Core/rede/save não alterados. Grades e percursos não provam cobertura contínua.</p>
+<h2 id="prévias-de-câmeras-interiores--14102026">Prévias de câmeras interiores · 14/10/2026</h2>
+<p>266 verificações dirigidas passaram no Godot, nas quatro salas solicitadas:
+hall, Doghall, jantar e cozinha. 40 definições de câmera/zona, 80 PNGs comparativos
+e quatro vídeos com 2.493 quadros amostrados a 15 quadros/s. Pés/cabeça enquadrados
+e raio livre até torso ou cabeça na grade de 0,8 m e nos percursos registrados;
+não é uma prova de cobertura contínua nem medição de desempenho.
+15 checks Python, 40 CoreTests, build sem erros/avisos e importação passaram.
+Geração normal do cenário idêntica byte a byte; 18 arquivos de Core/dados/câmera,
+tetos e iluminação conferidos contra o baseline, sem alteração.</p>
+<p>Revisão das imagens detectou áreas de contraste muito baixo atrás da estante e
+da lareira. O usuário preferiu preservar a iluminação atual e aceitar esses
+trechos escuros. Visibilidade geométrica não equivale a personagem identificável
+em toda captura. A aprovação visual desta etapa foi recebida; a integração tem registro separado.</p>
+<p>Galeria e logs em <code>Build/camera-prototypes-2026-10-14/</code>; detalhes em
+<a href="CAMERAS-PREVIAS-2026-10-14.html">câmeras em prévia</a>. Dados e câmeras da partida
+preservados naquela etapa. Sem controles físicos, combate/campanha, quatro jogadores, export
+ou smoke/matriz ENet nesta rodada; rede/save não foram alterados.</p>
+<h2 id="opções-de-inspeção-pelo-teclado--14102026">Opções de inspeção pelo teclado · 14/10/2026</h2>
+<p>15 checks Python, 40 CoreTests, build C# sem erros/avisos e importação Godot
+passaram. Suíte completa final: 581 checks, exit 0, sem erros de runtime/MTU.
+Entradas sintéticas no renderer verificam primeira seleção, esquerda/direita,
+ciclo entre linhas, Enter em Pegar/Deixar, pausa/retorno offline, Deixar online
+e recusa autoritativa por inventário cheio via Enter. Mouse e câmeras frontais
+continuam cobertos. Capturas originais confirmam borda inteira somente na
+opção selecionada. A primeira tentativa de borda de 1px perdia o traço inferior
+na escala 1024×768; rodada interrompida e substituída por 2px no layout virtual.
+Logs finais <code>build-final.log</code>, <code>import-final.log</code>, <code>renderer-final.log</code>, além
+de <code>python.log</code> e <code>core.log</code>, em <code>Build/inspection-keyboard-2026-10-14/</code>.
+Rede/save/Core não mudaram; smoke/matriz ENet geral não foram repetidos.
+Controles físicos, campanha manual, exports e Internet não executados.</p>
+<h2 id="câmera-frontal-de-inspeção--14102026">Câmera frontal de inspeção · 14/10/2026</h2>
+<p>15 checks Python, 40 CoreTests, build C# sem erros/avisos e importação Godot
+passaram. Fixture específica de câmera: 353 checks; suíte de inspeção completa:
+542 checks, exit 0, sem erros de runtime/MTU. Entradas sintéticas no renderer,
+seis janelas e os dois lados de três tipos de porta trancada, com duas posições
+e orientações adicionais por objeto: transform/FOV idênticos, personagem no
+mesmo lugar, pausa offline e câmera anterior restaurada. 24 capturas originais
+comparativas conferidas. A suíte inclui clientes ENet dirigidos; sem nova
+matriz/smoke geral, pois rede/save não mudaram. Controles físicos, campanha
+manual, exports e Internet permanecem sem validação nesta rodada.
+Logs e <code>../Build/frontal-inspection-2026-10-14/index.html</code> (evidência local; seleção pública no índice de galerias) em
+<code>Build/frontal-inspection-2026-10-14/</code>.</p>
+<h2 id="tetos-visíveis-nas-câmeras-normais--14102026">Tetos visíveis nas câmeras normais · 14/10/2026</h2>
+<p>Corrigido o ocultamento integral relatado após abrir o build atualizado. Recorte
+parcial preserva teto no alto da imagem e abre a área dos personagens, mantendo
+câmeras/malhas/texturas/luzes. 986 checks/272 capturas nas 34 salas; teto central
+efetivamente renderizado nas 132 câmeras internas, sem usar molduras como prova.
+28.080 raios até torso/cabeça/altura de 2,25 m sem bloqueios adicionais, incluindo
+patamar/escada. 130 checks de referências, 420 de cenário, 320 de inspeção,
+15 Python e 40 CoreTests passaram; build sem erros/avisos e importação concluída.
+Nova galeria em <code>Build/ceilings-visible-2026-10-14/index.html</code>. Fechar o processo
+antigo e rodar <code>Tools/Run.ps1</code> permite conferir sem nova tecla. Tetos continuam
+parciais nas vistas altas. Sem controles físicos, export, profiling ou nova
+matriz/smoke de multiplayer; rede/save não mudaram neste patch.
+<a href="TETOS-INTEGRADOS-2026-10-14.html">Fonte, critérios e limites</a>.</p>
+<h2 id="sfx-de-fechamento-ao-concluir-a-entrada--14102026">SFX de fechamento ao concluir a entrada · 14/10/2026</h2>
+<p>15 checks Python, 40 CoreTests, build sem erros/avisos, importação e 675 checks
+renderizados de portas passaram. Playback do banco existente uma única vez
+ao concluir a animação; cancelamentos e repetição de frames/readiness silenciosos.
+Fundo preto e espera por autoridade preservados; escadas sem som de fechamento.
+Logs em <code>Build/door-close-2026-10-14/</code>. Sem controles físicos/audição crítica;
+rede/save não mudaram e smoke/matriz ENet não foram repetidos.</p>
+<h2 id="tetos-aprovados-e-integrados--14102026">Tetos aprovados e integrados · 14/10/2026</h2>
+<p>33 tetos internos e terraço aberto. 850 checks/268 capturas de tetos,
+18.720 segmentos de visão sem bloqueios adicionais nas 136 câmeras fixas,
+114 checks/32 capturas de referência e 420 checks/148 capturas de cenário.
+320 checks de inspeção do app passaram; incluem pausa/câmera/chuva/SFX offline
+e cliente ENet dirigido, sem constituir validação multiplayer completa.
+15 checks Python, 40 CoreTests, build sem erros/avisos e importação concluídos.
+Sete PNGs aprovados idênticos; dados/Core/GLBs/WAVs/texturas anteriores preservados.
+Correção de recorte para câmera dentro das vigas/molduras; falhas iniciais de
+comparação/nearest da chuva documentadas e rodadas finais sem falhas.
+Sem controles físicos, campanha manual, audição crítica, exports, profiling ou
+nova matriz/smoke ENet geral. <a href="TETOS-INTEGRADOS-2026-10-14.html">Detalhes</a>.</p>
+<h2 id="tetos-ps1--prévias-para-aprovação--14102026">Tetos PS1 · prévias para aprovação · 14/10/2026</h2>
+<p>Quatro salas representativas, novas malhas somente na cena Tools. 131 checks
+renderizados/56 capturas, 2.888 segmentos de visão sem bloqueios adicionais nas
+16 câmeras fixas, folgas com portas/janelas/arandelas e chuva/SFX preservados.
+14 checks Python, 40 CoreTests, build sem erros/avisos e importação concluídos.
+Bake de sete PNGs/manifesto idêntico; 359 arquivos de runtime/dados/arte iguais
+ao baseline. Rodada inicial teve um check de áudio incorreto por ResourcePath
+apagado na duplicação do WAV; corrigido para igualdade PCM e repetido sem falhas.
+Capturas inspecionadas; aprovação do usuário pendente. Sem controles físicos,
+rollout, nova matriz ENet, exports, audição crítica ou profiling.
+<a href="TETOS-PREVIAS-2026-10-14.html">Fontes, evidências e limites</a>.</p>
+<h2 id="meeting-rebecca-mansion-basement-e-gerador--14102026">Meeting Rebecca, Mansion Basement e gerador · 14/10/2026</h2>
+<p>Em <code>Build/music-expansion-2026-10-14/</code>: 14 checks Python, 40 CoreTests,
+build sem erros/avisos, importação Godot, 135 checks de música/gerador e
+355 checks gerais de áudio/173 takes aprovados. Mixer real confirma os
+cinco loops com fades e motor gravado; gerador somente com flag <code>power</code>,
+sem BGM, com pausa/mudo/combate/restore/saída/desconexão exercitados.
+Rebake de WAV/JSON/MIDI idêntico, três BGMs anteriores e demais SFX preservados.
+<code>danger.wav</code> e receita removidos. Cena principal abriu por 120 frames sem erro.
+Correção e evidências da falha inicial de processamento da fixture em
+<a href="TRILHAS-SONORAS-2026-10-14.html">Trilhas da mansão</a>.
+Sem audição crítica, partida por controles físicos, exports ou nova matriz ENet;
+Core/rede/save não alterados. Checks dirigidos não validam multiplayer completo.</p>
+<h2 id="chuva-visual-textos-e-sfx-espacial--14102026">Chuva visual, textos e SFX espacial · 14/10/2026</h2>
+<p>Em <code>Build/window-rain-2026-10-14/</code>: 14 checks Python, 40 CoreTests, build
+sem erros/avisos, importação Godot e 169 checks renderizados de chuva passaram.
+Inclui seis janelas, simulação/atores offline pausados com água e áudio ativos,
+textos que mudam sem reposicionar câmera, secagem, retomada, volume/mudo,
+emenda real do loop e descarte. Mixer verifica atenuação na profundidade do
+cômodo e cauda de reverberação. Regressão: 320 checks de inspeção e 353 de
+áudio/172 takes, sem erros. 18 imagens e 20 quadros reais; cadência de captura
+não é medição de FPS. Master CC0 recebido preservado e bake reproduzível.
+Ciclos cosméticos locais; não há sincronização climática entre clientes.
+Sem audição crítica, controle físico, campanha manual, exports, profiling
+ou novo smoke/matriz ENet geral. Detalhes e falha inicial da fixture em
+<a href="CHUVA-JANELAS-2026-10-14.html">Chuva nas janelas</a>.</p>
+<h2 id="portas-ps1-e-passagem-para-preto--14102026">Portas PS1 e passagem para preto · 14/10/2026</h2>
+<p>14 checks Python, 40 CoreTests, build sem erros/avisos e importação concluída.
+462 checks renderizados de portas, 320 de inspeção e 351 de áudio passaram.
+Quatro modelos, 35 portas/70 entradas dirigidas; abertura mantida, câmera
+atravessando sem carregar/revelar o destino, espera por autoridade e descarte.
+Contagens de malha/capturas em <code>Build/doors-mystery-2026-10-14/</code>; logs em
+<code>Build/doors-2026-10-14/</code>. Sem controle físico, campanha completa, audição crítica,
+export ou profiling. Rede/save não alterados; smoke/matriz ENet não repetidos.
+<a href="PORTAS-PS1-2026-10-14.html">Detalhes e fontes</a>.</p>
+<h2 id="emissores-de-luz--prévias-para-aprovação--14102026">Emissores de luz · prévias para aprovação · 14/10/2026</h2>
+<p>Catálogo real das 34 salas: 68 arandelas, um lustre/oito velas, duas lareiras
+e seis janelas. As 76 velas são componentes. Novas animações/SFX somente na
+cena Tools; lareiras permanecem apagadas na partida. Em
+<code>Build/emitter-prototypes-2026-10-14/</code>: 14 checks Python, 40 CoreTests, build
+sem erros/avisos, importação e 139 checks renderizados passaram. Inclui
+inventário, luz/chama, limite Compatibility, loop espacial atravessando sua
+emenda, descarte e coexistência com clarão. 18 capturas/270 quadros geram os
+GIFs; cadência de captura não é FPS medido. Master CC0 fornecido preservado,
+bake repetido byte a byte, sem alteração do banco de áudio ativo.
+Capturas inspecionadas; controles físicos, audição crítica, export, profiling
+e nova matriz ENet não executados. Aprovação visual pendente. Fontes e
+limites em <a href="CATALOGO-EMISSORES-2026-10-14.html">Catálogo de emissores</a>.</p>
+<h2 id="inspeção-de-objetos--14102026">Inspeção de objetos · 14/10/2026</h2>
+<p>Portas comuns e baú diretos: em <code>Build/direct-doors-chest-2026-10-14/</code>,
+validador Python (14 checks), 40 CoreTests, build sem erros/avisos, importação
+e 320 checks de inspeção passaram. <code>renderer-verified.log</code> / <code>import-verified.log</code>
+sem erros/MTU. Inclui porta comum, retorno por porta já destrancada, dicas de
+porta trancada e inventário do baú offline/cliente ENet (sem pausar o servidor).
+Não alterados Core/rede/save; smoke de quatro processos/gate ENet geral não
+repetidos neste ajuste de UI. Entradas sintéticas, sem controle físico.</p>
+<p>Ajuste posterior do clique: durante a escrita, o primeiro revela todo o texto
+sem fechar/despausar; o seguinte fecha em qualquer fase das reticências.
+Em <code>Build/inspection-click-2026-10-14/</code>: validador Python (14 checks),
+40 CoreTests, build sem erros/avisos, importação e 319 checks de inspeção
+passaram, sem erro de runtime/MTU. Inclui primeiro/segundo clique offline
+e cliente ENet real, com servidor ativo online. Transporte/Core/save não
+mudaram; smoke de quatro processos e gate ENet de 42 checks não repetidos
+neste ajuste local de UI. Sem controle físico ou campanha manual completa.</p>
+<p>Textos no canto inferior esquerdo, sem borda/fundo, pausa somente offline e
+reticências animadas para continuar por clique. Coleta pede Pegar/Deixar;
+portas trancadas/janelas usam primeira pessoa, com retorno seguro da câmera.
+Textos para móveis, notas, puzzles, cadáveres, máquina e requisitos da saída.
+Portas destrancadas e baú agem diretamente, sem caixa de texto intermediária.</p>
+<p>Gate <code>Build/validation/20261014-095244-2a667e80/report.json</code>, exit 0: 14 checks
+Python, 22 PowerShell, 3 do scanner de rede, 40 CoreTests, build/importação,
+smoke real de quatro clientes (35s), 42 ENet, 645 de apresentação e 295 de inspeção.
+Após corrigir a prévia pausada ao voltar ao menu, básicos e inspeção completos
+repetidos: 306 checks de inspeção, sem falhas/erros/MTU; build sem avisos/erros.
+Inclui cliente ENet real, coleta simultânea/recusa, dano, Epoch/disconnect,
+clique antes/depois da escrita, três fases das reticências, menu e reinício.</p>
+<p>Fontes, logs, capturas e falhas iniciais em <a href="INSPECAO-DE-OBJETOS-2026-10-14.html">Inspeção de objetos</a>.
+Fixtures usam entradas/posições dirigidas; controle físico, campanha manual,
+exports, Internet, profiling e audição perceptiva não executados nesta tarefa.</p>
+<h2 id="coerência-das-fachadas-externas--14102026">Coerência das fachadas externas · 14/10/2026</h2>
+<p>Doghall e corredor leste superior corrigidos; estufa mantida. Seis janelas
+autoradas em fachadas externas, sem portas para destinos internos nessas paredes.
+14 checks Python, 40 CoreTests, build sem erros/avisos e importação Godot passaram.
+420 checks de cenário/148 capturas, 67 de detalhes/18 capturas, 117 de luz lunar
+e 149 de clarões passaram. Primeiro teste de clarões falhou 51 vezes por usar
+o horário antigo de 120 s; atualizado para os atuais 20 s e repetido sem falhas.
+Portas, planta, props, câmeras e 758 arquivos de modelos/texturas preservados.
+Galeria em <code>Build/window-facades-2026-10-14/index.html</code>; detalhes e limites em
+<a href="JANELAS-E-FACHADAS-2026-10-14.html">Janelas e fachadas</a>.
+Sem partida por controles físicos, nova validação multiplayer ou profiling.</p>
+<h2 id="música-contínua-durante-combate--14102026">Música contínua durante combate · 14/10/2026</h2>
+<p>Removida a escolha de <code>danger</code> baseada em inimigos. Em
+<code>Build/music-2026-10-14/combat-continuity-*</code>: validador Python aprovado,
+40 CoreTests, build C# sem erros/avisos, importação Godot concluída,
+114 checks musicais e 350 checks gerais de áudio sem falhas. A fixture
+aplica snapshots com inimigos vivos e alvo no térreo e andar superior;
+verifica que o player continua tocando na mesma instância e posição após
+o encontro. A derrota também não reinicia o tema. A cena principal abriu em
+modo gráfico por 120 frames, exibiu o hall e encerrou sem erro
+(<code>combat-continuity-game-smoke-gui.log</code>). A tentativa sem interface registrou
+a exigência normal do projeto por <code>--server</code> ou <code>--headless-bot</code>; não é falha
+da música. Sem audição crítica,
+partida com controles físicos, export ou nova matriz ENet.</p>
+<h2 id="quatro-trilhas-e-fade-de-repetição--14102026">Quatro trilhas e fade de repetição · 14/10/2026</h2>
+<p><code>Build/music-2026-10-14/</code>: 13 checks Python, 40 CoreTests, build sem erros/avisos,
+importação Godot e 115 checks musicais renderizados sem falhas. O mixer real
+atravessa as quatro emendas, confirmando saída gradual de 3,5 s, entrada de
+2,5 s e retomada do áudio. Cobertura explícita das 34 salas e das transições.
+WAV/JSON/MIDI reproduzíveis e três referências MP3 intactas. Regressão sonora
+executada nesta tarefa: 350 checks / 171 takes; mudanças concorrentes posteriores
+têm gates próprios. Audição/fidelidade, partida com controles físicos, export
+e Internet/Linux pendentes; ENet não repetido nesta mudança de apresentação.
+Falha inicial da fixture e detalhes em <a href="TRILHAS-SONORAS-2026-10-14.html">Trilhas da mansão</a>.</p>
+<h2 id="trovões-mais-frequentes-e-fortes--14102026">Trovões mais frequentes e fortes · 14/10/2026</h2>
+<p>Primeiro aos 20 s de campanha, depois intervalos de 45/30 s; ganho do banco
+0 dB (+4 dB neste ajuste). Em <code>Build/thunder-fast-louder-2026-10-14/</code>:
+13 checks Python, 40 CoreTests, build sem erros/avisos, importação Godot
+concluída e 350 checks de áudio sem falhas, incluindo horários e ganho.
+A primeira execução Python detectou fonte de música desatualizada durante
+trabalho simultâneo; a segunda passou com fontes/saídas correspondentes.
+Sem audição ou partida manual neste ajuste; aprovação perceptiva pendente.</p>
+<h2 id="relógio-baixado-armas-e-novos-tempos-do-trovão--14102026">Relógio baixado, armas e novos tempos do trovão · 14/10/2026</h2>
+<p>Em <code>Build/recorded-clock-guns-2026-10-14/</code>: 13 checks Python, 40 CoreTests,
+build sem erros/avisos, importação concluída, runtime de áudio com 350 checks
+e 171 takes; sete checks renderizados de sala/loop/inventário/reentrada/saída.
+Loop de quatro segundos validado no formato QOA importado, inclusive seu
+limite de 88.200 frames; fonte com extremos zero. Regeneração preserva os
+193 WAVs locais. Novos trovões: primeiro45 s, intervalos58/88 s; banco +8 dB.
+Os três disparos novos usam somente arquivos recebidos. Sem audição, controles
+físicos, aprovação perceptiva de loop/tiros/mixagem, export ou Internet/Linux.
+Detalhes: <a href="RELOGIO-E-TIROS-2026-10-14.html">Relógio e tiros</a>.</p>
+<h2 id="clarão-do-trovão-nas-janelas--14102026">Clarão do trovão nas janelas · 14/10/2026</h2>
+<p><code>AudioDirector</code> dispara o mesmo evento para áudio e <code>WindowLightning</code>;
+<code>RoomView</code> registra as sete janelas e limpa o efeito ao trocar de sala/restore.
+Dois pulsos em 0,65 s, sem novas luzes, com retorno exato à noite.
+<code>Build/lightning-2026-10-14/</code>: 151 checks dirigidos sem falhas, 46 capturas
+e 58 quadros pelo loop real. Python: 12 checks; Core: 40 testes; build/importação
+concluídos. Mudo, pausa, Epoch/relógio, ausência de replay e descarte verificados.
+O gate geral de áudio permanece reprovado nas tentativas desta tarefa: procura
+do player do relógio e depois ganho do trovão, em código de áudio simultaneamente
+alterado. Sem partida física, audição, profiling, export ou nova matriz ENet.
+Detalhes, evidências iniciais e limites em <a href="CLARAO-TROVAO-2026-10-14.html">Clarão do trovão</a>.</p>
+<h2 id="escala-dos-zumbis-corrigida--14102026">Escala dos zumbis corrigida · 14/10/2026</h2>
+<p>Reproduzida a diferença de altura atrás da Jill: <code>RoomView.Apply</code> usava
+<code>.90 + Variant * .042</code> num rig já curvado. Na pose de repouso medida no Godot,
+zombie0 ficava com 1,4666 m contra 1,7173 m da Jill.</p>
+<p><code>Art.ModelScale</code> define agora escala uniforme por aparência: 1,07–1,11 para
+seis masculinos e 1,06–1,07 para três femininos. <code>RoomView</code> aplica essa política.
+Variantes de combate não determinam a estatura; humanos e Cerberus continuam
+com escala 1. GLBs, texturas, clips, geradores, Core, dados e hitboxes preservados.</p>
+<p>Em <code>Build/zombie-scale-2026-10-14/</code>:</p>
+<ul>
+<li>Baseline: 44 checks/26 capturas reais sem falhas, usando combate Variant 0.</li>
+<li>Aplicado: <strong>181 checks/26 novas capturas sem falhas</strong>, pelas nove aparências
+  via <code>RoomView.Apply</code>. Comparação ortográfica no mesmo piso/profundidade;
+  duas aparências também nas quatro câmeras da sala de medicamentos.</li>
+<li>Alturas na pose de repouso padronizada: masculinos 1,7439–1,8093 m;
+  femininos 1,7272–1,7437 m; Jill 1,7173 m. Postura/perspectiva variam a altura aparente.</li>
+<li>27 sequências walk/run/back de 180 frames verificam finitude, cadência por
+  deslocamento/escala, ausência de penetração das solas e apoio na caminhada/back.
+  Menor Y das solas: 0,00106 m. As nove aparências foram conferidas contra os
+  seis tipos de combate; escala independente da variante.</li>
+<li>12 checks Python, 40 CoreTests, build sem erros/avisos e importação Godot
+  concluída; logs limpos. Áudio/iluminação concorrentes preservados na árvore.</li>
+<li><code>integrity.json</code>: 764 hashes de modelos/texturas/Core preservados. O cenário
+  recebeu somente uma mudança concorrente de descrição textual do jantar;
+  todos os demais campos de dados foram conferidos como idênticos.
+  <code>index.html</code>: 52 imagens antes/depois e três pranchas de todas as aparências.</li>
+</ul>
+<p>Snapshots/targets sintéticos e inspeção visual estática. Sem partida manual,
+homologação de combate/multiplayer, profiling ou export. O estúdio usa luz
+diagnóstica; vistas do ambiente usam iluminação/câmeras de produção. Não houve
+novo gate ENet: contratos de simulação/rede/save não foram alterados.</p>
+<h2 id="iluminação-noturna--14102026">Iluminação noturna · 14/10/2026</h2>
+<p>Aplicada luz somente por luminárias existentes e janelas, sem preenchimento
+global. Em <code>Build/lighting-2026-10-14/</code>: 12 checks Python, 40 CoreTests,
+build sem erros/avisos e importação Godot concluída. Fixture de iluminação
+com 543 checks sem falhas e 160 capturas: 136 câmeras das 34 salas e fontes/
+sombras isoladas. Opções 320×240/CRT/snap: 39 checks em uma sala.
+Auditoria de cenário: 405 checks/146 capturas; fluxo solo renderizado:
+45 checks de salas/escada. Os 902 hashes de Core/dados/modelos/texturas/ícones
+auditados permanecem iguais. Menor luminância média nas 136 vistas não
+constitui homologação de legibilidade. Sem partida com controles físicos,
+profiling, export ou nova matriz ENet. Detalhes e limites em
+<a href="ILUMINACAO-NOTURNA-2026-10-14.html">Iluminação noturna</a>.</p>
+<h2 id="trovões-mais-espaçados--14102026">Trovões mais espaçados · 14/10/2026</h2>
+<p><code>AudioDirector.ObserveTime</code> agora agenda o primeiro em 120 s e os seguintes
+em 359/598/777 s, com intervalos de 179/239 s. Continua usando o relógio
+autoritativo, atenuação por cômodo e supressão de replay em entrada/restore.
+Sem alteração de rede/save, arquivos sonoros ou regras de pausa.</p>
+<p>Em <code>Build/thunder-timing-2026-10-14/</code>: 12 checks Python, 40 CoreTests,
+build sem erros/avisos, importação Godot concluída e 340 checks de áudio
+com 174 takes carregados. Runtime confere ausência antes de 120 s, os três
+intervalos seguintes e ausência de duplicação; logs finais limpos. Não houve
+espera manual em partida nem audição; validação técnica com snapshots dirigidos.</p>
+<h2 id="corte-da-cauda-vocal-de-facada--14102026">Corte da cauda vocal de facada · 14/10/2026</h2>
+<p>Usuário relatou uma voz “WoooW” ao fim do ataque. A fonte de <code>knife_hit</code>
+e <code>defense_stab</code> continha uma cauda periódica a partir de aproximadamente
+0,85 s, após o impacto inicial. Receitas agora terminam em 0,80 s, com fade
+de saída de 20 ms. WAVs resultantes: 0,5287 s e 0,6086 s, respectivamente.
+Os 194 outros WAVs foram preservados e a regeneração mantém todos os hashes.</p>
+<p>Em <code>Build/knife-tail-2026-10-14/</code>: Python com 12 checks, Core com 40 testes,
+build sem erros/avisos, importação Godot concluída e runtime de áudio com
+334 checks/174 takes carregados; log final limpo. Medidas em <code>segments.json</code>
+e <code>cut-checks.json</code>. Não houve escuta nem partida por controles físicos;
+identificação apoiada no relato e análise do sinal, sem alegar transcrição
+ou aprovação perceptiva. Sem alteração de código de gameplay/rede/save.</p>
+<h2 id="complemento-sonoro-do-inventário--14102026">Complemento sonoro do inventário · 14/10/2026</h2>
+<p>Em <code>Build/inventory-audio-2026-10-14/</code>: Python com 12 checks, CoreTests com
+40 testes, build sem erros/avisos e importação Godot concluída. Fixture de áudio
+com 334 checks e 174 takes carregados; logs finais limpos. Interface renderizada
+com 32 checks de mouse/teclado sintéticos em solo/host: cliques, arraste válido/
+cancelado, spray/ervas/misturas e combinação. Comandos recusados não confirmam
+uso; o relógio solo permanece congelado enquanto o feedback é entregue.
+ENet com 42 checks e smoke de quatro clientes aprovados. Regeneração preservou
+196 WAVs, inclusive os 184 anteriores. Sem audição, partida física, export ou
+Internet/Linux. Fonte do spray é síntese; ervas são foley de papel/roupa.
+Detalhes: <a href="INVENTARIO-AUDIO-2026-10-14.html">Sons do inventário</a>.</p>
+<h2 id="janelas-noturnas-integradas-para-revisão--14102026">Janelas noturnas integradas para revisão · 14/10/2026</h2>
+<p>Usuário priorizou conferir a implementação das janelas antes dos tetos.
+<code>RoomView.LoadRoom</code> aplica <code>WindowArt</code> após montar a iluminação, usando as
+nove texturas da revisão noturna. Sete janelas nos mesmos pontos da estufa,
+corredor das janelas e corredor leste superior. Sem dados/mapa/colisão/rede/save.</p>
+<p>Evidências em <code>Build/windows-integration-2026-10-14/</code>:</p>
+<ul>
+<li><code>WindowArtPreview --runtime-only</code>: <strong>91 checks sem falhas</strong>, <strong>18 capturas novas</strong>
+  pelo código de produção, sem aplicação manual pela fixture. Quatro câmeras
+  de jogo e duas vistas aproximadas por sala. Relatório/galeria incluem também
+  18 imagens anteriores preservadas para comparação.</li>
+<li>Referências autenticadas pelos hashes do relatório noturno preservado.
+  14/18 imagens idênticas por SHA; outras diferem em até 40 pixels de 1024×768,
+  dentro da tolerância visual de 0,01%. Não se afirma igualdade binária.
+  Materiais, posições, profundidade, apoios, nearest e folgas foram conferidos.</li>
+<li><code>SceneAuditPreview</code>: <strong>405 checks sem falhas</strong>, 146 capturas das 34 salas.
+  A auditoria mede todos os meshes das molduras/peitoris das janelas, em vez
+  de identificar apenas a antiga textura azul das vidraças.</li>
+<li>12 checks Python e <strong>40 CoreTests</strong> passaram na árvore atual, incluindo
+  trabalho de áudio concorrente preservado. Build C# forçado sem erros/avisos,
+  importação concluída e renders finais sem erros/avisos. A primeira execução
+  carregou assembly anterior e foi repetida após rebuild. Corrigido também
+  um erro de associação de <code>else</code> no comparador, antes da rodada final.</li>
+<li><code>integrity.json</code>: <strong>759 hashes de modelos/texturas/dados preservados</strong>,
+  incluindo as nove texturas noturnas. <code>index.html</code> mostra o resultado aplicado.</li>
+</ul>
+<p>Capturas estáticas e câmeras aproximadas de inspeção; sem partida manual com
+controles físicos, profiling, avaliação temporal de cintilação ou export.
+Não há floresta navegável ou reflexos dinâmicos. ENet não foi repetido para
+esta alteração de apresentação. As prévias abaixo são etapas históricas.</p>
+<h2 id="protótipos-de-janelas-externas--14102026">Protótipos de janelas externas · 14/10/2026</h2>
+<p><strong>Revisão noturna solicitada pelo usuário:</strong> escurecidas as oito camadas de
+floresta para silhuetas frias de noite, mantendo máscara alfa e profundidade;
+reduzida a contribuição clara do vidro. A fonte é <code>generate_window_art.py</code>.
+Capturas anteriores preservadas, novas evidências em
+<code>Build/windows-night-2026-10-14/</code>: 103 checks sem falhas/36 imagens, 12 checks
+Python, 39 CoreTests, build/importação limpos. Galeria inclui comparação da
+prévia anterior com a vista noturna, antes da implementação descrita acima.</p>
+<p>Preparada prévia solicitada pelo usuário em estufa, corredor das janelas e
+corredor leste superior. <code>WindowArt</code> substitui apenas as vidraças e travessas
+na fixture <code>WindowArtPreview</code>; nessa etapa não havia chamada na partida normal. Floresta
+original com fundo e galhos em dois planos, vista inferior/superior, vidro
+envelhecido, molduras, peitoril e fecho. As nove texturas são geradas por
+<code>Tools/generate_window_art.py</code>, com rota <code>generate_assets.py --windows</code>.</p>
+<p>Evidências em <code>Build/windows-ps1-2026-10-14/</code>:</p>
+<ul>
+<li><code>report.json</code>: <strong>103 checks, zero falhas</strong>, <strong>36 capturas reais</strong> antes/candidato;
+  quatro câmeras de jogo e duas vistas aproximadas por ambiente, em ambas as fases.
+  Apresentação padrão 640×480, nearest, brilho 1,1, CRT/vertex snap desligados.</li>
+<li>Geometria/material/transform dos demais meshes, incluindo paredes aprovadas,
+  preservados. Verificados pontos/quantidade originais das janelas, folgas com
+  portas/arandelas reais, molduras acima dos lambris, camadas e filtro nearest.</li>
+<li><code>integrity.json</code>: 750 hashes de assets/dados preexistentes preservados;
+  9/9 PNGs regenerados com bytes idênticos (floresta 128², vidro 64²).</li>
+<li>12 checks Python e 39 CoreTests passaram; build C# sem erros/avisos;
+  importação Godot 4.7.2 stable .NET concluída, render sem erros/avisos.</li>
+<li><code>index.html</code>, <code>comparison.png</code> e <code>details.png</code>: galeria por sala/enquadramento,
+  antes/depois e amostras dos PNGs. Capturas do protótipo inspecionadas no engine.</li>
+</ul>
+<p>Nessa etapa a prévia aguardava aprovação antes da aplicação. As vistas
+aproximadas são câmeras de inspeção, não novas
+câmeras da partida. Camadas rasas limitadas à moldura simulam a vista externa;
+não há floresta navegável, reflexo dinâmico, mudança de iluminação ou novos
+vãos/colisões. Não houve partida manual, profiling, avaliação temporal de
+cintilação, export ou teste de CRT/vertex snap. Rede/save não mudaram e ENet
+não foi repetido. Esses gates não homologam multiplayer ou a qualidade estética.</p>
+<h2 id="integração-sonora--14102026">Integração sonora · 14/10/2026</h2>
+<p>Evidências em <code>Build/audio-integration-2026-10-14/</code>: validador Python com
+12 checks, CoreTests com 39 testes, build C# sem erros/avisos e importação
+Godot 4.7.2 stable .NET concluída. A fixture <code>AudioAcceptance</code> carrega
+162 takes de 77 bancos e passa 305 checks de eventos, contatos animados,
+variações, prioridades, mute, estojos, trovão e limpeza na troca de sala/Epoch.
+O log final de runtime está limpo, inclusive no encerramento.</p>
+<p>Smoke ENet com quatro clientes aprovado; <code>NetworkAcceptance</code> passa 42 checks
+de concorrência/reconexão/restore. <code>PresentationAcceptance --inventory-only</code>
+passa 12 checks renderizados com inputs sintéticos. Regeneração normal e bake
+forçado preservam os hashes dos 184 WAVs locais. Galeria conferida em
+1440/390 px, com busca e reprodução de 207 arquivos/takes de comparação.</p>
+<p>Não houve audição crítica, partida manual com controles físicos, aprovação
+perceptiva da mixagem em quatro clientes, export, Internet/Linux ou profiling.
+Perfis vocais dos zumbis são provisórios; humanos compartilham uma voz por
+sexo e reações caninas ainda usam recortes de latido/rosnado. Esses gates
+não homologam qualidade sonora nem multiplayer completo. Fontes, licenças,
+comportamentos e limites: <a href="INTEGRACAO-SONORA-2026-10-14.html">Integração sonora</a>.</p>
+<h2 id="paredes-aprovadas-e-aplicadas-às-34-salas--14102026">Paredes aprovadas e aplicadas às 34 salas · 14/10/2026</h2>
+<p>Após aprovação explícita do usuário, <code>RoomView.LoadRoom</code> aplica os 13 perfis
+por <code>WallArt.ForRoom</code>, mantendo as 17 texturas RGB 128² e os geradores aprovados.
+Oliva: 11 salas; bordô: seis; reboco: três; madeira: cinco; nove ambientes
+especializados usam os respectivos acabamentos. Nenhuma mudança de dados,
+mapa, colisão, rede, save, atores, janelas ou tetos foi feita por este rollout.</p>
+<p>Evidências em <code>Build/walls-rollout-2026-10-14/</code>:</p>
+<ul>
+<li><code>before-report.json</code>: 807 checks sem falhas e 272 imagens antes/candidato,
+  registrados antes de habilitar a chamada na partida. As 136 referências
+  candidatas estão preservadas em <code>reference/views</code> e <code>approved-reference.json</code>.</li>
+<li><code>report.json</code>: modo <code>--all --runtime-only</code>, que carrega as 34 salas pelo
+  código de produção e não aplica os materiais na fixture; <strong>671 checks sem
+  falhas e 136 capturas</strong> pelas quatro câmeras de cada sala.</li>
+<li><code>scene-audit/report.json</code>: 405 checks sem falhas, 146 capturas; apoios,
+  folgas, materiais nearest e superfícies do hall preservados.</li>
+<li><code>integrity.json</code>: 750 hashes de modelos/texturas/dados preservados e
+  17/17 texturas regeneradas com bytes idênticos às aprovadas.</li>
+<li>12 checks Python e 39 CoreTests passaram; build C# sem erros/avisos e
+  importação no Godot 4.7.2 stable .NET concluída. Os testes Core de áudio
+  pertencem a outro trabalho na mesma árvore, preservado por esta alteração.</li>
+<li><code>index.html</code>: comparação antes/aplicado das 34 salas, quatro câmeras por
+  ambiente e pranchas por família de acabamento.</li>
+</ul>
+<p>A comparação inicial por SHA exato apresentou 69 diferenças em 136 capturas
+(<code>strict-report.json</code>): somente 1–14 pixels por imagem de 1024×768, em pontos
+esparsos de arestas. As capturas e o relatório dessa tentativa foram mantidos.
+O comparador verifica a integridade das referências e registra tanto o SHA
+quanto a comparação visual com tolerância restrita de até 0,01% dos pixels,
+registrando também o tamanho dos componentes conectados. Isso não afirma igualdade
+binária entre renderizações, nem substitui os checks de geometria/material.
+Na rodada final, 65/136 capturas foram exatas e as demais diferiram em até
+14 pixels (389 pixels no total), dentro dessa tolerância. Duas execuções
+do mesmo código de produção também divergiram em 54 capturas, reforçando
+que SHA exato não é um critério estável desse render. A causa numérica
+específica não foi determinada. Nove pranchas cobrindo as 34 salas foram
+inspecionadas sem defeito visual concreto; exemplos ampliados estão em
+<code>pixel-diff-review</code> e o resumo final em <code>final-summary.json</code>.</p>
+<p>Limites: inspeção visual de capturas reais estáticas e auditoria automatizada;
+não houve partida manual com controles físicos, avaliação temporal de
+cintilação, profiling, export ou validação das opções CRT/vertex snap.
+Rede/save não mudaram e o gate ENet não foi repetido por esta tarefa.
+As duas seções seguintes registram as etapas históricas anteriores à aprovação.</p>
+<h2 id="acabamentos-específicos-de-paredes--14102026">Acabamentos específicos de paredes · 14/10/2026</h2>
+<p>Ampliação da prévia a pedido do usuário, antes da aprovação para aplicação
+geral. Acrescentados banheiro (cerâmica marfim/verde), estufa (cal úmida e
+tijolos), cozinha (azulejos), terraço (cantaria), passagem (tijolos), gerador
+(fuligem), arquivo (painéis técnicos), quartos do pesquisador/zelador
+(papéis azul/linho) e biblioteca (madeira escura). As quatro vistas de famílias
+da primeira proposta permanecem na coleção, totalizando 14 ambientes.</p>
+<p>Evidência desta rodada em <code>Build/walls-finishes-2026-10-14/</code>:</p>
+<ul>
+<li><code>report.json</code>: <strong>316 checks, zero falhas</strong>, <strong>112 capturas</strong> antes/depois,
+  pelas quatro câmeras de cada ambiente. Mantido pipeline padrão 640×480,
+  nearest, brilho 1,1, CRT/vertex snap desligados e iluminação idêntica.</li>
+<li>Checks incluem integridade das paredes/objetos, materiais por ambiente,
+  densidade e orientação dos UVs, tampas finas sem UV colapsado, alinhamento
+  das fiadas entre corpo e faixa inferior, campos inteiros da biblioteca
+  entre as molduras. Não houve mudança na geometria de paredes ou props.</li>
+<li>Inspeção real dos dez novos ambientes identificou e refinou duas questões:
+  grupos de lascas da estufa que lembravam uma estampa floral e painéis da
+  biblioteca parcialmente cortados pelos frisos. Capturas finais conferidas.</li>
+<li><code>index.html</code>: galeria por grupo/ambiente/câmera, com amostras dos 17 PNGs.
+  Pranchas <code>preview-original.png</code>, <code>preview-wet.png</code>, <code>preview-service.png</code>,
+  <code>preview-domestic.png</code> e <code>comparison.png</code> mantêm tamanho legível.</li>
+<li><code>integrity.json</code>: <strong>17/17</strong> texturas RGB 128² regeneradas identicamente;
+  <strong>738</strong> hashes de modelos/texturas/dados preexistentes preservados,
+  inclusive os cinco PNGs anteriores. Áudio/fontes concorrentes excluídos.</li>
+<li><code>validator.json</code>: <strong>12 checks Python aprovados</strong>; <code>core.log</code>: <strong>39 testes
+  Core aprovados</strong> na árvore atual, incluindo testes de áudio de outro trabalho.
+  <code>build.log</code>: zero erros/avisos; importação Godot concluída. Render sem erros.</li>
+</ul>
+<p>Nessa etapa, <code>WallArt</code> era chamado somente pela fixture de prévia; a partida
+normal ainda usava os materiais anteriores. Não houve aprovação estética do
+usuário, rollout às 34 salas, teste de movimento/cintilação, partida manual
+por input, profiling nem novo gate ENet nesta etapa. Janelas externas,
+tetos, personagens e regras de jogo permanecem fora do escopo das paredes.</p>
+<h2 id="prévias-de-paredes-ps1--14102026">Prévias de paredes PS1 · 14/10/2026</h2>
+<p>Reproduzido o esticamento dos motivos e da madeira: o BoxMesh das paredes
+usava um atlas 3×2 sem compensar a extensão em metros. Preparado candidato
+com UVs por face, cinco texturas originais RGB 128² e materiais nearest/repeat.
+As posições e os triângulos das paredes foram preservados. O acabamento
+estava somente em <code>Tools/WallArtPreview.tscn</code>; <code>RoomView</code> recebeu nomes para
+seus segmentos, mas a partida normal ainda não aplicava <code>WallArt</code> nessa etapa.</p>
+<p>Evidências em <code>Build/walls-ps1-2026-10-14/</code>:</p>
+<ul>
+<li><code>report.json</code>: <strong>84 checks, zero falhas</strong>, incluindo as 16 superfícies por
+  ambiente, triângulos preservados, objetos restantes sem alteração,
+  densidade física do papel e UVs sem colapso nas tampas finas das caixas.</li>
+<li><code>before/views</code> e <code>candidate/views</code>: <strong>32 capturas reais</strong>, quatro câmeras
+  em hall, dining, tea e medicine, antes/depois com iluminação idêntica.
+  A apresentação usa SubViewport 640×480, nearest e <code>retro.gdshader</code>, brilho
+  1,1, CRT e vertex snap desligados, iguais às opções padrão do jogo.</li>
+<li><code>index.html</code>, <code>preview.png</code> e <code>comparison.png</code>: galeria local e pranchas.
+  Inspeção das imagens confirmou motivos verticais/proporcionais, lambris
+  legíveis e ausência das manchas gigantes nas vistas examinadas. O reboco
+  recebeu marcas discretas de cal após a primeira revisão renderizada.</li>
+<li><code>integrity.json</code>: regeneração determinística dos cinco PNGs e modo
+  <code>generate_assets.py --walls</code> conferidos. Na amostra registrada, 791 fontes,
+  dados e assets preexistentes protegidos mantiveram os hashes do baseline.
+  Trabalhos de áudio concorrentes ficam fora dessa comparação.</li>
+<li><code>validator.json</code>: <strong>11 checks Python aprovados</strong>; <code>core.log</code>: <strong>36 testes
+  Core aprovados</strong>. <code>build.log</code>: build .NET com zero erros/avisos;
+  <code>import.log</code>: importação Godot 4.7.2 .NET concluída. Render sem erros.</li>
+</ul>
+<p>Limites: revisão visual estática de quatro ambientes; não houve aplicação
+geral às 34 salas, aprovação estética do usuário, partida manual por input,
+avaliação temporal de cintilação, profiling, nem teste das opções 320×240,
+CRT ou vertex snap ligadas. Rede/save não foram alterados por esta etapa;
+a matriz ENet não foi repetida. Tetos, janelas externas e escala dos zumbis
+permanecem etapas posteriores.</p>
+<h2 id="orientação-apoios-e-pisos-do-cenário--14102026">Orientação, apoios e pisos do cenário · 14/10/2026</h2>
+<p>Reproduzidos nos renders anteriores: cadeiras do jantar voltadas para os lados,
+coluna sobre porta, oito velas desconectadas do lustre, arandelas afastadas
+das paredes e patamar do hall sem malha. A altura antiga caía de 3 m para 0
+ao sair da faixa da escada. A auditoria adicional encontrou quadros orientados
+pela aresta/afastados da parede, janelas sobre portas, outros móveis invertidos
+e dois guarda-corpos com colisões muito maiores que suas malhas.</p>
+<p>Corrigidos nos geradores/fontes: 23 rotações e duas profundidades de guarda-corpo
+em <code>generate_data.py</code>; seis footprints procedurais <code>hall_column</code> correspondem
+às colunas visíveis. <code>PropPlacement</code> orienta os eixos sem mudar W/D, encosta
+quadros na parede e apoia as bases no chão. <code>RoomArchitecture</code> mantém colunas,
+janelas e arandelas afastadas das portas; lustre tem braços, aro, haste e viga.
+<code>HallSurface</code> compartilha altura dos 18 degraus e guardas com o movimento;
+<code>HallArchitecture</code> constrói patamar opaco, base fechada e guarda-corpo. A base
+fecha visualmente o espaço inacessível sob o patamar: a simulação continua com
+uma única superfície por X/Z, sem introduzir pisos sobrepostos na mesma sala.
+<code>ActorView</code> amostra o apoio no X/Z interpolado apenas quando recebe essa função
+do hall. Posições antigas dentro das novas guardas/colunas são recuperadas em
+até 0,8 m ao movimentar; os casos testados deslocam menos de 0,5 m. Schema,
+inventário e estado autoritativo restante permanecem os mesmos.</p>
+<p>Evidências em <code>Build/scene-audit-2026-10-14/</code>:</p>
+<ul>
+<li><code>before/</code>: 139 capturas reais, feitas antes das alterações do cenário.</li>
+<li><code>after/</code>: 146 capturas reais; <code>report.json</code> registra <strong>405 checks, zero falhas</strong>.
+  Inclui as 136 câmeras dos 34 cômodos, três detalhes e sete etapas de caminhada.
+  Medidas usam triângulos importados nos 18 degraus (três larguras), patamar,
+  personagem em movimento, pickups, oito cadeiras e limites de portas/suportes.</li>
+<li><code>index.html</code>: comparação sincronizada antes/depois; cinco pranchas por fase.</li>
+<li><code>core.log</code>: <strong>36 aprovados</strong>, incluindo subir/cruzar/descer o patamar, bloquear
+  quedas laterais, alcançar todas as portas, recuperar posições antigas e
+  impedir a travessia das colunas.</li>
+<li><code>validator.json</code>: <strong>11 checks aprovados</strong>, com 124 alvos navegáveis, 136 câmeras
+  e 29.818 amostras de enquadramento após acrescentar as colisões das colunas.</li>
+<li><code>build.log</code>: zero erros/avisos; <code>import.log</code>: importação Godot 4.7.2 .NET concluída.</li>
+<li><code>network-smoke.log</code>: servidor dedicado e quatro clientes ENet locais alcançaram
+  os cômodos esperados, incluindo a galeria superior pela escada.</li>
+<li><code>network-acceptance.log</code>: <strong>42 checks aprovados</strong>, incluindo concorrência,
+  reconexão, consumo de kit, restauração, novo Epoch e desligamento simultâneo.</li>
+<li><code>motion-regression.json</code>: <strong>99 checks aprovados</strong> no modo curto da fixture de
+  movimento, cobrindo Jill, zumbi masculino, feminino e Cerberus. A galeria
+  completa anterior foi preservada pelo modo <code>--metrics-only</code>.</li>
+<li><code>scope-audit.json</code>: 739 arquivos de modelos/texturas/fontes de atores preservados
+  byte a byte em relação ao início da tarefa. <code>determinism.json</code> verifica que
+  regenerar o catálogo não altera sua saída. <code>generate_assets.py --props</code>
+  regenerou 32 GLBs e texturas sem diferenças; <code>hall_column</code> permanece uma
+  geometria procedural de cenário, sem exigir um GLB separado.</li>
+</ul>
+<p>Os renders foram inspecionados nas 136 câmeras e ampliados nas regiões afetadas.
+A fixture chama o movimento tanque e <code>ActorView</code> em passos controlados; não é
+uma partida com controles físicos. Checagens de conexão por AABB são aproximadas
+e acompanham a inspeção visual, sem constituir aprovação artística automática.
+Não foram executados exports ou profiling. O estilo PS1 e os assets aprovados
+dos atores foram preservados; esta revisão não altera suas limitações anteriores.</p>
+<h2 id="aproximação-dos-quinze-atores-às-pranchas--rodada-atual">Aproximação dos quinze atores às pranchas · rodada atual</h2>
+<p>Refinados os cinco personagens, os nove zumbis e o Cerberus, preservando rig,
+pivôs e nomes de clipes. Rebecca recebeu nó e duas pontas da bandana atrás da
+cabeça. Cabeças/cabelos, boina, barba lateral e hastes dos óculos têm formas
+próprias; o nariz agora fecha contra o plano facial. Regiões de tecido,
+alças, cintos e cruz dos heróis substituem a projeção distorcida do torso.
+Zumbis receberam bordas de roupa distintas fora do quadril, cabelos aderentes
+ao crânio, ossos registrados nas lesões e dedos curtos em sapatos rasgados.
+Cerberus teve normais/UV do dorso, junção do pescoço e textura das patas corrigidos.</p>
+<p>Evidências em <code>Build/actors-ps1/</code>:</p>
+<ul>
+<li><code>fidelity-validator.json</code> / <code>.log</code>: 11 checks aprovados; 77 GLBs, 69.216
+  triângulos, 416 clipes, 700 PNGs e 42 WAVs. A soma de triângulos dos modelos
+  únicos não mede desempenho. Fontes conferidas também contra os hashes dos
+  prompts aprovados; todos os materiais usados no GLB conferidos byte a byte.</li>
+<li><code>fidelity-coretests.log</code>: 31 aprovados; <code>fidelity-build.log</code>: zero erros e
+  avisos; <code>fidelity-import.log</code>: importação Godot 4.7.2 stable .NET concluída.</li>
+<li><code>fidelity-art-render.log</code> / <code>render-report.json</code>: 711 verificações sem
+  falhas no Compatibility, incluindo poses dos 416 clipes, armas e 32 spawns.
+  Os atores finais têm 730–1.917 triângulos por GLB, sob o limite de 2.600.</li>
+<li><code>fidelity-motion-render.log</code> / <code>motion/report.json</code>: 845 verificações sem
+  falhas; 162 clipes medidos, quatro transições e 44 sequências atualizadas
+  com os modelos finais. Galeria em <code>motion/index.html</code>; montagem dos quadros
+  reais em <code>motion/movement-overview.mp4</code>.</li>
+<li><code>index.html</code>: pranchas, vistas e poses atuais, com seletor antes/atual.
+  As capturas anteriores estão em <code>fidelity-before/views</code>. A mudança do lado
+  da câmera traseira para corresponder às pranchas está indicada na galeria;
+  não deve ser contada como melhoria de geometria.</li>
+<li><code>fidelity-determinism.json</code>: 292 arquivos regenerados sem diferenças.
+  <code>fidelity-scope-audit.json</code>: Core, dados, ícones, retratos, áudio e modelos
+  que não são atores mantêm os hashes do baseline.</li>
+</ul>
+<p>Falhas visuais reproduzidas e corrigidas: triângulos com materiais diferentes
+dentro do mesmo quadrilátero do colete, cruz/cinto distorcidos, nariz sem
+laterais e afastado da face, mechas/ossos suspensos, pontas de roupa ocultas
+no quadril, dedos excessivamente longos, normais dorsais invertidas e pixels
+do fundo projetados no cão. O validador também exigia o atlas lateral antigo
+dos heróis dentro do GLB; o contrato agora confere os materiais efetivamente
+usados e mantém o hash de proveniência dos atlas que deixaram de ser aplicados.</p>
+<p>As capturas foram inspecionadas por frente/lateral/costas e comparadas às
+fontes. <strong>A fidelidade exata continua em revisão</strong>: contornos de cabelo/rosto,
+algumas proporções e distribuição de ferimentos ainda diferem das pranchas
+2D. Os gates técnicos não constituem aprovação visual. Modelos continuam
+articulados por partes rígidas; não há desmembramento dinâmico. Partida manual
+com controles físicos, nova matriz de rede/reconexão/restore, exportações e
+profiling não foram executados nesta rodada. As limitações das medidas de
+apoio e dos alvos sintéticos descritas abaixo continuam aplicáveis.</p>
+<h2 id="movimento-dos-atores-ps1--13102026">Movimento dos atores PS1 · 13/10/2026</h2>
+<p>Refeitos os movimentos dos 15 atores no gerador, com trajetórias dos apoios,
+IK calculado durante a geração, contrapeso do tronco/braços e articulações
+independentes das quatro patas. Os 366 nomes anteriores permanecem; 45 ações
+rastejantes e cinco sequências de levantar completam 416 clipes. Chris teve
+registro facial/cabelo revistos; Rebecca, cabelo e inclinação da bandana.</p>
+<p><code>ActorView</code> usa um relógio de animação e ajusta a passada ao deslocamento real,
+mantém a fase entre caminhada/corrida, sincroniza passos e trata queda,
+recuperação e entrada tardia em ações. A compensação visual das solas evita
+penetração durante blends; não altera colisão nem estados autoritativos.
+<code>RoomView</code> posiciona o spawn imediatamente e repassa o estado rastejante.</p>
+<p>Evidências desta rodada em <code>Build/actors-ps1/</code>:</p>
+<ul>
+<li><code>motion-validator.json</code> / <code>.log</code>: 11 checks aprovados; 77 GLBs, 67.834
+  triângulos, 416 clipes, 686 PNGs e 42 WAVs. Contagem de triângulos é a soma
+  dos modelos únicos, não uma medição de desempenho.</li>
+<li><code>motion-coretests.log</code>: 31 aprovados, zero falhas. <code>motion-build.log</code>:
+  C# compilado sem erros ou avisos. <code>motion-import.log</code>: importação Godot
+  4.7.2 stable .NET concluída.</li>
+<li><code>motion-art-render.log</code> / <code>render-report.json</code>: 711 verificações no
+  Compatibility, incluindo três amostras dos 416 clipes, encaixes de armas
+  e importação dos modelos nos 32 spawns de <code>RoomView</code>.</li>
+<li><code>motion/index.html</code>: reprodução de quadros reais, frente/lateral, com
+  velocidade reduzida e seleção de quadro. Ações finitas param no fim;
+  sequências de transição sinalizam o reinício. <code>motion/report.json</code> e
+  <code>motion-render.log</code>: 845 verificações, zero falhas; 162 clipes medidos,
+  quatro transições completas e 44 sequências capturadas. As solas ficaram
+  aproximadamente 1 mm ou mais acima do piso nas quatro transições medidas em runtime.</li>
+<li><code>motion-determinism.json</code>: 280 arquivos regenerados sem diferenças;
+  <code>motion-scope-audit.json</code>: hashes de Core, dados, ícones, retratos, áudio
+  e modelos que não são atores preservados.</li>
+</ul>
+<p>Falhas reproduzidas e corrigidas: marcha sem deslocamento, oscilação vertical
+duplicada, deslize do spawn desde a origem, ataques rastejantes em pé,
+penetração das patas introduzida pela reamostragem/otimização da importação,
+solas sob o piso durante blends e subida do corpo antes do apoio das mãos.
+Os 15 imports preservam os canais e usam amostragem de 120 Hz sem otimização;
+isso não significa que o jogo rode a 120 FPS.</p>
+<p>Limites: medições automáticas de chão cobrem vértices das botas/patas, não
+todos os contatos de mãos/joelhos/corpo. Inspeção das capturas de levantar,
+socorrer, caminhar e correr complementa os números; não certifica ausência
+de clipping em toda combinação. Há articulação de partes rígidas, sem IK
+adaptativa ao terreno, mocap ou skinning contínuo. Os testes de transição
+usam alvos sintéticos; partida com controles físicos, matriz manual completa,
+rede/concorrência/reconexão/restore, exportações e profiling não foram
+executados nesta rodada. <strong>A fidelidade exata às pranchas permanece pendente</strong>,
+principalmente cabeças, UVs e contornos dos rasgos. Nenhuma aprovação visual
+final é inferida dos gates técnicos.</p>
+<h2 id="atores-ps1-reconstruídos--13102026--fidelidade-visual-em-revisão">Atores PS1 reconstruídos · 13/10/2026 — fidelidade visual em revisão</h2>
+<p>Nova tentativa após rejeição dos modelos anteriores. Gerador de anatomia,
+projeção dos pixels das pranchas aprovadas para atlas pequenos, nove aparências
+de zumbi, Cerberus e cinco personagens. <code>Variant</code> de combate não foi ampliado;
+<code>Art.ZombieModel</code> usa o ID estável apenas para aparência. Ajustados pose base,
+apoio ao mirar e ponto de empunhadura em <code>ActorView</code>. Nenhum desmembramento
+dinâmico foi implementado.</p>
+<p>Rodada adicional: altura do quadril/joelhos e botas, largura do tronco e
+abertura dos braços; projeção de três quartos por seção da malha e recortes
+individuais de mãos/costas/cabeças; alças sem sobreposição, olhos sem duplicação,
+dedos curvos e mechas femininas fora do crânio. Cerberus teve tronco/focinho,
+mandíbula, orelhas, patas e garras revistos. Comparação continua reprovada como
+igualdade exata: ainda divergem desenho das cabeças, contorno das roupas e
+distribuição de alguns detalhes de textura. Não há homologação visual.</p>
+<p>Evidências locais em <code>Build/actors-ps1/</code>:</p>
+<ul>
+<li>Validador Python: onze checks, <code>refinement-validator.json</code> / <code>.log</code>; 77 GLBs, 366 clipes,
+  fontes/atlas com hashes correspondentes e PNGs embutidos conferidos.</li>
+<li>31 CoreTests aprovados, <code>refinement-coretests.log</code>; build C# sem erros/avisos,
+  <code>refinement-build.log</code>.</li>
+<li>Importação Godot 4.7.2 stable .NET, <code>refinement-import.log</code>.</li>
+<li>Compatibility real: <code>render-report.json</code> / <code>refinement-render.log</code>, 661 checks de
+  carregamento, nearest, silhueta no quadro, três amostras de cada clipe,
+  membro ausente, encaixes de pistola/revólver/escopeta/faca e integração
+  RoomView para todos os 32 spawns; prévia de seleção dos cinco personagens.</li>
+<li>Capturas de frente/lateral/costas, ações, armas e cenário em <code>views/</code>;
+  comparação com pranchas em <code>index.html</code>. Imagens do renderer sem retoque.</li>
+<li>Regeneração idêntica de 280 arquivos de modelos/texturas/manifesto:
+  <code>refinement-determinism.json</code>. Auditoria <code>refinement-scope-audit.json</code>: Core, dados, ícones,
+  retratos, áudio e GLBs que não são atores mantêm os hashes do baseline.</li>
+</ul>
+<p>Falhas intermediárias corrigidas: enquadramento de oito poses de crawl,
+UV frontal espelhada, recortes laterais contaminados por braços nas pranchas,
+primitiva vazia da mandíbula e identificação do nó da arma na fixture.
+Escrita atômica com tentativas limitadas trata bloqueios transitórios de
+arquivos por leitores no Windows durante a geração.
+Uma iteração curta encerrou com erro nativo após os checks; limpeza/coleta antes
+de sair e repetições completas tiveram exit 0. Experimentos de extensão de
+bordas e registro facial que introduziram faixas/distorções foram descartados.</p>
+<p><strong>Limite material:</strong> a comparação ainda mostra diferenças de volume e UV
+em relação às pranchas. Os checks técnicos não comprovam a igualdade visual
+exata exigida pelo usuário; a arte permanece em revisão, não homologada.
+As fontes são imagens 2D, e não arquivos das malhas aprovadas. Revisão visual
+por capturas e inputs sintéticos não substitui partida manual com controles
+físicos. Não executados nesta revisão: matriz manual completa, smoke ENet,
+concorrência/reconexão/restore, exportações e profiling. Rede/save não mudaram.</p>
+<h2 id="retratos-da-rebecca--13102026">Retratos da Rebecca · 13/10/2026</h2>
+<p>O retrato anterior não tinha bandana vermelha e apresentava expressão séria.
+Revisados <code>Assets/Portraits/rebecca{,-caution,-danger}.png</code> por edição com
+<code>image_gen</code>: bandana vermelha, rosto de jovem adulta e sorriso discreto no
+estado Bem. Cuidado/Perigo preservam o novo rosto e bandana, com cansaço/dor.
+O acessório da primeira revisão foi um laço por interpretação do pedido;
+após a correção do usuário, os três retratos foram editados para bandana.
+Prompts e hashes finais em <code>Assets/Portraits/prompts.json</code>; gerador e
+validador agora também conferem hashes opcionais da base/fonte das variantes.
+Os doze retratos dos demais personagens e os arquivos de UI/dados/Core
+auditados mantiveram seus hashes (<code>Build/rebecca-bandana-scope-audit.json</code>).</p>
+<p>Gates finais (exit 0), logs em <code>Build/rebecca-bandana-*</code>:</p>
+<ul>
+<li>Pipeline seletivo de inventário: <code>generation.log</code>; validador Python,
+  dez checks: <code>validator.log</code> / <code>.json</code>.</li>
+<li>31 CoreTests: <code>coretests.log</code>; build sem erros/avisos: <code>build.log</code>.</li>
+<li>Importação Godot 4.7.2 stable .NET: <code>import.log</code>.</li>
+<li>Compatibility, <code>--hud-only</code>: 103 checks sem falhas, <code>render.log</code>, incluindo
+  os três estados/retratos da Rebecca e regressão dos cinco personagens.</li>
+<li>Revisão visual no tamanho real das três capturas de inventário em
+  <code>Build/manual/fixed-hud-rebecca-{fine,caution,danger}.png</code>.</li>
+</ul>
+<p>Sem falhas nos gates desta revisão. Inputs da fixture são sintéticos;
+não executados: controle físico/partida manual, matriz manual completa,
+smoke ENet/concorrência/reconexão/restore, exportações, Internet/Linux e
+profiling. A revisão é dos retratos; modelos 3D não foram alterados.</p>
+<h2 id="escadas-por-estado-do-cômodo--13102026">Escadas por estado do cômodo · 13/10/2026</h2>
+<p><code>MapCanvas.StairColor</code> substitui o verde fixo por três tons sutis: branco
+acinzentado <code>#85877f</code> em não explorado, verde escuro <code>#243f26</code> em explorado
+e vermelho escuro <code>#682932</code> no cômodo atual, com prioridade para este último.
+Aplica-se à escadaria central e aos degraus dos acessos entre níveis. Estados
+acompanham <code>ViewRoom</code>/<code>Explored</code> do snapshot; sem mudança de dados ou regras.</p>
+<p>Gates (exit 0), logs em <code>Build/stair-states-*</code>:</p>
+<ul>
+<li>Validador Python: dez checks, <code>validator.json</code> / <code>.log</code>.</li>
+<li>31 CoreTests: <code>coretests.log</code>; build sem erros/avisos: <code>build.log</code>.</li>
+<li>Importação Godot 4.7.2 stable .NET: <code>import.log</code>.</li>
+<li>Compatibility, <code>--map-only</code>: 301 checks, <code>render.log</code>. Cores dos degraus
+  em todos os andares e transições atual/explorado/não explorado da escadaria
+  central em solo e anfitrião; regressão das conexões, pulso e controles.</li>
+<li>Revisão visual dos três estados em
+  <code>Build/manual/fixed-stairs-state-{current,explored,unexplored}-{True,False}.png</code>.</li>
+</ul>
+<p>Primeira rodada: um check leu o frame anterior após troca de cômodo; a captura
+seguinte já mostrava a cor correta. A fixture agora aguarda <code>FramePostDraw</code>
+antes das leituras de pixel após alterar o estado. Rodada final sem falhas.
+Inputs sintéticos; não executados: controle físico/partida manual, matriz
+manual completa, smoke ENet/concorrência/reconexão/restore, exportações,
+Internet/Linux e profiling. Não homologa multiplayer completo.</p>
+<h2 id="refinamento-da-planta-e-conexões--13102026">Refinamento da planta e conexões · 13/10/2026</h2>
+<p>Problema reproduzido: projeção independente de <code>AtA</code>/<code>AtB</code> desenhava dois
+acessos desconectados nos retângulos separados da planta. O gerador agora
+autora <code>DoorDef.MapLink</code>: 31 passagens 2D entre bordas no mesmo andar, sem
+atravessar outros cômodos. <code>MapCanvas</code> abre os contornos nesses pontos e
+desenha apenas um polígono por conexão. As quatro mudanças de nível mantêm
+um acesso em cada andar. Retângulos das salas, grafo, <code>AtA</code>/<code>AtB</code>, poses,
+colisões, regras, snapshot e schema de save preservados; o campo novo pertence
+ao catálogo, é consumido somente pelo mapa e não integra <code>WorldState</code>.
+Auditoria estrutural contra <code>Build/map-refinement-scenario-before.json</code>:
+removendo <code>MapLink</code>, o JSON regenerado é idêntico em conteúdo ao anterior.</p>
+<p>Removidos título/legenda da área de informações do item, marcadores dos
+jogadores e setas de nível. Cômodo atual pulsa em vermelho em ciclo de 1,2s,
+inclusive na pausa solo. Degraus em verde escuro sutil (<code>#243f26</code>), incluindo
+a escadaria central. Botões metálicos em pt-BR: MAPA/ARQUIVOS/RÁDIO/SAIR e
+SUBSOLO/TÉRREO/2º ANDAR. Seleção de item restaura a inspeção e seus detalhes.</p>
+<p>Gates finais (exit 0):</p>
+<ul>
+<li>Validador Python: dez checks, <code>Build/map-refinement-validator.json</code> / <code>.log</code>,
+  incluindo extremidades nas bordas e ausência de passagens sobre terceiros.</li>
+<li>31 CoreTests: <code>Build/map-refinement-coretests.log</code>.</li>
+<li>Build sem erros/avisos: <code>Build/map-refinement-build.log</code>; importação Godot
+  4.7.2 stable .NET: <code>Build/map-refinement-import.log</code>.</li>
+<li>Compatibility real, <code>--map-only</code>: 297 checks, <code>Build/map-refinement-render.log</code>.
+  Pixels das salas/acessos/degraus, passagem longa com um único marcador,
+  pulso por frames, pausa solo, botões/tradução, detalhes vazios, ausência
+  de indicadores, snapshots e retorno à inspeção em solo/anfitrião.</li>
+<li>Regressão da HUD dos cinco personagens, <code>--hud-only</code>: 103 checks,
+  <code>Build/map-refinement-hud.log</code>, capacidades/layout, contexto, saúde e arraste.</li>
+<li>Revisão visual dos três andares nas capturas
+  <code>Build/manual/fixed-map-refined-{solo,host}-*.png</code>; <code>git diff --check</code> aprovado.</li>
+</ul>
+<p>Rodada inicial: um aviso de nulabilidade corrigido no acesso ao snapshot;
+18 checks da fixture falharam porque amostravam a parede agora aberta da sala
+de jantar e um degrau como se fosse a seta removida. Ajustadas essas posições
+de amostragem; rodada final sem falhas.</p>
+<p>Inputs são sintéticos. Não executados: partida manual com controle físico,
+matriz manual completa, smoke ENet/concorrência/reconexão/restore, exportações,
+Internet/Linux e profiling. O anfitrião da fixture não conecta clientes remotos;
+essas evidências não homologam multiplayer completo.</p>
+<h2 id="mapa-integrado-ao-inventário--13102026">Mapa integrado ao inventário · 13/10/2026</h2>
+<p>Causa localizada em <code>GameUi.ShowMap</code> e <code>MapCanvas._Draw</code>: modal separado,
+salas não exploradas omitidas, cores por loot/segurança e escala fixa. O mapa
+agora substitui a inspeção no próprio inventário, com seleção B1/1F/2F e
+enquadramento por andar. Contornos permanecem visíveis; salas não exploradas
+não têm fill, exploradas são verdes e atual é vermelha. Acessos amarelos ou
+vermelhos usam os desbloqueios/chaves/flags do snapshot. Escadas têm degraus
+e setas nas duas extremidades; a escadaria do saguão também é desenhada.
+Selecionar um slot ou pressionar M retorna à inspeção; EXIT/I/Esc fecha tudo.
+Snapshots de saúde/inventário mantêm o mapa aberto e atualizam o ECG.
+Nenhuma alteração em Core, rede, save, dados, modelos ou capacidade.</p>
+<p>Gates finais (exit 0):</p>
+<ul>
+<li>Validador Python: nove checks, <code>Build/map-hud-validator.json</code> / <code>.log</code>.</li>
+<li>31 CoreTests: <code>Build/map-hud-coretests.log</code>.</li>
+<li>Build C# sem erros/avisos: <code>Build/map-hud-build.log</code>.</li>
+<li>Importação Godot 4.7.2 stable .NET sem erros: <code>Build/map-hud-import.log</code>.</li>
+<li>Compatibility real, <code>PresentationAcceptance --map-only</code>: 326 checks,
+  <code>Build/map-hud-render.log</code>. Pixels das 34 salas e dos 70 extremos de
+  acessos nos três andares; degraus, chave/energia, localização/exploração,
+  atualizações de saúde/inventário, MAP/M, seleção, slot vazio, EXIT/Esc
+  e liberação/reabertura, em solo e anfitrião com fixtures da simulação.</li>
+<li>Regressões renderizadas <code>--hud-only</code>: 103 checks, <code>Build/map-hud-regression.log</code>;
+  <code>--inspection-only</code>: 100 checks, <code>Build/map-hud-inspection.log</code>.</li>
+<li>Capturas reais dos três andares em <code>Build/manual/fixed-map-hud-{solo,host}-*.png</code>
+  revisadas visualmente. <code>git diff --check</code> aprovado.</li>
+</ul>
+<p>Sem falhas nos gates desta revisão. Inputs de mouse/teclado são sintéticos;
+não executados: partida manual com controle físico, matriz manual completa,
+smoke ENet/concorrência/reconexão/restore, exportações, Internet/Linux e
+profiling. O modo anfitrião desta fixture não conecta clientes remotos e
+não homologa multiplayer completo. Evidências anteriores de rede são históricas.</p>
+<h2 id="modelos-distintos-das-facas--13102026">Modelos distintos das facas · 13/10/2026</h2>
+<p>Causa reproduzida em <code>weaponmodel</code>: a faca defensiva usava a mesma malha
+da de combate, escalada por 0,78. Agora tem fonte geométrica própria, lâmina
+curta de ponta caída, cabo de madeira com rebites, guarda assimétrica e
+argola vazada. A faca de combate foi preservada. Regenerados GLB defensivo,
+texturas embutidas extraídas pelo importador, miniatura e hashes do manifesto.</p>
+<p>Gates finais (exit 0), logs em <code>Build/knife-models/</code>:</p>
+<ul>
+<li>Validador Python: nove checks aprovados, <code>validator.json</code> / <code>.log</code>.
+  74 GLBs, 58.142 triângulos e 30 pares GLB/ícone atualizados.</li>
+<li>31 CoreTests: <code>coretests.log</code>; build C# sem erros/avisos: <code>build.log</code>.</li>
+<li>Importação Godot 4.7.2 stable .NET: <code>import.log</code> e <code>icons-import.log</code>.</li>
+<li>Renderer Compatibility real, <code>ItemArtPreview --bake-icons</code>: 180 checks,
+  <code>render.log</code> e <code>items-render.json</code>. Modelos em três ângulos sem corte e
+  ícones transparentes 128×128 renderizados dos mesmos GLBs.</li>
+<li><code>PresentationAcceptance --inspection-only</code>: 100 checks de inventário,
+  seleção, carregamento de todos os itens, rotação por mouse/setas/teclado,
+  reset e limpeza, com inputs sintéticos: <code>inspection.log</code>.</li>
+<li>Revisão visual das duas facas em <code>Build/items-views/{knife,defense_knife}-front.png</code>,
+  verso/inclinação da defensiva e miniaturas. Regeneração byte a byte idêntica:
+  <code>determinism.json</code>. Auditoria <code>scope-audit.json</code>: dos 132 arquivos de modelos,
+  ícones, texturas-fonte e dados, somente GLB defensivo, ícone e manifesto mudaram.
+  <code>git diff --check</code> aprovado.</li>
+</ul>
+<p>Não houve falhas nos gates desta revisão. Não executados: partida manual com
+controle físico, matriz manual completa, smoke ENet/concorrência/reconexão/
+restore, exportações e profiling. Revisão visual por capturas e inputs
+sintéticos não homologam a matriz manual ou multiplayer completo.</p>
+<h2 id="refinamento-da-hud-do-inventário--13102026">Refinamento da HUD do inventário · 13/10/2026</h2>
+<p>Problemas localizados: cabeçalho e dicas redundantes, ações permanentes,
+seleção inicial forçada, detalhes com moldura e linhas que não ocupavam a
+altura do painel de slots. O layout agora alinha a base da grade com a faixa
+retrato/ECG/equipado; retrato e equipado têm a mesma largura, ECG expandido,
+detalhes sem bordas e footer metálico. A área vazia vinha da altura fixa do
+painel: os slots existentes agora preenchem essa altura, sem mudar capacidade.</p>
+<p>Ao abrir não há seleção; slots vazios exibem uma mensagem e ocultam setas e
+input de inspeção. Ações ficam no menu de contexto, com versões verificadas.
+Destinos válidos de arraste usam somente cantos verdes; seleção/foco usam
+cantos vermelhos, sem a borda amarela. Arrastes cancelados ou desatualizados
+limpam os destaques. Transferência pelo baú continua usando a alocação
+autoritativa existente: o slot apontado não promete um índice de destino.
+Saúde traduzida para Bem/Cuidado/Perigo e dez retratos PS1 adicionais para
+os cinco personagens, mantendo os originais. Equipado mostra quantidade ou
+infinito. RADIO desabilitado solo e habilitado online como reserva para VOIP;
+voz ainda não implementada. Core/rede/save/dados/modelos preservados.</p>
+<p>Gates finais (exit 0):</p>
+<ul>
+<li>Validador Python: nove checks, <code>Build/hud-refinement-validator.json</code> / <code>.log</code>.
+  74 GLBs, 58.210 triângulos, 537 PNGs e manifesto dos 15 retratos validado.</li>
+<li>31 CoreTests: <code>Build/hud-refinement-coretests.log</code>.</li>
+<li>Build C# sem erros/avisos: <code>Build/hud-refinement-build.log</code>.</li>
+<li>Importação Godot 4.7.2 stable .NET: <code>Build/hud-refinement-import.log</code>.</li>
+<li>Compatibility real com eventos GUI sintéticos, 215 checks aprovados:
+  <code>--hud-only</code> (103), <code>--inspection-only</code> (100), <code>--inventory-only</code> (12), em
+  <code>Build/hud-refinement-{hud,inspection,online-ui}.log</code>. Cobrem os cinco
+  personagens/capacidades, estados/retratos, alinhamento, abertura vazia,
+  contexto/equipar/usar/combinar/soltar, baú/conservação, versões, cancelamento,
+  saúde online, inspeção/rotação e pixels dos cantos verdes/vermelhos.</li>
+<li>Pipeline seletivo <code>generate_assets.py --inventory</code> aprovado:
+  <code>Build/hud-refinement-generation.log</code>. Modelos, dados, manifesto de ícones
+  e cinco retratos originais preservados; auditoria de hashes em
+  <code>Build/hud-refinement-scope-audit.json</code>.</li>
+<li>Capturas reais revisadas: <code>Build/manual/fixed-hud-*.png</code>, incluindo os
+  15 estados dos retratos, menu de contexto e destinos verdes do arraste.</li>
+</ul>
+<p>Rodadas iniciais falharam em dois inputs de mouse da fixture e na contagem
+das setas com nomes duplicados. O driver passou a posicionar o cursor e
+aguardar o frame; as quatro setas receberam nomes únicos. Rodadas finais
+aprovadas. A revisão visual corrigiu também o recorte da textura do footer
+e o posicionamento do contexto a partir das coordenadas do evento de clique.</p>
+<p>Não executados: partida manual com controle físico, matriz manual completa,
+smoke ENet/concorrência/reconexão/restore, exportações, Internet/Linux e
+profiling. As fixtures e capturas não homologam multiplayer completo, VOIP
+ou desempenho. As evidências anteriores de rede continuam históricas.</p>
+<h2 id="cenário-detalhado-ps1--13102026">Cenário detalhado PS1 · 13/10/2026</h2>
+<p>Causa localizada em <code>propmodel</code>: volumes genéricos, peças pouco diferenciadas
+e ferragens insuficientes. As portas duplas do cenário eram uma folha esticada;
+na cinemática as ferragens não eram espelhadas. A revisão dos screenshots
+também reproduziu móveis de costas para o interior e livros atravessando a
+cornija. Corrigidos no gerador, montagem visual e orientação padrão dos móveis.
+32 GLBs e texturas pequenas originais regenerados; posições, colisões, câmeras,
+dados, Core/rede/save e tempos da cinemática preservados.</p>
+<p>Gates finais (exit 0):</p>
+<ul>
+<li>Validador Python: <code>Build/props-validator.json</code> / <code>.log</code>, incluindo os 30
+  pares de GLB/ícone do inventário e nearest; 74 GLBs e 58.210 triângulos.</li>
+<li>31 CoreTests: <code>Build/props-coretests.log</code>.</li>
+<li>Build C# sem erros/avisos: <code>Build/props-build.log</code>.</li>
+<li>Importação Godot 4.7.2 stable .NET: <code>Build/props-import.log</code>.</li>
+<li>Renderer Compatibility real, <code>PropArtPreview</code>: 138 checks aprovados,
+  <code>Build/props-render.log</code> e <code>Build/props-views/report.json</code>. 32 malhas,
+  96 enquadramentos, folhas visíveis, espelhamento de ferragens, abertura
+  pelo pivô e conclusão no tempo original. 102 capturas reais em
+  <code>Build/props-views</code>, além de folhas de contato para revisão.</li>
+<li>Fixture <code>PresentationAcceptance --rooms-only</code>: 45 checks aprovados,
+  <code>Build/props-rooms.log</code>. Renderização de recursos nas 34 salas, orientação
+  das estantes/lareira, livros abaixo da cornija, quatro enquadramentos do
+  gerador e altura do personagem no meio/topo da escada. Capturas em
+  <code>Build/manual/fixed-room-*.png</code> e capturas dirigidas de gerador/escada.</li>
+<li>Regeneração seletiva: 100 arquivos GLB/textura com hashes idênticos,
+  <code>Build/props-determinism.log</code>. Os 32 GLBs de cenário mudaram em relação
+  ao baseline; os outros 42, dados e manifesto de ícones foram preservados,
+  <code>Build/props-scope-audit.json</code>.</li>
+<li>Revisão visual das prévias dos 32 modelos, de ângulos adicionais de escada
+  e portas duplas e de capturas das salas de leitura, jantar, cozinha,
+  banheiro, hall e sala da espingarda.</li>
+</ul>
+<p>A primeira fixture de portas falhou em quatro checks porque consultava
+transformações locais do nó importado em vez da escala global e do pivô
+ancestral. O driver foi corrigido e os gates finais passaram. Removido
+também o tooltip que sobrepunha as prévias iniciais. Os screenshots da sala
+motivaram as correções de orientação e altura dos livros citadas acima.</p>
+<p>Não executados: partida manual com controle físico, matriz manual completa,
+smoke ENet/concorrência/reconexão/restore, exportações, Internet/Linux e
+profiling. As fixtures montam as salas e avançam a cinemática de forma
+dirigida; não homologam uma partida completa, multiplayer, contatos por IK
+ou desempenho. As evidências de rede anteriores continuam históricas.</p>
+<h2 id="itens-detalhados-ps1--13102026">Itens detalhados PS1 · 13/10/2026</h2>
+<p>Causa localizada em <code>weaponmodel/itemmodel</code>: blocos genéricos com materiais
+de cenário, sem silhuetas/peças/rótulos suficientes. O gerador agora produz
+30 GLBs originais com malhas facetadas, canos/argolas/guarda-matos vazados,
+texturas pequenas e detalhes próprios por item. <code>ItemInspection.ResetPose</code>
+mostra a face relevante de cada tipo; <code>ItemArtPreview</code> renderiza os ícones e
+três ângulos no Compatibility. Fonte, saídas e manifesto de hashes preservados.
+Core/rede/save/capacidades/dados não foram alterados nesta revisão de arte.</p>
+<p>Gates finais (exit 0):</p>
+<ul>
+<li>Validador Python: <code>Build/items-validator.json</code> / <code>.log</code>, incluindo a
+  correspondência SHA-256 dos 30 pares GLB/PNG e nearest.</li>
+<li>31 CoreTests: <code>Build/items-coretests.log</code>.</li>
+<li>Build C# sem erros/avisos: <code>Build/items-build.log</code>.</li>
+<li>Importação Godot 4.7.2 stable .NET: <code>Build/items-import.log</code>.</li>
+<li>Renderer real: <code>Build/items-render.log</code> / <code>.json</code>, 180 checks aprovados
+  (30 malhas, 90 enquadramentos rotacionados, 30 dimensões e 30 fundos
+  transparentes). Capturas: <code>Build/items-views/{id}-{front,back,tilted}.png</code>.</li>
+<li>Inventário real com eventos GUI sintéticos: 104 checks de inspeção/rotação/
+  reset/reabertura/ECG/baú, <code>Build/items-inspection.log</code>; 12 checks de slots,
+  arraste/combinação e atualização de saúde, <code>Build/items-online-ui.log</code>.</li>
+<li>Regeneração dos 30 GLBs com hashes idênticos: <code>Build/items-determinism.log</code>.
+  Os outros 44 GLBs conservaram seus hashes: <code>Build/items-scope-audit.json</code>.</li>
+<li>Revisão visual de capturas reais de armas, spray, munições, ervas/misturas,
+  chaves, emblemas, gema, bateria e amostra, além do inventário integrado.</li>
+</ul>
+<p>Uma gravação inicial de ícone falhou por acesso ao PNG no Windows, apesar
+de os checks geométricos passarem. O bake agora grava e substitui o arquivo
+atomicamente, repete locks transitórios e falha se a gravação não concluir.
+Corrigidos também UVs de rótulos invertidos, ângulos que escondiam misturas e
+margem excessiva das miniaturas. A rodada final não registrou esses erros.</p>
+<p>Não executados: partida manual com controle físico, matriz manual completa,
+smoke ENet/concorrência/reconexão/restore, exportações, Internet/Linux ou
+profiling. A revisão das capturas não homologa o multiplayer nem desempenho.</p>
+<h2 id="inventário-ps1-inspeção-3d-e-ecg--13102026">Inventário PS1, inspeção 3D e ECG · 13/10/2026</h2>
+<p>Problemas confirmados no código anterior: o visor mostrava <code>Art.Icon</code> em
+<code>TextureRect</code>, as setas eram labels sem ações, o ECG era somente texto e o
+retrato usava a textura UV do rosto. <code>Game/ItemInspection.cs</code> renderiza o GLB
+em SubViewport próprio e recebe arraste/setas/Home. <code>Game/HealthMonitor.cs</code>
+anima o ECG a partir dos PV do snapshot. <code>GameUi</code>, <code>InventorySlot</code> e <code>UiKit</code>
+integram o layout preto/metal/azul e seleção vermelha. Retratos PS1 originais
+em <code>Assets/Portraits</code>, prompts preservados e gerador de arte revisado.
+Nenhuma mudança de Core, protocolo, save, dados ou capacidade nesta revisão.
+Alterações anteriores da matriz foram preservadas.</p>
+<p>Gates desta revisão, com exit 0:</p>
+<ul>
+<li>Validador Python: <code>Build/inventory-validator.json</code> / <code>.log</code>.</li>
+<li>31 CoreTests: <code>Build/inventory-coretests.log</code>.</li>
+<li>Build C# final sem erros/avisos: <code>Build/inventory-build.log</code>.</li>
+<li>Importação Godot 4.7.2 stable .NET: <code>Build/inventory-import.log</code>.</li>
+<li>Fixture renderizada Compatibility <code>--inspection-only</code>: 104 checks aprovados,
+  <code>Build/inventory-inspection.log</code>. Cinco personagens/capacidades/retratos,
+  conteúdo renderizado antes do primeiro input, 30 modelos, rotação real por
+  eventos GUI de arraste/seta/teclado, reset, limpeza/reabertura, ECG nas três
+  condições e durante pausa, foco/rolagem/guardar/retirar no baú.</li>
+<li>Fixture <code>--inventory-only</code>: 12 checks aprovados, <code>Build/inventory-online-ui.log</code>.
+  Arraste/combinação, navegação de slots, dano atualizando PV/condição e bloqueio
+  de movimento sem pausar os inimigos em modo anfitrião.</li>
+</ul>
+<p>Capturas reais inspecionadas em <code>Build/manual/fixed-ps1-*.png</code> e
+<code>fixed-inventory-combat.png</code>. A primeira rodada da fixture tentou clicar
+durante a animação de entrada e falhou em dois checks; o driver agora aguarda
+a conclusão da porta e a estabilização da renderização antes das capturas.
+Os testes finais estão aprovados. Isso não representa partida manual ou
+controle físico: mouse/teclado são eventos sintéticos do Godot.</p>
+<p>Não executados nesta revisão de apresentação: matriz manual completa,
+controle físico, smoke ENet/concorrência/reconexão/restore reais, exportações,
+Internet/Linux e profiling. As evidências anteriores continuam históricas.
+Nenhum FPS, latência ou homologação completa de multiplayer foi inferido.</p>
+<h2 id="revisão-da-matriz--13102026">Revisão da matriz · 13/10/2026</h2>
+<p><a href="MATRIZ-ACEITACAO-2026-10-13.html">Estado por caso, falhas reproduzidas e limites</a>.
+A revisão ampliou o gate para 31 CoreTests, 42 checks ENet e 168 checks de
+apresentação com renderer real. Corrigidos layout/foco/saúde do inventário,
+prévia do personagem, câmera do gerador, parry e encerramento do export.
+Removidos os nomes permanentes sobre aliados; mantidos painéis por comando.
+Não promove fixtures/screenhots a matriz manual completa. As seções seguintes
+registram evidências anteriores e seus limites na data de cada execução.</p>
+<h2 id="mtu-e-encerramento-enet--13102026">MTU e encerramento ENet · 13/10/2026</h2>
+<p>O aviso vinha de <code>NetSession._PhysicsProcess</code>: snapshots JSON completos eram
+enviados via <code>UnreliableOrdered</code>, excedendo a MTU. O smoke reforçado reprovou
+a versão anterior pelo aviso real de 1720 bytes: <code>Build/mtu-baseline.log</code>,
+<code>Build/smoke/f39684c0246d/report.json</code>. Os trajetos passaram nessa reprodução,
+mas o relatório corretamente ficou <code>failed</code> por saúde do transporte.</p>
+<p>O erro de envio no canal 0 durante saídas simultâneas é compatível com o
+relay automático de desconexão do <code>SceneMultiplayer</code> enviando para outro
+peer já encerrado. A origem foi conferida no código oficial do Godot 4.7.2:
+<a href="https://github.com/godotengine/godot/blob/4.7.2-stable/modules/multiplayer/scene_multiplayer.cpp"><code>SceneMultiplayer._del_peer</code></a>
+e <a href="https://github.com/godotengine/godot/blob/4.7.2-stable/modules/enet/enet_packet_peer.cpp"><code>ENetPacketPeer.send</code></a>.
+Desativado o relay do servidor antes das conexões, pois todo RPC do jogo é cliente/autoridade.
+O cliente mantém suporte a notificações de relay para não recusar controles de
+servidores anteriores; interoperabilidade completa entre builds não foi homologada.
+Envios verificam conexão; <code>Stop</code> desassocia/fecha/libera o peer. O gate novo
+também reproduziu um timer de rejeição de autenticação tentando desconectar
+um peer já ausente; esse timer agora verifica a mesma instância do transporte
+e o estado conectado. Não foi alterada a autenticação nem o limite de vagas.</p>
+<p>JSON até 1000 bytes UTF-8 segue não confiável ordenado; acima disso usa
+<code>ReceiveReliableFrame</code>, já existente. Mesmo schema/protocolo e filtros de
+Epoch/Sequence; nenhuma alteração de save, dados, regras, UI ou navegação.
+O fallback confiável pode aumentar espera sob perdas; desempenho/latência
+não foram aferidos. Justificativa e orçamento em <code>ARQUITETURA.md</code>.</p>
+<p><code>Tools/network_smoke.py</code> inspeciona todos os logs, incluindo encerramento, e
+reprova <code>ERROR</code>, <code>SCRIPT ERROR</code>, <code>BOOT</code> e aviso de MTU mesmo com processos
+retornando zero. Três regressões Python cobrem logs limpos, erro de envio
+e aviso de MTU. O teste não descarta esses registros para forçar aprovação.</p>
+<p>Novo gate <code>Tools/NetworkAcceptance.tscn</code> / <code>Tools/NetworkAcceptance.cs</code>: sockets
+ENet reais com quatro clientes e servidor dedicado em raízes <code>SceneMultiplayer</code>
+isoladas no mesmo processo headless. Perfis/campanha únicos; fixtures de posição
+e inventário montadas diretamente na simulação para testar comandos pela rede.
+Abrange snapshots grandes, relay desativado, perfil duplicado (N02), coleta
+concorrente (I01), baú concorrente/versão antiga/retry (recorte I02), recompensa
+de puzzle com inventário cheio (I03), chave recuperável/reconexão sem kit (P01),
+save/restore/época antiga/reinício (P02) e saídas simultâneas. Não é uma partida
+manual; drag &amp; drop, todas as combinações/trocas, controle físico, Internet,
+Linux, exportações e profiling permanecem pendentes.</p>
+<p>Validação antes do ajuste final de compatibilidade do relay no cliente:
+<code>Build/validation/20261013-113257-deb102b2/report.json</code>, exit 0.
+Validadores Python, 22 testes PowerShell, três regressões Python, 28 CoreTests,
+build sem erros/avisos e importação passaram. Smoke de 35s com os quatro
+clientes: <code>Build/smoke/fe271cf5bb0f/report.json</code>, todos os trajetos e todos os
+logs limpos de erros/avisos de MTU, inclusive encerramento. Gate ENet:
+<code>enet-acceptance.log</code> desse mesmo relatório, <strong>19 checks aprovados</strong>, sem erros
+ou aviso de MTU. Houve uma execução anterior também limpa:
+<code>Build/validation/20261013-113108-89e7ae85/report.json</code> e
+<code>Build/smoke/bf233c6eac29/report.json</code> (16 checks antes de ampliar baú/puzzle).</p>
+<p>Depois de manter o suporte do cliente às notificações de servidores anteriores,
+<code>Build/validation/20261013-113856-b02337fb/report.json</code> reprovou o trajeto de
+Wesker, com todos os logs de transporte limpos. A previsão podia marcar pontos
+da rota como concluídos sem chegada autoritativa; uma correção posterior deixava
+o bot parado antes do destino. Nova regressão determinística falhou antes e
+passou após o patch (<code>Build/waypoint-reproduction.log</code> e
+<code>Build/waypoint-regression.log</code>). A previsão continua guiando o input, mas só
+posição recebida do servidor avança os pontos da rota. Total atual: 29 CoreTests.
+Sem ampliar o prazo de 35s ou reduzir os critérios do smoke.</p>
+<p>Validação após todos os ajustes aprovada com exit 0:
+<code>Build/validation/20261013-114450-8add6fbc/report.json</code>. Validadores, 22 testes
+PowerShell, três regressões Python, <strong>29 CoreTests</strong>, build sem erros/avisos,
+importação Godot, smoke real de 35s e <strong>19 checks ENet</strong> passaram. Smoke:
+<code>Build/smoke/d6979e522eb7/report.json</code>; todos os quatro destinos e logs limpos
+de erro de runtime/transporte e aviso de MTU, incluindo o encerramento.</p>
+<p>Repetição final isolada também aprovada, com os mesmos 35s e critérios:
+<code>Build/smoke/d58b6fdd99f6/report.json</code>. Quatro destinos atingidos e saúde dos
+logs aprovada nos cinco processos, sem os avisos/erros tratados nesta revisão.</p>
+<p>O cliente com UI também foi conferido contra servidor dedicado após corrigir
+o transporte: <code>Build/ui-after-mtu.log</code>, checks aprovados de log discreto,
+expiração, inventário/mapa/Esc/chat e limpeza ao fechar painéis. Logs desse
+cliente e do servidor (<code>Build/mtu-ui-server.log</code> e
+<code>Build/mtu-ui-server-errors.log</code>) sem os avisos/erros tratados nesta revisão.
+Matriz manual completa e demais limites descritos acima permanecem pendentes.</p>
+<h2 id="chriswesker-e-inputs-pendentes-no-smoke--13102026">Chris/Wesker e inputs pendentes no smoke · 13/10/2026</h2>
+<p>Os logs das falhas da revisão de interface mostram inputs confirmados, mas
+oscilação de direção e avanço lento. O driver usava posição/direção do snapshot
+sem reproduzir os inputs ainda pendentes. Ao chegar feedback antigo, emitia
+novas correções de um giro/deslocamento que já estava em execução no servidor.</p>
+<p>Reprodução determinística antes do patch: feedback de 10 Hz com atraso
+sintético de seis ticks (200 ms) em cada direção. Os dois testes falharam;
+Chris/Wesker permaneceram no saguão. Log: <code>Build/smoke-reproduction.log</code>.
+Esses atrasos são condições sintéticas, não medições de latência ENet.</p>
+<p><code>Game/SmokeBotNavigation.cs</code> agora reproduz inputs não confirmados usando
+<code>Geometry.Move</code> e decide o próximo input pela pose prevista. <code>App.BotStep</code>
+passa o snapshot e a fila <code>NetSession.Pending</code>; logs incluem seu tamanho.
+Comandos de porta continuam decididos pela proximidade no snapshot recebido
+e validados pelo servidor. Nenhuma mudança em Core, rede, save, mapa ou UI.</p>
+<p>As duas regressões em <code>Tests/Program.cs</code> passaram após o patch e foram ampliadas
+para as quatro posições de spawn, com atrasos input/snapshot de 6/6 e 12/9
+ticks (200/200 e 400/300 ms sintéticos). Total: 28 CoreTests.</p>
+<p><code>Tools/Test.ps1</code> aprovado com exit 0:
+<code>Build/validation/20261013-111148-6c070f76/report.json</code>. Validadores Python,
+22 testes PowerShell, 28 CoreTests, build sem erros/avisos, importação Godot
+e smoke ENet real de 35s passaram. Os quatro clientes cumpriram todos os
+critérios; Chris atingiu <code>eastgallery</code> e Wesker <code>balcony</code>.
+Smoke: <code>Build/smoke/05b427542dc1/report.json</code>.</p>
+<p>Repetição isolada com os mesmos 35s e critérios também aprovada:
+<code>Build/smoke/cd7bb49e7454/report.json</code>. Os checks dirigidos da interface foram
+reexecutados após ambos os smokes e passaram em solo e anfitrião: HUD ausente,
+log temporário online, posição/expiração, inventário, mapa, Esc, chat e limpeza
+dos avisos ao fechar painéis. Logs: <code>Build/ui-solo-after-smoke-fix.log</code> e
+<code>Build/ui-online-after-smoke-fix.log</code>. As alterações de UI foram preservadas.</p>
+<p>O servidor ainda registrou aviso de snapshots acima da MTU; na repetição houve
+erro de envio no encerramento (<code>Unable to send packet on channel 0, max channels: 0</code>).
+Sucesso dos critérios de movimento/conexão não homologa ausência de erros de rede. Matriz manual
+completa, concorrência/reconexão/restore ENet, controle físico, exportações,
+Internet/Linux e profiling permanecem pendentes. Os CoreTests de coleta
+concorrente, reconexão e checkpoint passaram. Esta revisão corrige somente
+o driver; nenhum contrato de rede/save foi alterado.</p>
+<h2 id="interface-durante-a-partida--13102026">Interface durante a partida · 13/10/2026</h2>
+<p><code>Game/GameUi.cs</code> remove o HUD permanente e controla o log temporário por modo;
+<code>Game/App.cs</code> encaminha respostas do servidor ao log, sem toast durante a
+partida. <code>Game/DoorCinematic.cs</code> remove apenas a legenda da animação de porta.
+Painéis por comando permanecem; avisos locais de painel somem ao fechá-lo.
+Sem mudanças de protocolo, simulação, save, dados ou assets.</p>
+<p>Verificações dirigidas no Godot com renderização Compatibility e perfis/campanhas
+de teste: solo, anfitrião e cliente ENet conectado a servidor dedicado. Foram
+verificados HUD ausente, visibilidade do ping recebido do servidor somente
+online, posição do log, expiração mesmo recebendo snapshots, inventário,
+mapa, Esc e chat apenas online. Capturas reais em <code>Build/ui-solo-idle.png</code>
+e <code>Build/ui-online-log.png</code> inspecionadas; logs em <code>Build/ui-solo.log</code>,
+<code>Build/ui-online.log</code> e <code>Build/ui-remote.log</code>. O driver temporário fica em
+<code>Build/ui_probe.gd</code>; usa ações de input e captura do viewport do engine.
+Essas verificações automatizadas e capturas não substituem a matriz manual.</p>
+<p>Primeira execução de <code>Tools/Test.ps1</code>:
+<code>Build/validation/20261013-110107-46faadaa/report.json</code>. Validadores Python,
+22 testes PowerShell, 26 CoreTests, build sem erros/avisos e importação Godot
+passaram. O smoke de quatro clientes falhou: Wesker não atingiu <code>balcony</code> em
+35s, embora todos recebessem snapshots e confirmação de input. Houve execução
+visual simultânea nessa tentativa; isso não comprova a causa da falha.</p>
+<p>Execução final após o ajuste de limpeza dos avisos ao fechar painéis:
+<code>Build/validation/20261013-110437-aa0fdf73/report.json</code>. Validadores Python,
+22 testes PowerShell, 26 CoreTests, build sem erros/avisos e importação passaram
+novamente. Smoke ENet reprovado nos trajetos de Chris e Wesker; não houve
+execução visual simultânea nessa repetição. Os critérios automáticos de rede
+não estão todos aprovados nesta revisão; a causa dessa falha não foi determinada.</p>
+<p>Matriz manual completa, controle físico, puzzles/baú/máquina de escrever em
+partida, concorrência/reconexão/restore reais, exportações e profiling não
+executados. Um encerramento do driver solo registrou aviso de duas instâncias
+ObjectDB remanescentes; isso não invalida os checks, mas permanece como limite.</p>
+<h2 id="correção-do-trajeto-de-wesker-no-smoke--13102026">Correção do trajeto de Wesker no smoke · 13/10/2026</h2>
+<p>O bot recalculava a rota a cada input e trocava o primeiro ponto a seguir com
+snapshots atrasados, oscilando perto da entrada do saguão. <code>SmokeBotNavigation</code>
+agora mantém a rota e avança seus pontos em ordem; <code>App.BotStep</code> usa esse mesmo
+controlador. Posição e direção foram incluídas nas amostras do smoke para
+diagnóstico. Nenhuma regra de movimento, porta, protocolo ou save foi alterada.</p>
+<p>Um teste com feedback de 10 Hz e atraso sintético de 200 ms falhou usando o
+controlador anterior e passou com a correção. Esse atraso é uma condição do
+teste, não uma medição de latência. Total atual: 26 testes aprovados.</p>
+<p><code>Tools/Test.ps1</code> concluiu com exit 0: validadores Python, 22 testes PowerShell,
+26 CoreTests, build C# sem erros/avisos, importação Godot e smoke ENet de 35s
+aprovados. Os quatro clientes cumpriram todos os critérios; Wesker atingiu
+<code>balcony</code>. Relatório: <code>Build/validation/20261013-105258-c99140f2/report.json</code>;
+smoke: <code>Build/smoke/55760c6def7f/report.json</code>.</p>
+<p>O log do servidor ainda registra um aviso de MTU e erro de envio no encerramento.
+Os critérios do smoke são conexão, confirmação de input e destino; seu sucesso
+não homologa ausência de erros de rede. Matriz manual, cenários ENet reais de
+concorrência/reconexão/restore, exportações, Linux/Internet e profiling não foram
+executados nesta correção restrita ao driver de teste. Os CoreTests existentes
+de concorrência de coleta, reconexão e integridade de checkpoint passaram.</p>
+<h2 id="execução-local-pelo-codex-antes-da-correção-do-smoke--13102026">Execução local pelo Codex antes da correção do smoke · 13/10/2026</h2>
+<p>SDK .NET 8.0.425 e Godot 4.7.2 stable .NET verificados. Validadores Python,
+22 regressões PowerShell, 25 CoreTests, build C# (zero erros/avisos) e importação
+Godot aprovados. O menu iniciou com janela e encerrou após 120 frames sem erros
+no log; isso não constitui aprovação visual.</p>
+<p>O smoke real com quatro clientes ENet foi executado duas vezes e <strong>falhou</strong>:
+Wesker não atingiu balcony em 35 segundos. Os quatro clientes receberam snapshots
+e confirmação de input. Há avisos de MTU e erro de envio no log do servidor.
+Não foram executados a matriz manual completa, cenários ENet de concorrência/
+reconexão/restore, exportações, Linux/Internet ou profiling.</p>
+<p>Veja <code>CODEX-GODOT-DOTNET.md</code> e
+<code>Build/validation/20261013-094921-963e1308/report.json</code> para os comandos e logs.
+Os estados “não executado” e “sem build confirmado” nas seções seguintes são
+históricos da entrega/R1/R2; esta execução confirma o build local, mas não
+homologa o jogo ou todo o multiplayer.</p>
+<h2 id="correção-de-código-r2">Correção de código R2</h2>
+<p>O log recebido do usuário confirma que a restauração no Windows concluiu e que o
+build do R1 parou com CS0104 em <code>Game/NetSession.cs</code>. Foi qualificado o gerador
+criptográfico do .NET usado no desafio de autenticação. Os validadores estáticos
+foram reexecutados; não houve execução de build ou Godot no ambiente desta correção.
+Veja <code>CORRECAO-R2-CS0104.md</code> e <code>r2-validation-report.json</code>. Esta revisão não altera
+as limitações de compilação, execução, rede e exportação indicadas abaixo.</p>
+<h2 id="correção-de-configuração-r1">Correção de configuração R1</h2>
+<p>Configuração atual: <strong>Godot 4.7.2 stable .NET / Godot.NET.Sdk 4.7.2 / net8.0</strong>.
+O bloqueio do script ao receber <code>4.7.2.stable.mono.official.ed1daf0bf</code> foi
+corrigido em código. Veja <code>CORRECAO-GODOT-4.7.2.md</code> e
+<code>toolchain-r1-report.json</code>. A verificação estática do patch não substitui execução
+PowerShell, compilação do jogo ou testes dentro do Godot.</p>
+<h2 id="classificação-da-entrega">Classificação da entrega</h2>
+<p><strong>Fonte alpha experimental. Sem build confirmado. Sem jogo exportado.</strong>
+Nenhum teste de Godot ou de partida real foi executado: o ambiente não tinha o
+engine nem o SDK .NET e a tentativa de obtê-los falhou. Esta não é uma entrega
+homologada de todo o escopo. Falhas de compilação, API, importação, interface e
+integração ainda podem existir. Não há resultados inventados para encobrir isso.</p>
+<h2 id="o-que-foi-executado">O que foi executado</h2>
+<table>
+<thead>
+<tr>
+<th>Verificação</th>
+<th>Resultado e limite</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Referências e IDs do catálogo</td>
+<td>Aprovado; 34 salas, 35 portas, cinco personagens, 30 tipos de item</td>
+</tr>
+<tr>
+<td>Grafo espacial</td>
+<td>34 salas conectadas ignorando fechaduras</td>
+</tr>
+<tr>
+<td>Dependências abstratas</td>
+<td>Sete puzzles e acesso à amostra sem depender da gazua da Jill</td>
+</tr>
+<tr>
+<td>Navegabilidade estática</td>
+<td>122 pontos de portas, coleta, puzzles e serviços alcançáveis em grade</td>
+</tr>
+<tr>
+<td>Cobertura geométrica de câmeras</td>
+<td>136 câmeras; 29.578 pontos de pés/cabeça amostrados em 4:3; margem/histerese incluída</td>
+</tr>
+<tr>
+<td>GLB e animações</td>
+<td>Cabeçalhos, buffers, acessores, UVs, tempos e quaternions verificados</td>
+</tr>
+<tr>
+<td>Texturas e áudio</td>
+<td>Referências, cabeçalhos PNG e integridade PCM/WAV verificados</td>
+</tr>
+<tr>
+<td>Código C#</td>
+<td>Somente delimitadores e referências de bootstrap; <strong>não compilação</strong></td>
+</tr>
+<tr>
+<td>Scripts Python</td>
+<td>Compilação sintática pelo Python aprovada</td>
+</tr>
+<tr>
+<td>Shell Linux</td>
+<td><code>bash -n Tools/run-server.sh</code> aprovado; execução de servidor não testada</td>
+</tr>
+<tr>
+<td>Prévia dos modelos</td>
+<td>Inspeção visual estática fora do engine</td>
+</tr>
+<tr>
+<td>Guia HTML</td>
+<td>Conteúdo renderizado no Chromium em 1440 e 390 px sem overflow horizontal; não é a UI do jogo</td>
+</tr>
+</tbody>
+</table>
+<p>Relatório reexecutável: <code>validation-report.json</code>, produzido por
+<code>python Tools/validate_project.py</code>. O teste de progressão não simula capacidade de
+inventário, combate, habilidade humana ou consumo detalhado de todos os recursos.
+A checagem de câmeras não testa ocultação por paredes, luz, silhueta, colisão de
+animação ou interface. O teste de navegação estática não executa a IA real.</p>
+<h2 id="o-que-foi-escrito-mas-não-executado">O que foi escrito, mas não executado</h2>
+<table>
+<thead>
+<tr>
+<th>Gate</th>
+<th>Ferramenta</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>25 testes do núcleo</td>
+<td><code>dotnet run --project Tests/CoreTests.csproj -- Data/scenario.json</code></td>
+<td>Não executado</td>
+</tr>
+<tr>
+<td>Build C# do jogo</td>
+<td><code>dotnet build OperationSpencer.csproj -c Debug</code></td>
+<td>Não executado</td>
+</tr>
+<tr>
+<td>Importação Godot de todos os assets</td>
+<td><code>Tools/Build.ps1</code></td>
+<td>Não executado</td>
+</tr>
+<tr>
+<td>Quatro clientes ENet reais</td>
+<td><code>Tools/network_smoke.py</code></td>
+<td>Não executado</td>
+</tr>
+<tr>
+<td>Quatro janelas com UI</td>
+<td><code>Tools/Launch-Four.ps1</code></td>
+<td>Não executado</td>
+</tr>
+<tr>
+<td>Linux dedicado / Internet</td>
+<td>Procedimento do guia de servidor</td>
+<td>Não executado</td>
+</tr>
+<tr>
+<td>Exportações Windows/Linux</td>
+<td><code>Tools/Build.ps1 -Export All</code></td>
+<td>Não executado</td>
+</tr>
+<tr>
+<td>FPS, memória, RTT e perdas</td>
+<td>Profilers/medições em máquinas-alvo</td>
+<td>Não executado</td>
+</tr>
+<tr>
+<td>CI do GitHub</td>
+<td><code>.github/workflows/verify-core.yml</code></td>
+<td>Arquivo fornecido, não executado</td>
+</tr>
+</tbody>
+</table>
+<p>Os testes de núcleo cobrem transações de inventário, kits/reconexão, slot/versão,
+época de mundo, entradas inválidas, colisão, portas, snapshots, respawn, recompensa
+com inventário cheio e integridade de save. O smoke test real verifica apenas
+conexão/movimento/salas básicas e não substitui a matriz abaixo.</p>
+<h2 id="matriz-manual-de-aceitação">Matriz manual de aceitação</h2>
+<p>Use campanha e perfis de teste separados dos saves de amigos. Registre versão,
+CPU, GPU, RAM, sistema, número de clientes e modo de renderer em cada relatório.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Procedimento</th>
+<th>Critério esperado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>B01</td>
+<td>Compilar, executar testes, importar recursos</td>
+<td>Zero erros; guardar logs reais</td>
+</tr>
+<tr>
+<td>V01</td>
+<td>Abrir menu e selecionar os cinco personagens</td>
+<td>Sem recursos ausentes ou UI cortada</td>
+</tr>
+<tr>
+<td>V02</td>
+<td>Caminhar até bordas/divisas de cada sala</td>
+<td>Trocas fixas legíveis, sem personagem oculto indevidamente</td>
+</tr>
+<tr>
+<td>V03</td>
+<td>Passar pela escada do saguão e acessar 2F/B1</td>
+<td>Altura visual e identificação de andar consistentes</td>
+</tr>
+<tr>
+<td>V04</td>
+<td>Ataque, agarrão, parry, queda e morte</td>
+<td>Contato aceitável, sem corpos flutuando ou pose reiniciando ao entrar</td>
+</tr>
+<tr>
+<td>N01</td>
+<td>Conectar quatro clientes; tentar o quinto</td>
+<td>Quatro aceitos, quinto recusado sem expulsar existentes</td>
+</tr>
+<tr>
+<td>N02</td>
+<td>Tentar mesmo personagem e mesmo perfil em duplicidade</td>
+<td>Sem duplicação de equipamento/identidade</td>
+</tr>
+<tr>
+<td>N03</td>
+<td>Separar jogadores em térreo, segundo andar e subsolo</td>
+<td>Progresso e status compartilhados, sem carregar cenários alheios</td>
+</tr>
+<tr>
+<td>N04</td>
+<td>Jogador atravessa porta enquanto outro combate</td>
+<td>Só o primeiro vê transição; combate não pausa</td>
+</tr>
+<tr>
+<td>N05</td>
+<td>Abrir inventário em combate</td>
+<td>Não pausa coop; input de movimento não fica preso</td>
+</tr>
+<tr>
+<td>I01</td>
+<td>Dois clientes coletam o mesmo item</td>
+<td>Apenas uma transferência bem-sucedida</td>
+</tr>
+<tr>
+<td>I02</td>
+<td>Arrastar, combinar, entregar e usar baú simultaneamente</td>
+<td>Quantidades conservadas, versões antigas recusadas</td>
+</tr>
+<tr>
+<td>I03</td>
+<td>Completar puzzle com inventário cheio</td>
+<td>Recompensa recuperável no mundo, sem item perdido</td>
+</tr>
+<tr>
+<td>P01</td>
+<td>Sair levando chave/amostra</td>
+<td>Item essencial recuperável; não duplica ao reconectar</td>
+</tr>
+<tr>
+<td>P02</td>
+<td>Save manual, reinício e derrota da equipe</td>
+<td>Mundo e inventários restaurados; snapshots velhos não sobrescrevem</td>
+</tr>
+<tr>
+<td>C01</td>
+<td>Caído por 45s, resgate, morte e recuperação</td>
+<td>Cura consumida só quando concluída; sem kit novo</td>
+</tr>
+<tr>
+<td>C02</td>
+<td>Parry e ajuda contra agarrão</td>
+<td>Janela/estados respeitados; arma/munição consistentes</td>
+</tr>
+<tr>
+<td>E01</td>
+<td>Matar inimigo; permanecer na sala até vencer o tempo</td>
+<td>Sem respawn em cômodo ocupado</td>
+</tr>
+<tr>
+<td>E02</td>
+<td>Sair da sala e variar população</td>
+<td>Mesmo spawn retorna uma vez; contador não reinicia arbitrariamente</td>
+</tr>
+<tr>
+<td>M01</td>
+<td>Concluir missão sozinho com Chris</td>
+<td>Nenhuma dependência obrigatória de Jill ou grupo completo</td>
+</tr>
+<tr>
+<td>M02</td>
+<td>Distribuir objetivos entre quatro pessoas</td>
+<td>Puzzles/portas não travam pela execução paralela</td>
+</tr>
+<tr>
+<td>U01</td>
+<td>Usar mouse e controle nos painéis</td>
+<td>Todas as ações alcançáveis, foco visível</td>
+</tr>
+<tr>
+<td>X01</td>
+<td>Exportar e executar em Windows sem editor aberto</td>
+<td>Recursos, dependências e saves corretos</td>
+</tr>
+<tr>
+<td>X02</td>
+<td>Rodar export Linux em VM e conectar pela rede</td>
+<td>Sessão real estável; medir RTT/perdas, não presumir</td>
+</tr>
+</tbody>
+</table>
+<p>Para acelerar E01/E02 em teste, altere temporariamente <code>RespawnSeconds</code> em uma
+cópia isolada para <code>[8,6,4,2]</code>, crie campanha nova e execute os testes reais. Esse
+catálogo diverge da versão distribuída e o validador padrão irá rejeitá-lo de
+propósito; restaure <code>[1200,900,600,420]</code> antes de compartilhar ou validar a release.</p>
+<h2 id="reduções-e-funcionalidades-ainda-ausentes">Reduções e funcionalidades ainda ausentes</h2>
+<p>O mapa é uma seleção/adaptação com 34 ambientes, não a mansão completa fiel 1:1.
+Há ligações condensadas e um arquivo subterrâneo original; não há campanha,
+cutscenes ou história integral do jogo oficial. A missão e documentos são originais.</p>
+<p>A arte é gerada e experimental. Os clipes atuais usam IK calculado no gerador,
+mas não possuem IK adaptativa em runtime, captura de movimento, skinning refinado
+nem garantia de contato sem clipping. Não há ragdoll, desmembramento, sistema elaborado de sangue regulável,
+emulação gráfica completa do PS1 ou tratamento profissional do áudio. Gavetas e
+armários são pontos de interação; nem todos têm uma tampa/porta individual animada.
+A introdução usa a transição de porta e aparição no saguão, não uma cutscene coletiva
+com todos andando sincronizados através da entrada.</p>
+<p>Não há remapeamento completo de controle, acessibilidade auditiva abrangente,
+voz integrada, dublagem, infecção, envenenamento, monstros adicionais, chefes,
+relay, lobby público, anticheat competitivo ou migração de anfitrião. O preset
+Linux mantém assets em disco mesmo que o processo não renderize.</p>
+<p>O desempenho não foi aferido; não há promessa de 60 FPS ou latência baixa. A
+simulação usa salas/dados e renderização de cômodo local, mas otimização adicional
+somente deve seguir medição real. Conectividade em rede doméstica/cloud não está
+homologada. A base precisa passar pelos gates antes de ser descrita como jogo
+completo, estável ou multiplayer funcional confirmado.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js"></script>
+        <script src="search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

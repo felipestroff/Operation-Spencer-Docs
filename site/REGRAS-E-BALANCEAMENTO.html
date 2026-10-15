@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="pt_BR" data-bs-theme="dark">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://felipestroff.github.io/Operation-Spencer-Docs/REGRAS-E-BALANCEAMENTO.html">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Regras - Operation Spencer · 0.1.0-alpha</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/brands.min.css" rel="stylesheet">
+        <link href="css/solid.min.css" rel="stylesheet">
+        <link href="css/v4-font-face.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" disabled>
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" >
+        <link href="stylesheets/spencer.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Operation Spencer · 0.1.0-alpha</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Início</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Jogar</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="INSTALACAO-WINDOWS.html" class="dropdown-item">Instalação</a>
+</li>
+                                    
+<li>
+    <a href="CONTROLES.html" class="dropdown-item">Controles</a>
+</li>
+                                    
+<li>
+    <a href="MENU-ESC-2026-10-15.html" class="dropdown-item">Menu Esc</a>
+</li>
+                                    
+<li>
+    <a href="CONTROLES-EDITAVEIS-2026-10-15.html" class="dropdown-item">Configurações</a>
+</li>
+                                    
+<li>
+    <a href="REGRAS-E-BALANCEAMENTO.html" class="dropdown-item active" aria-current="page">Regras</a>
+</li>
+                                    
+<li>
+    <a href="MULTIPLAYER-E-SERVIDOR.html" class="dropdown-item">Cooperativo</a>
+</li>
+                                    
+<li>
+    <a href="MANSAO-E-MISSAO.html" class="dropdown-item">Missão (spoilers)</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="GALERIAS.html" class="nav-link">Galerias</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Desenvolvimento</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="ARQUITETURA.html" class="dropdown-item">Arquitetura</a>
+</li>
+                                    
+<li>
+    <a href="TIROS-OBSTACULOS-2026-10-15.html" class="dropdown-item">Tiros e obstáculos</a>
+</li>
+                                    
+<li>
+    <a href="ASSETS-E-AUDIO.html" class="dropdown-item">Assets e áudio</a>
+</li>
+                                    
+<li>
+    <a href="JILL-PORTRAITS-2026-10-15.html" class="dropdown-item">Portraits de Jill</a>
+</li>
+                                    
+<li>
+    <a href="TEXTURAS-ARQUITETURA-2026-10-15.html" class="dropdown-item">Texturas arquitetônicas</a>
+</li>
+                                    
+<li>
+    <a href="VERSIONAMENTO.html" class="dropdown-item">Versões e publicação</a>
+</li>
+                                    
+<li>
+    <a href="DOCUMENTACAO.html" class="dropdown-item">Documentação</a>
+</li>
+                                    
+<li>
+    <a href="INVENTARIO-DOCUMENTACAO.html" class="dropdown-item">Inventário documental</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="TESTES-E-LIMITACOES.html" class="nav-link">Evidências</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="FONTES-E-ADAPTACOES.html" class="nav-link">Créditos e referências</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="VERSAO.html" class="nav-link">Versão</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="CONTROLES-EDITAVEIS-2026-10-15.html" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="MULTIPLAYER-E-SERVIDOR.html" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/felipestroff/Operation-Spencer-Docs" class="nav-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <button id="theme-menu" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle">
+                                <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                <span class="d-lg-none ms-2">Toggle theme</span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                                    <i class="fa-solid fa-sun fa-fw"></i>
+                                    <span class="ms-2">Light</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="true">
+                                    <i class="fa-solid fa-moon fa-fw"></i>
+                                    <span class="ms-2">Dark</span>
+                                    <i class="fa-solid fa-check ms-auto"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                                    <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                    <span class="ms-2">Auto</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                              </ul>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="js/darkmode.js"></script>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#regras-e-balanceamento-da-alpha" class="nav-link">Regras e balanceamento da alpha</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#personagens" class="nav-link">Personagens</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#movimento-nas-escadas" class="nav-link">Movimento nas escadas</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#ervas" class="nav-link">Ervas</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#combate" class="nav-link">Combate</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#incapacitação-e-morte" class="nav-link">Incapacitação e morte</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#respawn-e-reposição" class="nav-link">Respawn e reposição</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#campanha-e-cooperação" class="nav-link">Campanha e cooperação</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="regras-e-balanceamento-da-alpha">Regras e balanceamento da alpha</h1>
+<p>Tudo nesta página descreve as regras escritas no código/dados, ainda pendentes
+de testes no engine. Não são kits canônicos nem uma transcrição do jogo original.</p>
+<h2 id="personagens">Personagens</h2>
+<table>
+<thead>
+<tr>
+<th>Personagem</th>
+<th style="text-align: right;">Slots</th>
+<th style="text-align: right;">Vida</th>
+<th>Kit inicial adaptado</th>
+<th>Vantagem</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Jill</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">100</td>
+<td>Pistola com 15, faca, gazua, spray, 15 balas 9 mm</td>
+<td>Abre gavetas de serviço com gazua</td>
+</tr>
+<tr>
+<td>Chris</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">130</td>
+<td>Pistola com 10, faca, 10 balas 9 mm</td>
+<td>Faca causa 25% mais dano</td>
+</tr>
+<tr>
+<td>Wesker</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">100</td>
+<td>Pistola com 15, faca, 15 balas 9 mm</td>
+<td>Movimento 10% mais rápido</td>
+</tr>
+<tr>
+<td>Rebecca</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">90</td>
+<td>Pistola com 10, faca, duas ervas verdes, spray</td>
+<td>Cura 25% melhor</td>
+</tr>
+<tr>
+<td>Barry</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">125</td>
+<td>Revólver com 6, faca, 6 balas .357</td>
+<td>Recarga 15% mais rápida</td>
+</tr>
+</tbody>
+</table>
+<p>Não há personagem obrigatório. Wesker coopera normalmente, sem mecânica de traição.
+Capacidades não aumentam durante essa missão. Balas carregadas ficam na arma;
+munição de reserva ocupa slots e tem limite de pilha: 60 para 9 mm, 24 para .357 e
+24 para cartuchos. Facas defensivas empilham até três. Ervas são unitárias.</p>
+<h2 id="movimento-nas-escadas">Movimento nas escadas</h2>
+<p>Humanos caminham obrigatoriamente nos degraus da escadaria central do saguão,
+subindo ou descendo, mesmo com o comando de corrida pressionado. A entrada no
+primeiro degrau já usa caminhada. Piso e patamar permitem correr; mantendo o
+comando, a corrida retorna ao deixar os degraus. A regra é compartilhada pelo
+solo, servidor e previsão do cliente, preservando os modificadores de personagem
+e ferimentos. Os acessos entre cômodos mantêm suas transições existentes.</p>
+<h2 id="ervas">Ervas</h2>
+<p>A amarela <strong>potencializa as misturas</strong>, sem aumentar vida máxima. Não há veneno,
+infecção progressiva ou erva azul nesta primeira missão.</p>
+<table>
+<thead>
+<tr>
+<th>Item / combinação</th>
+<th style="text-align: right;">Cura-base</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Verde</td>
+<td style="text-align: right;">25</td>
+</tr>
+<tr>
+<td>Verde + verde</td>
+<td style="text-align: right;">50</td>
+</tr>
+<tr>
+<td>Verde + verde + verde</td>
+<td style="text-align: right;">90</td>
+</tr>
+<tr>
+<td>Verde + vermelha</td>
+<td style="text-align: right;">75</td>
+</tr>
+<tr>
+<td>Verde + amarela</td>
+<td style="text-align: right;">38</td>
+</tr>
+<tr>
+<td>Verde + verde + amarela</td>
+<td style="text-align: right;">75</td>
+</tr>
+<tr>
+<td>Verde + vermelha + amarela</td>
+<td style="text-align: right;">100</td>
+</tr>
+<tr>
+<td>Vermelha, amarela ou vermelha + amarela</td>
+<td style="text-align: right;">Não curam sozinhas</td>
+</tr>
+<tr>
+<td>Spray</td>
+<td style="text-align: right;">Preenche a vida até o máximo</td>
+</tr>
+</tbody>
+</table>
+<p>Vermelha + amarela pode ser preparada primeiro e receber verde depois. A cura
+respeita o máximo do personagem. O bônus de Rebecca se aplica à cura consumida;
+a combinação é uma tabela explícita, não uma multiplicação universal sem limite.</p>
+<h2 id="combate">Combate</h2>
+<p>Faca reutilizável: dano-base 22, alcance 1,65 m, intervalo 0,7 s. Pistola: dano-base
+28, carregador 15. Revólver: dano-base 85, carregador 6. Espingarda: dano-base 95,
+alcance 8 m, carregador 6, até três alvos na seleção de disparo. Assistência de
+mira respeita direção e obstáculos. Mirar alto aumenta dano quando aplicável;
+mirar baixo pode derrubar zumbis. Não há fogo amigo nesta implementação.</p>
+<p>Disparos consideram a altura da arma, o nível de mira, a postura do alvo e a
+elevação do piso. Passam acima de banheiras e móveis baixos quando há trajetória
+livre; relógios, armários e outros objetos altos bloqueiam quando atravessados
+pela trajetória. Mira baixa, cães e rastejantes podem ficar protegidos por móveis
+baixos. Os volumes usam largura, profundidade e altura autoradas dos props,
+sem colisão por triângulo do modelo. <a href="TIROS-OBSTACULOS-2026-10-15.html">Correção e testes</a>.</p>
+<p>O ataque armado exige mira e impede andar simultaneamente. Zumbis alternam
+perseguição, ataque próximo, agarrão e investida; podem continuar rastejando após
+ser derrubados e tentar agarrar pernas. Cerberus correm mais que os personagens,
+se aproximam por posições laterais e atacam por investida/mordida. Nenhum deles
+atravessa as portas de transição nesta alpha. Comportamentos são simplificados.</p>
+<p>Parry: janela temporal de 0,23 s, intervalo de 0,9 s, exige faca principal;
+não existe rolagem aleatória de “sorte”. Q em agarrão tenta gastar faca defensiva
+e ferir o atacante. Não há defesa ilimitada contra qualquer estado/ataque.
+O código usa separação suave entre aliados para reduzir bloqueios de corredores.</p>
+<h2 id="incapacitação-e-morte">Incapacitação e morte</h2>
+<p>No coop, perder toda a vida gera estado caído por 45 s. Um aliado próximo com cura
+pode socorrer durante uma ação de 2 s. Ao concluir, gasta cura e retorna o alvo
+com 35% da vida e breve proteção. Sem resgate, ocorre morte, equipamento no chão
+e observação dos sobreviventes. Em uma máquina de escrever, um sobrevivente pode
+recuperar os mortos com 50% da vida, sem recriar equipamento; ele continua no chão.</p>
+<p>Solo: morte leva à recuperação do checkpoint, sem esperar resgate inexistente.
+Derrota da equipe aciona restauração do último save de checkpoint. Teste o fluxo
+com várias mortes, desconexões e inventários cheios antes de aceitar a versão.</p>
+<h2 id="respawn-e-reposição">Respawn e reposição</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Jogadores conectados conscientes/vivos considerados</th>
+<th style="text-align: right;">Tempo nominal por inimigo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">20 minutos</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">15 minutos</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">10 minutos</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">7 minutos</td>
+</tr>
+</tbody>
+</table>
+<p>A contagem é global à partida, não por cômodo. Jogadores caídos/mortos não aumentam
+a população ativa de combate. O progresso é uma fração acumulada: trocar a
+população altera a velocidade restante sem zerar o contador. Um spawn substitui
+seu inimigo morto, sem multiplicar a população.</p>
+<p>Não reapareça dentro de cômodo ocupado, nem em sala segura. O respawn pendente
+aguarda desocupação. Corpos podem persistir como representação do spawn morto.
+Fora da câmera mas no mesmo cômodo, a IA continua sendo simulada no servidor.
+Em cômodos vazios, cães e zumbis continuam vagando; perseguidores pressionam
+a porta por alguns segundos e depois retomam a movimentação. Consulte
+<a href="INIMIGOS-E-PORTAS-2026-10-15.html">implementação e limites</a>.</p>
+<p>Pontos específicos de munição/cura voltam após 25 ou 30 minutos de simulação,
+dependendo do cadastro, e só reaparecem quando o cômodo está vazio. Chaves,
+componentes de missão e armas especiais não se renovam. Inimigos não fornecem
+munição ilimitada por morte. O balanceamento precisa de partidas medidas.</p>
+<h2 id="campanha-e-cooperação">Campanha e cooperação</h2>
+<p>Portas abertas, puzzles e objetivos são compartilhados; itens do mundo são únicos.
+O baú é coletivo, com 64 slots. Chaves são físicas e necessárias ao destrancar;
+o desbloqueio vale para todos. Saída do portador não deve bloquear o avanço.
+Toda ação de inventário passa por validação de versão, origem e proximidade.</p>
+<p>Save manual nas máquinas de escrever sem fitas consumíveis; checkpoint coletivo.
+Recuperação automática periódica e em saídas. O arquivo pertence à campanha do
+anfitrião/servidor, não a um inventário universal levado a servidores diferentes.
+Sem clientes, o tempo de simulação não avança. Não há simulação pelo relógio
+quando o programa está fechado. Nova campanha começa com novos kits; reconectar
+à mesma não entrega kits adicionais.</p>
+<p>A condição final exige amostra recuperada, todos os sobreviventes conscientes na
+zona das portas principais do saguão e 8 segundos de permanência. Mortos e caídos
+não bloqueiam o contador de extração; isso é uma concessão desta alpha. Não há
+ranking, monetização, campanha longa ou chefe final.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js"></script>
+        <script src="search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

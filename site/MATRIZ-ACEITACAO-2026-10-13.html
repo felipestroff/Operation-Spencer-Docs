@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="pt_BR" data-bs-theme="dark">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://felipestroff.github.io/Operation-Spencer-Docs/MATRIZ-ACEITACAO-2026-10-13.html">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Matriz de aceitação · revisão local de 13/10/2026 - Operation Spencer · 0.1.0-alpha</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/brands.min.css" rel="stylesheet">
+        <link href="css/solid.min.css" rel="stylesheet">
+        <link href="css/v4-font-face.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" disabled>
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" >
+        <link href="stylesheets/spencer.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Operation Spencer · 0.1.0-alpha</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Início</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Jogar</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="INSTALACAO-WINDOWS.html" class="dropdown-item">Instalação</a>
+</li>
+                                    
+<li>
+    <a href="CONTROLES.html" class="dropdown-item">Controles</a>
+</li>
+                                    
+<li>
+    <a href="MENU-ESC-2026-10-15.html" class="dropdown-item">Menu Esc</a>
+</li>
+                                    
+<li>
+    <a href="CONTROLES-EDITAVEIS-2026-10-15.html" class="dropdown-item">Configurações</a>
+</li>
+                                    
+<li>
+    <a href="REGRAS-E-BALANCEAMENTO.html" class="dropdown-item">Regras</a>
+</li>
+                                    
+<li>
+    <a href="MULTIPLAYER-E-SERVIDOR.html" class="dropdown-item">Cooperativo</a>
+</li>
+                                    
+<li>
+    <a href="MANSAO-E-MISSAO.html" class="dropdown-item">Missão (spoilers)</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="GALERIAS.html" class="nav-link">Galerias</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Desenvolvimento</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="ARQUITETURA.html" class="dropdown-item">Arquitetura</a>
+</li>
+                                    
+<li>
+    <a href="TIROS-OBSTACULOS-2026-10-15.html" class="dropdown-item">Tiros e obstáculos</a>
+</li>
+                                    
+<li>
+    <a href="ASSETS-E-AUDIO.html" class="dropdown-item">Assets e áudio</a>
+</li>
+                                    
+<li>
+    <a href="JILL-PORTRAITS-2026-10-15.html" class="dropdown-item">Portraits de Jill</a>
+</li>
+                                    
+<li>
+    <a href="TEXTURAS-ARQUITETURA-2026-10-15.html" class="dropdown-item">Texturas arquitetônicas</a>
+</li>
+                                    
+<li>
+    <a href="VERSIONAMENTO.html" class="dropdown-item">Versões e publicação</a>
+</li>
+                                    
+<li>
+    <a href="DOCUMENTACAO.html" class="dropdown-item">Documentação</a>
+</li>
+                                    
+<li>
+    <a href="INVENTARIO-DOCUMENTACAO.html" class="dropdown-item">Inventário documental</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="TESTES-E-LIMITACOES.html" class="nav-link">Evidências</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="FONTES-E-ADAPTACOES.html" class="nav-link">Créditos e referências</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="VERSAO.html" class="nav-link">Versão</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/felipestroff/Operation-Spencer-Docs" class="nav-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <button id="theme-menu" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle">
+                                <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                <span class="d-lg-none ms-2">Toggle theme</span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                                    <i class="fa-solid fa-sun fa-fw"></i>
+                                    <span class="ms-2">Light</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="true">
+                                    <i class="fa-solid fa-moon fa-fw"></i>
+                                    <span class="ms-2">Dark</span>
+                                    <i class="fa-solid fa-check ms-auto"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                                    <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                    <span class="ms-2">Auto</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                              </ul>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="js/darkmode.js"></script>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#matriz-de-aceitação--revisão-local-de-13102026" class="nav-link">Matriz de aceitação · revisão local de 13/10/2026</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#falhas-reproduzidas-e-correções" class="nav-link">Falhas reproduzidas e correções</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#estado-por-caso" class="nav-link">Estado por caso</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#relatórios" class="nav-link">Relatórios</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="matriz-de-aceitação--revisão-local-de-13102026">Matriz de aceitação · revisão local de 13/10/2026</h1>
+<p>Esta revisão amplia evidências reais, mas <strong>não homologa a matriz manual completa</strong>.
+As fixtures montam posições/itens no servidor para isolar comandos; os eventos de
+mouse/teclado enviados ao Godot são sintéticos. Capturas foram inspecionadas, sem
+substituir percurso manual, controle físico ou aprovação de todas as animações.</p>
+<p>Ambiente: Windows 10 Home 10.0.19045; Intel i5-1135G7; 16 GB de RAM;
+NVIDIA GeForce MX330 / driver 582.66; Compatibility/OpenGL 3.3; janela 1024×768.
+Godot 4.7.2.stable.mono.official.ed1daf0bf, SDK .NET 8.0.425 e Python 3.11.
+Ensaio Linux: export dedicado em Ubuntu WSL2, kernel 5.15.146.1, com quatro
+processos cliente Windows. Campanhas/perfis de teste separados; sem saves privados.</p>
+<h2 id="falhas-reproduzidas-e-correções">Falhas reproduzidas e correções</h2>
+<ul>
+<li>Inventário extrapolava a janela nos cinco personagens. <code>GameUi.Modal</code> agora
+  contém rolagem vertical com <code>FollowFocus</code>; <code>InventorySlot</code> mostra foco e deixa
+  o clique no número passar para o slot. Evidência anterior:
+  <code>Build/manual/presentation-baseline.log</code> (cinco falhas de layout).</li>
+<li>A prévia de personagem ficava atrás da coluna do menu. Ajustado somente o
+  enquadramento de prévia em <code>RoomView.Preview</code>.</li>
+<li>A revisão do código encontrou nomes permanentes sobre aliados no multiplayer.
+  Removidos em <code>RoomView.Apply</code>; captura renderizada de quatro personagens em
+  <code>Build/manual/fixed-multiplayer-no-name-labels.png</code> confirma apenas o log.</li>
+<li>Dano durante o inventário multiplayer não atualizava PV/estado sem alteração
+  de versão dos itens. <code>GameUi.Refresh</code> acompanha HP; o título de saúde também
+  passa a atualizar. <code>Build/manual/ui-combat-before.log</code> reproduziu;
+  <code>Build/manual/ui-combat-after.log</code> passou os 11 checks desse recorte.</li>
+<li>O gerador ocultava o personagem no ponto livre junto à face oeste. Alteradas
+  somente as quatro câmeras de <code>furnace</code> em <code>Tools/generate_data.py</code>, regenerando
+  <code>Data/scenario.json</code>: lado X acompanha a zona, altura 6,2 e FOV 60. Capturas
+  <code>Build/manual/furnace-before.png</code> / <code>fixed-room-furnace.png</code>; teste de linha de
+  visão do torso e enquadramento dos quatro cantos em <code>furnace-regression.log</code>.</li>
+<li>Ao aparar um swipe, a simulação substituía <code>stunned</code> por <code>idle</code>; <code>HitEnemy</code>
+  também sobrescrevia os 1,4s do parry. Preservados stun e morte após contato;
+  duração aplicada depois do dano, apenas quando o inimigo sobrevive.
+  <code>Build/manual/core-parry-before.log</code> reproduziu; regressão Core e ENet passaram.</li>
+<li>O export Linux, após quatro clientes, registrou erro de desconexão de
+  <code>tree_exited</code> em <code>NetSession.Stop</code> ao trocar o peer:
+  <code>Build/manual/wsl-4b328249ac/report.json</code>. O cache nativo conecta um callable
+  com ID associado, mas seu <code>clear()</code> tenta desconectar sem esse argumento.
+  A saída/reentrada temporária do mesmo nó Net permite o callback one-shot
+  remover o cache antes da troca; a saída definitiva fecha o transporte e
+  deixa o evento normal limpar o cache. Há guarda de recursão. Engine mantido.
+  <a href="https://github.com/godotengine/godot/blob/4.7.2-stable/modules/multiplayer/scene_cache_interface.cpp">Código oficial do cache RPC</a>.</li>
+</ul>
+<p>HUD preservado: solo sem interface permanente; multiplayer apenas com log discreto
+e temporário no canto inferior esquerdo. Painéis por comando continuam disponíveis.
+Sem alteração de schema, kits, mapa/conexões, slots, população ou respawn aprovado.</p>
+<h2 id="estado-por-caso">Estado por caso</h2>
+<p>“ENet” significa sockets reais; “renderizado” significa engine/GPU com entradas
+sintéticas e inspeção de capturas. “Parcial” explicita a parte ainda sem execução.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Evidência desta revisão</th>
+<th>Estado / limite</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>B01</td>
+<td>Python, 22 regressões PowerShell, 3 Python, 31 CoreTests, build/importação e smoke</td>
+<td>Gates executados; logs abaixo</td>
+</tr>
+<tr>
+<td>V01</td>
+<td>Cinco personagens/menu/inventário/mapa; preview fora da coluna; ações alcançáveis com foco</td>
+<td>Renderizado; controle físico pendente</td>
+</tr>
+<tr>
+<td>V02</td>
+<td>Capturas dos 34 ambientes; oclusão/cantos de <code>furnace</code> corrigidos/testados</td>
+<td>Parcial: caminhar por todas as bordas/divisas ainda pendente</td>
+</tr>
+<tr>
+<td>V03</td>
+<td>Ator renderizado no meio/topo da escada; salas 2F/B1 carregadas; transferências na sequência Core</td>
+<td>Parcial: percurso manual contínuo pendente</td>
+</tr>
+<tr>
+<td>V04</td>
+<td>Estados de parry/grab/morte exercitados no Core/ENet</td>
+<td>Parcial: contato/clipping/pose de todas as animações não homologados</td>
+</tr>
+<tr>
+<td>N01</td>
+<td>Quatro clientes; quinto transporte recusado; originais permanecem</td>
+<td>ENet aprovado</td>
+</tr>
+<tr>
+<td>N02</td>
+<td>Personagem/perfil duplicado recusado, reconexão sem kit novo</td>
+<td>ENet aprovado nos recortes</td>
+</tr>
+<tr>
+<td>N03</td>
+<td>Clientes em 1F/2F/B1 recebem elenco compartilhado/inimigos locais</td>
+<td>ENet aprovado; quatro janelas simultâneas pendentes</td>
+</tr>
+<tr>
+<td>N04</td>
+<td>Porta de um cliente enquanto outro perde HP; somente primeiro em transição</td>
+<td>ENet aprovado; percepção visual simultânea pendente</td>
+</tr>
+<tr>
+<td>N05</td>
+<td>Host com inventário aberto sofre dano; PV/estado atualizam; W solto no painel não fica preso</td>
+<td>Renderizado aprovado; cliente remoto/controle físico pendentes</td>
+</tr>
+<tr>
+<td>I01</td>
+<td>Dupla coleta do mesmo pickup; uma quantidade total</td>
+<td>ENet aprovado</td>
+</tr>
+<tr>
+<td>I02</td>
+<td>Arraste real na GUI, combinação, entrega paralela, baú concorrente/retry e versão antiga</td>
+<td>Recortes renderizados/ENet aprovados; todas as combinações/trocas e drag entre baú/inventário pendentes</td>
+</tr>
+<tr>
+<td>I03</td>
+<td>Puzzle concluído com inventário cheio; recompensa disponível no mundo</td>
+<td>ENet aprovado</td>
+</tr>
+<tr>
+<td>P01</td>
+<td>Chave essencial recuperável após saída; retorno conserva inventário</td>
+<td>ENet aprovado para chave; saída com amostra ainda pendente</td>
+</tr>
+<tr>
+<td>P02</td>
+<td>Save por comando, restore, época velha, reinício, derrota da equipe e reconexão</td>
+<td>ENet aprovado; interação manual completa com máquina pendente</td>
+</tr>
+<tr>
+<td>C01</td>
+<td>Resgate cancelado conserva cura; conclusão consome uma; morte após 45 segundos autoritativos; recuperação sem kit</td>
+<td>ENet aprovado com fixtures de estado/posição</td>
+</tr>
+<tr>
+<td>C02</td>
+<td>Parry impede dano, mantém stun; faca defensiva consumida; aliado interrompe grab; parry letal mantém morte</td>
+<td>Core/ENet aprovados; contato visual completo pendente</td>
+</tr>
+<tr>
+<td>E01</td>
+<td>Progresso de respawn pré-acumulado chega a 1, mas sala ocupada bloqueia respawn</td>
+<td>ENet aprovado no recorte; espera integral de 1200s não executada</td>
+</tr>
+<tr>
+<td>E02</td>
+<td>Sala vazia devolve mesmo spawn uma vez; população muda sem zerar fração</td>
+<td>ENet aprovado no recorte; não alterados <code>[1200,900,600,420]</code></td>
+</tr>
+<tr>
+<td>M01</td>
+<td>Chris obtém chaves/componentes por comandos, passa portas/puzzles e extrai amostra com seis slots</td>
+<td>Core aprovado com posições/tempo dirigidos e invulnerabilidade; campanha manual/balanceamento pendentes</td>
+</tr>
+<tr>
+<td>M02</td>
+<td>Três puzzles em paralelo propagam progresso aos quatro clientes</td>
+<td>ENet aprovado no recorte; missão completa com quatro pessoas pendente</td>
+</tr>
+<tr>
+<td>U01</td>
+<td>Mouse sintético seleciona número, arrasta e combina; seta move foco; rolagem revela ações</td>
+<td>Renderizado aprovado; controle físico não executado</td>
+</tr>
+<tr>
+<td>X01</td>
+<td>Export Windows sem editor: campanha offline nova e retomada, ticks 204→399</td>
+<td>Startup/retomada aprovados; percurso e inventário manual detalhado pendentes</td>
+</tr>
+<tr>
+<td>X02</td>
+<td>Export Linux dedicado em WSL2 e quatro clientes Windows, logs/RTT/perda ENet</td>
+<td>Ensaio aprovado; VM gráfica, Internet/perdas induzidas não homologadas</td>
+</tr>
+</tbody>
+</table>
+<h2 id="relatórios">Relatórios</h2>
+<p>Gates consolidados:
+<code>Build/validation/20261013-131117-9853a8d3/report.json</code>, exit 0:
+31 CoreTests, 42 checks ENet e 167 checks renderizados, além dos demais gates.
+Após remover os nomes sobre aliados, repetidos validadores Python, 31 CoreTests,
+build (zero erros/avisos), importação e apresentação: <strong>168 checks</strong>, exit 0,
+sem erros de runtime/MTU (<code>Build/manual/final-ui-presentation.log</code>). Relatórios
+Python em <code>final-ui-project.json</code> / <code>final-ui-toolchain.json</code>, log de importação
+em <code>final-ui-import.log</code>, todos em <code>Build/manual/</code>. O código de rede não mudou
+entre o gate consolidado e essa correção de apresentação.
+Falhas intermediárias foram preservadas; não foram suprimidas dos scanners.
+O teste de wipe espera a <strong>época nova em todos os clientes</strong>, pois o tick volta
+ao checkpoint e um snapshot anterior pode ter tick maior.</p>
+<p>Para repetir:</p>
+<pre><code class="language-powershell">powershell.exe -NoProfile -ExecutionPolicy Bypass -File Tools/Test.ps1 -Presentation
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File Tools/Build.ps1 -Export All
+</code></pre>
+<p>Saída com peers ativos: iniciar <code>Tools/NetworkAcceptance.tscn -- --quit-active</code>
+em execução separada, usando o engine .NET; porta 27625 compartilhada pela fixture.
+As capturas e folhas de contato ficam em <code>Build/manual/</code>.</p>
+<p>Exports Windows/Linux: <code>Build/manual/exports-verified.log</code>, exit 0; regenerados
+com a última alteração visual em <code>Build/manual/final-ui-exports.log</code>. Windows
+novo/retomada: <code>Build/manual/package-b7efd93f46/report.json</code>, exit 0 em ambos os
+processos, ticks 204→399, sem erros. Saída com quatro peers ativos:
+<code>Build/manual/quit-active-verified.log</code>, exit 0, sete checks de preparação e logs limpos.</p>
+<p>Windows→Linux WSL2 após corrigir encerramento:
+<code>Build/manual/wsl-aa1e2b04f9/report.json</code>, aprovado, quatro trajetos/ACKs/elenco
+e logs limpos, incluindo encerramento do servidor. Medianas de RTT do ping por
+cliente entre 6,74 e 6,75 ms arredondados; máximo observado 6,80 ms; estimativa
+de perda de pacotes confiáveis 0 nas amostras maduras desse ensaio. A execução
+anterior, que revelou o erro de encerramento, chegou a 0,001190185546875 na
+estimativa ENet de Chris; não foi descartada para alegar ausência geral de perdas.
+Somente ambiente local/virtualizado: não é resultado de Internet ou benchmark.
+O runner de teste em <code>Build/manual/wsl_smoke.py</code> espera a porta UDP via <code>ss</code>,
+pois <code>wsl.exe</code> pode entregar stdout gerenciado redirecionado só no encerramento.</p>
+<p>A captura nativa via <code>computer-use</code> falhou por timeout e a automação foi encerrada
+pela tecla Esc física. Não houve teste com controle físico. Não foram aferidos
+FPS, perdas UDP gerais, qualidade de todos os contatos ou desempenho na Internet.
+Os números ENet de perda são estimativas de <strong>pacotes confiáveis</strong>, atualizadas em
+janelas de aproximadamente 10s; não equivalem à perda UDP total. O RTT do ping
+do jogo é medido no cliente, em milissegundos, sem promessa para outras redes.
+O WSL existente inicia como root e emite seu aviso padrão; o aviso não foi ocultado.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js"></script>
+        <script src="search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

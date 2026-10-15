@@ -1,0 +1,18 @@
+{
+  "kind": "PACKAGING_AND_DOCUMENTATION_CHECKS_NOT_ENGINE_TESTS",
+  "utc": "2026-10-13T00:50:25.020896+00:00",
+  "python_syntax": "pass",
+  "bash_syntax": "pass",
+  "csproj_xml_parse": "pass",
+  "declared_core_tests": 25,
+  "core_tests_executed": false,
+  "html_local_references": "pass",
+  "html_layout_desktop_1440px": "pass",
+  "html_layout_mobile_390px": "pass",
+  "html_method": "Chromium set_content with embedded preview image; file:// navigation was blocked by environment policy.",
+  "game_compiled": false,
+  "godot_import_executed": false,
+  "game_rendering_tested": false,
+  "network_test_executed": false,
+  "font_files_distributed": false
+}

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="pt_BR" data-bs-theme="dark">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://felipestroff.github.io/Operation-Spencer-Docs/ESCADAS-MOVIMENTO-2026-10-14.html">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Movimento na escadaria · 14/10/2026 - Operation Spencer · 0.1.0-alpha</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/brands.min.css" rel="stylesheet">
+        <link href="css/solid.min.css" rel="stylesheet">
+        <link href="css/v4-font-face.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" disabled>
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" >
+        <link href="stylesheets/spencer.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Operation Spencer · 0.1.0-alpha</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Início</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Jogar</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="INSTALACAO-WINDOWS.html" class="dropdown-item">Instalação</a>
+</li>
+                                    
+<li>
+    <a href="CONTROLES.html" class="dropdown-item">Controles</a>
+</li>
+                                    
+<li>
+    <a href="MENU-ESC-2026-10-15.html" class="dropdown-item">Menu Esc</a>
+</li>
+                                    
+<li>
+    <a href="CONTROLES-EDITAVEIS-2026-10-15.html" class="dropdown-item">Configurações</a>
+</li>
+                                    
+<li>
+    <a href="REGRAS-E-BALANCEAMENTO.html" class="dropdown-item">Regras</a>
+</li>
+                                    
+<li>
+    <a href="MULTIPLAYER-E-SERVIDOR.html" class="dropdown-item">Cooperativo</a>
+</li>
+                                    
+<li>
+    <a href="MANSAO-E-MISSAO.html" class="dropdown-item">Missão (spoilers)</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="GALERIAS.html" class="nav-link">Galerias</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Desenvolvimento</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="ARQUITETURA.html" class="dropdown-item">Arquitetura</a>
+</li>
+                                    
+<li>
+    <a href="TIROS-OBSTACULOS-2026-10-15.html" class="dropdown-item">Tiros e obstáculos</a>
+</li>
+                                    
+<li>
+    <a href="ASSETS-E-AUDIO.html" class="dropdown-item">Assets e áudio</a>
+</li>
+                                    
+<li>
+    <a href="JILL-PORTRAITS-2026-10-15.html" class="dropdown-item">Portraits de Jill</a>
+</li>
+                                    
+<li>
+    <a href="TEXTURAS-ARQUITETURA-2026-10-15.html" class="dropdown-item">Texturas arquitetônicas</a>
+</li>
+                                    
+<li>
+    <a href="VERSIONAMENTO.html" class="dropdown-item">Versões e publicação</a>
+</li>
+                                    
+<li>
+    <a href="DOCUMENTACAO.html" class="dropdown-item">Documentação</a>
+</li>
+                                    
+<li>
+    <a href="INVENTARIO-DOCUMENTACAO.html" class="dropdown-item">Inventário documental</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="TESTES-E-LIMITACOES.html" class="nav-link">Evidências</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="FONTES-E-ADAPTACOES.html" class="nav-link">Créditos e referências</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="VERSAO.html" class="nav-link">Versão</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/felipestroff/Operation-Spencer-Docs" class="nav-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <button id="theme-menu" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle">
+                                <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                <span class="d-lg-none ms-2">Toggle theme</span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                                    <i class="fa-solid fa-sun fa-fw"></i>
+                                    <span class="ms-2">Light</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="true">
+                                    <i class="fa-solid fa-moon fa-fw"></i>
+                                    <span class="ms-2">Dark</span>
+                                    <i class="fa-solid fa-check ms-auto"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                                    <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                    <span class="ms-2">Auto</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                              </ul>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="js/darkmode.js"></script>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#movimento-na-escadaria--14102026" class="nav-link">Movimento na escadaria · 14/10/2026</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#caminhada-obrigatória-nos-degraus--15102026" class="nav-link">Caminhada obrigatória nos degraus · 15/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#revisão-da-postura-após-os-prints-do-desenvolvedor" class="nav-link">Revisão da postura após os prints do desenvolvedor</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#primeira-implementação--histórico-de-contato-com-postura-rejeitada" class="nav-link">Primeira implementação — histórico de contato, com postura rejeitada</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#causa-e-alteração" class="nav-link">Causa e alteração</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#evidências-e-reprodução" class="nav-link">Evidências e reprodução</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#limites" class="nav-link">Limites</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="movimento-na-escadaria--14102026">Movimento na escadaria · 14/10/2026</h1>
+<blockquote>
+<p>Referência visual atualizada: a <a href="TEXTURAS-ARQUITETURA-2026-10-15.html">revisão de texturas de 15/10/2026</a> substitui os materiais arquitetônicos nas capturas atuais. As imagens e resultados desta rodada datada permanecem como evidência histórica anterior à revisão.</p>
+</blockquote>
+<h2 id="caminhada-obrigatória-nos-degraus--15102026">Caminhada obrigatória nos degraus · 15/10/2026</h2>
+<p>Estado atual: humanos não podem correr no trecho de degraus da escadaria do hall.
+Segurar Shift ou corrida no controle produz caminhada na subida/descida; mantendo
+o comando, a corrida volta ao chegar ao piso ou ao patamar. Outras áreas e as
+transições de portas entre níveis permanecem como antes.</p>
+<p><code>HallSurface.CrossesFlight</code> identifica o trecho atravessado pela passada proposta;
+<code>Geometry.Move</code> normaliza o pedido antes de calcular o deslocamento final e o
+estado. Assim, a primeira entrada já usa velocidade de caminhada, e o servidor,
+o solo e a previsão do cliente usam a mesma regra. Não muda input/protocolo,
+schema/save, dados, geometria, câmeras, animações ou modificadores de movimento.</p>
+<p><code>Tests/StairMovementTests.cs</code> cobre os cinco humanos, direções/diagonal, snapshot
+autoritativo, ambas as entradas/saídas, piso/patamar, outra sala, recuo e mira.
+<code>StairGameplayAcceptance --hold-run</code> mantém corrida pressionada durante os dez
+percursos dos cinco humanos e confere estado, velocidade, clipe de caminhada e
+retorno da corrida fora dos degraus. Saída desta revisão em
+<code>Build/stair-walk-only-2026-10-15/</code>.</p>
+<p>Para reproduzir após build/importação:</p>
+<pre><code class="language-powershell">$enginePath = 'C:\dev\Godot_v4.7.2-stable_mono_win64\Godot_v4.7.2-stable_mono_win64_console.exe'
+&amp; $enginePath --path . res://Tools/StairGameplayAcceptance.tscn -- --hold-run --output=res://Build/stair-walk-only-2026-10-15/gameplay --profile stair-walk-only-20261015 --campaign stair-walk-only-20261015
+</code></pre>
+<p>Na primeira tentativa, a tela inicial mantinha o input bloqueado na fixture,
+impedindo o percurso. A preparação passou a concluir o callback dessa tela,
+como no teste de inspeção existente, antes de iniciar o input. O relatório
+também aceita medições não finitas de tentativas falhas para registrar a falha
+e encerrar o processo. Essa correção é exclusiva da ferramenta de teste.</p>
+<p>Gates desta revisão em 15/10/2026:</p>
+<ul>
+<li><code>Tools/Test.ps1</code> aprovado: 15 checks do validador Python, toolchain, 22 testes
+  PowerShell, três regressões de logs de rede, 77 CoreTests, build C# e importação
+  Godot 4.7.2 .NET. Relatório local:
+  <code>Build/validation/20261015-125954-0772a721/report.json</code>.</li>
+<li>Smoke ENet real em localhost com quatro clientes aprovado e 53 checks de
+  concorrência, reconexão, recuperação e restore aprovados. Isso não homologa
+  partidas por Internet nem quatro pessoas jogando.</li>
+<li>Aplicativo real com <code>--hold-run</code>: 115 checks aprovados, dez percursos dos cinco
+  humanos, subindo/descendo com parada e retomada. Estado autoritativo, clipe e
+  velocidade de caminhada nos degraus; corrida retomada fora deles. Preservados
+  os checks de postura, enquadramento, câmeras de produção e teto. Relatório em
+  <code>Build/stair-walk-only-2026-10-15/gameplay/report.json</code>; log final em
+  <code>gameplay-final.log</code>, sem erros de runtime. Capturas da Jill subindo e descendo
+  também foram inspecionadas visualmente. Input sintético; sem teste com controle
+  físico, partida humana completa, exportação Windows/Linux ou profiling.</li>
+</ul>
+<p>Fontes alteradas: <code>Core/Geometry.cs</code> e <code>Core/HallSurface.cs</code>; cobertura em
+<code>Tests/StairMovementTests.cs</code>, registro em <code>Tests/Program.cs</code> e fixture
+<code>Tools/StairGameplayAcceptance.cs</code>. A fixture sintética e o gerador das galerias
+identificam a corrida antiga como histórica. Controles, regras, arquitetura,
+README, índice, inventário documental, testes e changelog acompanham a mudança;
+as galerias locais anteriores foram regeneradas sem regravar os vídeos datados.</p>
+<p>As medições e vídeos de corrida nas seções/galerias de 14/10 abaixo são registros
+históricos ou poses sintéticas do rig, não ações atualmente permitidas nos degraus.
+O estado atual de controles está em <a href="CONTROLES.html">Controles</a> e as regras em
+<a href="REGRAS-E-BALANCEAMENTO.html#movimento-nas-escadas">Movimento nas escadas</a>.</p>
+<h2 id="revisão-da-postura-após-os-prints-do-desenvolvedor">Revisão da postura após os prints do desenvolvedor</h2>
+<p>A primeira implementação abaixo foi rejeitada visualmente: contato sem
+penetração não impediu postura agachada. O offset fixo de -18 cm baixava os
+quadris, enquanto o arco extra de 22/27 cm dos pés se somava à altura do degrau.
+A filtragem vertical duplicada ainda atrasava o corpo em relação ao perfil
+contínuo. Baseline renderizado nas câmeras reais: flexão máxima de 152,64° na
+subida e 114,55° na descida da Jill; altura mínima dos quadris sobre o perfil
+contínuo de 60,43 cm e 68,98 cm. Flexão de 0° significa perna reta.</p>
+<p><code>StairLocomotion</code> agora acompanha o perfil contínuo no X/Z já interpolado, sem
+o offset fixo ou a segunda filtragem. Calcula uma correção pequena a partir do
+alcance da perna de apoio e impede que a soma com a pose/blend original baixe
+o quadril além do envelope de marcha. O arco extra passa a 4 cm (6,5 cm correndo).
+O apoio termina antes de a perna de trás ficar estendida demais. Um destino fora
+do alcance é trocado por um degrau alcançável e esse novo contato fica ancorado;
+o tornozelo não tenta alcançar o destino impossível a cada quadro. Aproximações
+diagonais suaves orientam a sola ao longo da escada para não apoiar a ponta
+um degrau acima do calcanhar.</p>
+<p>Novas evidências em <code>Build/stair-posture-2026-10-14/</code>, preservando a galeria antiga.
+<code>StairMotionAcceptance --game-cameras</code> usa as lentes e a histerese de produção,
+viewport 640×480/nearest/postprocess padrão e iluminação existente, sem luz extra.
+Além do contato, mede quadril, flexão de joelhos e estabilidade do apoio central.
+O intervalo de medida do apoio foi ajustado à nova fase de apoio mais curta;
+a fase de balanço não é contada como deslize de um pé plantado.</p>
+<p><code>StairGameplayAcceptance</code> abre o aplicativo real, inicia solo com perfis/campanha
+de teste e usa <code>Input.ActionPress/Release</code> para atravessar a escada. Os cinco
+humanos sobem, param, retomam e descem; câmera e teto são os mesmos da partida.
+Não há alteração em dados, Core, saves, rede, GLBs, geradores, som ou câmeras.</p>
+<p>Gates finais desta revisão, todos com exit 0:</p>
+<ul>
+<li>15 checks Python (<code>validator.json</code> / <code>python.log</code>), 40 CoreTests (<code>core.log</code>),
+  build sem erros/avisos (<code>build-final.log</code>) e importação Godot 4.7.2 .NET
+  concluída sem erros (<code>import-final.log</code>).</li>
+<li>264 checks controlados de contato/postura, 28 trajetos e 234 capturas nas
+  câmeras de produção (<code>after/report.json</code>, <code>render-final.log</code>). Cinco humanos,
+  subida/descida, corrida/back, diagonais e passos de renderização 30/60/120 Hz.
+  Jill em caminhada central a 60 Hz: flexão máxima de 92,62° na subida e 85,05°
+  na descida, contra 152,64°/114,55° no baseline. Altura mínima dos quadris sobre
+  o perfil: 88,21/87,98 cm. Essas são amostras controladas, não limites universais.</li>
+<li>75 checks no aplicativo real, dez percursos com os cinco humanos, 226 capturas
+  e dez vídeos (<code>gameplay/report.json</code>, <code>gameplay-final.log</code>). Três câmeras reais
+  usadas por percurso, cabeça/quadril enquadrados e tetos presentes; parada e
+  retomada alcançadas por input sintético. Altura mínima de quadril de pelo menos
+  79 cm nos trechos medidos. Não foram trocadas câmeras ou adicionadas luzes.</li>
+<li>99 checks de regressão de movimento plano (<code>motion-regression.json</code> / <code>.log</code>),
+  incluindo zumbis e Cerberus. <code>git diff --check</code> e integridade das referências
+  locais da galeria conferidos. Logs finais sem erros de runtime ou checks falhos.</li>
+</ul>
+<p>Na primeira rodada do aplicativo, dois checks de altura falharam ao retomar a
+subida: Jill em 76,97 cm e Barry em 76,31 cm. A limitação sobre a altura final
+do quadril, incluindo o blend do GLB, corrigiu essas quedas; a rodada com os
+cinco humanos foi repetida integralmente. Capturas comparativas ampliadas
+(<code>posture-comparison.png</code>) usam recortes do renderer sem alterar a pose.</p>
+<p>Para reproduzir a revisão após build/importação:</p>
+<pre><code class="language-powershell">$enginePath = 'C:\dev\Godot_v4.7.2-stable_mono_win64\Godot_v4.7.2-stable_mono_win64_console.exe'
+&amp; $enginePath --path . res://Tools/StairMotionAcceptance.tscn -- --game-cameras --output=res://Build/stair-posture-2026-10-14/after
+&amp; $enginePath --path . res://Tools/StairGameplayAcceptance.tscn -- --profile stair-posture-test --campaign stair-posture-test
+python -B Tools/build_stair_motion_gallery.py --root Build/stair-posture-2026-10-14 --videos
+</code></pre>
+<p><code>--videos</code> requer ffmpeg disponível no PATH e preserva a temporização das capturas
+do aplicativo. O player de quadros permite comparação sincronizada e câmera lenta;
+vídeos do aplicativo incluem paradas/retomadas. Não sobrescrever o baseline em
+<code>before/</code> com o código atual. As frequências controladas não são medições de FPS.</p>
+<p>Os limites de joelho/altura são critérios de regressão deste rig, não uma
+certificação biomecânica. A revisão de imagens reais complementa as medidas.
+Controle físico, aprovação perceptiva do desenvolvedor, campanha/combate completo,
+multiplayer/concorrência/reconexão/restore, exports e profiling não são validados
+por esses percursos solo. Falhas intermediárias de apoio e da retomada estão
+preservadas nos relatórios <code>measure*</code> e <code>gameplay-first-report.json</code>.</p>
+<h2 id="primeira-implementação--histórico-de-contato-com-postura-rejeitada">Primeira implementação — histórico de contato, com postura rejeitada</h2>
+<h2 id="causa-e-alteração">Causa e alteração</h2>
+<p><code>ActorView</code> colocava a raiz visual diretamente na altura discreta do degrau,
+sem adaptar a passada plana dos GLBs ao terreno. Reprodução no Godot registrou
+saltos de 0,166667 m no corpo e penetração máxima das botas de 0,3314 m na subida
+e 0,2928 m na descida. A medida usa vértices das botas contra a superfície
+compartilhada com os degraus; a auditoria separada confere essa superfície
+contra os triângulos importados.</p>
+<p><code>Game/StairLocomotion.cs</code> adapta somente a apresentação dos humanos no hall:</p>
+<ul>
+<li>O modelo sobe continuamente; raiz, alvo e altura física continuam sobre o
+  degrau real. O quadril desce para permitir flexão e alcance da perna de trás.</li>
+<li>Passada completa de dois degraus na caminhada/marcha à ré e quatro na corrida,
+  com a fase e o relógio de contatos existentes. Não muda a velocidade do jogador.</li>
+<li>Pé de apoio fica ancorado; o outro descreve um arco até o próximo apoio.
+  A resolução de dois segmentos flexiona joelho/tornozelo sem alongar as malhas.</li>
+<li>Verificação das botas após a resolução evita que o limite de alcance leve o
+  calcanhar ao espelho do degrau anterior. Entrada/saída usam mistura gradual.</li>
+<li>Giro/mira usam o apoio sob a pose atual; queda, morte e levantar mantêm as
+  animações próprias, sem receber a adaptação de marcha.</li>
+</ul>
+<p><code>ActorView.cs</code> integra a adaptação após avançar a animação. <code>RoomView.cs</code> fornece
+a definição existente da escada. Nenhum GLB, textura, fonte/gerador de arte,
+áudio, Core, dado, câmera, teto, protocolo ou save foi modificado.</p>
+<h2 id="evidências-e-reprodução">Evidências e reprodução</h2>
+<p>Saída: <code>Build/stair-motion-2026-10-14/</code>. A
+<code>../Build/stair-motion-2026-10-14/index.html</code> (evidência local; seleção pública no índice de galerias) reproduz quadros originais
+com pausa, seleção de quadro e velocidade reduzida. Comparação lado a lado
+da caminhada da Jill: antes/depois na subida e descida. Novas sequências também
+mostram corrida e marcha à ré. A luz extra existe somente na cena de diagnóstico.</p>
+<pre><code class="language-powershell">dotnet build OperationSpencer.csproj -c Debug
+$enginePath = 'C:\dev\Godot_v4.7.2-stable_mono_win64\Godot_v4.7.2-stable_mono_win64_console.exe'
+&amp; $enginePath --headless --path . --editor --import --quit
+&amp; $enginePath --path . res://Tools/StairMotionAcceptance.tscn -- --output=res://Build/stair-motion-2026-10-14/after
+python -B Tools/build_stair_motion_gallery.py
+</code></pre>
+<p>O modo <code>--no-capture</code> permite executar a fixture headless. <code>--baseline --quick</code>
+registra medidas sem os critérios da correção: <strong>não restaura código antigo</strong>.
+As imagens em <code>before/</code> foram capturadas antes do patch; não sobrescrevê-las
+com o código atual. O construtor da galeria usa os dois relatórios existentes.</p>
+<p>Gates finais:</p>
+<ul>
+<li>15 checks Python (<code>validator.json</code> / <code>python.log</code>) e 40 CoreTests (<code>core.log</code>).</li>
+<li>Build C# sem erros/avisos (<code>build-final.log</code>) e importação Godot 4.7.2 .NET
+  concluída (<code>import-final.log</code>).</li>
+<li>180 checks de escada, 28 trajetos e 234 capturas (<code>after/report.json</code>,
+  <code>render-final.log</code>). Cinco humanos em caminhada; subida/descida, corrida,
+  marcha à ré, aproximação diagonal, parada/giro/mira/queda/recuperação/pausa.
+  Snapshots sintéticos de 30 Hz; passos de renderização controlados de
+  30/60/120 Hz. Essas frequências <strong>não são medições de FPS ou rede</strong>.</li>
+<li>Na caminhada da Jill a 60 Hz: maior variação vertical do corpo por quadro
+  de 16,67 cm para 1,69 cm, tanto subindo quanto descendo. Folga mínima de
+  aproximadamente 1 mm; deriva horizontal do apoio menor que 0,002 mm na
+  amostra central da escada. Não extrapolar para toda combinação possível.</li>
+<li>99 checks de regressão de movimento plano (<code>motion-regression.json</code> / <code>.log</code>):
+  Jill, zumbi masculino/feminino e Cerberus, incluindo transições.</li>
+<li>Auditoria do hall: 88 checks/23 capturas (<code>hall-audit/report.json</code>),
+  degraus importados, patamar, alvos/raízes, apoios de pickups e câmeras existentes.</li>
+<li>Apresentação do aplicativo: 45 checks (<code>presentation-rooms.log</code>), com entrada
+  offline, recursos das 34 salas e apoio no meio/topo da escada, em campanha de teste.</li>
+</ul>
+<p>As tentativas intermediárias estão preservadas em <code>diagnostic*</code>, <code>sweep*</code> e
+<code>render-first.log</code>: localizaram penetrações por mistura na entrada/saída e
+por limite de extensão na corrida descendente. Corrigidos antes da rodada final.</p>
+<h2 id="limites">Limites</h2>
+<p>Revisão de capturas reais e sequências dirigidas, sem partida com controles
+físicos ou aprovação perceptiva do desenvolvedor. A adaptação é dos cinco humanos
+na escadaria contínua do hall; os acessos entre cômodos continuam com suas
+transições existentes. Zumbis/Cerberus mantêm a apresentação anterior.
+Não há garantia de ausência de clipping para toda pose, curva ou interrupção.
+Sem profiling, exports, Internet/Linux ou repetição de smoke/matriz ENet
+de concorrência/reconexão/restore: contratos de rede/save não foram alterados.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js"></script>
+        <script src="search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

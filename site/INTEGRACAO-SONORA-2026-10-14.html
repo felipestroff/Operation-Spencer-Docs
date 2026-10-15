@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt_BR" data-bs-theme="dark">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://felipestroff.github.io/Operation-Spencer-Docs/INTEGRACAO-SONORA-2026-10-14.html">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Integração sonora · 14/10/2026 - Operation Spencer · 0.1.0-alpha</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/brands.min.css" rel="stylesheet">
+        <link href="css/solid.min.css" rel="stylesheet">
+        <link href="css/v4-font-face.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" disabled>
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" >
+        <link href="stylesheets/spencer.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Operation Spencer · 0.1.0-alpha</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Início</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Jogar</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="INSTALACAO-WINDOWS.html" class="dropdown-item">Instalação</a>
+</li>
+                                    
+<li>
+    <a href="CONTROLES.html" class="dropdown-item">Controles</a>
+</li>
+                                    
+<li>
+    <a href="MENU-ESC-2026-10-15.html" class="dropdown-item">Menu Esc</a>
+</li>
+                                    
+<li>
+    <a href="CONTROLES-EDITAVEIS-2026-10-15.html" class="dropdown-item">Configurações</a>
+</li>
+                                    
+<li>
+    <a href="REGRAS-E-BALANCEAMENTO.html" class="dropdown-item">Regras</a>
+</li>
+                                    
+<li>
+    <a href="MULTIPLAYER-E-SERVIDOR.html" class="dropdown-item">Cooperativo</a>
+</li>
+                                    
+<li>
+    <a href="MANSAO-E-MISSAO.html" class="dropdown-item">Missão (spoilers)</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="GALERIAS.html" class="nav-link">Galerias</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Desenvolvimento</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="ARQUITETURA.html" class="dropdown-item">Arquitetura</a>
+</li>
+                                    
+<li>
+    <a href="TIROS-OBSTACULOS-2026-10-15.html" class="dropdown-item">Tiros e obstáculos</a>
+</li>
+                                    
+<li>
+    <a href="ASSETS-E-AUDIO.html" class="dropdown-item">Assets e áudio</a>
+</li>
+                                    
+<li>
+    <a href="JILL-PORTRAITS-2026-10-15.html" class="dropdown-item">Portraits de Jill</a>
+</li>
+                                    
+<li>
+    <a href="TEXTURAS-ARQUITETURA-2026-10-15.html" class="dropdown-item">Texturas arquitetônicas</a>
+</li>
+                                    
+<li>
+    <a href="VERSIONAMENTO.html" class="dropdown-item">Versões e publicação</a>
+</li>
+                                    
+<li>
+    <a href="DOCUMENTACAO.html" class="dropdown-item">Documentação</a>
+</li>
+                                    
+<li>
+    <a href="INVENTARIO-DOCUMENTACAO.html" class="dropdown-item">Inventário documental</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="TESTES-E-LIMITACOES.html" class="nav-link">Evidências</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="FONTES-E-ADAPTACOES.html" class="nav-link">Créditos e referências</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="VERSAO.html" class="nav-link">Versão</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/felipestroff/Operation-Spencer-Docs" class="nav-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <button id="theme-menu" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle">
+                                <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                <span class="d-lg-none ms-2">Toggle theme</span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                                    <i class="fa-solid fa-sun fa-fw"></i>
+                                    <span class="ms-2">Light</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="true">
+                                    <i class="fa-solid fa-moon fa-fw"></i>
+                                    <span class="ms-2">Dark</span>
+                                    <i class="fa-solid fa-check ms-auto"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                                    <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                    <span class="ms-2">Auto</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                              </ul>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="js/darkmode.js"></script>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#integração-sonora--14102026" class="nav-link">Integração sonora · 14/10/2026</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#entrega" class="nav-link">Entrega</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#comportamento-implementado" class="nav-link">Comportamento implementado</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#fontes-e-reprodução" class="nav-link">Fontes e reprodução</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#limitações-artísticas-explícitas" class="nav-link">Limitações artísticas explícitas</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#arquivos-e-contratos" class="nav-link">Arquivos e contratos</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#evidências-e-aceite-pendente" class="nav-link">Evidências e aceite pendente</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="integração-sonora--14102026">Integração sonora · 14/10/2026</h1>
+<p>A revisão mais recente de <a href="RELOGIO-E-TIROS-2026-10-14.html">relógio e tiros baixados</a>
+registra os ganhos atuais e trovões a cada 58/88 s, com primeiro em 45 s.</p>
+<p>Este relatório registra a primeira integração. O complemento posterior de
+<a href="INVENTARIO-AUDIO-2026-10-14.html">sons do inventário</a> acrescenta 12 takes/nove
+bancos e corrige feedback durante a pausa solo. Totais atuais e gates dessa
+revisão estão no complemento; números abaixo preservam esta etapa inicial.</p>
+<h2 id="entrega">Entrega</h2>
+<p>Integrados <strong>162 recortes em 77 bancos</strong>, de <strong>64 fontes selecionadas</strong> dos downloads autorizados. Vinte WAVs antigos foram substituídos; os demais sons de protótipo, as três trilhas e as quatro notas do piano continuam como fontes/fallbacks. O conjunto local tem 184 WAVs (183 versionáveis e uma opção local Mixkit), sendo três trilhas e 181 efeitos. Nem todo banco corresponde a gravações independentes: há composições de foley, recortes da mesma sessão e bancos por material derivados do mesmo impacto.</p>
+<p>Revisão local: <code>Build/audio-integration-2026-10-14/index.html</code>, gerada por <code>python -B Tools/build_audio_gallery.py</code>. A galeria contém os takes e referências do protótipo para comparação. <strong>A audição crítica e a aprovação estética ainda estão pendentes.</strong> A reprodução isolada na galeria não aplica distância, reverb ou volumes do jogo.</p>
+<h2 id="comportamento-implementado">Comportamento implementado</h2>
+<ul>
+<li>Zumbis usam bancos masculinos/femininos ligados à mesma aparência determinística do modelo; gemidos espaçados durante presença/caminhada, reação de ataque, dano e morte. A seleção não usa mais a variante de combate para decidir o perfil vocal.</li>
+<li>Cerberus recebe rosnado/latido e bancos de reação. Passos de patas, bota humana e zumbi têm bancos separados; arrasto/roupa foram acrescentados ao rastejar. A cadência continua ligada aos contatos das animações.</li>
+<li>Superfície local considera tapetes; o saguão tem banco de degraus. Os temas de pedra/cerâmica/exterior usam piso duro, em vez de tratar terraço/estufa como madeira. Bancos de grama estão preparados para futura superfície correspondente, mas o mapa atual não recebeu chão novo.</li>
+<li>Queda de humanos/inimigos toca uma vez ao cruzar a fase 0,82 do clipe de morte. Cadáveres vistos ao entrar e morte definitiva depois de já estar caído não repetem o impacto. É um marcador no clipe atual, não detecção física/ragdoll.</li>
+<li>Pistola, revólver e escopeta recebem takes de disparo e recargas específicas. A recarga sonora ajusta a velocidade à duração da ação/arma/personagem; gatilho vazio tem feedback com intervalo local.</li>
+<li>Faca no ar é separada da perfuração: a segunda depende do acerto aceito pelo servidor. Aparo corporal e escape com faca defensiva têm bancos diferentes.</li>
+<li>Correção posterior em 14/10: <code>knife_hit</code>/<code>defense_stab</code> excluem a cauda vocal da fonte de facada, conservando 0,00–0,80 s e fade de saída de 20 ms. Master preservado; as variações de faca no ar não mudaram.</li>
+<li>Pistola e escopeta agendam estojos; revólver só agenda estojos durante a recarga. São sons de apresentação, sem simulação física de cartuchos nem alteração de munição. A escopeta usa um cartucho metálico genérico de referência; gravações específicas de plástico/bomba continuam desejáveis.</li>
+<li>Interação explícita com baú toca tampa/trinco, e fechar o painel toca fechamento. Transferência só emite <code>item_store</code> depois de aceita; clique de tentativa continua sendo UI. Cura aceita, socorro e mistura têm foley discreto.</li>
+<li>Porta tem um dono sonoro para o viajante; companheiros recebem abertura/fechamento espacial. Passagens marcadas <code>stairs</code> usam passos de transição e não som de porta. Esse trecho de passos não muda o tempo de transição existente.</li>
+<li>Trovão é derivado do tempo autoritativo do mundo, sem repetir ao atualizar snapshot ou entrar em sala. Após o pedido de intervalos maiores em 14/10, o primeiro toca em 120 s e os seguintes têm intervalos de 179/239 s (antes: primeiro em 45 s, intervalos de 72/107 s). O take atual é um único trovão; salas seguras/subsolo têm atenuação. Nenhum timer novo foi persistido.</li>
+<li>Listener 3D acompanha o jogador observado, mantendo a câmera fixa visual. Há reverb moderado compartilhado por ambiente seguro/comum; sem oclusão/projeção acústica entre cômodos.</li>
+<li>Limite espacial permanece em 24 vozes; eventos prioritários podem substituir vozes de prioridade menor. Efeitos ativos respondem ao volume zero. Filas cosméticas são limpas em troca de sala, reset/novo Epoch e saída da sessão.</li>
+</ul>
+<h2 id="fontes-e-reprodução">Fontes e reprodução</h2>
+<p><code>Tools/AudioSources/manifest.json</code> é a fonte editável: autores, páginas, licenças, SHA-256 dos masters, recortes, camadas, pitch, metas de pico, nomes de banco e prioridades. Masters selecionados (aproximadamente 41,1 MiB) ficam no mesmo diretório; <code>.gdignore</code> os exclui da importação/exportação do Godot. Não são assets extraídos dos jogos. Pacotes não usados permanecem somente na pasta de downloads.</p>
+<p><code>Tools/audio_pipeline.py</code> faz o bake: FFmpeg para decodificar/downmix/low-pass de 8,5 kHz e reamostrar; NumPy para recortes, remoção de DC, camadas, ganho e fades de 4 ms; saída WAV mono, 22.050 Hz, PCM16. O ganho máximo é 12 dB em geral, 24 dB nos contatos/UI selecionados. Não há bitcrusher nem ajuste cego por RMS. Fontes importadas nunca são sobrescritas.</p>
+<p>Saídas: <code>Assets/Audio/sfx-catalog.json</code> e <code>sfx-manifest.json</code> com hashes dos derivados/receitas. O catálogo está incluído nos presets de exportação. O validador confere origem, receita, formato e hash. <code>generate_assets.py --audio</code> preserva os imports e gera música/fallbacks; não reverte as substituições para síntese.</p>
+<pre><code class="language-powershell"># Regeneração normal; reutiliza derivados e confere seus hashes.
+python -B Tools/generate_assets.py --audio
+
+# Reconstrução completa dos takes importados; FFmpeg deve estar no PATH
+# ou em MANSION_FFMPEG. Masters versionados bastam para os takes distribuíveis.
+python -B Tools/audio_pipeline.py --force
+
+# Opção local Mixkit, quando o download original estiver disponível.
+python -B Tools/audio_pipeline.py --force --external &quot;C:\Users\strof\Downloads\re_sfx&quot;
+python -B Tools/build_audio_gallery.py
+</code></pre>
+<p>O FFmpeg não foi copiado para o projeto/pacote. A reconstrução byte a byte foi confirmada na versão instalada, registrada em <code>force-determinism.json</code>; outra versão/plataforma pode exigir revisão dos hashes após novo bake.</p>
+<p>As fontes selecionadas vêm de Kenney, Signature Sounds, Still North Media/Free Firearm Sound Library, BigSoundBank, BMacZero e arquivos do Pixabay. Créditos/licenças de cada arquivo estão no manifesto. <strong>Pixabay Content License não é CC0</strong>; usar os derivados como parte deste jogo, sem redistribuir masters como biblioteca de sons independente.</p>
+<h3 id="opção-local-de-máquina-de-escrever">Opção local de máquina de escrever</h3>
+<p>A <a href="https://mixkit.co/license/modal/sfxFree/">licença Sound Effects Free do Mixkit</a> permite incorporar o som em jogos, mas proíbe redistribuí-lo junto dos arquivos-fonte, em ferramentas/templates ou isoladamente. Por isso, o master permanece em Downloads e o derivado fica em <code>Assets/Audio/Local/</code>, ignorado pelo Git. <strong>Excluir esse diretório de qualquer ZIP de fonte e não distribuir a galeria local como biblioteca.</strong> O arquivo pode compor o End Product compilado conforme a licença; exportação não foi executada nesta tarefa. Sem a opção local, o jogo usa o <code>typewriter.wav</code> de protótipo. Não remover o fallback.</p>
+<h2 id="limitações-artísticas-explícitas">Limitações artísticas explícitas</h2>
+<ul>
+<li>O ZIP de zumbis anuncia atuações masculinas/femininas, mas não identifica cada performer por arquivo. Atribuição provisória por timbre: originais 14/16 para o banco masculino; 04/05/12/15 para o feminino. Medidas de periodicidade orientaram a seleção e <strong>não comprovam sexo nem adequação sonora</strong>. A galeria deve ser ouvida antes de aprovar essa escolha.</li>
+<li>Há uma voz humana masculina e uma feminina. Chris/Wesker/Barry compartilham a primeira; Jill/Rebecca, a segunda. Ainda faltam performances próprias e variações de intensidade; a reação de morte humana reaproveita um grunhido curto, sem alegar nova atuação longa.</li>
+<li>Dor/morte canina usam recortes do rosnado/latido disponível; não são ganidos de ferimento gravados. Substituir essas reações após escolher fontes próprias.</li>
+<li>A fonte do revólver é um S&amp;W 642 .38 Special, como referência de timbre; não se afirma gravação fiel de .357. Recargas são montagens de componentes, não gravações integrais de cada mecanismo.</li>
+<li>Variações por material/espécie incluem edição das mesmas bases. O fechamento do baú deriva de foley de tampa/trinco. Não são novas gravações de cada objeto.</li>
+<li>Trovão tem um take, e não os 4–6 sugeridos na auditoria. Não houve aprovação de equilíbrio entre tiros, gemidos, passos, reverb e trilhas. Música continua com troca direta, sem crossfade.</li>
+</ul>
+<h2 id="arquivos-e-contratos">Arquivos e contratos</h2>
+<p>Áudio/pipeline: <code>Tools/audio_pipeline.py</code>, <code>Tools/generate_assets.py</code>, <code>Tools/AudioSources/*</code>, <code>Assets/Audio/*</code>, <code>Game/AudioDirector.cs</code>, <code>Game/AudioPresentation.cs</code>. Integração: <code>ActorView</code>, <code>RoomView</code>, <code>App</code>, <code>GameUi</code>. Testes: <code>Tools/AudioAcceptance.cs/.tscn</code>, <code>Tools/validate_project.py</code>, <code>Tests/Program.cs</code>. Export: inclusão do catálogo; <code>.gitignore</code>: derivado local Mixkit.</p>
+<p><code>Core/Simulation.cs</code> recebeu somente identificação/posição de efeitos e emissão de sucesso para cura/baú, fechamento de porta e arma vazia. Dano, slots, cooldowns, regras de tempo, respawn, kit e transações foram preservados. A normalização de uma passagem ao reconectar/restaurar não emite seu fechamento. Core continua sem Godot; protocolo/DTOs e schema 1 do save não foram alterados. Builds antigos não foram testados com os novos IDs de som.</p>
+<h2 id="evidências-e-aceite-pendente">Evidências e aceite pendente</h2>
+<p>Logs em <code>Build/audio-integration-2026-10-14/</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Gate</th>
+<th>Evidência</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Validador Python</td>
+<td><code>validator.json</code>: 12 checks aprovados, incluindo receitas, fontes, hashes, formato e catálogo exportável</td>
+</tr>
+<tr>
+<td>CoreTests</td>
+<td><code>core.log</code>: 39 aprovados, incluindo faca sem acerto, sucesso/recusa de baú/cura e escada/restore sem fechar porta</td>
+</tr>
+<tr>
+<td>Godot/.NET build</td>
+<td><code>build.log</code>: zero erros/avisos</td>
+</tr>
+<tr>
+<td>Importação</td>
+<td><code>import.log</code>: Godot 4.7.2 stable .NET, exit 0</td>
+</tr>
+<tr>
+<td>Áudio em runtime Godot</td>
+<td><code>runtime.log</code> / <code>runtime.json</code>: 305 checks, 162 takes carregados; bancos, prioridades, contatos, vozes, mute, estojos, recarga independente de snapshot antigo e limpeza de filas</td>
+</tr>
+<tr>
+<td>Smoke ENet</td>
+<td><code>network-smoke.log</code>: quatro clientes alcançaram os cômodos esperados; logs de transporte limpos</td>
+</tr>
+<tr>
+<td>Concorrência/reconexão/restore</td>
+<td><code>network-acceptance.log</code>: 42 checks ENet aprovados</td>
+</tr>
+<tr>
+<td>Interface renderizada</td>
+<td><code>presentation.log</code>: 12 checks de inventário/combate, inputs sintéticos; sem pausa do combate coop</td>
+</tr>
+<tr>
+<td>Regeneração</td>
+<td><code>determinism.json</code>: 184 WAVs idênticos ao regenerar <code>--audio</code>; <code>force-determinism.json</code>: decodificação/bake forçados também idênticos</td>
+</tr>
+<tr>
+<td>Galeria local</td>
+<td><code>gallery-checks.json</code>: 77 bancos, busca e layout em 1440/390 px sem erros JS/overflow</td>
+</tr>
+</tbody>
+</table>
+<p>A primeira fixture de áudio passou os checks, mas registrou objetos/um recurso ainda em uso ao encerrar. O bus compartilhado agora tem contagem de usuários e liberação; a fixture aguarda limpeza/coleta antes de sair. Reexecução com log limpo. O exit 0 inicial não foi tratado como gate aprovado enquanto havia erro no log.</p>
+<p>Não executados: audição crítica, partida manual com controles físicos, validação perceptiva de todas as sobreposições em quatro clientes, exports, Internet/Linux e profiling. Checks técnicos e inputs sintéticos não homologam qualidade sonora, FPS/latência ou multiplayer completo. A próxima revisão é ouvir a galeria e uma partida para aprovar/ajustar takes, perfis e mixagem.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js"></script>
+        <script src="search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

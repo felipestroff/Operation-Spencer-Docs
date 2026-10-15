@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="pt_BR" data-bs-theme="dark">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://felipestroff.github.io/Operation-Spencer-Docs/HISTORICO-CHANGELOG-ATE-2026-10-15.html">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Histórico - Operation Spencer · 0.1.0-alpha</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/brands.min.css" rel="stylesheet">
+        <link href="css/solid.min.css" rel="stylesheet">
+        <link href="css/v4-font-face.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" disabled>
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" >
+        <link href="stylesheets/spencer.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Operation Spencer · 0.1.0-alpha</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Início</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Jogar</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="INSTALACAO-WINDOWS.html" class="dropdown-item">Instalação</a>
+</li>
+                                    
+<li>
+    <a href="CONTROLES.html" class="dropdown-item">Controles</a>
+</li>
+                                    
+<li>
+    <a href="MENU-ESC-2026-10-15.html" class="dropdown-item">Menu Esc</a>
+</li>
+                                    
+<li>
+    <a href="CONTROLES-EDITAVEIS-2026-10-15.html" class="dropdown-item">Configurações</a>
+</li>
+                                    
+<li>
+    <a href="REGRAS-E-BALANCEAMENTO.html" class="dropdown-item">Regras</a>
+</li>
+                                    
+<li>
+    <a href="MULTIPLAYER-E-SERVIDOR.html" class="dropdown-item">Cooperativo</a>
+</li>
+                                    
+<li>
+    <a href="MANSAO-E-MISSAO.html" class="dropdown-item">Missão (spoilers)</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="GALERIAS.html" class="nav-link">Galerias</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Desenvolvimento</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="ARQUITETURA.html" class="dropdown-item">Arquitetura</a>
+</li>
+                                    
+<li>
+    <a href="TIROS-OBSTACULOS-2026-10-15.html" class="dropdown-item">Tiros e obstáculos</a>
+</li>
+                                    
+<li>
+    <a href="ASSETS-E-AUDIO.html" class="dropdown-item">Assets e áudio</a>
+</li>
+                                    
+<li>
+    <a href="JILL-PORTRAITS-2026-10-15.html" class="dropdown-item">Portraits de Jill</a>
+</li>
+                                    
+<li>
+    <a href="TEXTURAS-ARQUITETURA-2026-10-15.html" class="dropdown-item">Texturas arquitetônicas</a>
+</li>
+                                    
+<li>
+    <a href="VERSIONAMENTO.html" class="dropdown-item">Versões e publicação</a>
+</li>
+                                    
+<li>
+    <a href="DOCUMENTACAO.html" class="dropdown-item">Documentação</a>
+</li>
+                                    
+<li>
+    <a href="INVENTARIO-DOCUMENTACAO.html" class="dropdown-item">Inventário documental</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="TESTES-E-LIMITACOES.html" class="nav-link">Evidências</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="FONTES-E-ADAPTACOES.html" class="nav-link">Créditos e referências</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="VERSAO.html" class="nav-link">Versão</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/felipestroff/Operation-Spencer-Docs" class="nav-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <button id="theme-menu" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle">
+                                <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                <span class="d-lg-none ms-2">Toggle theme</span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                                    <i class="fa-solid fa-sun fa-fw"></i>
+                                    <span class="ms-2">Light</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="true">
+                                    <i class="fa-solid fa-moon fa-fw"></i>
+                                    <span class="ms-2">Dark</span>
+                                    <i class="fa-solid fa-check ms-auto"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                                    <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                    <span class="ms-2">Auto</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                              </ul>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="js/darkmode.js"></script>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#histórico" class="nav-link">Histórico</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#lareiras--15102026--apoio-nas-paredes" class="nav-link">Lareiras · 15/10/2026 — apoio nas paredes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#portas--15102026--encaixe-dos-batentes-nas-paredes" class="nav-link">Portas · 15/10/2026 — encaixe dos batentes nas paredes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#inimigos-e-portas--15102026--movimentação-após-fuga" class="nav-link">Inimigos e portas · 15/10/2026 — movimentação após fuga</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#menus--15102026--fade-ao-voltar" class="nav-link">Menus · 15/10/2026 — fade ao voltar</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#menus--15102026--áudio-flashes-e-lista-de-saves" class="nav-link">Menus · 15/10/2026 — áudio, flashes e lista de saves</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#portas--15102026--auditoria-completa-dos-dois-sfx" class="nav-link">Portas · 15/10/2026 — auditoria completa dos dois SFX</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#interação--15102026--primeiro-alvo-ao-alcance" class="nav-link">Interação · 15/10/2026 — primeiro alvo ao alcance</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#campanhas-e-slots-independentes--15102026" class="nav-link">Campanhas e slots independentes · 15/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#portas--15102026--fechamento-nas-conexões-de-escada" class="nav-link">Portas · 15/10/2026 — fechamento nas conexões de escada</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#confirmação-de-ações-e-exclusão-de-saves--15102026" class="nav-link">Confirmação de ações e exclusão de saves · 15/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#acabamento-dos-menus-e-cartões--15102026" class="nav-link">Acabamento dos menus e cartões · 15/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#pilha-dos-cartões--15102026" class="nav-link">Pilha dos cartões · 15/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#novo-jogo-e-cartões-stars--14102026" class="nav-link">Novo jogo e cartões S.T.A.R.S. · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#abertura-do-catálogo-de-saves--14102026" class="nav-link">Abertura do catálogo de saves · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#carregar-jogo--14102026" class="nav-link">Carregar jogo · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#inventário--14102026--guardar-somente-com-baú-aberto" class="nav-link">Inventário · 14/10/2026 — guardar somente com baú aberto</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#operation-spencer--14102026" class="nav-link">Operation Spencer · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#tela-inicial--14102026" class="nav-link">Tela inicial · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#menu-de-contexto-no-visor--14102026" class="nav-link">Menu de contexto no visor · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#áudio-de-fechaduras--14102026" class="nav-link">Áudio de fechaduras · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#integração-aprovada--14102026--emissores-animados" class="nav-link">Integração aprovada · 14/10/2026 — emissores animados</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#apresentação--14102026--tela-cheia-proporcional" class="nav-link">Apresentação · 14/10/2026 — tela cheia proporcional</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#combate--14102026--sem-miraataque-de-mãos-vazias" class="nav-link">Combate · 14/10/2026 — sem mira/ataque de mãos vazias</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#inventário--14102026--desequipar-no-contexto" class="nav-link">Inventário · 14/10/2026 — Desequipar no contexto</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#baú--14102026--arma-guardada-desequipa" class="nav-link">Baú · 14/10/2026 — arma guardada desequipa</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#escadaria--14102026--correção-da-postura-agachada" class="nav-link">Escadaria · 14/10/2026 — correção da postura agachada</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#baú--14102026--layout-integrado-ao-inventário" class="nav-link">Baú · 14/10/2026 — layout integrado ao inventário</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#escadaria--14102026--movimento-dos-humanos" class="nav-link">Escadaria · 14/10/2026 — movimento dos humanos</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#câmeras-e-tetos--14102026--regra-explícita-obrigatória" class="nav-link">Câmeras e tetos · 14/10/2026 — regra explícita obrigatória</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#câmeras--14102026--integração-dos-interiores" class="nav-link">Câmeras · 14/10/2026 — integração dos interiores</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#câmeras--14102026--prévias-para-aprovação" class="nav-link">Câmeras · 14/10/2026 — prévias para aprovação</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#inspeção--14102026--opções-pelo-teclado" class="nav-link">Inspeção · 14/10/2026 — opções pelo teclado</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#inspeção--14102026--câmera-frontal-fixa-por-objeto" class="nav-link">Inspeção · 14/10/2026 — câmera frontal fixa por objeto</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#tetos--14102026--visibilidade-nas-câmeras-fixas" class="nav-link">Tetos · 14/10/2026 — visibilidade nas câmeras fixas</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#portas--14102026--sfx-ao-concluir-a-entrada" class="nav-link">Portas · 14/10/2026 — SFX ao concluir a entrada</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#integração-local--14102026--tetos-ps1-aprovados" class="nav-link">Integração local · 14/10/2026 — tetos PS1 aprovados</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#prévia-local--14102026--tetos-ps1-para-aprovação" class="nav-link">Prévia local · 14/10/2026 — tetos PS1 para aprovação</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#áudio--14102026--rebecca-subsolo-e-gerador" class="nav-link">Áudio · 14/10/2026 — Rebecca, subsolo e gerador</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#chuva--14102026--vidro-textos-e-sfx-espacial" class="nav-link">Chuva · 14/10/2026 — vidro, textos e SFX espacial</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#portas--14102026--passagem-e-modelos-ps1" class="nav-link">Portas · 14/10/2026 — passagem e modelos PS1</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#prévia--14102026--animações-dos-emissores-para-aprovação" class="nav-link">Prévia · 14/10/2026 — animações dos emissores para aprovação</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#interface--14102026--inspeção-de-objetos" class="nav-link">Interface · 14/10/2026 — inspeção de objetos</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#correção-local--14102026--janelas-em-fachadas-externas" class="nav-link">Correção local · 14/10/2026 — janelas em fachadas externas</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#correção-local--14102026--música-contínua-durante-combate" class="nav-link">Correção local · 14/10/2026 — música contínua durante combate</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#música-local--14102026--quatro-trilhas-e-repetição-gradual" class="nav-link">Música local · 14/10/2026 — quatro trilhas e repetição gradual</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#ajuste-local--14102026--trovões-mais-frequentes-e-fortes" class="nav-link">Ajuste local · 14/10/2026 — trovões mais frequentes e fortes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#integração-local--14102026--relógio-baixado-e-disparos-novos" class="nav-link">Integração local · 14/10/2026 — relógio baixado e disparos novos</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#manutenção-local--14102026--clarão-do-trovão" class="nav-link">Manutenção local · 14/10/2026 — clarão do trovão</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#ajuste-local--14102026--origem-dos-sfx-e-ganho-do-trovão" class="nav-link">Ajuste local · 14/10/2026 — origem dos SFX e ganho do trovão</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#manutenção-local--14102026--estatura-dos-zumbis" class="nav-link">Manutenção local · 14/10/2026 — estatura dos zumbis</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#manutenção-local--14102026--iluminação-noturna" class="nav-link">Manutenção local · 14/10/2026 — iluminação noturna</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#ajuste-local--14102026--trovões-mais-espaçados" class="nav-link">Ajuste local · 14/10/2026 — trovões mais espaçados</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#correção-local--14102026--cauda-vocal-da-facada" class="nav-link">Correção local · 14/10/2026 — cauda vocal da facada</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#manutenção-local--14102026--sons-do-inventário" class="nav-link">Manutenção local · 14/10/2026 — sons do inventário</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#manutenção-local--14102026--janelas-noturnas-integradas" class="nav-link">Manutenção local · 14/10/2026 — janelas noturnas integradas</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#prévia-local--14102026--janelas-externas-ps1" class="nav-link">Prévia local · 14/10/2026 — janelas externas PS1</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#manutenção-local--14102026--integração-de-efeitos-sonoros" class="nav-link">Manutenção local · 14/10/2026 — integração de efeitos sonoros</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#manutenção-local--14102026--paredes-ps1-aplicadas-às-34-salas" class="nav-link">Manutenção local · 14/10/2026 — paredes PS1 aplicadas às 34 salas</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#prévia-local--14102026--etapa-anterior-à-aplicação-das-paredes-ps1" class="nav-link">Prévia local · 14/10/2026 — etapa anterior à aplicação das paredes PS1</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#manutenção-local--14102026--orientação-e-apoios-dos-cenários" class="nav-link">Manutenção local · 14/10/2026 — orientação e apoios dos cenários</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#manutenção-local--13102026--reconstrução-dos-atores-ps1-em-revisão" class="nav-link">Manutenção local · 13/10/2026 — reconstrução dos atores PS1 em revisão</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#manutenção-local--13102026--retratos-da-rebecca" class="nav-link">Manutenção local · 13/10/2026 — retratos da Rebecca</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#manutenção-local--13102026--cores-das-escadas-por-exploração" class="nav-link">Manutenção local · 13/10/2026 — cores das escadas por exploração</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#manutenção-local--13102026--refinamento-da-planta" class="nav-link">Manutenção local · 13/10/2026 — refinamento da planta</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#manutenção-local--13102026--mapa-no-inventário" class="nav-link">Manutenção local · 13/10/2026 — mapa no inventário</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#manutenção-local--13102026--modelos-distintos-das-facas" class="nav-link">Manutenção local · 13/10/2026 — modelos distintos das facas</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#manutenção-local--13102026--refinamento-da-hud-do-inventário" class="nav-link">Manutenção local · 13/10/2026 — refinamento da HUD do inventário</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#manutenção-local--13102026--cenário-detalhado-ps1" class="nav-link">Manutenção local · 13/10/2026 — cenário detalhado PS1</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#manutenção-local--13102026--itens-detalhados-ps1" class="nav-link">Manutenção local · 13/10/2026 — itens detalhados PS1</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#manutenção-local--13102026--inventário-ps1" class="nav-link">Manutenção local · 13/10/2026 — inventário PS1</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#manutenção-local--13102026--matriz-de-aceitação" class="nav-link">Manutenção local · 13/10/2026 — matriz de aceitação</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#manutenção-local--13102026--mtu-e-encerramento-enet" class="nav-link">Manutenção local · 13/10/2026 — MTU e encerramento ENet</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#manutenção-local--13102026--previsão-dos-inputs-no-smoke-enet" class="nav-link">Manutenção local · 13/10/2026 — previsão dos inputs no smoke ENet</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#manutenção-local--13102026--interface-durante-a-partida" class="nav-link">Manutenção local · 13/10/2026 — interface durante a partida</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#manutenção-local--13102026--trajeto-de-wesker-no-smoke-enet" class="nav-link">Manutenção local · 13/10/2026 — trajeto de Wesker no smoke ENet</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#manutenção-local--13102026--toolchain-no-codex" class="nav-link">Manutenção local · 13/10/2026 — toolchain no Codex</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#010-alpha-r2--correção-localizada-de-compilação" class="nav-link">0.1.0-alpha R2 — correção localizada de compilação</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#010-alpha--primeira-entrega-em-fonte" class="nav-link">0.1.0-alpha — primeira entrega em fonte</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="histórico">Histórico</h1>
+<blockquote>
+<p>Os registros abaixo são preservados como evidência. O recorte de personagem
+de 2,5 s foi substituído por 3,5 s com fade out de 0,8 s.
+<a href="TRANSICOES-MENUS-2026-10-15.html">Revisão atual</a>.</p>
+</blockquote>
+<h2 id="lareiras--15102026--apoio-nas-paredes">Lareiras · 15/10/2026 — apoio nas paredes</h2>
+<p>Corrigidas as frestas traseiras das lareiras do jantar e dos troféus, mantendo
+dados físicos e inspeção alinhados ao modelo. Fundo de tijolos ajustado para
+não ser ocultado pelo revestimento da parede; fogo, luz e áudio preservados.
+Dois enquadramentos locais do jantar passam a olhar a frente da lareira.
+Posições antigas atrás das lareiras são recuperadas para piso livre no movimento,
+sem mudar schema de save ou recriar inventário.
+Regra explícita permanente: todas as portas e todas as lareiras, sem exceção,
+devem ficar encostadas nas paredes. Evidências e limites em
+<code>Docs/ENCAIXE-LAREIRAS-2026-10-15.md</code>.</p>
+<h2 id="portas--15102026--encaixe-dos-batentes-nas-paredes">Portas · 15/10/2026 — encaixe dos batentes nas paredes</h2>
+<p>Corrigido o recuo visual que deixava os batentes 15,5–16 cm afastados da
+parede. Portas simples, duplas, especiais e de escadas usam o plano da
+alvenaria; a entrada principal recebe moldura completa. Pontos de chegada,
+alturas, SFX, modelos e câmeras preservados. Comparação dos 71 encaixes e
+limites em <code>Docs/ENCAIXE-PORTAS-2026-10-15.md</code>.</p>
+<h2 id="inimigos-e-portas--15102026--movimentação-após-fuga">Inimigos e portas · 15/10/2026 — movimentação após fuga</h2>
+<p>Corrigidos inimigos congelados em salas vazias. Perseguidores de uma passagem
+concluída alcançam a porta, produzem impactos irregulares com tremor e gravações
+leves/fortes fornecidas pelo desenvolvedor, e voltam a vagar. Intensidade e
+cadência acompanham quem chegou. Outros sobreviventes continuam sob ataque;
+cancelamento, desconexão e restore descartam a tentativa. Schema de saves,
+respawn e SFX existentes de abertura/fechamento preservados.
+Fontes, testes e limites em <code>Docs/INIMIGOS-E-PORTAS-2026-10-15.md</code>.</p>
+<h2 id="menus--15102026--fade-ao-voltar">Menus · 15/10/2026 — fade ao voltar</h2>
+<p>VOLTAR/Esc nos modos, slots, conexão e cartões agora usam fade de 0,4 s com
+clique do inventário. A origem permanece visível até o ponto preto e bloqueia
+entradas repetidas; o destino só libera interação ao terminar. Cancelar conexão
+pendente continua imediato, com retorno visual pelo mesmo fade.</p>
+<h2 id="menus--15102026--áudio-flashes-e-lista-de-saves">Menus · 15/10/2026 — áudio, flashes e lista de saves</h2>
+<p>Suspense Riser exclusivo da primeira abertura; demais transições usam o clique
+do inventário e fade de 0,4 s. Confirmar personagem usa Metallic Horror Stinger
+cortado em 2,5 s, desaparecimento e três flashes sincronizados até o fim do SFX.
+Camada preta impede o cenário da mansão de aparecer por trás; a porta de entrada
+aguarda o término do efeito também no cliente cooperativo. VOLTAR/Esc cancelam
+conexão pendente e o formulário usa o passeio azul dos cômodos. Lista de saves
+contínua por aba, sem cabeçalhos por campanha, mantendo identidades independentes.
+Fontes, receitas e limites em <code>Docs/TRANSICOES-MENUS-2026-10-15.md</code>.</p>
+<h2 id="portas--15102026--auditoria-completa-dos-dois-sfx">Portas · 15/10/2026 — auditoria completa dos dois SFX</h2>
+<p>Todas as 35 portas verificadas nos dois sentidos pelo App real: 70 travessias,
+560 checks e zero falhas; entrada principal verificada separadamente. Corrigida
+a abertura das quatro portas de escada, que usavam somente passos. Todas usam
+SFX de porta abrindo e fechando, uma vez por fase, com fundo preto preservado.
+Bancos/WAVs existentes reutilizados; detalhes e limites no relatório de portas.</p>
+<h2 id="interação--15102026--primeiro-alvo-ao-alcance">Interação · 15/10/2026 — primeiro alvo ao alcance</h2>
+<p>E abre diretamente o primeiro alvo da lista de proximidade, mesmo com vários
+itens/objetos próximos. Removida a seleção intermediária “O que examinar?”;
+empates preservam a ordem da fila. Pegar/Deixar, teclado, pausa somente offline,
+portas/baú diretos e câmeras frontais preservados. 15 checks Python, 60 CoreTests,
+build/importação e 680 checks renderizados passaram. Controle físico pendente.</p>
+<h2 id="campanhas-e-slots-independentes--15102026">Campanhas e slots independentes · 15/10/2026</h2>
+<p>NOVO JOGO cria identidade exclusiva para solo/host, sem substituir a
+campanha anterior. Cada gravação manual acrescenta um arquivo de slot;
+salvar depois de retomar um ponto antigo também preserva os anteriores.
+Catálogo agrupado por campanha dentro das abas Solo/Cooperativo. Schema 3
+vincula identidade e checkpoint, lê schemas 1/2 em memória e conserva
+inventário, Epoch e reconexão. <a href="https://github.com/felipestroff/Projeto-Mansao/blob/main/Docs/CAMPANHAS-E-SLOTS-2026-10-15.md">Detalhes</a>.</p>
+<h2 id="portas--15102026--fechamento-nas-conexões-de-escada">Portas · 15/10/2026 — fechamento nas conexões de escada</h2>
+<p>Corrigido banco vazio de fechamento em quatro portas <code>Kind=stairs</code>, incluindo
+a porta do patamar do hall. Reutiliza os SFX existentes, uma vez ao terminar
+a animação; cancelamentos e fundo preto preservados. Abertura de escadas mantida.
+Reprodução e validação em <code>Docs/PORTAS-PS1-2026-10-14.md</code>.</p>
+<h2 id="confirmação-de-ações-e-exclusão-de-saves--15102026">Confirmação de ações e exclusão de saves · 15/10/2026</h2>
+<p>Modal reutilizável com fundo desfocado, título e CONFIRMAR/CANCELAR para
+saída do menu, desconexão da pausa e exclusão de save. Cancelar preserva
+sessão/seleção/arquivos. Clicar em save apenas seleciona e mostra CARREGAR
+e EXCLUIR à direita da própria linha selecionada. Exclusão confirmada valida caminho e
+hash e remove só o snapshot escolhido e cópias idênticas da mesma campanha;
+lista/status atualizados em seguida. Sem mudança de schema/protocolo.
+<a href="https://github.com/felipestroff/Projeto-Mansao/blob/main/Docs/CONFIRMACOES-2026-10-15.md">Detalhes</a>.</p>
+<h2 id="acabamento-dos-menus-e-cartões--15102026">Acabamento dos menus e cartões · 15/10/2026</h2>
+<p>VOLTAR centralizado abaixo de COOPERATIVO, com navegação por teclado.
+SAIR no menu NOVO JOGO / CARREGAR JOGO fecha o jogo. Desconectar ou perder
+o servidor retorna à primeira abertura e encerra a BGM. Seleção de personagem
+sem título superior; cinco assinaturas desenhadas independentemente e
+inclinadas. Emblema com faixa/letras em arco próximas ao círculo, inscrições
+RACCOON / POLICE / DEP na orientação correta e estrelas inclinadas junto à
+borda interna, sem riscos radiais. Fonte editável e gerador preservados.</p>
+<h2 id="pilha-dos-cartões--15102026">Pilha dos cartões · 15/10/2026</h2>
+<p>Emblema S.T.A.R.S. menor, centralizado na coluna azul e com faixa superior.
+Os cinco cartões formam uma pilha real: avançar gira o atual e o coloca
+embaixo; voltar traz o anterior do fundo ao topo. Confirmação e novas
+trocas ficam bloqueadas durante a passagem. A sequência é Jill, Chris,
+Barry, Rebecca e Wesker. SFX gravado de cartas de OxidVideos/Pixabay
+integrado a partir do original fornecido, com master/receita preservados
+e duração de 0,64 s acompanhando a animação.</p>
+<h2 id="novo-jogo-e-cartões-stars--14102026">Novo jogo e cartões S.T.A.R.S. · 14/10/2026</h2>
+<p>NOVO JOGO agora oferece SOLO/COOPERATIVO. SOLO abre cartões dos cinco
+personagens sobre uma mesa PS1, com retratos civis, objetos próprios, setas
+verdes e confirmação que inicia uma campanha nova. Jill usa roupa azul nos
+retratos revisados; as feições dos demais são mais calmas, exceto Wesker.
+COOPERATIVO apresenta IP/porta/senha e abre os mesmos cartões após conectar.
+O cliente só autentica o personagem selecionado, inclusive se o desafio
+inicial expirar; o servidor continua controlando identidade e vagas.
+<a href="https://github.com/felipestroff/Projeto-Mansao/blob/main/Docs/NOVO-JOGO-CARTOES-2026-10-14.md">Detalhes e validação</a>.</p>
+<h2 id="abertura-do-catálogo-de-saves--14102026">Abertura do catálogo de saves · 14/10/2026</h2>
+<p>CARREGAR JOGO mostra o painel antes de montar a máquina de escrever e passa
+a ler os saves em segundo plano. O título fica acima do painel e pontos
+animados indicam a leitura no topo da lista; abas e VOLTAR continuam
+responsivos. A lista vazia usa apenas o status “Nenhum save disponível.”;
+NOVO JOGO fica à direita e abre a escolha SOLO/COOPERATIVO. A entrada nos
+slots usa o fade/SFX de três segundos do menu principal. Removidos ATUALIZAR
+e os tooltips das linhas.
+<a href="https://github.com/felipestroff/Projeto-Mansao/blob/main/Docs/CARREGAR-SAVES-2026-10-14.md">Detalhes e validação</a>.</p>
+<h2 id="carregar-jogo--14102026">Carregar jogo · 14/10/2026</h2>
+<p>CARREGAR JOGO abre os saves reais em abas Solo/Cooperativo, com máquina de
+escrever PS1 sem desfoque, painel transparente, lista ampliada com scroll e
+status de carregamento. Seleção por teclado/mouse, sons existentes,
+reticências animadas, gravação da máquina e fade para retomar a partida.
+Save schema 2 registra modo e contagem manual, com migração de schema 1 em
+memória, preservação de identidade/inventário e nova verificação dos arquivos
+antes da retomada. <a href="https://github.com/felipestroff/Projeto-Mansao/blob/main/Docs/CARREGAR-SAVES-2026-10-14.md">Comportamento, compatibilidade e testes</a>.</p>
+<h2 id="inventário--14102026--guardar-somente-com-baú-aberto">Inventário · 14/10/2026 — guardar somente com baú aberto</h2>
+<p>Removido Guardar do contexto do inventário comum, inclusive perto de um baú.
+Depósito por duplo clique/arraste e transferências pela interface exigem modo
+baú aberto; reorganizar slots continua disponível no inventário comum.
+Sem mudança de comandos autoritativos, proximidade, versões, rede ou save.</p>
+<h2 id="operation-spencer--14102026">Operation Spencer · 14/10/2026</h2>
+<p>Novo nome na abertura, menu, janela, documentação, metadados e geradores.
+Solução/assembly/exportações e scripts usam <code>OperationSpencer</code>.
+Diretório de perfis/campanhas preservado; modelos mudam somente no metadado
+do gerador, com novo bake dos ícones e manifestos atualizados.
+<a href="https://github.com/felipestroff/Projeto-Mansao/blob/main/Docs/RENOMEACAO-2026-10-14.md">Escopo, compatibilidade e validação</a>.</p>
+<h2 id="tela-inicial--14102026">Tela inicial · 14/10/2026</h2>
+<p>Menu intermediário PS1 com NOVO JOGO e CARREGAR JOGO, substituindo o prompt
+após a abertura. Seleção por ↑/↓, confirmação por Enter ou clique esquerdo,
+opção não selecionada cinza. Passeio desfocado e efeitos seguem continuamente;
+BGM segue bloqueada. NOVO JOGO abre a escolha de modo com fade/SFX de
+três segundos; CARREGAR JOGO toca o mesmo SFX e abre os slots. A campanha
+começa após a confirmação do cartão.</p>
+<p>Abertura em tela cheia com fundo azul escuro, névoa animada, granulação fina
+e vinheta, OPERATION SPENCER em vermelho sangue com borda/sombra pretas,
+prompt por teclado/mouse, STROFFLABS, 2026 e versão lida do projeto.
+O prompt pulsa continuamente em fade in/out suave, com ciclo de dois segundos.
+Primeiros três segundos do SFX CC0 fornecido acompanham o fade até o menu
+existente; entradas repetidas não reiniciam a transição. Atalhos de execução
+solo/host/cliente e processos dedicados continuam diretos.
+BGM da mansão bloqueada antes da prévia do hall; retorna apenas depois da
+conclusão da abertura, sem sobrepor o SFX.
+Passeio decorativo por seis câmeras existentes: hall, Doghall, jantar,
+cozinha, biblioteca e galeria leste. Vistas reais desfocadas sob o tom azul;
+dez segundos de permanência e quatro de dissolução. Texto permanece nítido.
+Entrada interrompe o passeio e restaura a prévia do personagem no menu.</p>
+<h2 id="menu-de-contexto-no-visor--14102026">Menu de contexto no visor · 14/10/2026</h2>
+<p>Opções de item ancoradas no canto inferior direito do visor em uma coluna
+de botões, com intervalos de seis pixels, fundo azul do inventário, texto
+branco e bordas finas azul-claro. Esc fecha primeiro as opções; clique fora
+permite selecionar outro item. Preservadas ações, versões e comandos do
+servidor, inclusive Desequipar e destinatários. Fluxo aprovado do baú mantido.</p>
+<h2 id="áudio-de-fechaduras--14102026">Áudio de fechaduras · 14/10/2026</h2>
+<p>Interagir com porta trancada reproduz uma maçaneta resistindo, inclusive na
+inspeção offline pausada. Primeira liberação com chave emite SFX confirmado
+pelo servidor; o jogador ouve uma vez e companheiros no cômodo ouvem na porta.
+Gravações baixadas de shelbyshark e STRACHszydło, com masters/licenças/edições
+preservados. Portas já abertas, tentativas recusadas e restore não repetem sucesso.</p>
+<h2 id="integração-aprovada--14102026--emissores-animados">Integração aprovada · 14/10/2026 — emissores animados</h2>
+<p>Arandelas e lustre usam chamas/luz coordenadas; duas lareiras receberam fogo
+facetado e o SFX gravado aprovado. Painel/gerador acendem telas/indicadores e
+luz local conforme power do snapshot. Fontes persistentes respeitam volume,
+mudo, pausa, Epoch, troca de sala, menu e descarte. Textos das lareiras
+atualizados no gerador de dados. Chuva/clarões e câmeras/tetos preservados.
+430 checks renderizados, 169 de regressão de chuva, 15 Python, 48 CoreTests
+e build/importação passaram; controles físicos/audição crítica pendentes.
+Fontes e limites em <code>Docs/EMISSORES-ANIMADOS-2026-10-14.md</code>.</p>
+<h2 id="apresentação--14102026--tela-cheia-proporcional">Apresentação · 14/10/2026 — tela cheia proporcional</h2>
+<p>Inicialização em tela cheia exclusiva, na resolução do monitor. Cenário 3D e
+transições de portas acompanham a proporção sem barras de escala; câmeras mantêm
+o quadro original de 4:3 ampliando o campo visível. Interface centralizada com
+escala uniforme, fundo do inventário cobrindo a tela e configurações atualizadas.
+FOV de referência preservado ao redimensionar durante inspeções e retornar.
+<a href="https://github.com/felipestroff/Projeto-Mansao/blob/main/Docs/TELA-CHEIA-2026-10-14.md">Evidências no Godot e limites</a>.</p>
+<h2 id="combate--14102026--sem-miraataque-de-mãos-vazias">Combate · 14/10/2026 — sem mira/ataque de mãos vazias</h2>
+<p>Sem arma equipada, mira normal/alta/baixa não entra em animação nem bloqueia
+movimento, e o cliente deixa de enviar ataques. Simulação e previsão local
+usam o equipamento real do snapshot. Desequipar/transferir a última arma
+encerra a mira imediatamente; armas equipadas e defesa/parry preservados.
+Sem mudanças de modelos, animações-fonte, áudio ou formato de save/protocolo.</p>
+<h2 id="inventário--14102026--desequipar-no-contexto">Inventário · 14/10/2026 — Desequipar no contexto</h2>
+<p>A primeira ação do contexto mostra Desequipar na arma equipada, Equipar nas
+armas não equipadas e Usar nos consumíveis; somente uma opção é exibida.
+O servidor limpa o equipamento sem mover a arma nem alterar munição; mãos e painel equipado
+ficam vazios. Opção restrita à arma equipada, com slots/versões validados
+e SFX de botão já existente. Sem novos campos de save/protocolo ou assets.</p>
+<h2 id="baú--14102026--arma-guardada-desequipa">Baú · 14/10/2026 — arma guardada desequipa</h2>
+<p>Guardar, soltar ou entregar a última arma do tipo equipado limpa o equipamento
+no servidor, HUD e modelo em mãos. Transferências recusadas preservam a arma;
+retirar do baú não equipa automaticamente. Referências órfãs de campanhas
+existentes são normalizadas sem novo kit ou mudança de schema/protocolo.
+Evidências e limites em <code>Docs/BAU-INTERFACE-2026-10-14.md</code>.</p>
+<h2 id="escadaria--14102026--correção-da-postura-agachada">Escadaria · 14/10/2026 — correção da postura agachada</h2>
+<p>Após os prints do desenvolvedor, removido o rebaixamento fixo de 18 cm e reduzido
+o arco adicional dos pés. Altura do quadril calculada pelo alcance do apoio,
+com piso mínimo durante blends de retomada; contato inviável é substituído por
+um degrau alcançável e permanece ancorado. Passada diagonal alinha as botas aos
+degraus. Verificações de postura e vídeos nas câmeras reais, sem luz extra,
+em <code>Build/stair-posture-2026-10-14/</code>. Detalhes em <code>Docs/ESCADAS-MOVIMENTO-2026-10-14.md</code>.</p>
+<h2 id="baú--14102026--layout-integrado-ao-inventário">Baú · 14/10/2026 — layout integrado ao inventário</h2>
+<p>Lista com miniaturas/nomes ocupa o visor, sem título ou preview. MAPA,
+ARQUIVOS e RÁDIO bloqueados; SAIR disponível. Clique seleciona, duplo clique
+no inventário guarda e no baú retira para o próximo espaço disponível;
+arraste guarda/retira com alocação autoritativa.
+Setas/indicador amarelos e roda percorrem todos os itens, um por passo;
+arrastar o indicador permite saltos. Reutilizados os SFX existentes.
+Evidências e limites em <code>Docs/BAU-INTERFACE-2026-10-14.md</code>.</p>
+<h2 id="escadaria--14102026--movimento-dos-humanos">Escadaria · 14/10/2026 — movimento dos humanos</h2>
+<p>Corrigidos os saltos verticais do corpo por degrau e a passada de piso plano
+na escadaria do hall. Apoios individuais, flexão dos joelhos e cadência por
+profundidade dos degraus, com entrada/saída gradual. Física, velocidade,
+modelos, câmeras e sons existentes preservados. Evidências e limites em
+<code>Docs/ESCADAS-MOVIMENTO-2026-10-14.md</code>.</p>
+<h2 id="câmeras-e-tetos--14102026--regra-explícita-obrigatória">Câmeras e tetos · 14/10/2026 — regra explícita obrigatória</h2>
+<p>Documentadas as duas obrigações de compatibilidade: câmeras não podem quebrar
+a visualização dos tetos e tetos não podem quebrar o enquadramento das câmeras.
+Ângulos/tetos aprovados são a referência; revisões exigem conferir os dois em
+conjunto, incluindo transições, escadas, inspeções e render real no Godot.
+Regra em <code>AGENTS.md</code> e critérios em <code>Docs/ASSETS-E-AUDIO.md</code>; demais documentos
+referenciam o contrato. Formalização documental, sem alteração de gameplay.</p>
+<h2 id="câmeras--14102026--integração-dos-interiores">Câmeras · 14/10/2026 — integração dos interiores</h2>
+<p>Câmeras aprovadas no hall, Doghall, jantar e cozinha aplicadas à partida e
+direção estendida aos 29 interiores restantes. São 186 zonas internas;
+terraço aberto preservado. Lentes internas mostram os tetos físicos completos,
+com cortes próprios para passagens estreitas e retenção de 0,55 m preservada.
+Ajuste de alvo de 25 cm no hall evita cortar os pés na borda da zona. Corrigida
+a permanência da câmera do menu ao começar uma partida no mesmo hall.
+Iluminação, arte, mapa, regras, áudio, rede e save preservados.
+Evidências e limites em <code>Docs/CAMERAS-INTEGRADAS-2026-10-14.md</code>.</p>
+<h2 id="câmeras--14102026--prévias-para-aprovação">Câmeras · 14/10/2026 — prévias para aprovação</h2>
+<p>Hall, Doghall, jantar e cozinha receberam propostas de câmeras interiores em
+Tools, com tetos em perspectiva, vistas locais para passagens estreitas,
+comparações e quatro vídeos. Iluminação atual preservada por preferência do
+usuário. 266 verificações dirigidas passaram, além de Python/CoreTests/build e
+importação. Etapa aprovada e posteriormente integrada; limites históricos em
+<code>Docs/CAMERAS-PREVIAS-2026-10-14.md</code>.</p>
+<h2 id="inspeção--14102026--opções-pelo-teclado">Inspeção · 14/10/2026 — opções pelo teclado</h2>
+<p>Setas esquerda/direita percorrem as opções em ciclo, inclusive entre linhas;
+Enter confirma a opção selecionada. Borda branca fina somente no botão com
+foco; texto/container permanecem transparentes e sem borda. Mouse, câmera
+frontal e pausa somente offline preservados. 581 checks renderizados, 15 Python,
+40 CoreTests, build e importação passaram. Controle físico permanece pendente.</p>
+<h2 id="inspeção--14102026--câmera-frontal-fixa-por-objeto">Inspeção · 14/10/2026 — câmera frontal fixa por objeto</h2>
+<p>Portas trancadas e janelas mantêm a mesma vista frontal ao variar posição e
+orientação do personagem. Foco na maçaneta e retorno à câmera anterior
+preservados, assim como texto sem borda, reticências e pausa somente offline.
+15 checks Python, 40 CoreTests, build/importação e 542 checks renderizados
+passaram. Comparações e limites em <code>Docs/INSPECAO-DE-OBJETOS-2026-10-14.md</code>.</p>
+<h2 id="tetos--14102026--visibilidade-nas-câmeras-fixas">Tetos · 14/10/2026 — visibilidade nas câmeras fixas</h2>
+<p>Corrigido ocultamento integral do teto no jogo atualizado. Recorte parcial mantém
+os acabamentos no alto da imagem e libera a área dos personagens, inclusive no
+patamar. Inspeções baixas mantêm a arte aprovada; câmeras/luzes/dados preservados.
+986 checks de tetos, 130 de referências, 420 de cenário, 320 de inspeção,
+15 Python, 40 CoreTests, build/importação aprovados. Capturas/comparações em
+<code>Build/ceilings-visible-2026-10-14/index.html</code>; sem controles físicos/export.</p>
+<h2 id="portas--14102026--sfx-ao-concluir-a-entrada">Portas · 14/10/2026 — SFX ao concluir a entrada</h2>
+<p>SFX integrado de fechamento toca uma única vez no término visual da passagem,
+após confirmação da transferência, mantendo fundo preto. Cancelamento, reset
+e desconexão permanecem silenciosos; escadas preservadas. 675 checks de portas,
+15 Python, 40 CoreTests, build e importação aprovados. Audição crítica pendente.</p>
+<h2 id="integração-local--14102026--tetos-ps1-aprovados">Integração local · 14/10/2026 — tetos PS1 aprovados</h2>
+<p>Aplicados acabamentos às 33 salas internas; terraço mantido aberto. Fontes de
+malha compartilhadas por produção/prévias, sete albedos aprovados idênticos,
+recorte automático também na inspeção pausada e na faixa das vigas/molduras.
+Saguão adaptado à viga do lustre e portas superiores. 850 checks de tetos,
+114 de referências, 420 de cenário, 320 de inspeção, 15 Python e 40 CoreTests
+passaram, além de build/importação. Dados/rede/save/áudio existentes preservados.
+Evidências, correções e limites em <code>Docs/TETOS-INTEGRADOS-2026-10-14.md</code>.</p>
+<h2 id="prévia-local--14102026--tetos-ps1-para-aprovação">Prévia local · 14/10/2026 — tetos PS1 para aprovação</h2>
+<p>Quatro protótipos em salas reais: caixotões de madeira, reboco envelhecido,
+forro de serviço com suportes e alvenaria escurecida facetada. Malhas somente
+em Tools, sete texturas originais com gerador/manifesto. 131 checks renderizados,
+56 capturas e 2.888 segmentos de visão sem bloqueios nas câmeras fixas.
+Python/CoreTests/build/importação aprovados; partida e arte existente intactas.
+Direção e rollout aguardam aprovação. Detalhes em <code>Docs/TETOS-PREVIAS-2026-10-14.md</code>.</p>
+<h2 id="áudio--14102026--rebecca-subsolo-e-gerador">Áudio · 14/10/2026 — Rebecca, subsolo e gerador</h2>
+<p><code>west_recovery</code> recriado a partir de Meeting Rebecca (59 s); <code>ambient</code>
+substituído por arranjo de Mansion Basement (70 s). Fades de 3,5/2,5 s
+mantidos, com partituras, instrumentos, referências e hashes preservados.
+Sala do gerador sem BGM; loop espacial de gravação CC0/qubodup fornecida pelo
+usuário, somente após ativar a energia. Master e receita preservados.
+<code>danger.wav</code>, import e receita removidos. Combate mantém a reprodução.
+14 checks Python, 40 CoreTests, build/importação, 135 checks musicais e
+355 de áudio aprovados. Audição crítica e partida manual pendentes;
+detalhes em <code>Docs/TRILHAS-SONORAS-2026-10-14.md</code>.</p>
+<h2 id="chuva--14102026--vidro-textos-e-sfx-espacial">Chuva · 14/10/2026 — vidro, textos e SFX espacial</h2>
+<p>Regra de negócio explicitada em <code>AGENTS.md</code> e <code>Docs/ASSETS-E-AUDIO.md</code>:
+toda janela externa exige floresta PS1, chuva e SFX espacial; outro background
+ou exceção aos efeitos depende de indicação explícita do desenvolvedor.</p>
+<p>Seis janelas com gotas PS1 e escorrimento; períodos variáveis de chuva/estiagem,
+secagem gradual e textos ao vivo. Efeito e áudio continuam durante inspeção
+offline pausada, mantendo câmera e simulação. Loop CC0 recebido do usuário,
+master/licença/hashes e receita preservados; fontes nas janelas e reverberação
+aproximada pelas dimensões do cômodo. Sem alteração de Core/rede/save.
+Ciclos cosméticos locais não sincronizados entre clientes. Testes e limites em
+<code>Docs/CHUVA-JANELAS-2026-10-14.md</code>.</p>
+<h2 id="portas--14102026--passagem-e-modelos-ps1">Portas · 14/10/2026 — passagem e modelos PS1</h2>
+<p>Porta abre e mantém abertura durante a passagem em primeira pessoa para
+fundo preto, sem prévia do destino. Modelos de madeira, serviço em metal,
+espada e escudo com ferragens/fechaduras próprias; fonte e manifesto preservados.
+Porta comum reduzida de 1.636 para 988 triângulos. Sem novo SFX; fechamento
+legado silencioso na apresentação. Autoridade/transferência/save preservados.
+462 checks de portas, 320 de inspeção e 351 de áudio aprovados, além dos
+gates Python/Core/build/import. Limites em <code>Docs/PORTAS-PS1-2026-10-14.md</code>.</p>
+<h2 id="prévia--14102026--animações-dos-emissores-para-aprovação">Prévia · 14/10/2026 — animações dos emissores para aprovação</h2>
+<p>Catálogo com arandelas, velas do lustre, duas lareiras e referência das seis
+janelas. Protótipos PS1 de chama e luz sincronizadas, com SFX de lareira CC0
+baixado e fornecido pelo usuário. Fontes, master, receita, imagens e GIFs
+preservados. Novas animações somente em Tools; implantação aguarda aprovação.
+139 checks renderizados, 14 Python, 40 CoreTests e build/importação passaram;
+audição crítica e partida por controles físicos pendentes. Detalhes em
+<code>Docs/CATALOGO-EMISSORES-2026-10-14.md</code>.</p>
+<h2 id="interface--14102026--inspeção-de-objetos">Interface · 14/10/2026 — inspeção de objetos</h2>
+<p>Diálogos no canto inferior esquerdo, fonte branca com sombra preta, sem fundo,
+borda ou contorno de foco. Descrições sem escolhas revelam texto gradualmente;
+reticências animadas indicam clique para continuar, sem botão Fechar.
+Clique durante a escrita completa o texto sem fechar; o próximo encerra a
+leitura. Reticências continuam animadas, com pausa somente offline.
+Portas destrancadas iniciam passagem diretamente, sem texto; baú abre o
+inventário direto. Dicas e primeira pessoa preservadas nas portas trancadas.
+Coleta pede Pegar/Deixar e aguarda autoridade; portas trancadas focam a maçaneta
+em primeira pessoa, janelas focam sua fachada. Textos para móveis, pistas,
+puzzles, cadáveres, máquina de escrever e requisitos da saída.
+Somente offline pausa simulação/atores. Dano, restore e desconexão encerram
+leitura e câmera. Preservados HUD/log temporário, protocolo/save, regras,
+extração de oito segundos e arte/SFX. Textos estáticos no gerador de dados.
+Evidências e limites em <code>Docs/INSPECAO-DE-OBJETOS-2026-10-14.md</code>.</p>
+<h2 id="correção-local--14102026--janelas-em-fachadas-externas">Correção local · 14/10/2026 — janelas em fachadas externas</h2>
+<p>Doghall passa a ter janelas a oeste e o corredor leste superior a sul, junto
+ao acesso ao terraço. Estufa mantida a leste. Seis janelas autoradas, com
+validação de fachada/portas internas, folgas e luz orientada para dentro.
+Portas, mapa, objetos, câmeras, malhas e texturas preservados. 420 checks de
+cenário, 67 de detalhes, 117 de luz lunar, 149 de clarões, 14 Python e 40 CoreTests
+passaram, além de build/importação. Evidências e limites em
+<code>Docs/JANELAS-E-FACHADAS-2026-10-14.md</code>.</p>
+<h2 id="correção-local--14102026--música-contínua-durante-combate">Correção local · 14/10/2026 — música contínua durante combate</h2>
+<p>Encontros e derrotas de inimigos não trocam mais a trilha do cômodo pelo tema
+<code>danger</code>. A faixa mantém sua posição; a seleção por área e as transições entre
+áreas continuam. 114 checks musicais no Godot e 350 checks de áudio passaram;
+testes dirigidos cobrem encontros no térreo e andar superior.</p>
+<h2 id="música-local--14102026--quatro-trilhas-e-repetição-gradual">Música local · 14/10/2026 — quatro trilhas e repetição gradual</h2>
+<p>Adicionados temas de térreo, andar superior e enfermaria oeste; substituída
+a sala segura. Térreo/superior/salvamento refeitos com análise dos MP3s fornecidos,
+instrumentos novos e fontes editáveis. As quatro faixas usam fade-out de 3,5 s
+e fade-in de 2,5 s; trocas de tema têm crossfade de 1,8 s. Salas do mesmo tema
+preservam a posição e hall/balcão usam exploração. 115 checks musicais Godot
+aprovados; audição crítica pendente. Detalhes em <code>Docs/TRILHAS-SONORAS-2026-10-14.md</code>.</p>
+<h2 id="ajuste-local--14102026--trovões-mais-frequentes-e-fortes">Ajuste local · 14/10/2026 — trovões mais frequentes e fortes</h2>
+<p>Primeiro trovão aos 20 s de campanha; seguintes com intervalos alternados de
+45/30 s. Ganho do banco passa de -4 para 0 dB: mais 4 dB neste ajuste,
+12 dB acima do valor inicial. Mantidas atenuação por sala e ausência de replay.</p>
+<h2 id="integração-local--14102026--relógio-baixado-e-disparos-novos">Integração local · 14/10/2026 — relógio baixado e disparos novos</h2>
+<p>Loop contínuo na sala de jantar usa o download DRAGON-STUDIO fornecido pelo
+usuário. Pistola, revólver e escopeta usam os novos downloads, com ganhos de
+4/5/6 dB; quatro variantes anteriores arquivadas. Trovão mantém +8 dB e,
+após novo pedido de frequência, passa a intervalos de 58/88 s, primeiro aos
+45 s. Fontes/licenças e gates em <code>Docs/RELOGIO-E-TIROS-2026-10-14.md</code>.
+Corrigido LoopEnd para formato importado comprimido; excluídos snapshots C#
+de Build da compilação. Audição e aprovação perceptiva permanecem pendentes.</p>
+<h2 id="manutenção-local--14102026--clarão-do-trovão">Manutenção local · 14/10/2026 — clarão do trovão</h2>
+<p>Trovão dispara dois pulsos de luz branca azulada nas sete janelas existentes,
+reutilizando suas fontes e sombras. Efeito retorna à noite, funciona no mudo
+e é cancelado por troca de sala/restore/desconexão. Sem novo áudio, assets,
+dados ou protocolo. Evidências e falhas da regressão geral de áudio em
+<code>Docs/CLARAO-TROVAO-2026-10-14.md</code>.</p>
+<h2 id="ajuste-local--14102026--origem-dos-sfx-e-ganho-do-trovão">Ajuste local · 14/10/2026 — origem dos SFX e ganho do trovão</h2>
+<p>Regra explícita: indicar fonte/autor/licença antes de integrar e aguardar o
+download/caminho do desenvolvedor; síntese de novo SFX somente se solicitada
+explicitamente. Relógio sintético em preparação retirado; loop aguarda gravação.
+Ganho do trovão existente aumentado em 8 dB. Alternativas para relógio e tiros
+registradas em <code>Docs/SELECAO-SFX-2026-10-14.md</code>; disparos atuais preservados.</p>
+<h2 id="manutenção-local--14102026--estatura-dos-zumbis">Manutenção local · 14/10/2026 — estatura dos zumbis</h2>
+<p>Removida a redução visual ligada à variante de combate. As nove aparências
+usam escala uniforme própria, calibrada ao lado da Jill no Godot. Preservados
+GLBs, clips, texturas e regras. Validação integrada: 181 checks, 27 sequências
+de marcha e 26 novas capturas, com galeria antes/depois e alturas medidas.</p>
+<h2 id="manutenção-local--14102026--iluminação-noturna">Manutenção local · 14/10/2026 — iluminação noturna</h2>
+<p>Removidas luz ambiente/direcional globais. Arandelas e velas do lustre produzem
+luz quente localizada com sombras; as sete janelas lançam luz fria fraca para
+dentro. Calibração renderizada elimina sombras exageradas dos suportes e reduz
+o lustre. Dados, modelos e regras preservados. Evidências e limites em
+<code>Docs/ILUMINACAO-NOTURNA-2026-10-14.md</code>.</p>
+<h2 id="ajuste-local--14102026--trovões-mais-espaçados">Ajuste local · 14/10/2026 — trovões mais espaçados</h2>
+<p>Primeiro trovão após dois minutos de campanha; seguintes separados por
+179/239 segundos, aproximadamente três a quatro minutos. Mantidos tempo
+autoritativo, atenuação por cômodo e supressão de replay ao entrar/restaurar.</p>
+<h2 id="correção-local--14102026--cauda-vocal-da-facada">Correção local · 14/10/2026 — cauda vocal da facada</h2>
+<p><code>knife_hit</code> e <code>defense_stab</code> passam a usar somente 0,00–0,80 s da tomada
+de facada, excluindo a cauda vocal relatada como “WoooW”. Impacto preservado,
+fade de saída de 20 ms e master intacto. Corte registrado na receita e bake;
+os outros 194 WAVs permanecem idênticos. Conferência por escuta pendente.</p>
+<h2 id="manutenção-local--14102026--sons-do-inventário">Manutenção local · 14/10/2026 — sons do inventário</h2>
+<p>Acrescentados 12 takes em nove bancos para botões, seleção, início/encaixe/
+cancelamento de arraste, spray, erva, mistura pronta e combinação. Uso e
+combinação só confirmam ações aceitas. Corrigida entrega dos eventos durante
+a pausa solo sem avançar a simulação. Fontes Kenney CC0 e síntese original do
+chiado de spray; audição pendente. Evidências em <code>Docs/INVENTARIO-AUDIO-2026-10-14.md</code>.</p>
+<h2 id="manutenção-local--14102026--janelas-noturnas-integradas">Manutenção local · 14/10/2026 — janelas noturnas integradas</h2>
+<p>As sete janelas da estufa e dos dois corredores carregam a versão noturna
+por <code>RoomView</code>/<code>WindowArt</code>. Texturas da prévia preservadas; auditoria passou
+a medir moldura e peitoril completos. Galeria integrada com 18 capturas novas
+e 18 anteriores, 91 checks de janelas e 405 de cenário sem falhas. Sem mapa/regras.</p>
+<h2 id="prévia-local--14102026--janelas-externas-ps1">Prévia local · 14/10/2026 — janelas externas PS1</h2>
+<p>Preparados protótipos nas três salas com janelas externas: floresta original
+em camadas, vistas inferiores/superiores, vidro envelhecido e molduras com
+profundidade. Nove PNGs pequenos reproduzíveis, 36 capturas antes/candidato
+no Godot e galeria em <code>Build/windows-ps1-2026-10-14/index.html</code>. Aplicação na
+partida ainda aguardava a revisão visual nessa etapa. Sem mapa ou regras.</p>
+<h2 id="manutenção-local--14102026--integração-de-efeitos-sonoros">Manutenção local · 14/10/2026 — integração de efeitos sonoros</h2>
+<p>Integrados 162 recortes licenciados em 77 bancos: vozes por perfil/aparência,
+passos por espécie/superfície, ferimentos/quedas, tiros/recargas, faca/aparo,
+baú/portas/escadas, estojos e trovão. Gatilhos de acerto e transferência continuam
+sob autoridade; removida abertura de porta duplicada para o viajante. Pipeline
+preserva masters/receitas/hashes, e os imports sobrevivem à regeneração geral.
+Mixkit permanece opcional/local, excluído da redistribuição com fonte.
+Audição e homologação da mixagem ainda pendentes; fontes, gates e limitações em
+<code>Docs/INTEGRACAO-SONORA-2026-10-14.md</code>. Sem mudança de regras, protocolo ou save.</p>
+<h2 id="manutenção-local--14102026--paredes-ps1-aplicadas-às-34-salas">Manutenção local · 14/10/2026 — paredes PS1 aplicadas às 34 salas</h2>
+<p>Aplicados após aprovação os 13 perfis de acabamento, com 17 texturas originais
+128² e filtro nearest. <code>RoomView</code>/<code>WallArt</code> selecionam o perfil de cada sala
+durante a partida. A <code>Build/walls-rollout-2026-10-14/index.html</code> (evidência local; seleção pública no índice de galerias)
+reúne capturas reais das 136 câmeras do Godot. Passaram 12 checks Python, 39 CoreTests,
+build C# sem erros/avisos e importação Godot; a auditoria de cenário passou
+405 checks com 146 capturas. Evidências e limites em <code>Docs/TESTES-E-LIMITACOES.md</code>.</p>
+<h2 id="prévia-local--14102026--etapa-anterior-à-aplicação-das-paredes-ps1">Prévia local · 14/10/2026 — etapa anterior à aplicação das paredes PS1</h2>
+<p>Ampliada a proposta com acabamentos próprios para banheiro, estufa, cozinha,
+terraço, passagem, gerador, arquivo de contenção, dois quartos e biblioteca.
+Inclui materiais cerâmicos, minerais, técnicos e domésticos; fiadas alinhadas
+e painéis altos ajustados às molduras da biblioteca. Novos geradores mantêm
+17 texturas 128² reproduzíveis e preservam os cinco PNGs da primeira proposta.
+A galeria dessa etapa foi ampliada para 14 ambientes; naquele momento,
+a proposta ainda não estava aplicada às partidas.</p>
+<p>Preparados papéis oliva/bordô, reboco e lambris de madeira em cinco texturas
+originais 128². O candidato corrige o esticamento dos desenhos pelo atlas das
+paredes, usando repetição por distância e materiais exclusivos. Galeria de
+comparação em quatro ambientes reais, com enquadramento e iluminação iguais.
+Nessa primeira etapa, os acabamentos ficaram somente na fixture de prévia
+até revisão visual, antes da aplicação geral registrada acima. Fontes,
+reprodução e limites em <code>Docs/ASSETS-E-AUDIO.md</code> e <code>Docs/TESTES-E-LIMITACOES.md</code>.</p>
+<h2 id="manutenção-local--14102026--orientação-e-apoios-dos-cenários">Manutenção local · 14/10/2026 — orientação e apoios dos cenários</h2>
+<p>Corrigidas 23 orientações de móveis/esculturas, incluindo cadeiras do jantar,
+piano e escrivaninhas. Quadros encostam nas paredes; bases dos props apoiam no
+chão. Lustre e arandelas têm suportes conectados; colunas e janelas deixam as
+portas livres. O hall recebeu patamar opaco, base, guarda-corpos e altura por
+degrau, com colisão compartilhada e apoio durante a interpolação visual.
+Colunas passaram a bloquear movimento; dois guarda-corpos perderam a colisão
+excessiva. Posições antigas dentro dos novos obstáculos são recuperadas
+localmente ao movimentar, sem alterar schema ou inventário.
+Adicionada auditoria reproduzível das 34 salas/136 câmeras, com comparação
+antes/depois. Evidências e limitações em <code>Docs/TESTES-E-LIMITACOES.md</code>.</p>
+<h2 id="manutenção-local--13102026--reconstrução-dos-atores-ps1-em-revisão">Manutenção local · 13/10/2026 — reconstrução dos atores PS1 em revisão</h2>
+<p>Nova tentativa dos quinze modelos articulados com fontes dos protótipos
+aprovados, atlas rastreáveis e comparação por capturas reais do Godot.
+Incluídas três aparências femininas de zumbi, rasgos/lesões e uma variante
+sem braço; seleção visual por ID sem mudar a variante de combate. Revisados
+pose, anatomia, cabelo, Cerberus e encaixes das armas. Refinamento adicional
+ajusta quadril/joelhos/botas, contorno do tronco, projeção por seção, recortes
+individuais de mãos/cabeça/costas, olhos sem duplicação, dedos curvados e perfil
+do Cerberus. Removidas alças sobrepostas à pintura. Ainda não homologada
+a igualdade visual exata pedida pelo usuário. Evidências técnicas e limites
+em <code>Docs/TESTES-E-LIMITACOES.md</code>.</p>
+<p>Movimentação revista com passada por apoios, flexão das articulações, cadência
+por deslocamento, mistura de poses e passos sincronizados. Cerberus ganha
+tornozelos articulados; rastejantes mantêm postura nas ações e personagens
+têm transição de levantar. Spawn visual deixa de deslizar desde a origem.
+Revisados cabelo de Chris/Rebecca, bandana inclinada e registro facial de Chris.
+Preservados Core, rede, save, fontes aprovadas e regras de combate. A fidelidade
+visual exata e a avaliação manual da naturalidade continuam em revisão.</p>
+<p>Nova rodada de aproximação das quinze malhas: cabeças/cabelos individuais,
+roupas dos heróis com alças/cintos/cruz recortados nas próprias faces e bandana
+da Rebecca com nó e pontas atrás da cabeça. Zumbis têm bordas rasgadas e mechas
+femininas distintas, sapatos lesionados e ossos aderentes à malha. Corrigidos
+normais e registro de textura do dorso do Cerberus. Galeria inclui comparação
+antes/atual e identifica a mudança da câmera traseira.</p>
+<h2 id="manutenção-local--13102026--retratos-da-rebecca">Manutenção local · 13/10/2026 — retratos da Rebecca</h2>
+<p>Bandana vermelha e rosto de jovem adulta mais simpática no retrato PS1 da Rebecca.
+Cuidado e Perigo preservam identidade e bandana. Corrigido o acessório da
+primeira revisão, que havia interpretado o pedido como um laço.
+Prompts/proveniência atualizados; pipeline confere hashes da base e da fonte
+das variantes. Demais personagens, UI e regras preservados. Evidências e
+limites em <code>Docs/TESTES-E-LIMITACOES.md</code>.</p>
+<h2 id="manutenção-local--13102026--cores-das-escadas-por-exploração">Manutenção local · 13/10/2026 — cores das escadas por exploração</h2>
+<p>Degraus acompanham o estado do cômodo: branco sutil em não explorado,
+verde escuro em explorado e vermelho sutil na localização atual. A regra
+vale para a escadaria central e os acessos entre níveis, com atualização
+pelo snapshot. Alterados renderer, fixture e documentação; dados/regras
+preservados. Evidências em <code>Docs/TESTES-E-LIMITACOES.md</code>.</p>
+<h2 id="manutenção-local--13102026--refinamento-da-planta">Manutenção local · 13/10/2026 — refinamento da planta</h2>
+<p>Cômodo atual pulsa em vermelho; removidos legenda/título da área de informações,
+marcadores de jogadores e setas das escadas. Degraus em verde escuro sutil,
+inclusive na escadaria central. Comandos traduzidos para MAPA,
+ARQUIVOS, RÁDIO e SAIR; seletor SUBSOLO/TÉRREO/2º ANDAR com o mesmo acabamento
+metálico. Passagens 2D ligam as bordas das salas com um único acesso por conexão
+no mesmo andar. Fonte <code>generate_data.py</code>, metadados <code>DoorDef.MapLink</code> e JSON
+atualizados; posições do cenário, colisões, grafo, rede e save preservados.
+Validação e limites em <code>Docs/TESTES-E-LIMITACOES.md</code>.</p>
+<h2 id="manutenção-local--13102026--mapa-no-inventário">Manutenção local · 13/10/2026 — mapa no inventário</h2>
+<p>MAP/M passa a usar o visor de inspeção, mantendo slots, retrato, ECG e equipado;
+selecionar um slot retorna à inspeção. Planta com grade PS1, contornos de todos
+os cômodos, interiores não explorados transparentes, explorados verdes e atual
+vermelho. Acessos amarelos/vermelhos acompanham desbloqueios do snapshot;
+degraus e setas mostram trocas de nível, com seletor B1/1F/2F no visor.
+Preservados dados, capacidades, Core, rede, save e assets. Evidências e limites
+da validação em <code>Docs/TESTES-E-LIMITACOES.md</code>.</p>
+<h2 id="manutenção-local--13102026--modelos-distintos-das-facas">Manutenção local · 13/10/2026 — modelos distintos das facas</h2>
+<p>Faca defensiva deixa de reutilizar a malha reduzida da faca de combate:
+lâmina curta de ponta caída, cabo de madeira com rebites, guarda assimétrica
+e argola vazada. Gerador, GLB, miniatura renderizada e manifesto atualizados;
+faca de combate e regras preservadas. Validador, 31 CoreTests, build/importação,
+180 checks de arte e 100 de inspeção aprovados. Revisão visual por capturas
+do Godot; limites em <code>Docs/TESTES-E-LIMITACOES.md</code>.</p>
+<h2 id="manutenção-local--13102026--refinamento-da-hud-do-inventário">Manutenção local · 13/10/2026 — refinamento da HUD do inventário</h2>
+<p>Layout PS1 com grade preenchendo a altura disponível, faixa retrato/ECG/
+equipado alinhada, detalhes sem bordas e footer metálico. Removidos cabeçalho,
+dicas e botões redundantes; ações no menu de contexto. Inventário abre sem
+seleção e slots vazios ocultam controles de inspeção. Destinos válidos de
+arraste usam cantos verdes; seleção mantém cantos vermelhos sem borda amarela.
+Bem/Cuidado/Perigo e dez retratos PS1 adicionais; equipado mostra quantidade
+ou infinito. RADIO reservado para VOIP online, desabilitado solo.
+Preservadas capacidades, modelos, regras e validação autoritativa.
+31 CoreTests, validador, build/importação e 215 checks renderizados dirigidos
+aprovados; evidências e limites em <code>Docs/TESTES-E-LIMITACOES.md</code>.</p>
+<h2 id="manutenção-local--13102026--cenário-detalhado-ps1">Manutenção local · 13/10/2026 — cenário detalhado PS1</h2>
+<p>32 modelos de móveis, portas, equipamentos e decoração recebem silhuetas e
+peças próprias: gavetas, ferragens, painéis, molduras, estofados, livros,
+teclados, louças, degraus e corrimãos. Texturas originais pequenas e faces
+facetadas seguem a direção PS1. Portas duplas usam folhas espelhadas e
+guarnições; móveis de frente definida passam a olhar para dentro da sala
+quando a orientação padrão apontava para fora. Livros ajustados à estante.
+Gerador seletivo <code>--props</code> e fontes preservados; reprodução determinística.
+31 CoreTests, validador, build/importação e 183 checks renderizados dirigidos
+aprovados; evidências e limites em <code>Docs/TESTES-E-LIMITACOES.md</code>.</p>
+<h2 id="manutenção-local--13102026--itens-detalhados-ps1">Manutenção local · 13/10/2026 — itens detalhados PS1</h2>
+<p>Os 30 itens ganham silhuetas e peças próprias: armas com canos e guarda-matos
+vazados, empunhaduras, miras e cilindro; spray rotulado, munições, ervas/misturas,
+chaves, emblemas, gema, bateria e amostra detalhados. Mantidas faces facetadas,
+texturas pequenas e nearest. Miniaturas transparentes renderizadas dos GLBs,
+ângulos iniciais por tipo e manifesto para detectar ícones desatualizados.
+Gerador e pipeline preservados; nenhuma mudança nas regras ou dados do jogo.
+31 CoreTests, validador, build/importação e 296 checks renderizados dirigidos
+aprovados; evidências e limites em <code>Docs/TESTES-E-LIMITACOES.md</code>.</p>
+<h2 id="manutenção-local--13102026--inventário-ps1">Manutenção local · 13/10/2026 — inventário PS1</h2>
+<p>Visor de inspeção passa de ícone estático para GLB rotacionável por arraste,
+quatro setas e teclado, com reset e limpeza ao fechar. ECG animado em verde,
+amarelo e vermelho acompanha Fine/Caution/Danger, inclusive na pausa solo.
+Cinco retratos originais com acabamento PS1 substituem as texturas UV no painel.
+Layout preto/azul, molduras metálicas, botões e marcadores vermelhos aproximados
+das referências. Mantidos slots, comandos, versões e validação autoritativa.
+Arte e prompts preservados; gerador revisado. 31 CoreTests, build/importação,
+validador e 116 checks renderizados dirigidos aprovados; limites na documentação
+de testes. Sem homologação da matriz manual ou controle físico.</p>
+<h2 id="manutenção-local--13102026--matriz-de-aceitação">Manutenção local · 13/10/2026 — matriz de aceitação</h2>
+<p>Painéis recebem rolagem que acompanha foco; slots mostram foco e o número do
+slot aceita clique. PV e estado de saúde do inventário acompanham dano no
+multiplayer. A prévia do personagem passa para a área livre do menu. Ajustadas
+somente as quatro câmeras da sala do gerador no gerador de dados e JSON regenerado.
+Parry preserva o atordoamento de 1,4s e não substitui a morte do inimigo por idle.
+Encerramento ENet remove o cache de RPC pelo evento de saída do nó antes de
+trocar o peer, contornando o erro de callable do export Godot 4.7.2; engine mantido.
+Ampliadas as fixtures ENet/renderizada e as regressões Core. Logs dos bots medem
+RTT e a estimativa de perda de pacotes confiáveis do ENet. Matriz, resultados e
+limites em <code>Docs/MATRIZ-ACEITACAO-2026-10-13.md</code>. Alterações de HUD preservadas.
+Removidos também os nomes permanentes sobre aliados no cenário multiplayer.</p>
+<h2 id="manutenção-local--13102026--mtu-e-encerramento-enet">Manutenção local · 13/10/2026 — MTU e encerramento ENet</h2>
+<p>Snapshots grandes usam o canal confiável existente; o caminho não confiável
+tem orçamento de 1000 bytes UTF-8 para o JSON. Relay automático desativado
+na topologia cliente/servidor, guardas para peers desconectados e timers de
+autenticação, e encerramento que desassocia/libera o transporte. Preservados
+JSON/protocolo, Epoch/Sequence, regras, interface e previsão dos bots.
+O smoke agora reprova erros de runtime/transporte e avisos de MTU nos logs,
+mesmo com exit 0. Adicionado gate ENet de concorrência/reconexão/restore.
+Uma repetição revelou pontos de rota concluídos só pela previsão do bot:
+agora apenas o feedback autoritativo avança a rota; regressão adicional cobre
+correção de posição antes da chegada. Prazo e critérios do smoke preservados.
+Evidências e tradeoff do fallback em <code>Docs/TESTES-E-LIMITACOES.md</code> e
+<code>Docs/ARQUITETURA.md</code>.</p>
+<h2 id="manutenção-local--13102026--previsão-dos-inputs-no-smoke-enet">Manutenção local · 13/10/2026 — previsão dos inputs no smoke ENet</h2>
+<p>O driver dos bots Chris/Wesker passa a prever posição/direção reproduzindo os
+inputs ainda não confirmados sobre o último snapshot, como o cliente visual.
+Isso evita correções repetidas de direção usando feedback antigo. Mantidos
+o trajeto, limite de 35s, critérios do smoke e validações do servidor.
+Logs incluem a quantidade de inputs pendentes. Duas regressões cobrem as
+quatro posições de entrada com atrasos sintéticos de input e snapshot.
+As alterações de interface permanecem. Evidências em <code>Docs/TESTES-E-LIMITACOES.md</code>.</p>
+<h2 id="manutenção-local--13102026--interface-durante-a-partida">Manutenção local · 13/10/2026 — interface durante a partida</h2>
+<p>Removidos os painéis permanentes de sala, objetivo, equipe, vida, arma e
+controles. Solo fica sem HUD/log; multiplayer mantém somente texto discreto
+do servidor no canto inferior esquerdo, com até três mensagens, seis segundos
+de duração e fade final. Respostas de comandos e eventos alimentam o log;
+snapshots vazios não prolongam sua exibição. Transições de porta sem legenda.
+Painéis por comando preservados; chat disponível somente no multiplayer.
+Evidências e limites em <code>Docs/TESTES-E-LIMITACOES.md</code>.</p>
+<h2 id="manutenção-local--13102026--trajeto-de-wesker-no-smoke-enet">Manutenção local · 13/10/2026 — trajeto de Wesker no smoke ENet</h2>
+<p>O bot passa a manter os pontos da rota entre snapshots, evitando oscilação no
+spawn causada por recalcular o caminho a cada input. Controlador compartilhado
+com teste de regressão de feedback atrasado; logs do smoke incluem posição/yaw.
+Validadores, 26 CoreTests, build/importação e smoke real com quatro clientes
+aprovados. Aviso de MTU e erro de envio no encerramento permanecem; homologação
+completa pendente. Veja <code>Docs/TESTES-E-LIMITACOES.md</code> para os relatórios reais.</p>
+<h2 id="manutenção-local--13102026--toolchain-no-codex">Manutenção local · 13/10/2026 — toolchain no Codex</h2>
+<p>Adicionados setup de <code>GODOT_DOTNET</code> e comando consolidado <code>Tools/Test.ps1</code>, com
+logs por gate e relatório de falha. Os scripts consultam o ambiente persistente
+do usuário mesmo quando o Codex já estava aberto. Versões do projeto preservadas.
+Build, 25 CoreTests, validadores e importação aprovados; smoke ENet reprovado no
+trajeto de Wesker à varanda. Veja <code>Docs/CODEX-GODOT-DOTNET.md</code> para evidências e
+testes de aceitação ainda pendentes.</p>
+<h2 id="010-alpha-r2--correção-localizada-de-compilação">0.1.0-alpha R2 — correção localizada de compilação</h2>
+<p><code>Game/NetSession.cs</code> passa a usar
+<code>global::System.Security.Cryptography.RandomNumberGenerator.GetBytes(32)</code>
+para desambiguar o gerador usado no desafio de autenticação (CS0104).
+Mantidos 32 bytes, Base64, protocolo, saves, assets e configuração Godot/.NET do R1.
+Busca das ocorrências e validadores Python reexecutados; compilação e execução
+Godot não executadas neste ambiente. Veja <code>Docs/CORRECAO-R2-CS0104.md</code>.</p>
+<h2 id="010-alpha--primeira-entrega-em-fonte">0.1.0-alpha — primeira entrega em fonte</h2>
+<p>Base experimental com simulação, rede ENet, campanha adaptada de 34 ambientes,
+assets originais gerados, ferramentas e documentação PT-BR. Entrega não compilada
+nem homologada no Godot. Sem binários exportados; veja o relatório de limitações.</p>
+<p>Revisões estáticas antes do pacote: acessibilidade dos pontos de interação,
+progressão sem gazua obrigatória, enquadramento geométrico de quatro câmeras por
+cômodo, transações/versionamento, épocas após restore, recuperação de chaves,
+correção de pose de cadáver na reaparição visual, separação de texturas de rosto
+e corpo e inclusão de solução .sln para o pipeline de exportação C#.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js"></script>
+        <script src="search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

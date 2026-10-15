@@ -1,0 +1,127 @@
+{
+  "patch": "r1-godot-4.7.2",
+  "base_archive": "Projeto-Mansao-0.1.0-alpha-fonte.zip",
+  "base_sha256": "7cd019c13a28afe3795901b0016a93ee2f6978aabd44ae4e734aa8bf310d1581",
+  "destination": "Extract the PATCH CONTENTS into the existing project root; merge Tools/Docs and replace the listed files.",
+  "godot": "4.7.2 stable .NET",
+  "godot_sdk": "4.7.2",
+  "target_framework": "net8.0",
+  "gameplay_assets_unchanged": true,
+  "build_or_runtime_validated": false,
+  "files": [
+    {
+      "path": ".github/workflows/verify-core.yml",
+      "operation": "replace",
+      "sha256_before": "72739526d2d1cc5149dd53aff610371cc4aea6d939e5f8b2e4731dd65859c8bf",
+      "sha256_after": "0cdc53b92cbb6a1bea968093d36dbb484308b4effde37517c95018e8d6207ab6"
+    },
+    {
+      "path": "ABRIR-PRIMEIRO.html",
+      "operation": "replace",
+      "sha256_before": "c079b13d30c5c4cc5f347048ba665c63bf54c9b3a0f57e8bf7e2b7f66df88a65",
+      "sha256_after": "b9929bc8409eae5aa71927bbacd423be273cb4657e697b54060a28954869f980"
+    },
+    {
+      "path": "AGENTS.md",
+      "operation": "replace",
+      "sha256_before": "80652183be92ebf56b4ee0d535ae2404cba1fbf936c1dab01b6b78f6cdf2e09f",
+      "sha256_after": "7f0dfcea0440ce81f546b3af630265007d907f45fd0ee41eb86512428fc482cf"
+    },
+    {
+      "path": "Docs/CORRECAO-GODOT-4.7.2.md",
+      "operation": "add",
+      "sha256_before": null,
+      "sha256_after": "81b33bce027df4c6856297561658cee02af554bac462e01ec117caad34c92fec"
+    },
+    {
+      "path": "Docs/FONTES-E-ADAPTACOES.md",
+      "operation": "replace",
+      "sha256_before": "94d57ba7c2d0abfd4ff8cf27aa6bc6d10fdd0a58fc6d225c5a1f9e2fb4ab020d",
+      "sha256_after": "d0bb07cdd716a99049bc166731836df539ad3bfcb8bbc0753749b1b7e707c896"
+    },
+    {
+      "path": "Docs/INSTALACAO-WINDOWS.md",
+      "operation": "replace",
+      "sha256_before": "93d3ca9f483b72ece10889b5414ff2c6c8bc524f421e3bad547ebe658900070d",
+      "sha256_after": "e5fb152b774ef46dbcc540dcb2e87529bb97b195cb8af9d056e33ceaecf305b5"
+    },
+    {
+      "path": "Docs/TESTES-E-LIMITACOES.md",
+      "operation": "replace",
+      "sha256_before": "17d7cff97e9501544af925d52b0931f5f8773398863aa44578748deb1b4197b7",
+      "sha256_after": "f290cdc2127de1f44fd313edbe1b9fb313490c9638f47104e08be08a4a02fe0e"
+    },
+    {
+      "path": "Docs/toolchain-r1-report.json",
+      "operation": "add",
+      "sha256_before": null,
+      "sha256_after": "d214c504949260d38649b0939520a3f898ea7de4daa7614b5ac2ff84531e8dc4"
+    },
+    {
+      "path": "Docs/validation-report.json",
+      "operation": "replace",
+      "sha256_before": "fdbd4b840ad40153d891649d3ec89e85b4271a0878a1a8529e611ae002531cff",
+      "sha256_after": "a04f5fab1a5e422a85dc050fa41e0ceacf0fc69780a00a23b024dc4f4f441084"
+    },
+    {
+      "path": "ProjetoMansao.csproj",
+      "operation": "replace",
+      "sha256_before": "69ef0436a921212c54cb13fb3b3fde5e75aa3869fd366709e66fd3c9eaad251b",
+      "sha256_after": "915ce0ce91cfdc919d33dc42714e4bd1b04e462d2ae6be9e4495035bcefdb562"
+    },
+    {
+      "path": "README.md",
+      "operation": "replace",
+      "sha256_before": "f075fcbd0ba87938cf4fbe1913376cc91ad264b1bbf17041c6cd6c7594817a07",
+      "sha256_after": "a12afe3b0f051470cd1ab2b2a63d755d09795f9a124ab5d2feec6ee96f281d76"
+    },
+    {
+      "path": "Tools/Build.ps1",
+      "operation": "replace",
+      "sha256_before": "a04645a5cf11f00c317a0d07e8255af9e654dc406f2b38856e031282b1e956af",
+      "sha256_after": "1ea9f427cd9bc08c837d6d534bfa9711efe7fe7ffbf806cad82af0d017839558"
+    },
+    {
+      "path": "Tools/Common.ps1",
+      "operation": "replace",
+      "sha256_before": "368818ba9e82e3a3bfc39465b80b178d2743942c0227922bc06ade81ac3cd08c",
+      "sha256_after": "ddfae9ade562d71601a033f15e1e8d00b7199461ad376439803adcbe877460fd"
+    },
+    {
+      "path": "Tools/Test-Toolchain.ps1",
+      "operation": "add",
+      "sha256_before": null,
+      "sha256_after": "b60fad79999aca20d5da4ddf4475387302f646c06a004c9a21fb20f8401919f1"
+    },
+    {
+      "path": "Tools/network_smoke.py",
+      "operation": "replace",
+      "sha256_before": "898fa757d8c8456c24ae61ffb229c0616f7ce2b2b66e1306f4a8bee7f3d4cce0",
+      "sha256_after": "da012688f5a34e0d2f2e698851c332bf79a86db5e14018ef90e066bcc6d8622f"
+    },
+    {
+      "path": "Tools/run-server.sh",
+      "operation": "replace",
+      "sha256_before": "614ab20c7496a9ba34638e5a252c50ea6741d1a6b9ed4771fe03b89bfa0b0aaa",
+      "sha256_after": "35d950fccca95e955d150176f2d45cfdeef36966ddd8a1095e5b1c0a582440a7"
+    },
+    {
+      "path": "Tools/validate_toolchain.py",
+      "operation": "add",
+      "sha256_before": null,
+      "sha256_after": "637edd51b35c38fddf8a7220579e79d3dfcc40e5961d3b917c2f75cae688ec3c"
+    },
+    {
+      "path": "project.godot",
+      "operation": "replace",
+      "sha256_before": "5829b74b41e559034b3235a4cb190558668847e4fb5a6bf7f36de27c48b5ada0",
+      "sha256_after": "bc79552973f4c2dc2eae5c7b67c4a6ec47e112a976f5c4db2f2ec363f7fa6333"
+    },
+    {
+      "path": "release.json",
+      "operation": "replace",
+      "sha256_before": "fd07b17fd13d145e15fe012de0ac32b818f8a012d6f7c33878763934cbf9e0a5",
+      "sha256_after": "96ec93b7721745276cc1ab3c1995e67a8c85041f073f094dab11b0870e3cf78a"
+    }
+  ]
+}

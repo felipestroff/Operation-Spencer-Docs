@@ -1,0 +1,237 @@
+{
+  "kind": "STATIC_ASSET_AND_DATA_VALIDATION_NOT_ENGINE_TEST",
+  "utc": "2026-10-15T16:22:31.182828+00:00",
+  "checks": [
+    {
+      "check": "exterior_window_facades_and_interior_portals",
+      "status": "pass",
+      "detail": {
+        "sites": [
+          {
+            "room": "greenhouse",
+            "wall": "E",
+            "offset": -2,
+            "outside_strip": [
+              59,
+              30.663,
+              2.25,
+              3.4739999999999998
+            ]
+          },
+          {
+            "room": "greenhouse",
+            "wall": "E",
+            "offset": 2,
+            "outside_strip": [
+              59,
+              37.863,
+              2.25,
+              3.4739999999999998
+            ]
+          },
+          {
+            "room": "doghall",
+            "wall": "W",
+            "offset": -6,
+            "outside_strip": [
+              96.75,
+              56.62022727272728,
+              2.25,
+              4.123181818181818
+            ]
+          },
+          {
+            "room": "doghall",
+            "wall": "W",
+            "offset": -2,
+            "outside_strip": [
+              96.75,
+              65.16568181818181,
+              2.25,
+              4.123181818181818
+            ]
+          },
+          {
+            "room": "eastupper",
+            "wall": "S",
+            "offset": -1.95,
+            "outside_strip": [
+              99.11333333333334,
+              95,
+              2.5733333333333333,
+              2.25
+            ]
+          },
+          {
+            "room": "eastupper",
+            "wall": "S",
+            "offset": 1.95,
+            "outside_strip": [
+              104.31333333333333,
+              95,
+              2.5733333333333333,
+              2.25
+            ]
+          }
+        ],
+        "original_faults_rejected": [
+          {
+            "room": "doghall",
+            "reason": "Interior door on E: doghall__sitting -> sitting"
+          },
+          {
+            "room": "eastupper",
+            "reason": "Interior door on E: eastupper__bedroom -> bedroom"
+          }
+        ]
+      }
+    },
+    {
+      "check": "catalog_references_and_respawn_table",
+      "status": "pass",
+      "detail": {
+        "Rooms": 34,
+        "Doors": 35,
+        "Items": 30,
+        "Characters": 5,
+        "Spawns": 32,
+        "Pickups": 35,
+        "Puzzles": 11,
+        "RespawnSeconds": 4
+      }
+    },
+    {
+      "check": "room_graph",
+      "status": "pass",
+      "detail": "34 rooms connected, ignoring lock state"
+    },
+    {
+      "check": "map_passages_join_room_boundaries_without_crossing_other_rooms",
+      "status": "pass",
+      "detail": {
+        "single_access_seams": 31,
+        "level_changes": 4
+      }
+    },
+    {
+      "check": "abstract_mission_dependencies",
+      "status": "pass",
+      "detail": {
+        "abstract_completion_without_Jill_lockpick": true,
+        "puzzle_order": [
+          "piano",
+          "tiger",
+          "armor",
+          "portraits",
+          "greenhouse",
+          "shotgun",
+          "generator"
+        ],
+        "note": "Inventory capacity, combat and animation are not simulated."
+      }
+    },
+    {
+      "check": "static_navigation",
+      "status": "pass",
+      "detail": "124 door landings, pickups, puzzle positions, safe-room services and hall landing wings accessible on static grid"
+    },
+    {
+      "check": "fixed_camera_geometric_coverage",
+      "status": "pass",
+      "detail": {
+        "fixed_cameras": 190,
+        "sampled_body_points": 31284,
+        "max_normalized_frame_extent": 0.9712,
+        "note": "Geometric 4:3 frustum with 0.55m switch hysteresis; no Godot rendering or wall-occlusion test."
+      }
+    },
+    {
+      "check": "all_GLTF_meshes_animations_textures_audio_and_item_references",
+      "status": "pass",
+      "detail": {
+        "glb": 80,
+        "triangles": 72244,
+        "animation_clips": 416,
+        "png": 765,
+        "wav": 211
+      }
+    },
+    {
+      "check": "PS1_item_rendered_icons_match_source_models",
+      "status": "pass",
+      "detail": {
+        "original_rendered_icons": 30,
+        "size": "128x128",
+        "filter": "nearest",
+        "model_and_icon_hashes": "matched"
+      }
+    },
+    {
+      "check": "actor_approved_reference_atlases_and_GLBS",
+      "status": "pass",
+      "detail": {
+        "actors": 15,
+        "original_reference_hashes": "matched",
+        "all_used_materials_embedded_in_GLB": "matched",
+        "max_texture_dimension": 256,
+        "note": "Unused hero side atlases retain provenance hashes. Asset integrity is not a visual-fidelity approval."
+      }
+    },
+    {
+      "check": "health_portrait_variants_and_provenance",
+      "status": "pass",
+      "detail": {
+        "fine": 5,
+        "caution": 5,
+        "danger": 5,
+        "variant_hashes": "match"
+      }
+    },
+    {
+      "check": "imported_audio_sources_recipes_and_runtime_banks",
+      "status": "pass",
+      "detail": {
+        "sources": 87,
+        "clips": 188,
+        "banks": 98,
+        "optional_local_sources": 1,
+        "hashes": "match"
+      }
+    },
+    {
+      "check": "authored_music_sources_pcm_and_loops",
+      "status": "pass",
+      "detail": {
+        "tracks": 5,
+        "sources_and_outputs": "hashes match",
+        "PCM_and_loops": "checked",
+        "listening": "not assessed"
+      }
+    },
+    {
+      "check": "approved_ceiling_albedos_and_source_manifest",
+      "status": "pass",
+      "detail": {
+        "approved_textures": 7,
+        "source_and_PNG_hashes": "matched",
+        "original_prototype_PNGs": "byte-identical",
+        "visual_approval": "user confirmed; runtime validated separately"
+      }
+    },
+    {
+      "check": "source_delimiters_and_bootstrap",
+      "status": "pass",
+      "detail": "56 source files: delimiters and bootstrap references only; NO compiler validation"
+    }
+  ],
+  "failures": [],
+  "not_executed": [
+    "C# compilation",
+    "Godot resource import",
+    "rendering/UI",
+    "four-client networking",
+    "Windows/Linux exports",
+    "measured FPS/latency"
+  ],
+  "status": "pass"
+}

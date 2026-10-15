@@ -1,0 +1,282 @@
+{
+  "patch": "r2-net-rng-cs0104",
+  "status": "static-checks-passed-runtime-not-executed",
+  "basis": "R1 source archive and user-provided Windows compiler error CS0104; original C# error not executed locally.",
+  "source_checks": {
+    "csharp_files_inspected": 20,
+    "random_number_generator_usages": [
+      [
+        "Game/NetSession.cs",
+        93,
+        "global::System.Security.Cryptography.RandomNumberGenerator.GetBytes(32));"
+      ]
+    ],
+    "no_bare_random_number_generator_calls": true,
+    "qualified_dotnet_cryptographic_rng": true,
+    "nonce_32_bytes_and_base64_preserved": true,
+    "only_changed_csharp_file": "Game/NetSession.cs",
+    "godot_and_dotnet_configuration_unchanged_from_r1": true,
+    "source_before_sha256": "d6ad7c4f1b49ce648f5178ca1f968d183225ac331497c4591b8d7e79302f6949",
+    "source_after_sha256": "a38f583888104b9141ae7fd700c904f167a28a48334b3a9bc42059b9236b9870"
+  },
+  "project_validator": {
+    "kind": "STATIC_ASSET_AND_DATA_VALIDATION_NOT_ENGINE_TEST",
+    "utc": "2026-10-13T02:54:01.896273+00:00",
+    "checks": [
+      {
+        "check": "catalog_references_and_respawn_table",
+        "status": "pass",
+        "detail": {
+          "Rooms": 34,
+          "Doors": 35,
+          "Items": 30,
+          "Characters": 5,
+          "Spawns": 32,
+          "Pickups": 35,
+          "Puzzles": 11,
+          "RespawnSeconds": 4
+        }
+      },
+      {
+        "check": "room_graph",
+        "status": "pass",
+        "detail": "34 rooms connected, ignoring lock state"
+      },
+      {
+        "check": "abstract_mission_dependencies",
+        "status": "pass",
+        "detail": {
+          "abstract_completion_without_Jill_lockpick": true,
+          "puzzle_order": [
+            "piano",
+            "tiger",
+            "armor",
+            "portraits",
+            "greenhouse",
+            "shotgun",
+            "generator"
+          ],
+          "note": "Inventory capacity, combat and animation are not simulated."
+        }
+      },
+      {
+        "check": "static_navigation",
+        "status": "pass",
+        "detail": "122 door landings, pickups, puzzle positions and safe-room services accessible on static grid"
+      },
+      {
+        "check": "fixed_camera_geometric_coverage",
+        "status": "pass",
+        "detail": {
+          "fixed_cameras": 136,
+          "sampled_body_points": 29578,
+          "max_normalized_frame_extent": 0.7014,
+          "note": "Geometric 4:3 frustum with 0.55m switch hysteresis; no Godot rendering or wall-occlusion test."
+        }
+      },
+      {
+        "check": "all_GLTF_meshes_animations_textures_audio_and_item_references",
+        "status": "pass",
+        "detail": {
+          "glb": 74,
+          "triangles": 39935,
+          "animation_clips": 282,
+          "png": 107,
+          "wav": 37
+        }
+      },
+      {
+        "check": "source_delimiters_and_bootstrap",
+        "status": "pass",
+        "detail": "19 source files: delimiters and bootstrap references only; NO compiler validation"
+      }
+    ],
+    "failures": [],
+    "not_executed": [
+      "C# compilation",
+      "Godot resource import",
+      "rendering/UI",
+      "four-client networking",
+      "Windows/Linux exports",
+      "measured FPS/latency"
+    ],
+    "status": "pass"
+  },
+  "toolchain_validator": {
+    "patch": "r1-godot-4.7.2",
+    "status": "pass",
+    "method": "Static XML/JSON/source inspection and a Python model of the shipped .NET regular expression; not PowerShell execution.",
+    "checks": [
+      {
+        "name": "reported_official_version",
+        "passed": true,
+        "detail": "Python model: accepted=True"
+      },
+      {
+        "name": "stable_mono_short",
+        "passed": true,
+        "detail": "Python model: accepted=True"
+      },
+      {
+        "name": "surrounding_whitespace",
+        "passed": true,
+        "detail": "Python model: accepted=True"
+      },
+      {
+        "name": "banner_before_version",
+        "passed": true,
+        "detail": "Python model: accepted=True"
+      },
+      {
+        "name": "custom_stable_mono",
+        "passed": true,
+        "detail": "Python model: accepted=True"
+      },
+      {
+        "name": "missing_patch_normalized",
+        "passed": true,
+        "detail": "Python model: accepted=True"
+      },
+      {
+        "name": "explicit_zero_patch",
+        "passed": true,
+        "detail": "Python model: accepted=True"
+      },
+      {
+        "name": "old_engine",
+        "passed": true,
+        "detail": "Python model: accepted=False"
+      },
+      {
+        "name": "older_patch",
+        "passed": true,
+        "detail": "Python model: accepted=False"
+      },
+      {
+        "name": "newer_patch_requires_migration",
+        "passed": true,
+        "detail": "Python model: accepted=False"
+      },
+      {
+        "name": "future_minor",
+        "passed": true,
+        "detail": "Python model: accepted=False"
+      },
+      {
+        "name": "future_major",
+        "passed": true,
+        "detail": "Python model: accepted=False"
+      },
+      {
+        "name": "standard_edition",
+        "passed": true,
+        "detail": "Python model: accepted=False"
+      },
+      {
+        "name": "mono_substring_not_token",
+        "passed": true,
+        "detail": "Python model: accepted=False"
+      },
+      {
+        "name": "release_candidate",
+        "passed": true,
+        "detail": "Python model: accepted=False"
+      },
+      {
+        "name": "beta",
+        "passed": true,
+        "detail": "Python model: accepted=False"
+      },
+      {
+        "name": "development",
+        "passed": true,
+        "detail": "Python model: accepted=False"
+      },
+      {
+        "name": "empty",
+        "passed": true,
+        "detail": "Python model: accepted=False"
+      },
+      {
+        "name": "unrecognized",
+        "passed": true,
+        "detail": "Python model: accepted=False"
+      },
+      {
+        "name": "wrong_numeric_version",
+        "passed": true,
+        "detail": "Python model: accepted=False"
+      },
+      {
+        "name": "unanchored_substring",
+        "passed": true,
+        "detail": "Python model: accepted=False"
+      },
+      {
+        "name": "case_count",
+        "passed": true,
+        "detail": "21 version cases read from the PowerShell tests"
+      },
+      {
+        "name": "project_sdk",
+        "passed": true,
+        "detail": "Godot.NET.Sdk/4.7.2"
+      },
+      {
+        "name": "target_framework",
+        "passed": true,
+        "detail": "net8.0 preserved"
+      },
+      {
+        "name": "engine_features",
+        "passed": true,
+        "detail": "4.7 feature line"
+      },
+      {
+        "name": "release_engine",
+        "passed": true,
+        "detail": "4.7.2-stable-dotnet"
+      },
+      {
+        "name": "script_reads_sdk",
+        "passed": true,
+        "detail": "Version requirement comes from csproj"
+      },
+      {
+        "name": "old_script_pin_removed",
+        "passed": true,
+        "detail": "No old hardcoded 4.5 gate"
+      },
+      {
+        "name": "stable_and_dotnet_gates",
+        "passed": true,
+        "detail": "Edition and channel gates are retained in the script"
+      }
+    ],
+    "not_executed": [
+      "PowerShell 5.1/7 tests",
+      "Godot executable",
+      "dotnet build",
+      "C# core tests",
+      "Godot imports",
+      "Windows/Linux exports",
+      "multiplayer runtime"
+    ]
+  },
+  "tool_availability": {
+    "dotnet": null,
+    "godot": null,
+    "godot-mono": null,
+    "pwsh": null,
+    "powershell": null
+  },
+  "not_executed": [
+    "C# build",
+    "C# CoreTests",
+    "PowerShell execution",
+    "Godot import or rendering",
+    "real networking",
+    "Windows/Linux exports"
+  ],
+  "runtime_status": "Not validated. Static checks do not establish successful compilation or gameplay."
+}

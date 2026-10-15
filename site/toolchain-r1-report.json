@@ -1,0 +1,161 @@
+{
+  "patch": "r1-godot-4.7.2",
+  "status": "pass",
+  "method": "Static XML/JSON/source inspection and a Python model of the shipped .NET regular expression; not PowerShell execution.",
+  "checks": [
+    {
+      "name": "reported_official_version",
+      "passed": true,
+      "detail": "Python model: accepted=True"
+    },
+    {
+      "name": "stable_mono_short",
+      "passed": true,
+      "detail": "Python model: accepted=True"
+    },
+    {
+      "name": "surrounding_whitespace",
+      "passed": true,
+      "detail": "Python model: accepted=True"
+    },
+    {
+      "name": "banner_before_version",
+      "passed": true,
+      "detail": "Python model: accepted=True"
+    },
+    {
+      "name": "custom_stable_mono",
+      "passed": true,
+      "detail": "Python model: accepted=True"
+    },
+    {
+      "name": "missing_patch_normalized",
+      "passed": true,
+      "detail": "Python model: accepted=True"
+    },
+    {
+      "name": "explicit_zero_patch",
+      "passed": true,
+      "detail": "Python model: accepted=True"
+    },
+    {
+      "name": "old_engine",
+      "passed": true,
+      "detail": "Python model: accepted=False"
+    },
+    {
+      "name": "older_patch",
+      "passed": true,
+      "detail": "Python model: accepted=False"
+    },
+    {
+      "name": "newer_patch_requires_migration",
+      "passed": true,
+      "detail": "Python model: accepted=False"
+    },
+    {
+      "name": "future_minor",
+      "passed": true,
+      "detail": "Python model: accepted=False"
+    },
+    {
+      "name": "future_major",
+      "passed": true,
+      "detail": "Python model: accepted=False"
+    },
+    {
+      "name": "standard_edition",
+      "passed": true,
+      "detail": "Python model: accepted=False"
+    },
+    {
+      "name": "mono_substring_not_token",
+      "passed": true,
+      "detail": "Python model: accepted=False"
+    },
+    {
+      "name": "release_candidate",
+      "passed": true,
+      "detail": "Python model: accepted=False"
+    },
+    {
+      "name": "beta",
+      "passed": true,
+      "detail": "Python model: accepted=False"
+    },
+    {
+      "name": "development",
+      "passed": true,
+      "detail": "Python model: accepted=False"
+    },
+    {
+      "name": "empty",
+      "passed": true,
+      "detail": "Python model: accepted=False"
+    },
+    {
+      "name": "unrecognized",
+      "passed": true,
+      "detail": "Python model: accepted=False"
+    },
+    {
+      "name": "wrong_numeric_version",
+      "passed": true,
+      "detail": "Python model: accepted=False"
+    },
+    {
+      "name": "unanchored_substring",
+      "passed": true,
+      "detail": "Python model: accepted=False"
+    },
+    {
+      "name": "case_count",
+      "passed": true,
+      "detail": "21 version cases read from the PowerShell tests"
+    },
+    {
+      "name": "project_sdk",
+      "passed": true,
+      "detail": "Godot.NET.Sdk/4.7.2"
+    },
+    {
+      "name": "target_framework",
+      "passed": true,
+      "detail": "net8.0 preserved"
+    },
+    {
+      "name": "engine_features",
+      "passed": true,
+      "detail": "4.7 feature line"
+    },
+    {
+      "name": "release_engine",
+      "passed": true,
+      "detail": "4.7.2-stable-dotnet"
+    },
+    {
+      "name": "script_reads_sdk",
+      "passed": true,
+      "detail": "Version requirement comes from csproj"
+    },
+    {
+      "name": "old_script_pin_removed",
+      "passed": true,
+      "detail": "No old hardcoded 4.5 gate"
+    },
+    {
+      "name": "stable_and_dotnet_gates",
+      "passed": true,
+      "detail": "Edition and channel gates are retained in the script"
+    }
+  ],
+  "not_executed": [
+    "PowerShell 5.1/7 tests",
+    "Godot executable",
+    "dotnet build",
+    "C# core tests",
+    "Godot imports",
+    "Windows/Linux exports",
+    "multiplayer runtime"
+  ]
+}

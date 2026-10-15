@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="pt_BR" data-bs-theme="dark">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://felipestroff.github.io/Operation-Spencer-Docs/ARQUITETURA.html">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Arquitetura - Operation Spencer · 0.1.0-alpha</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/brands.min.css" rel="stylesheet">
+        <link href="css/solid.min.css" rel="stylesheet">
+        <link href="css/v4-font-face.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" disabled>
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" >
+        <link href="stylesheets/spencer.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Operation Spencer · 0.1.0-alpha</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Início</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Jogar</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="INSTALACAO-WINDOWS.html" class="dropdown-item">Instalação</a>
+</li>
+                                    
+<li>
+    <a href="CONTROLES.html" class="dropdown-item">Controles</a>
+</li>
+                                    
+<li>
+    <a href="MENU-ESC-2026-10-15.html" class="dropdown-item">Menu Esc</a>
+</li>
+                                    
+<li>
+    <a href="CONTROLES-EDITAVEIS-2026-10-15.html" class="dropdown-item">Configurações</a>
+</li>
+                                    
+<li>
+    <a href="REGRAS-E-BALANCEAMENTO.html" class="dropdown-item">Regras</a>
+</li>
+                                    
+<li>
+    <a href="MULTIPLAYER-E-SERVIDOR.html" class="dropdown-item">Cooperativo</a>
+</li>
+                                    
+<li>
+    <a href="MANSAO-E-MISSAO.html" class="dropdown-item">Missão (spoilers)</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="GALERIAS.html" class="nav-link">Galerias</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Desenvolvimento</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="ARQUITETURA.html" class="dropdown-item active" aria-current="page">Arquitetura</a>
+</li>
+                                    
+<li>
+    <a href="TIROS-OBSTACULOS-2026-10-15.html" class="dropdown-item">Tiros e obstáculos</a>
+</li>
+                                    
+<li>
+    <a href="ASSETS-E-AUDIO.html" class="dropdown-item">Assets e áudio</a>
+</li>
+                                    
+<li>
+    <a href="JILL-PORTRAITS-2026-10-15.html" class="dropdown-item">Portraits de Jill</a>
+</li>
+                                    
+<li>
+    <a href="TEXTURAS-ARQUITETURA-2026-10-15.html" class="dropdown-item">Texturas arquitetônicas</a>
+</li>
+                                    
+<li>
+    <a href="VERSIONAMENTO.html" class="dropdown-item">Versões e publicação</a>
+</li>
+                                    
+<li>
+    <a href="DOCUMENTACAO.html" class="dropdown-item">Documentação</a>
+</li>
+                                    
+<li>
+    <a href="INVENTARIO-DOCUMENTACAO.html" class="dropdown-item">Inventário documental</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="TESTES-E-LIMITACOES.html" class="nav-link">Evidências</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="FONTES-E-ADAPTACOES.html" class="nav-link">Créditos e referências</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="VERSAO.html" class="nav-link">Versão</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="GALERIAS.html" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="TIROS-OBSTACULOS-2026-10-15.html" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/felipestroff/Operation-Spencer-Docs" class="nav-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <button id="theme-menu" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle">
+                                <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                <span class="d-lg-none ms-2">Toggle theme</span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                                    <i class="fa-solid fa-sun fa-fw"></i>
+                                    <span class="ms-2">Light</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="true">
+                                    <i class="fa-solid fa-moon fa-fw"></i>
+                                    <span class="ms-2">Dark</span>
+                                    <i class="fa-solid fa-check ms-auto"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                                    <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                    <span class="ms-2">Auto</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                              </ul>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="js/darkmode.js"></script>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#arquitetura-técnica" class="nav-link">Arquitetura técnica</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#organização" class="nav-link">Organização</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#apresentação-local" class="nav-link">Apresentação local</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#fluxo-de-rede" class="nav-link">Fluxo de rede</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#visibilidade-não-é-simulação" class="nav-link">Visibilidade não é simulação</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#persistência-e-identidade" class="nav-link">Persistência e identidade</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#extensões" class="nav-link">Extensões</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="arquitetura-técnica">Arquitetura técnica</h1>
+<h2 id="organização">Organização</h2>
+<p><code>Core/</code> não referencia Godot. Ele concentra DTOs serializados, geometria 2D de
+colisão, inventário, IA simplificada, regras e persistência. <code>Game/</code> faz adaptação
+para Godot: ENet, input, apresentação, UI, áudio e cenas. <code>Data/scenario.json</code>
+define mapa, props, câmeras, itens, encontros e puzzles. <code>Tools/</code> contém autoria
+determinística, build, execução e validação; <code>Tests/</code> possui testes .NET de console.</p>
+<p>A planta renderizada é 3D, mas a lógica de deslocamento é um plano X/Z por cômodo.
+Andares são unidades espaciais diferentes conectadas por transições. No saguão,
+a altura visual acompanha a escada. Não há física 3D global contínua de todos os
+andares sobrepostos. O layout dos props sólidos compartilha os dados de colisão.</p>
+<p><code>Ballistics.HasLineOfFire</code> testa o segmento 3D entre alturas de arma/alvo contra
+os volumes finitos dos props sólidos (<code>W/D/H</code>), acrescidos da elevação de
+<code>HallSurface</code>. A seleção de disparos em <code>Simulation.Attack</code> usa esse teste na
+autoridade. <code>Geometry.LineOfSight</code> mantém o contrato anterior para IA e corpo
+a corpo; caminhada e navegação continuam em X/Z. Não há nova física Godot,
+campo de save ou alteração do protocolo. <a href="TIROS-OBSTACULOS-2026-10-15.html">Evidências</a>.</p>
+<p><code>Geometry.Move</code> também impõe caminhada nos degraus do hall: a passada proposta
+é verificada antes da entrada, e velocidade/estado ignoram corrida nesse trecho.
+A autoridade e a previsão do cliente executam a mesma regra; piso e patamar
+mantêm corrida, sem alterar o formato dos inputs ou dos saves.</p>
+<h2 id="apresentação-local">Apresentação local</h2>
+<p><code>ArchitectureArt</code> aplica os albedos arquitetônicos PS1 e mapeia caixas/pisos
+em metros, preservando a geometria e os materiais compartilhados dos GLBs.
+<code>RoomArchitecture</code> usa altura física no UV dos fustes; <code>HallArchitecture</code>
+compartilha a origem do piso/patamar. A montagem inicial das paredes já usa o
+perfil <code>WallArt</code>, sem carregar a paleta antiga transitoriamente.
+<a href="TEXTURAS-ARQUITETURA-2026-10-15.html">Autoria, materiais e validação renderizada</a>.</p>
+<p>O menu Esc é apresentação local (<code>Game/PauseMenu.cs</code>, partial de <code>GameUi</code>).
+Reutiliza <code>UiKit.MenuButton</code> com a abertura; backdrop/shader cobrem o viewport.
+O gate de pausa continua <code>Offline &amp;&amp; BlocksMovement</code>, sem pausar o servidor
+cooperativo. <code>MusicDirector</code> possui bus próprio com low-pass/ganho temporários,
+ativados pelo <code>App</code> para menu Esc/configurações/inventário/baú solo; SFX e preferências independem
+desse filtro. Fechar/trocar sessão limpa a apresentação. <a href="MENU-ESC-2026-10-15.html">Detalhes</a>.</p>
+<p><code>SettingsMenu</code> conserva esse contexto em <code>GameUi</code>; <code>SettingsPanel</code> monta as
+abas metálicas e campos existentes de <code>GameOptions</code>. <code>ControlGuide</code> consulta
+teclas/mouse no <code>InputMap</code>, com tabelas das ações da interface; <code>KeyboardDiagram</code>
+desenha o teclado na UI sem assets externos. Os ajustes disparam <code>OptionsChanged</code>
+ao vivo; Esc e SAIR gravam as preferências locais. <code>SettingsBindings</code> captura
+novas teclas e verifica conflitos/contextos; <code>GameOptions.KeyBindings</code> é um
+campo opcional de preferências, sem mudar saves de campanha. Arquivos antigos
+sem o campo mantêm defaults; overrides desconhecidos/inválidos são descartados.
+<code>Controls.Setup</code> aplica vínculos preservando mouse/joypad. W/S ajustam a mira
+mantida; a roda conserva seu último sentido até soltar a mira, bloquear input
+ou sair da sessão. <code>App</code> usa o mesmo InputFrame/limites/autoridade. Pausa não
+enfileira inputs extras: o ciclo normal já neutraliza controles bloqueados.
+<a href="CONTROLES-EDITAVEIS-2026-10-15.html">Painel e validação</a>.</p>
+<p><code>SettingsBindings.ConfirmResetBindings</code> reutiliza o diálogo metálico local,
+com cancelamento inicial. Só CONFIRMAR limpa <code>KeyBindings</code>, reaplica os
+defaults de teclado e atualiza campos/desenho; <code>GameOptions</code> conserva os demais
+ajustes. Não muda o gate de pausa, formato de preferências ou autoridade.
+<a href="RESTAURAR-TECLAS-2026-10-15.html">Restauração e testes</a>.</p>
+<p><code>UiKit.InventoryField</code>, <code>InventoryContextButton</code> e <code>QuantityLabel</code> compartilham
+paleta/estilo com inventário e configurações. <code>KeyboardDiagram</code> tem foco próprio,
+navegação espacial por setas, vínculos verdes e destaque vermelho para hover/seleção.
+<code>InventorySelection</code> compartilha a cor dos slots. A legenda é
+um Label separado do desenho. Inventário/baú usam o mesmo backdrop de pausa;
+o painel externo é transparente e apenas <code>ItemDetailsBackground</code> é preto opaco.
+Não há atribuições de tooltip. <a href="INTERFACE-AZUL-2026-10-15.html">Revisão visual</a>.</p>
+<p>O baú usa os mesmos detalhes da seleção do inventário, sem o antigo ramo que
+limpava os textos em <code>chestMode</code>. <code>SettingsBindings._Process</code> anima o aviso
+verde de captura com o pulso de dois segundos da abertura; a simulação mantém
+seu gate de pausa. <a href="DESTAQUES-E-BAU-2026-10-15.html">Detalhes e evidências</a>.</p>
+<p><code>ChestInventoryList.SelectionChanged</code> permite examinar também itens armazenados.
+<code>GameUi</code> guarda só a origem transitória e consulta o índice atual da lista no
+snapshot; selecionar inventário devolve a origem. Refresh da lista não emite o
+evento, evitando recursão. Substituição/remoção de slots atualiza os textos sem
+novos comandos de transferência. <a href="BAU-LISTA-DETALHES-2026-10-15.html">Seleção e testes</a>.</p>
+<p><code>ChestNavigation</code> restringe <code>_Input</code> às setas e Enter no baú ativo: esquerda foca a lista,
+direita o inventário; cima/baixo alteram seleção e detalhes no mesmo fluxo de
+clique. Mantém um índice de retorno do inventário; a lista mantém seu índice
+autoritativo. <code>FocusSelection</code> cobre também a lista vazia. Consome os eventos
+antes do foco espacial do Godot, preservando outras telas, drag e confirmações.
+Enter/KpEnter no slot focado chama <code>TransferChestItem</code>, compartilhado com duplo
+clique: capacidade e versão são verificadas antes de enviar deposit/withdraw
+ao servidor. Echo é consumido sem repetir; lista/slots vazios não transferem.</p>
+<h2 id="fluxo-de-rede">Fluxo de rede</h2>
+<p>Cliente envia intenção de movimento a 30 Hz, em lote limitado com repetição de
+inputs não confirmados. Servidor aplica movimento e combate em passo fixo de
+30 Hz. Snapshots têm cadência-alvo de 10 Hz; eventos/transações importantes usam
+canal confiável. O protocolo usa ENet com canais separados, sem transporte HTTP.</p>
+<p>Snapshots com JSON de até 1000 bytes UTF-8 usam o canal não confiável ordenado;
+acima disso usam <code>ReceiveReliableFrame</code>, permitindo fragmentação confiável
+sem exceder a MTU no caminho não confiável. O orçamento reserva espaço para
+headers RPC/ENet; não muda os DTOs nem a versão do protocolo. Esse fallback
+pode aumentar espera/fila sob perda de pacotes; não há medição de desempenho
+ou promessa de latência. <code>Epoch</code> e <code>Sequence</code> continuam filtrando todos os frames.</p>
+<p>O relay automático do servidor entre clientes fica desativado antes de conectar. Cada
+cliente conversa apenas com a autoridade; a equipe vem dos snapshots/eventos
+do servidor. Envios e desconexões agendadas verificam se o transporte e o peer
+continuam conectados. Encerrar a sessão marca <code>Running=false</code> e desassocia o
+peer da API antes de fechar/liberar o ENet. No Godot 4.7.2, o cache nativo de
+RPC conecta <code>tree_exited</code> com um callable associado ao ID do nó, mas tenta
+desconectar um callable sem esse argumento no <code>clear()</code>. O export Linux
+reproduziu o erro ao trocar o peer. <code>Stop</code> retira/reinsere temporariamente o
+mesmo nó Net para que o callback one-shot retire o cache antes da troca; uma
+guarda evita recursão de <code>_ExitTree</code>. Na saída real da árvore, fecha o transporte
+e deixa o evento normal retirar o cache. Não altera paths de RPC durante a
+partida, autenticação, schema, protocolo ou a versão do engine.
+Origem: <a href="https://github.com/godotengine/godot/blob/4.7.2-stable/modules/multiplayer/scene_cache_interface.cpp">SceneCacheInterface no Godot 4.7.2</a>.</p>
+<p>Não aceite posição, vida, dano, item criado ou conclusão de puzzle informados pelo
+cliente. <code>Simulation.Command</code> valida identidade, estado, distância, cooldown,
+sequência, época de mundo e versões de inventário/baú. Há limites simples para
+fila de input, tamanho de mensagens e frequência de comandos. Eles não são uma
+auditoria completa de segurança nem proteção DDoS.</p>
+<p>O cliente pode prever seu deslocamento pela mesma geometria e reaplicar inputs
+não confirmados; aliados/inimigos recebem interpolação de apresentação. O servidor
+continua sendo a fonte do estado. Janelas de porta/agarrão/ação descartam os inputs
+que não devem virar uma rajada de movimento depois do desbloqueio.</p>
+<p><code>WorldState.Epoch</code> avança na restauração de save; comando/input de uma época antiga
+é recusado. <code>Snapshot.Sequence</code> é independente do tick: uma resposta confiável de
+inventário e um snapshot não confiável do mesmo tick não podem retroceder a UI.
+Esse projeto precisa testar esses casos sob latência/perda real, não só inspecionar código.</p>
+<h2 id="visibilidade-não-é-simulação">Visibilidade não é simulação</h2>
+<p>O cliente instancia cenário, pickups e inimigos somente do cômodo corrente ou
+observado. O servidor envia status resumido dos colegas em outros cômodos, mas
+não toda sua geometria. A câmera do cliente usa os quatro enquadramentos
+cadastrados, com histerese de 0,55 m para evitar oscilação na divisa.</p>
+<p>O culling de frustum do renderer elimina desenhos fora da câmera; paredes de
+outras salas nem estão instanciadas. Não foi implementado um sistema adicional
+medido de portais/occlusion baking. Props escondidos por outros props no mesmo
+cômodo podem continuar sendo submetidos ao renderer. “Só renderizar o que vê”
+não significa eliminar custo de CPU/áudio/cache de cada objeto individual.</p>
+<p>Inimigos fora do quadro no cômodo ocupado continuam ativos no servidor. Cômodos
+vazios usam estado dormente, preservando HP, cadáveres e progresso de reposição.
+Respawn não acontece na frente de participantes. O servidor headless não precisa
+de renderização. Ticks e metas de FPS não equivalem a números de desempenho medidos.</p>
+<h2 id="persistência-e-identidade">Persistência e identidade</h2>
+<p>JSON em envelope com versão e SHA-256 de integridade, escrita temporária,
+flush/substituição e cópia <code>.bak</code>. O hash detecta corrupção acidental; não é
+assinatura nem proteção contra edição por quem controla o arquivo.</p>
+<p>O perfil cria par ECDSA P-256 e responde a desafio de entrada. A prova de senha
+usa HMAC; isso não torna ENet um canal confidencial. A chave privada fica no
+perfil local, sem cofre do sistema operacional. Esta alpha se destina a amigos
+em rede de confiança, não a competição ou contas públicas.</p>
+<p>IDs de personagens, campanha e perfil não devem ser confundidos: perfil identifica
+o participante, personagem guarda estado da campanha e campanha é o save do mundo.
+A reconexão não recria kits. Tokens/senhas não devem ir para o repositório.</p>
+<h2 id="extensões">Extensões</h2>
+<p>Adicione cômodos/itens no gerador de dados e regenere o JSON. Mantenha IDs estáveis
+para saves; mudanças de estrutura exigem migrador e incremento de schema.
+Para outro inimigo, adicione dados, estados, regras, modelo/animações e testes.
+Não ligue comportamento autoritativo a <code>VisibleOnScreenNotifier3D</code> ou <code>_Process</code>
+da câmera. Recursos visuais e áudio não podem decidir dano, loot ou progressão.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js"></script>
+        <script src="search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

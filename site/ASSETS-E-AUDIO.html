@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="pt_BR" data-bs-theme="dark">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://felipestroff.github.io/Operation-Spencer-Docs/ASSETS-E-AUDIO.html">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Assets e áudio - Operation Spencer · 0.1.0-alpha</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/brands.min.css" rel="stylesheet">
+        <link href="css/solid.min.css" rel="stylesheet">
+        <link href="css/v4-font-face.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" disabled>
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" >
+        <link href="stylesheets/spencer.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Operation Spencer · 0.1.0-alpha</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Início</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Jogar</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="INSTALACAO-WINDOWS.html" class="dropdown-item">Instalação</a>
+</li>
+                                    
+<li>
+    <a href="CONTROLES.html" class="dropdown-item">Controles</a>
+</li>
+                                    
+<li>
+    <a href="MENU-ESC-2026-10-15.html" class="dropdown-item">Menu Esc</a>
+</li>
+                                    
+<li>
+    <a href="CONTROLES-EDITAVEIS-2026-10-15.html" class="dropdown-item">Configurações</a>
+</li>
+                                    
+<li>
+    <a href="REGRAS-E-BALANCEAMENTO.html" class="dropdown-item">Regras</a>
+</li>
+                                    
+<li>
+    <a href="MULTIPLAYER-E-SERVIDOR.html" class="dropdown-item">Cooperativo</a>
+</li>
+                                    
+<li>
+    <a href="MANSAO-E-MISSAO.html" class="dropdown-item">Missão (spoilers)</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="GALERIAS.html" class="nav-link">Galerias</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Desenvolvimento</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="ARQUITETURA.html" class="dropdown-item">Arquitetura</a>
+</li>
+                                    
+<li>
+    <a href="TIROS-OBSTACULOS-2026-10-15.html" class="dropdown-item">Tiros e obstáculos</a>
+</li>
+                                    
+<li>
+    <a href="ASSETS-E-AUDIO.html" class="dropdown-item active" aria-current="page">Assets e áudio</a>
+</li>
+                                    
+<li>
+    <a href="JILL-PORTRAITS-2026-10-15.html" class="dropdown-item">Portraits de Jill</a>
+</li>
+                                    
+<li>
+    <a href="TEXTURAS-ARQUITETURA-2026-10-15.html" class="dropdown-item">Texturas arquitetônicas</a>
+</li>
+                                    
+<li>
+    <a href="VERSIONAMENTO.html" class="dropdown-item">Versões e publicação</a>
+</li>
+                                    
+<li>
+    <a href="DOCUMENTACAO.html" class="dropdown-item">Documentação</a>
+</li>
+                                    
+<li>
+    <a href="INVENTARIO-DOCUMENTACAO.html" class="dropdown-item">Inventário documental</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="TESTES-E-LIMITACOES.html" class="nav-link">Evidências</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="FONTES-E-ADAPTACOES.html" class="nav-link">Créditos e referências</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="VERSAO.html" class="nav-link">Versão</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="TIROS-OBSTACULOS-2026-10-15.html" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="JILL-PORTRAITS-2026-10-15.html" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/felipestroff/Operation-Spencer-Docs" class="nav-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <button id="theme-menu" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle">
+                                <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                <span class="d-lg-none ms-2">Toggle theme</span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                                    <i class="fa-solid fa-sun fa-fw"></i>
+                                    <span class="ms-2">Light</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="true">
+                                    <i class="fa-solid fa-moon fa-fw"></i>
+                                    <span class="ms-2">Dark</span>
+                                    <i class="fa-solid fa-check ms-auto"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                                    <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                    <span class="ms-2">Auto</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                              </ul>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="js/darkmode.js"></script>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#assets-estilo-e-áudio" class="nav-link">Assets, estilo e áudio</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#regra-obrigatória-portas-e-lareiras-encostadas-nas-paredes" class="nav-link">Regra obrigatória: portas e lareiras encostadas nas paredes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#regra-obrigatória-compatibilidade-entre-câmeras-e-tetos" class="nav-link">Regra obrigatória: compatibilidade entre câmeras e tetos</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#regra-de-negócio-janelas-externas" class="nav-link">Regra de negócio: janelas externas</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#regra-obrigatória-sfx-de-todas-as-portas" class="nav-link">Regra obrigatória: SFX de todas as portas</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#regra-de-origem-dos-sfx" class="nav-link">Regra de origem dos SFX</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#produção-incluída" class="nav-link">Produção incluída</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#reconstrução-de-personagens-e-inimigos--13102026" class="nav-link">Reconstrução de personagens e inimigos · 13/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#regra-de-arte-ps1-para-novos-itens-e-objetos" class="nav-link">Regra de arte PS1 para novos itens e objetos</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#regeneração-opcional" class="nav-link">Regeneração opcional</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#música-e-efeitos-iniciais" class="nav-link">Música e efeitos iniciais</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#fontes-opcionais-para-sons-futuros" class="nav-link">Fontes opcionais para sons futuros</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#inventário-e-proposta-sonora--14102026" class="nav-link">Inventário e proposta sonora · 14/10/2026</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="assets-estilo-e-áudio">Assets, estilo e áudio</h1>
+<p><strong>Arquitetura e pisos revisados · 15/10/2026.</strong> As oito texturas iniciais ainda
+em uso foram substituídas por albedos originais PS1 de 64/128 px com nearest e
+UVs em metros, começando por patamar e colunas. Fonte em
+<code>Tools/generate_architecture_art.py</code> (<code>--architecture</code>); manifesto de hashes em
+<code>Assets/Textures/architecture-art-manifest.json</code>. Pisos, arandelas/lustre e
+rebaixos/fechos das janelas também migraram. As 17 texturas de parede, GLBs,
+tetos, câmeras e fontes de luz foram preservados. As rodadas datadas abaixo
+mantêm sua evidência histórica anterior à migração.
+<a href="TEXTURAS-ARQUITETURA-2026-10-15.html">Locais, autoria, comparação e limites</a>.</p>
+<p><strong>Chuva nas janelas · 14/10/2026:</strong> shader original de gotas PS1 com fonte
+editável em <code>Assets/Shaders/window_rain.gdshader</code> e camada gerada por
+<code>WindowRain.BuildSurface</code>/<code>WindowArt</code>, preservando modelos/texturas existentes.
+Loop gravado CC0 de Phil/Signature Sounds, ZIP recebido do usuário;
+master/licença, caminho, hashes e receita no manifesto de áudio.
+Fontes 3D por janela, reverberação própria por dimensões do cômodo e pausa
+offline preservada. <a href="CHUVA-JANELAS-2026-10-14.html">Fontes, galeria e limites</a>.</p>
+<h2 id="regra-obrigatória-portas-e-lareiras-encostadas-nas-paredes">Regra obrigatória: portas e lareiras encostadas nas paredes</h2>
+<p>Regra explícita do desenvolvedor em 15/10/2026, permanente para objetos
+existentes, novos ou revisados: <strong>TODAS as portas e TODAS as lareiras, sem
+exceção, devem ficar sempre encostadas nas suas paredes de apoio.</strong> Não pode
+haver fresta traseira, objeto flutuando ou desalinhamento visível na junção.</p>
+<ul>
+<li><strong>Portas:</strong> batentes e travessas devem encontrar a parede nos dois lados
+  da passagem. Abrange portas comuns, duplas, metálicas, especiais, entrada
+  principal e escadas/patamares. As folhas mantêm a folga funcional para girar;
+  essa folga não autoriza afastar a moldura da parede. Preservar altura do
+  piso/patamar, chegadas, largura útil, animação e SFX obrigatórios.</li>
+<li><strong>Lareiras:</strong> o corpo e as costas dos pilares laterais devem encontrar a
+  parede. Encostar somente a base saliente ou a cornija não basta. A pequena
+  sobreposição necessária para selar chanfros não pode enterrar ornamentos,
+  lenha ou fornalha. O fundo de tijolos precisa permanecer visível à frente
+  do revestimento da parede, sem faces concorrentes ou vazamento do papel de
+  parede. Fogo animado, iluminação e SFX espacial acompanham a lareira.</li>
+<li><strong>Dados e arte:</strong> manter o modelo e seus geradores; posicionamento visual,
+  colisão, navegação e alcance de inspeção devem concordar. Não deslocar apenas
+  a malha, deixando o obstáculo/interação na posição antiga.</li>
+<li><strong>Aceitação:</strong> verificar todas as instâncias afetadas no Godot, pela frente
+  e por ambos os lados, nas câmeras de jogo e aproximações caminháveis.
+  Conferir piso, teto, circulação, inspeção e efeitos. Medir o plano real de
+  apoio, sem usar somente o limite da base ou o ponto de chegada da porta.
+  Capturas renderizadas e revisão visual são obrigatórias; checks geométricos
+  sozinhos não aprovam o encaixe.</li>
+</ul>
+<p>Referências de implementação e limites: <a href="ENCAIXE-PORTAS-2026-10-15.html">portas</a>
+e <a href="ENCAIXE-LAREIRAS-2026-10-15.html">lareiras</a>.</p>
+<h2 id="regra-obrigatória-compatibilidade-entre-câmeras-e-tetos">Regra obrigatória: compatibilidade entre câmeras e tetos</h2>
+<p>Regra explícita do desenvolvedor em 14/10/2026, válida para todas as câmeras e
+tetos existentes, novos ou revisados:</p>
+<ul>
+<li><strong>Nenhuma câmera pode quebrar a visualização de um teto.</strong> A lente, o plano
+  de corte próximo, a orientação e o FOV devem evitar atravessamentos, cortes
+  indevidos, faixas horizontais, buracos e exposição de faces internas do teto,
+  inclusive em suas vigas e molduras. A parte enquadrada deve manter continuidade,
+  perspectiva e acabamento PS1 coerentes com o ambiente.</li>
+<li><strong>Nenhum teto pode quebrar a visualização de uma câmera.</strong> Teto, vigas e
+  molduras não podem obstruir o enquadramento nem esconder personagens, inimigos,
+  itens, portas ou elementos necessários à leitura da ação e da circulação.</li>
+</ul>
+<p>A referência é a direção de câmeras/tetos aprovada no hall, Doghall, jantar e
+cozinha, integrada aos 33 interiores em 14/10/2026: lentes internas, tetos em
+perspectiva e vistas locais para passagens estreitas. Não é obrigatório mostrar
+o teto em todos os planos; sua presença deve respeitar a composição e a ação.
+Iluminação aprovada e trechos escuros aceitos pelo usuário continuam preservados.
+O terraço permanece aberto. <a href="CAMERAS-INTEGRADAS-2026-10-14.html">Referência e evidências da integração</a>.</p>
+<h3 id="critérios-de-aceitação-e-revisão">Critérios de aceitação e revisão</h3>
+<ol>
+<li>Revisar câmera e teto em conjunto ao alterar posição, alvo, FOV, zonas,
+   geometria, altura, molduras, vigas ou lógica de visibilidade. Ajustar os
+   enquadramentos conforme o ambiente e preservar os materiais aprovados.</li>
+<li>Verificar posições caminháveis e limites das zonas, incluindo a margem de
+   retenção vigente (atualmente 0,55 m), entradas/saídas, trocas de plano,
+   escadas e patamares. Conferir pés/cabeça e leitura da ação com os cinco
+   personagens e inimigos nas poses relevantes, inclusive movimento e mira.</li>
+<li>Verificar primeira pessoa, interação offline pausada, retorno às câmeras
+   fixas e transição do menu para a partida. Um plano correto isoladamente não
+   dispensa a conferência dessas transições.</li>
+<li>Conferir projeção e oclusão na geometria real e revisar capturas/percursos
+   renderizados no Godot, no enquadramento e proporção de tela utilizados pelo
+   jogo. Grade amostrada e raio livre até torso/cabeça são evidências parciais;
+   não comprovam, sozinhos, legibilidade ou ausência de artefatos visuais.</li>
+<li>Registrar cenas/ângulos verificados, falhas, correções e limites. Qualquer
+   corte indevido do teto ou obstrução causada por ele impede considerar a
+   alteração concluída até sua correção e nova conferência dos casos afetados.</li>
+</ol>
+<p>O recorte técnico existente para lentes altas é um mecanismo de compatibilidade,
+não uma autorização para entregar faixas ou cortes indevidos. Ele também deve
+atender a estes critérios. A documentação histórica de tetos não substitui esta
+regra nem a referência atual de câmeras aprovadas.</p>
+<h2 id="regra-de-negócio-janelas-externas">Regra de negócio: janelas externas</h2>
+<p>Regra obrigatória definida pelo desenvolvedor em 14/10/2026, válida para
+todas as janelas externas existentes, novas ou revisadas:</p>
+<ul>
+<li><strong>Background padrão:</strong> floresta escura com profundidade, seguindo a direção
+  de arte PS1 das janelas aprovadas. A paisagem é visível tanto na câmera fixa
+  quanto na inspeção em primeira pessoa.</li>
+<li><strong>Chuva visual:</strong> gotas leves atingem o vidro e escorrem gradualmente.
+  Períodos variáveis de chuva alternam com estiagem; ao parar, as gotas
+  residuais terminam de escorrer e o vidro seca aos poucos.</li>
+<li><strong>SFX obrigatório:</strong> gravação licenciada de chuva, com fontes nas janelas,
+  atenuação pela distância do jogador e reverberação conforme tamanho e
+  profundidade do cômodo. O áudio para/retoma com a chuva, usando transições
+  suaves; volume e mudo de SFX continuam respeitados.</li>
+<li><strong>Inspeção e pausa:</strong> background, gotas e som permanecem na vista em primeira
+  pessoa. Chuva/escorrimento/SFX continuam ativos na interação offline pausada,
+  sem despausar a simulação ou os atores.</li>
+<li><strong>Textos:</strong> a descrição da janela acompanha chuva, gotas residuais e estiagem,
+  inclusive quando o clima muda durante a leitura, preservando câmera e diálogo.</li>
+<li><strong>Exceção explícita:</strong> outro background só substitui a floresta por indicação
+  explícita do desenvolvedor, registrada na documentação da alteração. Trocar
+  a paisagem não autoriza remover chuva ou SFX; uma exceção a esses efeitos
+  também precisa de orientação explícita do desenvolvedor.</li>
+</ul>
+<p>Criar ou revisar uma janela externa exige preservar esse conjunto e verificar
+o resultado no Godot, incluindo primeira pessoa/pausa, ciclos, textos e som
+espacial. Esta obrigação não autoriza sintetizar SFX: novas gravações seguem
+a <a href="#regra-de-origem-dos-sfx">regra de origem dos SFX</a>. A implementação e suas
+limitações atuais estão em <a href="CHUVA-JANELAS-2026-10-14.html">Chuva nas janelas</a>.</p>
+<h2 id="regra-obrigatória-sfx-de-todas-as-portas">Regra obrigatória: SFX de todas as portas</h2>
+<p><strong>TODA porta do jogo, sem exceção, deve emitir um efeito sonoro de abertura
+durante a animação de abertura e um efeito sonoro de fechamento ao final da
+animação de entrada/travessia.</strong> Esta é uma regra permanente para portas
+existentes, novas ou revisadas, em ambos os sentidos de uso.</p>
+<p>Abrange portas comuns, duplas, metálicas, com chaves especiais e portas em
+escadas/patamares. Nenhum tipo, material, chave, cômodo ou classificação de
+dados pode excluir uma porta da regra. Em particular, <code>Kind=stairs</code> não
+autoriza banco vazio, fechamento silencioso ou substituir o SFX de abertura
+da porta somente por passos/transição de escada.</p>
+<p>O SFX de abertura toca uma vez, sincronizado com a abertura da folha. O SFX
+de fechamento toca uma vez, ao concluir a animação e após a confirmação da
+transferência pelo servidor. O fundo preto e o mistério do próximo cômodo
+são preservados; não é necessário animar a folha se fechando para tocar o SFX.
+Frames posteriores, snapshots repetidos ou chamadas repetidas de prontidão
+não podem repetir o som. Cancelamento, reset e desconexão não são conclusões:
+não disparam fechamento nem deixam callbacks/sons atrasados pendentes.</p>
+<p>Reutilizar os bancos apropriados ao material, respeitando a
+<a href="#regra-de-origem-dos-sfx">regra de origem dos SFX</a> ao criar ou substituir áudio.
+Um pedido de porta nova não autoriza síntese de SFX.</p>
+<p>Ao alterar portas ou sua apresentação, conferir no Godot o playback dos dois
+efeitos em cada tipo afetado e nos dois sentidos. Verificar abertura, conclusão,
+espera pela autoridade, repetição de frames/snapshots e cancelamento antes,
+durante e após a duração nominal. Retornar nome de banco sem reproduzi-lo não
+comprova o comportamento; registrar testes, capturas quando úteis e limites
+de audição crítica. Implementação e evidências em
+<a href="PORTAS-PS1-2026-10-14.html">Portas PS1</a>.</p>
+<h2 id="regra-de-origem-dos-sfx">Regra de origem dos SFX</h2>
+<p><strong>Batidas nas portas · 15/10/2026:</strong> <code>Soft door banging</code> e <code>hard door banging</code>,
+de vate, <a href="https://freesound.org/people/vate/sounds/268125/">Freesound 268125</a> e
+<a href="https://freesound.org/people/vate/sounds/268126/">268126</a>, CC0-1.0. Originais
+fornecidos em <code>C:\Users\strof\Downloads\re_sfx\</code>, preservados em
+<code>Tools/AudioSources/door-bang-recording/</code>. O manifesto registra caminhos,
+hashes e quatro cortes de cada gravação; receita em
+<code>Tools/prepare_door_bang_audio.py</code>, sem síntese/pitch/time-stretch. Os 203 WAVs
+anteriores foram preservados byte a byte. Batidas espaciais e tremor acompanham
+os perseguidores que chegaram à folha; os bancos de abertura/fechamento continuam
+independentes. <a href="INIMIGOS-E-PORTAS-2026-10-15.html">Comportamento, receitas, testes e limites</a>.</p>
+<p><strong>Transições · 15/10/2026:</strong> abertura usa <code>Suspense Riser</code>, de Universfield,
+<a href="https://pixabay.com/sound-effects/film-special-effects-suspense-riser-191979/">Pixabay 191979</a>,
+Pixabay Content License, gravação inteira de 2,742857 s. Confirmação de personagem
+usa <code>Metallic Horror Stinger</code>, de zombieallen,
+<a href="https://freesound.org/people/zombieallen/sounds/725223/">Freesound 725223</a>, CC0-1.0,
+corte 0–3,5 s com fade final suave de 800 ms, revisto em 15/10 para suavizar
+a cauda anteriormente cortada em 2,5 s. Originais recebidos em
+<code>C:\Users\strof\Downloads\re_sfx\</code>, preservados em
+<code>Tools/AudioSources/menu-riser-recording/</code> e <code>character-stinger-recording/</code>.
+Manifesto registra caminho, autor, licença, SHA-256 e edições.
+<code>Tools/prepare_menu_audio.py</code> preserva também a receita histórica de TITLEFLIGHT-DARK.
+Menus internos reutilizam <code>ui_button.wav</code> do inventário (Kenney, CC0, fonte e
+hash já registrados), sem nova edição, com ganho igual e fade visual de 0,4 s.
+<a href="TRANSICOES-MENUS-2026-10-15.html">Hashes, receitas e testes</a>.</p>
+<p><strong>Cartões · 15/10/2026:</strong> <code>Taking playing card</code>, de OxidVideos,
+<a href="https://pixabay.com/sound-effects/film-special-effects-taking-playing-card-522520/">Pixabay 522520</a>,
+Pixabay Content License. Original indicado pelo desenvolvedor:
+<code>C:\Users\strof\Downloads\re_sfx\oxidvideos-taking-playing-card-522520.mp3</code>.
+Master preservado em <code>Tools/AudioSources/card-recording/</code>; receita, caminho,
+autor/licença e SHA-256 registrados no manifesto. <code>Tools/prepare_card_audio.py</code>
+conserva a gravação e completa a cauda com silêncio para 0,64 s, com fades
+curtos, sem mudar velocidade/pitch. Banco <code>card_pass</code>; os 200 WAVs anteriores
+permaneceram idênticos. <a href="NOVO-JOGO-CARTOES-2026-10-14.html">Fluxo e testes</a>.</p>
+<p><strong>Abertura · 14/10/2026:</strong> <code>TITLEFLIGHT-DARK.wav</code>, de newagesoup,
+<a href="https://freesound.org/people/newagesoup/sounds/341281/">Freesound 341281</a>,
+CC0-1.0. Original baixado fornecido pelo desenvolvedor, preservado em
+<code>Tools/AudioSources/title-recording/</code>. <code>Tools/prepare_title_audio.py</code> registra
+caminho/hash/licença e prepara somente 0–3 s pelo pipeline de áudio existente;
+nenhum outro WAV foi alterado. <a href="TELA-INICIAL-2026-10-14.html">Receita e testes</a>.</p>
+<p>Regra explícita solicitada em 14/10/2026: todo novo efeito sonoro ou
+substituição deve partir de um arquivo original baixado. Antes de implementar,
+apresentar link direto para a página do efeito, autor, licença e uso pretendido.
+Aguardar o desenvolvedor baixar e indicar o caminho do original. Somente então
+registrar origem, caminho recebido, licença, SHA-256 e edições no manifesto e
+integrar o efeito.</p>
+<p>Não gerar efeitos genéricos por síntese, ruído, osciladores ou procedimentos,
+nem usar essas técnicas como placeholder/fallback para completar um pedido.
+Síntese exige pedido explícito para criar aquele SFX; pedir um som de relógio,
+tiro ou outro objeto não é autorização para sintetizá-lo. É permitido tratar
+arquivos baixados com cortes, fades, filtros, volume, camadas e loops, preservando
+os masters e a proposta de terror PS1. Ajustes de volume de sons já importados
+podem usar o original existente; não exigem repetir o download.</p>
+<p>Sons sintéticos anteriores são legados identificados, não precedente para
+novas adições. O relógio sintético em preparação foi retirado do projeto ativo;
+o loop agora usa o arquivo baixado fornecido pelo usuário. Fontes propostas:
+<a href="SELECAO-SFX-2026-10-14.html">Seleção de SFX</a>. Arquivos recebidos e integração:
+<a href="RELOGIO-E-TIROS-2026-10-14.html">Relógio e tiros</a>.</p>
+<p><strong>Lareiras aplicadas após aprovação · 14/10/2026:</strong> master <code>fire_crackling.wav</code> de ceich93,
+CC0, baixado pelo usuário e preservado em <code>Tools/AudioSources/fire-recording/</code>.
+Origem/caminho/hash/edições promovidos para <code>Tools/AudioSources/manifest.json</code>;
+loop ativo idêntico à prévia, com fonte 3D por lareira e mudo/volume/descarte.
+<a href="EMISSORES-ANIMADOS-2026-10-14.html">Implementação, fontes e reprodução</a>.</p>
+<h2 id="produção-incluída">Produção incluída</h2>
+<p>Os GLBs, texturas, ícones e WAVs de protótipo foram gerados especificamente
+para o projeto por scripts determinísticos. A integração de 14/10/2026 acrescenta
+efeitos de fontes gratuitas/licenciadas, com masters e receitas preservados;
+veja a <a href="INTEGRACAO-SONORA-2026-10-14.html">integração sonora</a>. Os retratos de inventário foram
+gerados pela ferramenta integrada <code>image_gen</code>, com aparência de pixels PS1.
+Não foram extraídos arquivos dos jogos.
+A estética pretendida é retro: silhuetas de uniforme, detalhes de roupa, faces,
+texturas pequenas, madeiras, papel de parede, piso xadrez, objetos reconhecíveis,
+seleção de ângulos fixos e resolução interna de 640×480 ou 320×240.</p>
+<h2 id="reconstrução-de-personagens-e-inimigos--13102026">Reconstrução de personagens e inimigos · 13/10/2026</h2>
+<p>Os quinze GLBs de atores foram reconstruídos em <code>Tools/generate_actor_art.py</code>:
+cinco personagens, seis zumbis masculinos, três femininos e Cerberus. A primeira
+implementação foi rejeitada por divergir das pranchas. A nova tentativa ajusta
+proporções, mangas, cabelo, boina, pose, roupas rasgadas, mãos/pés lesionados e
+a variante sem braço esquerdo. A exigência de igualdade visual exata permanece
+em revisão: estas malhas não devem ser descritas como idênticas às pranchas.</p>
+<p>Fontes originais aprovadas, sem alteração dos bytes, em
+<code>Tools/ArtSources/actors/*.png</code>, com prompts/proveniência no mesmo diretório.
+São imagens 2D geradas por <code>image_gen</code>, não malhas 3D. <code>.gdignore</code> mantém essas
+pranchas fora da importação/exportação do jogo. <code>actor_reference_atlas.py</code>
+registra marcos de projeção e produz atlas nearest de até 256×256: esse tamanho
+acomoda os recortes de vários membros no mesmo material. A projeção acompanha
+as seções da malha em vista de três quartos; cabeça, costas e mãos usam marcos
+próprios por prancha. As botas usam materiais de 64×64 e lesões geométricas para
+evitar projetar pixels da calça e do chão no calçado. <code>actor_hero_clothing.py</code>
+recorta tecido, alças, cinto e cruz nas próprias faces do torso dos heróis,
+substituindo a projeção que distorcia esses detalhes. Os membros usam regiões
+de cor amplas. Os atlas não são billboards; o GLB continua articulado.</p>
+<p><code>actor_hero_geometry.py</code> define cabeças, cabelo e acessórios individuais;
+a bandana da Rebecca inclui nó traseiro e duas pontas curtas de tecido.
+Barba lateral de Barry e hastes dos óculos de Wesker seguem o crânio; o nariz
+tem faces laterais ligadas ao plano facial, evitando uma faixa suspensa.
+<code>actor_zombie_refinement.py</code> define bordas rasgadas por variante, mechas
+esparsas aderentes ao crânio, sapatos abertos com dedos curtos e relevos ósseos
+ajustados à superfície. A barra da camisa acompanha o envelope real do quadril.
+Os olhos mortos e os ferimentos permanecem nos nove zumbis e no Cerberus.
+O atlas do cão usa recortes de frente/lateral/costas, dentro de 256×256.
+O dorso tem normais externas corrigidas; pescoço termina sob o crânio e patas
+usam uma textura própria de 64×64, mantendo solas e articulação.
+Manifesto de fontes/atlas: <code>Assets/Textures/actor-reference-manifest.json</code>.
+O validador confere hashes das fontes/atlas e os PNGs de cada material em uso
+embutido nos GLBs. Os atlas laterais antigos dos heróis continuam com hash de
+proveniência, mas não são aplicados à malha. Isso verifica integridade, não
+aprovação visual.</p>
+<p><code>Art.ZombieModel</code> escolhe aparência pelo ID estável do inimigo. <code>Variant</code>, HP,
+velocidade, agarrões, spawns e saves permanecem iguais. Os nomes dos membros e
+os 366 nomes de clipes anteriores foram mantidos, com os movimentos refeitos;
+45 ações rastejantes e cinco clipes de levantar completam 416. A pose base foi ajustada, assim como o
+braço de apoio ao mirar. <code>ActorView.Equip</code> alinha o ponto da empunhadura à palma.
+Ausência de braço/dedos é arte estática; desmembramento por tiros não foi adicionado.</p>
+<p>Regeneração seletiva: <code>python -B Tools/generate_assets.py --actors</code>.
+Após build/importação, executar <code>res://Tools/ActorArtPreview.tscn</code> com renderer
+Compatibility e <code>python -B Tools/build_actor_gallery.py</code>. Galeria comparativa
+local em <code>Build/actors-ps1/index.html</code>, capturas sem retoque em <code>views/</code>,
+relatório técnico em <code>render-report.json</code>. Limites em <code>TESTES-E-LIMITACOES.md</code>.
+O seletor antes/atual usa as capturas arquivadas em <code>fidelity-before/views</code>.
+A câmera traseira atual mostra o lado correspondente à prancha; esse ângulo
+difere das capturas arquivadas e está identificado na galeria.
+Para iteração visual restrita, a mesma cena aceita <code>-- --views-only</code> e
+<code>--actor=rebecca</code> (ou outro ID). Esse modo não substitui a execução completa de
+animações, armas e RoomView; não sobrescreve o relatório do gate completo.</p>
+<p>Movimento: <code>actor_human_motion.py</code> e <code>actor_dog_motion.py</code> resolvem no bake as
+trajetórias de apoio, joelhos/cotovelos e tornozelos. Quatro nós <code>*Paw</code> articulam
+as mesmas superfícies das patas do Cerberus. <code>ActorView</code> usa deslocamento real,
+escala e distância por ciclo para a cadência; o áudio segue os contatos. A
+oscilação vertical duplicada foi removida. Misturas têm duração por ação,
+preservam a fase de locomoção e recebem proteção contra penetração das solas.
+Queda/levantada são apresentação; não atrasam comandos, dano ou autoridade.</p>
+<p>Os sidecars <code>.glb.import</code> dos quinze atores preservam tracks constantes e
+desabilitam o otimizador de animação, com bake a 120 amostras/s. Isso é resolução
+de importação, não FPS medido ou limite de renderização. As opções de bake e
+remoção de tracks são descritas na <a href="https://docs.godotengine.org/en/stable/tutorials/assets_pipeline/importing_3d_scenes/import_configuration.html">documentação do importador Godot</a>.
+Manter esses sidecars junto dos GLBs evita reintroduzir erro nos apoios.</p>
+<p><code>res://Tools/ActorMotionPreview.tscn</code> produz medidas dos clipes e sequências
+reais em <code>Build/actors-ps1/motion/</code>. Aceita <code>--quick</code>, <code>--actor=jill</code>,
+<code>--clip=stand_up</code>, <code>--frames=32</code>, <code>--runtime-frames=120</code> e <code>--metrics-only</code>.
+O modo de métricas preserva a galeria anterior. Capturas do runtime usam
+alvos sintéticos e não equivalem a uma partida manual. Apoio em plano e
+integridade dos loops não comprovam naturalidade nem igualdade às pranchas.</p>
+<h2 id="regra-de-arte-ps1-para-novos-itens-e-objetos">Regra de arte PS1 para novos itens e objetos</h2>
+<p><strong>Tetos aprovados e integrados · 14/10/2026.</strong> Caixotões de madeira,
+reboco envelhecido, forro de serviço e alvenaria escurecida nas 33 salas internas;
+terraço aberto. Fonte de malhas em <code>Game/CeilingArt.cs</code>, recorte por câmera em
+<code>Game/RoomCeiling.cs</code>; sete albedos de 64/128 pixels em <code>Tools/generate_ceiling_art.py</code>,
+gerados por <code>--ceilings</code> em <code>Assets/Textures</code> com <code>ceiling-art-manifest.json</code>.
+PNGs aprovados preservados em <code>Prototypes/Ceilings</code> e comparados byte a byte.
+Nearest, faces facetadas, UVs em metros, iluminação/chuva atuais preservadas.
+<code>Tools/CeilingArtPrototype.cs</code> delega à mesma fonte de produção. Galeria e limites
+em <code>Docs/TETOS-INTEGRADOS-2026-10-14.md</code>; prévias históricas no documento anterior.</p>
+<p>Portas revisadas em 14/10/2026: <code>Tools/generate_assets.py --doors</code>, quatro GLBs
+originais com ambos os lados acabados, ferragens e fechaduras; variantes espada
+e escudo escolhidas pela chave existente. Manifesto de hashes/proveniência em
+<code>Assets/Models/door-art-manifest.json</code>. <a href="PORTAS-PS1-2026-10-14.html">Galeria, critérios e validação</a>.</p>
+<p><strong>Emissores aprovados e aplicados · 14/10/2026.</strong> GLBs/texturas de arandelas,
+lustre e lareiras preservados; shader aprovado promovido para Assets e gerador
+facetado preservado em <code>Game/RoomEmitters.cs</code>. Telas/indicadores usam suas
+texturas nearest existentes, com brilho discreto conforme a energia. Capturas
+reais das 34 salas/detalhes/GIFs em
+<a href="EMISSORES-ANIMADOS-2026-10-14.html">Emissores animados</a>. Sem rebake de inventário;
+janelas/chuva/tetos e iluminação noturna existentes preservados.</p>
+<p><strong>Fachadas das janelas revisadas em 14/10/2026.</strong> A quantidade atual é seis:
+Doghall W (-6,-2), corredor leste superior S (-1,95,1,95), estufa E (-2,2).
+<code>ExteriorWindows</code> é autorado em <code>Tools/generate_data.py</code>; <code>WindowPlacement</code>
+rejeita paredes com portas internas e trechos com cômodos atrás na planta.
+Luz lunar, clarões e espaço das arandelas acompanham a nova orientação.
+Arte/fontes PS1 preservadas. As sete janelas e referências de pixels descritas
+nas etapas iniciais abaixo são históricas. Usar <code>WindowArtPreview</code> com
+<code>--layout-only</code> para o layout atual; galeria e limites em
+<code>Docs/JANELAS-E-FACHADAS-2026-10-14.md</code>.</p>
+<p><strong>Clarão do trovão pelas janelas — 14/10/2026.</strong> <code>WindowLightning</code> anima as
+luzes e os materiais existentes das sete janelas a partir do evento do trovão,
+por 0,65 s, com sombras e retorno aos parâmetros originais. Não há novos
+modelos, texturas, luzes ou arquivos sonoros; fontes e geradores preservados.
+Galeria e limites em <a href="CLARAO-TROVAO-2026-10-14.html">Clarão do trovão</a>.</p>
+<p><strong>Estatura dos zumbis corrigida em 14/10/2026.</strong> <code>Art.ModelScale</code> define escala
+uniforme pela aparência, aplicada por <code>RoomView</code> em vez da variante de combate.
+GLBs/texturas/clips e geradores foram preservados. Os nove zumbis ficam próximos
+da altura de Jill em repouso, mantendo curvatura, proporções e detalhes PS1.
+<code>ActorView</code> já considera <code>Scale.X</code> na passada/cadência; essa lógica não mudou.
+Validação integrada: <code>res://Tools/ZombieScalePreview.tscn</code>; galeria:
+<code>python -B Tools/zombie_scale_gallery.py</code>. <code>--baseline</code> foi executado antes
+da correção; não recriar o antes com código corrigido. Evidência em
+<code>Build/zombie-scale-2026-10-14/</code>, com medidas e limites nos testes.</p>
+<p><strong>Iluminação noturna — aplicada em 14/10/2026.</strong> <code>RoomLighting</code> define as
+fontes quentes nas arandelas/velas do lustre e frias nas janelas existentes,
+sem iluminação global. <code>RoomArchitecture</code> e <code>WindowArt</code> preservam suas malhas
+e texturas; não há novos props ou rebake de inventário. Camada visual 20 nas
+luminárias evita sombras exageradas dos suportes, mantendo sombras de cenário
+e atores. As referências de pixels das prévias de paredes/janelas abaixo são
+anteriores à nova iluminação. Evidências, reprodução e limites em
+<a href="ILUMINACAO-NOTURNA-2026-10-14.html">Iluminação noturna</a>.</p>
+<p><strong>Janelas externas — integradas em 14/10/2026 para revisão no jogo.</strong>
+<code>Tools/generate_window_art.py</code> desenha nove PNGs originais: floresta distante
+RGB e galhos RGBA 128², variantes A/B para térreo e andar superior, mais vidro
+envelhecido RGBA 64². Regenerar apenas essa família com
+<code>python -B Tools/generate_assets.py --windows</code>. Sem fotografias/assets externos.
+<code>Game/WindowArt.cs</code> é a fonte das molduras, peitoril/fecho e planos do exterior,
+com nearest, alpha scissor nos galhos e marcas translúcidas no vidro. O fundo
+e os galhos têm profundidades diferentes; a moldura oculta suas bordas.</p>
+<p><code>RoomView.LoadRoom</code> aplica <code>WindowArt</code> após montar as luminárias. A fixture
+<code>res://Tools/WindowArtPreview.tscn -- --runtime-only</code> verifica essa integração,
+sem aplicar a arte manualmente. Passar
+<code>--window-art-output=res://Build/windows-integration-2026-10-14</code>, que contém
+<code>approved-preview.json</code>, <code>reference/views</code> e as capturas anteriores preservadas.
+Depois executar <code>python -B Tools/window_art_gallery.py --output Build/windows-integration-2026-10-14</code>.
+São três salas e sete janelas, com quatro câmeras reais mais duas vistas
+aproximadas por ambiente. O modo antigo recusa criar um falso antes após
+a integração. Evidências em <code>Docs/TESTES-E-LIMITACOES.md</code>.
+Após o usuário esclarecer que é noite, a fonte passou a usar paleta fria e
+escura nas duas camadas, com marcas de vidro discretas. Nova revisão em
+<code>Build/windows-night-2026-10-14/index.html</code>; as duas prévias ficam preservadas.</p>
+<p><strong>Acabamentos aprovados e aplicados às 34 salas em 14/10/2026.</strong>
+<code>Game/RoomView.cs</code> chama <code>WallArt.Apply</code> após montar paredes e frisos;
+<code>WallArt.ForRoom</code> escolhe entre os 13 perfis aprovados conforme Theme/ID.
+Oliva cobre 11 salas; bordô, seis; reboco, três; madeira de biblioteca, cinco.
+Cada um dos nove acabamentos especializados restantes cobre seu ambiente.
+O mapeamento preserva os 14 ambientes apresentados e não altera dados, física,
+modelos ou a fonte das 17 texturas. O gerador <code>--walls</code> continua reproduzível.</p>
+<p>A evidência integrada fica em <code>Build/walls-rollout-2026-10-14/index.html</code>.
+<code>WallArtPreview --all</code> registrou antes/candidato nas 136 câmeras antes da
+ativação. Depois, <code>--all --runtime-only</code> verifica somente <code>RoomView.LoadRoom</code>,
+sem aplicar materiais na fixture, e compara pixels com as imagens preservadas
+em <code>reference/views</code>, autenticadas por <code>approved-reference.json</code>. A comparação
+registra SHA exato, componentes conectados e a fração de pixels diferentes;
+a tolerância visual é de até 0,01% dos pixels, além dos checks de geometria/UV/material.
+Não executar o modo de baseline após a ativação:
+ele recusa criar um falso “antes”. As galerias de prévia abaixo ficam como
+histórico da direção aprovada, anterior à aplicação geral.</p>
+<p>Histórico da extensão dos acabamentos de paredes de 14/10/2026, antes da aprovação:
+<code>Tools/wall_architectural_textures.py</code> acrescenta cerâmica marfim, azulejos de
+cozinha, cal úmida, cantaria, tijolos, alvenaria com fuligem, painéis técnicos,
+cerâmica verde e ferro. <code>Tools/wall_domestic_textures.py</code> acrescenta papéis
+azul/linho e madeira entalhada para biblioteca. São 17 PNGs RGB 128² no total,
+incluindo os cinco anteriores preservados. O comando <code>--walls</code> regenera todos
+pelas fontes, sem alterar famílias antigas fora desse conjunto.</p>
+<p><code>WallArt.Finishes</code> define corpo, faixa inferior e frisos por acabamento.
+Cerâmica repete a cada 1,28 m; alvenaria/painéis/papéis a cada 1,6 m. Fiadas
+usam origem física comum para alinhar corpo e faixa inferior. A biblioteca
+usa baias de 0,8 m: o entalhe superior se ajusta à altura livre entre os
+frisos existentes, preservando campos completos e o lambril abaixo.</p>
+<p>Na etapa anterior à integração, foi executado <code>res://Tools/WallArtPreview.tscn -- --expanded</code> e depois
+<code>python -B Tools/wall_art_gallery.py --output Build/walls-finishes-2026-10-14</code>.
+São 14 ambientes e 112 imagens antes/depois; a galeria lê nomes, acabamentos,
+grupos e amostras do relatório. As pranchas dividem a comparação entre
+propostas originais, áreas úmidas, serviço e quartos/biblioteca. Essa rodada
+antecedeu a aprovação visual e a aplicação geral descritas acima.</p>
+<p>Prévia de paredes de 14/10/2026: <code>Tools/generate_wall_art.py</code> desenha cinco
+texturas originais RGB 128² (papéis oliva/bordô, reboco, lambris e madeira),
+sem referências externas. Regenerar somente essa família com
+<code>python -B Tools/generate_assets.py --walls</code>. <code>Game/WallArt.cs</code> preserva os
+triângulos das paredes e substitui o atlas 3×2 do BoxMesh por UVs medidos em
+metros: papel/reboco 1,6 m por tile; lambris 1,05 m × 1,1 m. Materiais exclusivos
+usam nearest/repeat, sem modificar o cache compartilhado dos objetos.</p>
+<p>Nessa primeira rodada, os acabamentos existiam somente na prévia, aguardando
+revisão. <code>RoomView</code> recebeu nomes semânticos para os 16 segmentos de
+parede/lambril/friso; a apresentação normal ainda não os aplicava. Comandos históricos:
+<code>res://Tools/WallArtPreview.tscn</code> no Godot compilado e
+<code>python -B Tools/wall_art_gallery.py --output Build/walls-ps1-2026-10-14</code>.
+A galeria compara os quatro enquadramentos de hall, jantar, corredor e sala
+de medicamentos, usando RoomView, resolução interna 640×480 e o shader retrô
+com as opções padrão do jogo. Não lê configurações pessoais. Janelas,
+tetos, colunas, móveis e atores não recebem os novos materiais nesta etapa.</p>
+<p>Arquitetura do cenário revista em 14/10/2026: <code>Game/RoomArchitecture.cs</code> é a
+fonte procedural das colunas facetadas, arandelas e lustre com braços, aro,
+castiçais, haste e viga. Usa texturas existentes 64/128 px com nearest.
+<code>Game/HallArchitecture.cs</code> gera o patamar norte, piso opaco, base de alvenaria e
+guarda-corpos; as dimensões dos degraus/guardas vêm de <code>Core/HallSurface.cs</code>
+e do prop de escada nos dados. As seis colunas têm footprints <code>hall_column</code>
+em <code>Tools/generate_data.py</code>, compartilhados com colisão/navegação.
+<code>Game/PropPlacement.cs</code> alinha bases à superfície, quadros à parede e eixos
+locais dos móveis à orientação, preservando W/D como ocupação no mundo.
+Não foram alterados GLBs, texturas ou miniaturas nesta rodada.</p>
+<p>Inspeção reproduzível: executar <code>res://Tools/SceneAuditPreview.tscn</code> no Godot
+compilado e depois <code>python -B Tools/scene_audit_gallery.py Build/scene-audit-2026-10-14</code>.
+O resultado usa a geometria real de <code>RoomView</code>: 136 câmeras, detalhes e percursos
+do hall. <code>--capture-only</code> registra um baseline sem os checks das correções.</p>
+<p><strong>Todo novo item ou objeto deve seguir esta direção de arte.</strong> Ela se aplica
+a armas, consumíveis, itens de puzzle, objetos interativos e props de cenário,
+e também à revisão de modelos existentes. O padrão visual são os itens PS1
+detalhados em 13/10/2026, cujas fontes estão em <code>Tools/generate_assets.py</code> e
+modelos em <code>Assets/Models</code> (por exemplo, <code>pistol.glb</code>, <code>shotgun.glb</code>, <code>knife.glb</code>,
+<code>spray.glb</code> e <code>crest_moon.glb</code>). As referências do inventário original orientam
+silhueta, proporções e leitura visual; a produção de assets deve ser original.</p>
+<p>Critérios obrigatórios de acabamento:</p>
+<ul>
+<li><strong>Forma reconhecível:</strong> construir a silhueta e as proporções do objeto, com
+  volumes, curvas facetadas e peças próprias. Caixas, cilindros e outras
+  primitivas podem compor a malha, mas um bloco genérico sem acabamento não
+  atende à regra, mesmo que esteja pixelizado.</li>
+<li><strong>Detalhe compatível com PS1:</strong> usar poucos polígonos e faces facetadas,
+  acrescentando os detalhes que identificam o objeto. Exemplos: canos e
+  guarda-matos vazados, gatilho/mira/empunhadura nas armas; tampa, bico e rótulo
+  em recipientes; dentes e argolas nas chaves; motivos distintos nos emblemas.
+  Os detalhes devem ser legíveis no tamanho de uso no jogo.</li>
+<li><strong>Texturas e materiais:</strong> preferir texturas de 64×64 ou 128×128, paleta
+  coerente, UVs orientadas corretamente e filtro nearest. Representar madeira,
+  metal, papel e outros materiais com pixels e contraste simples. Evitar
+  fotorealismo, texturas HD, suavização excessiva e acabamento moderno que
+  destoe dos itens de referência. Pixelizar uma arte realista não basta.</li>
+<li><strong>Complexidade proporcional:</strong> usar geometria onde ela melhora silhueta,
+  volume ou vazados; usar textura para inscrições e pequenos detalhes. Os
+  54–1.268 triângulos dos itens atuais são uma referência de escala, não uma
+  cota mínima nem um limite global para todos os props. Justificar no registro
+  da alteração necessidades maiores; não inferir desempenho da contagem.</li>
+<li><strong>Origem e manutenção:</strong> manter fonte editável, proveniência e gerador
+  correspondente; regenerar as saídas após alterar a fonte. Não usar assets
+  extraídos dos jogos ou fontes do sistema nos arquivos distribuídos.</li>
+</ul>
+<p>Antes de concluir cada criação/revisão, importar e inspecionar a renderização
+real no Godot Compatibility. Conferir a leitura no enquadramento de uso,
+proporção em relação à cena/personagem, materiais, UVs, faces, vazados e
+encaixes afetados. Prévias fora do engine e checks estáticos não substituem
+essa revisão. Registrar capturas, verificações executadas e limitações.</p>
+<p>Para cada item de inventário, conferir também o modelo em vários ângulos,
+rotação, enquadramento inicial e ausência de cortes no visor. A miniatura
+deve ser renderizada do mesmo GLB, transparente, de 128×128, com nearest e
+margem adequada, preservando proporção. Repetir o bake e atualizar
+<code>Assets/Icons/item-render-manifest.json</code> quando o modelo ou sua apresentação
+mudar; executar o validador para detectar miniaturas desatualizadas. O fluxo
+está na seção “Itens detalhados PS1” abaixo. Props sem uso no inventário não
+precisam de miniatura, mas devem cumprir os demais critérios de arte.</p>
+<h3 id="arte-do-inventário--13102026">Arte do inventário · 13/10/2026</h3>
+<p>Revisão de 15/10/2026: Jill tem expressão séria e olhos semicerrados em
+Bem/Cuidado/Perigo, mantendo os sinais próprios de cada condição. A foto civil
+da seleção recebeu apenas olhos mais serrados. Os quatro PNGs originais da
+edição por <code>image_gen</code>, prompts completos, hashes atuais e hashes dos alvos
+anteriores estão em <code>Assets/Portraits/</code> e seus dois manifestos <code>prompts.json</code>.
+<a href="JILL-PORTRAITS-2026-10-15.html">Capturas, reprodução e limites</a>.</p>
+<p><code>Assets/Portraits/{jill,chris,wesker,rebecca,barry}.png</code> são fontes originais
+importadas, com pixels de baixa resolução simulados na própria imagem gerada.
+Os PNGs mantêm os bytes da ferramenta e são mostrados com filtro nearest;
+não são texturas UV de cabeça. Prompts finais e proveniência estão em
+<code>Assets/Portraits/prompts.json</code>. A primeira tentativa realista foi rejeitada;
+somente a geração corrigida para PS1 foi integrada.</p>
+<p><code>{personagem}-caution.png</code> e <code>{personagem}-danger.png</code> acrescentam dez variantes
+originais editadas por <code>image_gen</code> a partir dos cinco retratos bons. Mantêm
+identidade, roupa, enquadramento, fundo azul e acabamento PS1; mudam expressão,
+cansaço e pequenos ferimentos. Os originais bons foram preservados. Prompts,
+fonte por personagem e SHA-256 das variantes estão no mesmo manifesto.</p>
+<p>Rebecca foi revisada com bandana vermelha ao redor da cabeça, rosto de jovem adulta e
+expressão simpática no estado Bem. Cuidado/Perigo derivam desse retrato e
+preservam a bandana e o rosto, com cansaço/ferimentos próprios da condição.
+O manifesto registra os prompts finais, hash do retrato base e hash da fonte
+das duas variantes; gerador e validador conferem esses hashes quando presentes.</p>
+<p><code>python -B Tools/generate_assets.py --inventory</code> regenera a moldura metálica
+<code>Assets/Textures/inventory_metal.png</code> e verifica/preserva os quinze retratos,
+incluindo a cobertura das condições e hashes das dez variantes.
+O modo sem argumentos também inclui essa etapa. A arte importada é fonte
+versionada: o gerador não a substitui por desenho procedural nem promete
+recriar os mesmos pixels mediante uma nova chamada de IA.</p>
+<p>O visor de inspeção usa os 30 GLBs dos itens, centralizados e dimensionados
+pelos limites geométricos. O ECG e os marcadores de seleção são desenhados no
+Godot. Molduras, fundo azul, quatro setas e tipografia seguem as referências
+do inventário; capacidade, ações e transações mantêm seus contratos.</p>
+<p>Na revisão de HUD, o retrato acompanha Bem/Cuidado/Perigo pelos mesmos limiares
+de PV. Foto e arma equipada têm larguras iguais, o ECG ocupa a largura restante,
+e a base da faixa se alinha à grade de slots. Todas as linhas da grade ocupam
+a altura disponível: o espaço vago anterior vinha da altura fixa, não de slots
+extras. Detalhes sem borda ocupam a largura do inventário logo abaixo desses
+painéis. <code>InventoryFooter</code> desenha a faixa metálica com degrau da referência.
+O arraste usa somente cantos verdes; seleção/foco usam cantos vermelhos, sem
+borda amarela. O menu de contexto aberto pelo item fica ancorado no canto
+inferior direito do visor compartilhado: opções com fundo azul do inventário,
+texto branco, borda azul-clara de um pixel e separação de seis pixels.
+O visor vazio mostra a mensagem de seleção, sem setas ou input de rotação.</p>
+<h3 id="itens-detalhados-ps1--13102026">Itens detalhados PS1 · 13/10/2026</h3>
+<p><code>Tools/generate_assets.py --items</code> regenera somente os 30 itens e suas texturas
+originais. Armas usam silhuetas extrudadas, canos/guarda-matos vazados, miras,
+martelos, cilindro do revólver, empunhaduras e bomba da espingarda. Spray,
+munição, ervas/misturas, chaves, gazua, emblemas, gema, bateria e amostra têm
+peças e materiais próprios. São 54–1.268 triângulos por item (11.926 somados),
+faces planas e PNGs de 64×64/128×128 com nearest; nenhum asset extraído.</p>
+<p>As facas usam malhas próprias: a de combate mantém lâmina longa, cabo escuro
+anelado e guarda de latão (392 triângulos). A defensiva tem lâmina curta de
+ponta caída, fio curvo, talas de madeira com dois rebites por face, guarda
+assimétrica e argola vazada no pomo (324 triângulos). A origem de encaixe e
+direção da lâmina foram preservadas. <code>weaponmodel</code> no mesmo gerador mantém
+as duas fontes; a defensiva deixou de ser uma cópia reduzida da de combate.
+Miniatura e manifesto foram atualizados pelo bake do Godot.</p>
+<p>Após regenerar modelos, compilar/importar e renderizar as miniaturas no Godot:</p>
+<pre><code class="language-powershell">python -B Tools/generate_assets.py --items
+dotnet build OperationSpencer.csproj
+. ./Tools/Common.ps1
+$itemEngine = Resolve-Godot
+&amp; $itemEngine --headless --editor --path . --import
+&amp; $itemEngine --path . res://Tools/ItemArtPreview.tscn -- --bake-icons
+&amp; $itemEngine --headless --editor --path . --import
+python -B Tools/validate_project.py
+</code></pre>
+<p><code>ItemArtPreview</code> usa o mesmo visor/ângulo inicial do inventário e grava os
+30 ícones transparentes de 128×128, além de 90 capturas em <code>Build/items-views</code>.
+O bake recorta a margem transparente e ajusta o item com nearest, preservando
+proporção e seis pixels de margem no eixo maior para aproveitar o espaço dos slots.
+<code>Assets/Icons/item-render-manifest.json</code> vincula PNG/GLB por SHA-256: o validador
+reprova ícones desatualizados. <code>--textures</code> preserva os ícones desse manifesto;
+regeneração geral ou <code>--models</code> exige repetir o bake se os GLBs mudarem.
+Os ângulos iniciais mostram rótulos, a face das chaves e o conteúdo das misturas.</p>
+<h3 id="cenário-detalhado-ps1--13102026">Cenário detalhado PS1 · 13/10/2026</h3>
+<p><code>Tools/generate_assets.py --props</code> regenera somente os 32 modelos de cenário
+existentes e suas 26 texturas <code>prop_*</code>. Móveis têm pernas/encostos próprios,
+gavetas, puxadores, molduras e estofados; estantes têm livros individuais.
+Piano, máquina de escrever, relógio, lareira, equipamentos, louças, esculturas,
+escadas e corrimãos têm peças que distinguem sua função e silhueta. Portas
+têm quatro painéis, ferragens e acabamento nos dois lados; portas duplas
+usam duas folhas com ferragens espelhadas, tanto na sala como na cinemática.
+<code>Art.DoorTrim</code> acrescenta guarnições nos batentes existentes.</p>
+<p>São 448–2.904 triângulos por modelo (32.094 somados). Estantes com livros,
+balustradas, máquina de escrever com teclado e suporte de armas usam mais
+peças para manter vazados e leitura da silhueta. O suporte reutiliza a fonte
+das armas detalhadas, sem reexportar seus GLBs de inventário. Madeira, tecido,
+metal, pedra, mostrador, papel e pintura usam desenhos originais de 64×64;
+o tapete usa 128×128, com borda aplicada uma vez sobre sua superfície.
+Faces facetadas, filtro nearest e contraste simples preservam o estilo PS1.</p>
+<p><code>RoomView</code> orienta para o interior os móveis de frente definida que não
+recebem rotação explícita e apontavam para fora da sala. A meia-volta mantém
+a área ocupada; posições, dimensões do catálogo e colisões permanecem iguais.
+Os livros foram ajustados para ficar abaixo da cornija das estantes.</p>
+<pre><code class="language-powershell">python -B Tools/generate_assets.py --props
+dotnet build OperationSpencer.csproj
+. ./Tools/Common.ps1
+$propEngine = Resolve-Godot
+&amp; $propEngine --headless --editor --path . --import
+&amp; $propEngine --path . res://Tools/PropArtPreview.tscn
+&amp; $propEngine --path . res://Tools/PresentationAcceptance.tscn -- --rooms-only
+python -B Tools/validate_project.py
+</code></pre>
+<p><code>PropArtPreview</code> grava três ângulos de cada modelo e seis capturas das portas
+simples/duplas/escadas em <code>Build/props-views</code>. As prévias isoladas normalizam
+o tamanho dos modelos; as proporções finais são as dimensões do catálogo,
+verificadas nas salas reais em <code>Build/manual/fixed-room-*.png</code>. A regeneração
+foi determinística e preservou os outros 42 GLBs e o manifesto de miniaturas.
+Resultados e limites estão em <code>Docs/TESTES-E-LIMITACOES.md</code>.</p>
+<p>Registro histórico da etapa de itens e props, anterior à reconstrução PS1 dos
+atores: o validador contou 74 GLBs, 537 PNGs em Assets (incluindo texturas
+extraídas dos GLBs pelo importador Godot) e 42 WAVs originais existentes.
+Naquela etapa, as cinco personagens e seis variações de zumbis usavam hierarquia
+articulada de partes rígidas; Cerberus tinha cabeça, mandíbula, membros e cauda
+articulados. As animações incluíam movimento, mira, ataque, recarga, parry, agarrão,
+queda/morte e socorro, conforme cada modelo, somando <strong>282 clipes nomeados</strong>,
+com repetições entre variantes. Esses números não descrevem os atores atuais.</p>
+<p>A reconstrução atual calcula IK de apoio no gerador e grava o resultado nos
+clipes. Desde 14/10/2026, <code>StairLocomotion</code> também adapta pernas e apoio das botas
+em runtime para humanos na escadaria do hall; os GLBs e seus geradores permanecem
+preservados. A revisão de postura remove o rebaixamento fixo do quadril, limita
+a altura mínima nas retomadas e usa apoios alcançáveis, sem modificar os clipes.
+<a href="ESCADAS-MOVIMENTO-2026-10-14.html">Escopo e validação nas câmeras reais</a>.
+Não há captura de movimento, skinning contínuo ou ragdoll. Os modelos têm rostos
+e materiais próprios, mas o acabamento permanece alpha.
+A contagem histórica de 58.142 triângulos era a soma dos modelos únicos verificados,
+não a quantidade renderizada em cada frame. Não use essa soma para inferir FPS.</p>
+<p><code>ASSETS-PREVIEW.png</code> foi produzido lendo geometria, UVs e texturas dos GLBs em um
+renderizador de inspeção Python. <strong>Não é screenshot do Godot nem prova da
+iluminação, enquadramento, interface ou animação em execução.</strong> Essa prévia
+histórica não foi regenerada para os itens e props detalhados; use as capturas
+do Godot acima.</p>
+<p>Não há fundos pré-renderizados; o ambiente é montado em 3D por <code>RoomView</code>.
+O shader opcional de quantização de vértices e o efeito CRT podem ser desligados.
+Não foi implementada emulação completa de distorção afim ou de hardware do PS1.</p>
+<h2 id="regeneração-opcional">Regeneração opcional</h2>
+<p>O jogo já recebe os assets prontos; Python/Pillow/NumPy não são necessários para
+jogar ou compilar. Para editar o pipeline de arte, em um ambiente virtual:</p>
+<pre><code class="language-bash">python -m venv .venv
+# Ative o ambiente conforme o sistema operacional.
+python -m pip install -r Tools/requirements-art.txt
+python Tools/generate_data.py
+python Tools/generate_assets.py
+python Tools/validate_project.py
+python Tools/preview_assets.py
+</code></pre>
+<p>Os geradores <strong>sobrescrevem</strong> os arquivos de saída. Preserve alterações manuais ou
+migre-as para o script antes de regenerar. A prévia usa fonte disponível no sistema;
+nenhum arquivo de fonte acompanha o pacote. Não existem projetos <code>.blend</code> nesta
+entrega. Os GLBs são os arquivos 3D editáveis/intercambiáveis fornecidos.</p>
+<h2 id="música-e-efeitos-iniciais">Música e efeitos iniciais</h2>
+<p>O <a href="MENU-ESC-2026-10-15.html">menu Esc solo</a> mantém o playback da BGM e aplica
+temporariamente low-pass de 900 Hz e ganho de 0,5 (cerca de −6 dB), em bus
+próprio de cada <code>MusicDirector</code>. SFX, arquivos/master de áudio e volume salvo
+permanecem independentes. Continuar/desconectar remove o efeito; cooperativo
+não o aplica. É processamento das trilhas existentes, sem novo SFX ou síntese.</p>
+<p><strong>Música atual:</strong> cinco arranjos estéreo para térreo, andar superior,
+medicamentos, salvamento e subsolo, com fade-out de 3,5 s e fade-in de 2,5 s
+em cada loop. <code>west_recovery</code> recriado por Meeting Rebecca; <code>ambient</code>
+substituído por Mansion Basement. <code>danger.wav</code> e sua receita removidos.
+Sala do gerador sem BGM, com SFX gravado de qubodup/CC0 somente após a flag
+autoritativa <code>power</code>. Master FLAC, caminho original, SHA-256 e corte/loop
+em <code>Tools/AudioSources/manifest.json</code>; preparação em <code>Tools/prepare_generator_audio.py</code>.
+Fonte, partituras,
+MP3s usados apenas como referência, regeneração e limites de validação em
+<a href="TRILHAS-SONORAS-2026-10-14.html">Trilhas da mansão</a>. A criação musical foi
+explicitamente solicitada; não altera a regra de origem dos SFX.</p>
+<p>Esta seção descreve o banco inicial. O banco atual integra 171 takes em
+87 categorias. Fontes, reprodução,
+comportamento e limites de escuta estão em
+<a href="INTEGRACAO-SONORA-2026-10-14.html">INTEGRACAO-SONORA-2026-10-14.md</a>.
+O <a href="INVENTARIO-AUDIO-2026-10-14.html">complemento do inventário</a> acrescenta
+cliques, arraste, spray, ervas/misturas e combinação, incluindo feedback
+durante a pausa solo sem avanço da simulação.
+Depois, <a href="RELOGIO-E-TIROS-2026-10-14.html">relógio e disparos baixados</a>
+substituíram três bases, retiraram quatro variantes antigas e acrescentaram
+um loop, com novos ganhos e trovões a cada 58/88 s.</p>
+<p>Trilhas: ambiente, sala segura e perigo, com loops sintéticos originais. Efeitos:
+passos, porta, interface, coleta, recarga, disparos, impactos, vozes sintetizadas
+de criaturas e quatro notas de piano, entre outros. Áudio WAV PCM mono, 22.050 Hz,
+16 bits. São sons de protótipo; não gravações dos jogos nem foley profissional.
+O cliente recebe eventos espaciais apenas quando relevantes ao cômodo observado.
+Na integração atual, encontros com inimigos preservam a música do cômodo.</p>
+<h2 id="fontes-opcionais-para-sons-futuros">Fontes opcionais para sons futuros</h2>
+<p>Na entrega inicial, esses pacotes não estavam incluídos. A revisão sonora de
+14/10/2026 integra somente arquivos selecionados, registrados no manifesto;
+não inclui os ZIPs completos. Os links são páginas de download;
+use o botão Download do autor e confira a licença do arquivo efetivamente obtido.
+As três páginas consultadas apresentam <strong>Creative Commons CC0</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Pacote e link</th>
+<th>Conteúdo anunciado</th>
+<th>Uso a avaliar por audição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://kenney.nl/assets/impact-sounds">Kenney — Impact Sounds</a></td>
+<td>130 arquivos; impactos/foley</td>
+<td>Contato, impactos e ações de objetos</td>
+</tr>
+<tr>
+<td><a href="https://kenney.nl/assets/rpg-audio">Kenney — RPG Audio</a></td>
+<td>50 arquivos; foley, passos e armas</td>
+<td>Passos, manuseio e ações de exploração</td>
+</tr>
+<tr>
+<td><a href="https://kenney.nl/assets/interface-sounds">Kenney — Interface Sounds</a></td>
+<td>100 arquivos; interface</td>
+<td>Inventário, confirmação e cancelamento</td>
+</tr>
+</tbody>
+</table>
+<p>Não foi verificado que um arquivo específico desses pacotes reproduza uma porta,
+cão ou zumbi da forma desejada. São candidatos para tratamento/edição, não uma
+promessa de que todo efeito de terror solicitado esteja pronto nesses downloads.
+Mantenha um registro por arquivo usado: origem, autor, licença e modificações.
+Não reutilize gravações extraídas de Resident Evil como “sons gratuitos”.</p>
+<h2 id="inventário-e-proposta-sonora--14102026">Inventário e proposta sonora · 14/10/2026</h2>
+<p>A <a href="AUDITORIA-SONORA-2026-10-14.html">auditoria sonora</a> registra os 39 efeitos e
+as três trilhas anteriores à integração, gatilhos no código, lacunas, prioridades e candidatos
+gratuitos para a direção de terror PS1. Medidas e hashes por arquivo estão no
+<a href="INVENTARIO-SONORO-2026-10-14.csv">inventário CSV</a>. O catálogo de reprodução local
+fica em <code>Build/audio-audit-2026-10-14/index.html</code>. O estado posterior está no
+<a href="INTEGRACAO-SONORA-2026-10-14.html">relatório de integração</a>, com sua própria galeria.
+Audição crítica e aprovação da mixagem em Godot permanecem pendentes.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js"></script>
+        <script src="search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
