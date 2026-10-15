@@ -8,7 +8,7 @@
         
         <link rel="canonical" href="https://felipestroff.github.io/Operation-Spencer-Docs/DOCUMENTACAO.html">
         <link rel="shortcut icon" href="img/favicon.ico">
-        <title>Documentação - Operation Spencer · 0.1.0-alpha</title>
+        <title>Documentação - Operation Spencer · 0.2.0-alpha</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/fontawesome.min.css" rel="stylesheet">
         <link href="css/brands.min.css" rel="stylesheet">
@@ -25,7 +25,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="index.html">Operation Spencer · 0.1.0-alpha</a>
+                <a class="navbar-brand" href="index.html">Operation Spencer · 0.2.0-alpha</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -355,7 +355,14 @@ Mudanças exclusivamente documentais não criam uma versão do jogo.</p>
 <p>Para ensaiar sem envio: <code>python -B Tools/publish_docs.py</code>. Para preparar o checkout
 público: <code>python -B Tools/publish_docs.py --destination Build/public-docs</code>.
 O comando recusa remote diferente do destino configurado, links simbólicos,
-fontes/bibliotecas do jogo, arquivos ocultos e chaves privadas reconhecíveis.</p></div>
+fontes/bibliotecas do jogo, arquivos ocultos e chaves privadas reconhecíveis.</p>
+<p>O administrador pode preparar o destino com <code>python -m pip install PyNaCl cryptography</code>
+e <code>python -B Tools/setup_public_docs.py --apply</code>. A ferramenta cria o repositório
+público e a deploy key, mantendo a chave privada apenas em memória e no secret
+criptografado do GitHub. Não imprime nem grava a chave em disco. Após o primeiro
+envio do portal/workflow público para main, <code>python -B Tools/setup_public_docs.py --enable</code>
+habilita Pages e a variável privada de entrega. Rodadas posteriores reutilizam a
+credencial existente; não compartilhar uma chave entre repositórios.</p></div>
             </div>
         </div>
 
