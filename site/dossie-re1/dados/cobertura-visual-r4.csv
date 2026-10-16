@@ -1,0 +1,31 @@
+﻿ID;Localização;Vistas de ambiente;Detalhes de cena;Total novo;Capturas anteriores;Fonte;Ressalvas
+M1-main-hall-1f;Saguão principal — térreo;7;0;7;0;https://raccooninsider.com/rooms/resident-evil/spencer-mansion/spencer-mansion-1f/entrance-hall/;A página indica 8 câmeras, mas apresenta 7 arquivos de fundo. A diferença continua pendente: não foi criado um oitavo enquadramento artificial.
+M1-l-passage;Corredor em L;4;0;4;0;https://raccooninsider.com/rooms/resident-evil/spencer-mansion/spencer-mansion-1f/l-shaped-corridor/;
+M1-art-room;Sala de arte;7;0;7;0;https://raccooninsider.com/rooms/resident-evil/spencer-mansion/spencer-mansion-1f/exhibition-room/;
+M1-back-passage;Corredor dos fundos;5;0;5;0;https://raccooninsider.com/rooms/resident-evil/spencer-mansion/spencer-mansion-1f/corridor-to-the-back-entrance/;
+M1-bar;Bar / sala do piano;8;0;8;2;https://raccooninsider.com/rooms/resident-evil/spencer-mansion/spencer-mansion-1f/bar/;
+M1-bathroom;Banheiro da mansão;3;0;3;0;https://raccooninsider.com/rooms/resident-evil/spencer-mansion/spencer-mansion-1f/mansion-bathroom/;O segundo fundo listado pela fonte não pôde ser visualizado. Somente os 3 arquivos efetivamente consultados entram na galeria.
+M1-central-corridor;Corredor central oeste;7;0;7;0;https://raccooninsider.com/rooms/resident-evil/spencer-mansion/spencer-mansion-1f/f-shaped-corridor/;
+M1-courtyard-study;Escritório do pátio;3;0;3;0;https://raccooninsider.com/rooms/resident-evil/spencer-mansion/spencer-mansion-1f/lord-spencers-study/;"Os arquivos 02 e 03 da fonte repetem visualmente o mesmo fundo; o 03 foi excluído. Os arquivos 01 e 04 mostram uma mesma composição com iluminação diferente e não contam como duas câmeras independentes."
+M1-dining-room;Sala de jantar;6;1;7;1;https://raccooninsider.com/rooms/resident-evil/spencer-mansion/spencer-mansion-1f/dining-hall/;
+M1-dressing-room;Sala de vestir;4;1;5;0;https://raccooninsider.com/rooms/resident-evil/spencer-mansion/spencer-mansion-1f/large-art-room/;
+M1-east-stairway-1f;Escadaria leste — térreo;4;0;4;0;https://raccooninsider.com/rooms/resident-evil/spencer-mansion/spencer-mansion-1f/east-staircase/;
+M1-elevator-stairway;Escadaria de serviço — nível 1F;3;0;3;0;https://raccooninsider.com/rooms/resident-evil/spencer-mansion/spencer-mansion-1f/elevator-stairway/;"A escadaria também é representada em B1 no atlas. Esta galeria é indexada apenas na ficha 1F; não duplica o espaço físico nem a contagem da pesquisa."
+M1-greenhouse;Estufa da mansão;4;2;6;0;https://raccooninsider.com/rooms/resident-evil/spencer-mansion/spencer-mansion-1f/greenhouse/;
+M1-isolated-passage;Passagem isolada;1;0;1;0;https://raccooninsider.com/rooms/resident-evil/spencer-mansion/spencer-mansion-1f/trevors-tomb/;"A fonte consultada fornece somente um fundo deste espaço. Uma segunda vista permanece pendente; não foi simulada por recorte, espelhamento ou imagem gerada. A fonte usa o nome “Trevor’s tomb”. Mantivemos “Isolated Passage” como identificação da ficha. Esse nome alternativo não foi importado como afirmação histórica sobre um túmulo."
+M1-keepers-bedroom;Quarto do tratador;4;0;4;0;https://raccooninsider.com/rooms/resident-evil/spencer-mansion/spencer-mansion-1f/keepers-room/;
+M1-large-gallery;Galeria dos quadros;6;2;8;1;https://raccooninsider.com/rooms/resident-evil/spencer-mansion/spencer-mansion-1f/portrait-room/;
+M1-living-room;Sala de estar / espingarda;2;1;3;0;https://raccooninsider.com/rooms/resident-evil/spencer-mansion/spencer-mansion-1f/parlor/;
+M1-mansion-save-room;Sala segura oeste / enfermaria;6;0;6;0;https://raccooninsider.com/rooms/resident-evil/spencer-mansion/spencer-mansion-1f/west-storeroom/;
+M1-mansion-storeroom;Depósito seguro leste;2;0;2;0;https://raccooninsider.com/rooms/resident-evil/spencer-mansion/spencer-mansion-1f/east-storeroom/;
+M1-outside-boiler;Área externa da caldeira;3;1;4;0;https://raccooninsider.com/rooms/resident-evil/spencer-mansion/spencer-mansion-1f/boiler-storage-area/;
+M1-roofed-passage;Passagem coberta / portão dos brasões;4;1;5;1;https://raccooninsider.com/rooms/resident-evil/spencer-mansion/spencer-mansion-1f/passage-to-the-shed/;
+M1-store-room;Depósito de saída ao pátio;2;1;3;0;https://raccooninsider.com/rooms/resident-evil/spencer-mansion/spencer-mansion-1f/shed/;
+M1-tea-room;Corredor do primeiro zumbi / sala de chá;5;1;6;0;https://raccooninsider.com/rooms/resident-evil/spencer-mansion/spencer-mansion-1f/tea-room/;
+M1-tiger-statue-room;Câmara da estátua do tigre;1;1;2;1;https://raccooninsider.com/rooms/resident-evil/spencer-mansion/spencer-mansion-1f/tiger-statue-room/;A estátua interativa não está desenhada no fundo isolado. Compare também a captura jogável do puzzle, preservada abaixo, antes de modelar o nicho e a estátua.
+M1-trap-room;Sala do teto-armadilha;3;1;4;0;https://raccooninsider.com/rooms/resident-evil/spencer-mansion/spencer-mansion-1f/suspended-ceiling-room/;"A fonte informa 5 câmeras, mas disponibiliza 4 arquivos. A vista do vão superior é um detalhe de cena; não foi contada como vista ampla do piso. O teto móvel é uma sobreposição do jogo e pode estar ausente dos fundos estáticos."
+M1-vacant-room;Quarto desocupado;3;1;4;0;https://raccooninsider.com/rooms/resident-evil/spencer-mansion/spencer-mansion-1f/firearms-room/;
+M1-wardrobe;Vestiário;2;0;2;0;https://raccooninsider.com/rooms/resident-evil/spencer-mansion/spencer-mansion-1f/costume-room/;
+M1-wardrobe-closet;Closet do vestiário;3;0;3;0;https://raccooninsider.com/rooms/resident-evil/spencer-mansion/spencer-mansion-1f/wardrobe-s/;
+M1-west-stairway-1f;Escadaria oeste — térreo;6;0;6;0;https://raccooninsider.com/rooms/resident-evil/spencer-mansion/spencer-mansion-1f/west-staircase/;
+M1-winding-passage;Corredor sinuoso;7;1;8;0;https://raccooninsider.com/rooms/resident-evil/spencer-mansion/spencer-mansion-1f/north-east-corridor/;

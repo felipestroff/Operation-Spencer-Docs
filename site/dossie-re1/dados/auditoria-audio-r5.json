@@ -1,0 +1,16 @@
+{
+  "version": "R5",
+  "status": "static-pass",
+  "metrics": {
+    "music": 45,
+    "effects": 89,
+    "voices": 14,
+    "rooms": 30,
+    "roomEffectRefs": 133,
+    "roomMusicEventRefs": 45,
+    "roomVoiceRefs": 13,
+    "assetFilesProvided": 0,
+    "independentAudioPlaybackVerified": false
+  },
+  "caveat": "Gatilhos e comparações originais não certificados por execução do disco; URLs externas não testadas ao vivo."
+}

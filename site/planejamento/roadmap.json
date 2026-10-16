@@ -1,0 +1,495 @@
+{
+  "schema": 1,
+  "updated": "2026-10-16",
+  "policy": "Base deste planejamento (16/10/2026): 1.0.0-alpha. As versões abaixo são janelas de planejamento, sem data ou tag reservada. O incremento real é calculado por PR: feat → MINOR; fix/refactor/perf → PATCH; quebra → MAJOR, inclusive durante alpha. Se uma quebra renumerar o jogo, replanejar as janelas e suas dependências. Docs não incrementa o jogo. Beta/estável exigem promoção explícita e critérios de aceitação; nenhum item deste roadmap foi implementado por esta integração.",
+  "releases": [
+    {
+      "version": "1.1.x-alpha",
+      "title": "Pesquisa aplicada e cenários da Mansão 1F",
+      "gate": "Iniciar somente após aprovação do recorte por sala; preservar mapa, câmeras aprovadas e regras PS1."
+    },
+    {
+      "version": "1.2.x-alpha",
+      "title": "Ambiência, SFX e trilha autorais/licenciados",
+      "gate": "Depende do mapa de eventos e de originais baixados pelo desenvolvedor, com licença e hash."
+    },
+    {
+      "version": "1.3.x-alpha",
+      "title": "Itens, puzzles e encontros: decisões de adaptação",
+      "gate": "Implementação de gameplay exige nova autorização e decisões explícitas sobre divergências da matriz."
+    },
+    {
+      "version": "1.4.x-alpha",
+      "title": "Personagens, animação e cooperação",
+      "gate": "Respeitar fases do roadmap cooperativo; alterações de protocolo/save podem exigir MAJOR e migração."
+    },
+    {
+      "version": "1.5.x-alpha",
+      "title": "Narrativa, percurso e preparação de testes ampliados",
+      "gate": "Aceitação da Mansão 1F e evidências por SHA antes de ampliar pesquisa a outros setores."
+    },
+    {
+      "version": "futuro sem versão",
+      "title": "Expansão e eventual beta",
+      "gate": "Pesquisa dos demais andares primeiro; beta somente após promoção explícita e gates funcionais/rede/save."
+    }
+  ],
+  "items": [
+    {
+      "id": "REF-01",
+      "version": "1.1.x-alpha",
+      "title": "Fixar edição/região e briefs por sala",
+      "domain": "pesquisa",
+      "description": "Conferir evidência primária, divergências e lacunas; separar variantes Jill/Chris e fases da campanha.",
+      "acceptance": "Manifesto da edição escolhido; briefing com IDs, URLs, confiança, adaptações e pendências para cada uma das 30 salas M1.",
+      "references": [
+        "M1-main-hall-1f",
+        "M1-isolated-passage"
+      ],
+      "depends": [],
+      "priority": "alta",
+      "audience": [
+        "desenvolvedor",
+        "alpha testers"
+      ],
+      "status": "planejado"
+    },
+    {
+      "id": "ENV-01",
+      "version": "1.1.x-alpha",
+      "title": "Hall, jantar e ala oeste",
+      "domain": "cenários",
+      "description": "Revisar materiais, móveis, portas e lareiras sem substituir automaticamente o mapa atual.",
+      "acceptance": "Comparativos no Godot por câmera, dois lados de portas/lareiras, cinco poses, legibilidade e tetos sem cortes; fonte/gerador e hashes preservados.",
+      "references": [
+        "M1-main-hall-1f",
+        "M1-dining-room",
+        "M1-tea-room",
+        "M1-bar",
+        "M1-central-corridor"
+      ],
+      "depends": [
+        "REF-01"
+      ],
+      "priority": "alta",
+      "audience": [
+        "desenvolvedor",
+        "alpha testers"
+      ],
+      "status": "planejado"
+    },
+    {
+      "id": "ENV-02",
+      "version": "1.1.x-alpha",
+      "title": "Ala leste, corredores, salas seguras e janelas",
+      "domain": "cenários",
+      "description": "Modelagem PS1 pelo Blender em coleção dedicada; chuva, floresta e SFX mantidos nas inspeções.",
+      "acceptance": "GLBs originais rastreáveis; Godot com aproximação, colisão e todos os planos; sem regressão de chuva/estiagem/pausa e regras de sala segura.",
+      "references": [
+        "M1-l-passage",
+        "M1-art-room",
+        "M1-bathroom",
+        "M1-mansion-storeroom",
+        "M1-mansion-save-room",
+        "M1-east-stairway-1f"
+      ],
+      "depends": [
+        "REF-01"
+      ],
+      "priority": "alta",
+      "audience": [
+        "desenvolvedor",
+        "alpha testers"
+      ],
+      "status": "planejado"
+    },
+    {
+      "id": "CAM-01",
+      "version": "1.1.x-alpha",
+      "title": "Câmeras e tetos em conjunto",
+      "domain": "câmeras",
+      "description": "Analisar as 140 referências como composições, sem inventar FOV/metros ou copiar os fundos.",
+      "acceptance": "Medições autoradas e justificadas no projeto; ida/volta, trocas, escadas e cinco personagens no Godot; lacunas hall/armadilha/escritório registradas.",
+      "references": [
+        "M1-main-hall-1f",
+        "M1-trap-room",
+        "M1-courtyard-study",
+        "M1-winding-passage"
+      ],
+      "depends": [
+        "ENV-01",
+        "ENV-02"
+      ],
+      "priority": "alta",
+      "audience": [
+        "desenvolvedor",
+        "alpha testers"
+      ],
+      "status": "planejado"
+    },
+    {
+      "id": "ART-01",
+      "version": "1.1.x-alpha",
+      "title": "Props PS1 e inspeção de inventário",
+      "domain": "modelagem 3D",
+      "description": "Planejar piano, emblemas, tigre, quadros, bomba, baú e máquina com fontes Blender/geradores.",
+      "acceptance": "Silhueta/UV/nearest/pivô e colisão documentados; GLB e miniatura do mesmo modelo renderizados no Godot; sem primitivas genéricas como arte final.",
+      "references": [
+        "tiger",
+        "piano",
+        "portraits",
+        "herbicide",
+        "item-box",
+        "typewriter"
+      ],
+      "depends": [
+        "REF-01"
+      ],
+      "priority": "alta",
+      "audience": [
+        "desenvolvedor",
+        "alpha testers"
+      ],
+      "status": "planejado"
+    },
+    {
+      "id": "AUD-01",
+      "version": "1.2.x-alpha",
+      "title": "Mapa de eventos, silêncio e fontes de áudio",
+      "domain": "áudio",
+      "description": "Ouvir e verificar gatilhos por campanha; títulos oficiais não certificam BGM por sala e códigos PC não autenticam PS1.",
+      "acceptance": "Tabela de eventos/loop/silêncio com evidência e licença; novos SFX só após sugerir página/autor/licença e receber caminho do original baixado pelo desenvolvedor.",
+      "references": [
+        "M1-bar",
+        "M1-mansion-storeroom",
+        "M1-mansion-save-room"
+      ],
+      "depends": [
+        "REF-01"
+      ],
+      "priority": "alta",
+      "audience": [
+        "desenvolvedor",
+        "alpha testers"
+      ],
+      "status": "planejado"
+    },
+    {
+      "id": "SFX-01",
+      "version": "1.2.x-alpha",
+      "title": "Portas, passos e mobiliário",
+      "domain": "SFX",
+      "description": "Curadoria de gravações identificáveis para madeira, metal, portões, pisos, gavetas, relógio, lareira e mecanismos.",
+      "acceptance": "Masters preservados, SHA/edições no manifesto; playback Godot de abertura/fechamento único, travessias/cancelamentos e atenuação por cômodo. Sem síntese não solicitada.",
+      "references": [
+        "M1-dining-room",
+        "M1-trap-room",
+        "M1-tiger-statue-room"
+      ],
+      "depends": [
+        "AUD-01",
+        "ART-01"
+      ],
+      "priority": "alta",
+      "audience": [
+        "desenvolvedor",
+        "alpha testers"
+      ],
+      "status": "planejado"
+    },
+    {
+      "id": "SFX-02",
+      "version": "1.2.x-alpha",
+      "title": "Chuva, floresta e ambiências",
+      "domain": "SFX",
+      "description": "Aprimorar gravações por janela e profundidade do ambiente, mantendo regras existentes de chuva e estiagem.",
+      "acceptance": "Escuta real Godot com distância, reverb, gotas residuais, primeira pessoa e pausa offline; não substituir a floresta sem orientação explícita.",
+      "references": [
+        "M1-l-passage",
+        "M1-outside-boiler",
+        "M1-west-stairway-1f"
+      ],
+      "depends": [
+        "AUD-01",
+        "ENV-02"
+      ],
+      "priority": "alta",
+      "audience": [
+        "desenvolvedor",
+        "alpha testers"
+      ],
+      "status": "planejado"
+    },
+    {
+      "id": "MUS-01",
+      "version": "1.2.x-alpha",
+      "title": "Trilha própria por estado e sala",
+      "domain": "trilha sonora",
+      "description": "Briefs de exploração, segurança, piano e tensão usam o atlas como comparação; gravações do RE1 não entram na distribuição.",
+      "acceptance": "Composição/gravação licenciada ou original com créditos e autorização; transições/silêncio ouvidos no Godot, coop sem disparo global por outro jogador.",
+      "references": [
+        "M1-bar",
+        "M1-mansion-save-room",
+        "M1-mansion-storeroom"
+      ],
+      "depends": [
+        "AUD-01"
+      ],
+      "priority": "alta",
+      "audience": [
+        "desenvolvedor",
+        "apoiadores",
+        "alpha testers"
+      ],
+      "status": "planejado"
+    },
+    {
+      "id": "DES-01",
+      "version": "1.3.x-alpha",
+      "title": "Decidir cadeia de puzzles e recompensas",
+      "domain": "design",
+      "description": "Escolher e registrar o que preservar como adaptação: piano, tigre, retratos, estufa, três emblemas/bateria e missão da amostra.",
+      "acceptance": "Documento aprovado antes de código; solução/itens/rotas sem softlock; comparar 29 mecanismos sem prometer implementar todos.",
+      "references": [
+        "piano",
+        "emblems",
+        "tiger",
+        "portraits",
+        "herbicide",
+        "crests",
+        "shotgun"
+      ],
+      "depends": [
+        "REF-01"
+      ],
+      "priority": "alta",
+      "audience": [
+        "desenvolvedor",
+        "alpha testers"
+      ],
+      "status": "planejado"
+    },
+    {
+      "id": "ITM-01",
+      "version": "1.3.x-alpha",
+      "title": "Itens e objetos com modelagem original",
+      "domain": "modelagem 3D",
+      "description": "Produzir revisões de chaves, joia, armas danificadas e emblemas no Blender após decisões de design.",
+      "acceptance": "Fonte .blend/receita reproduzível, GLB, hashes, inventário/rotação/miniaturas no Godot; manter slots, cura e contratos até alteração aprovada.",
+      "references": [
+        "sword-key",
+        "shield-key",
+        "blue-jewel",
+        "broken-shotgun",
+        "sun-crest",
+        "moon-crest",
+        "star-crest"
+      ],
+      "depends": [
+        "DES-01",
+        "ART-01"
+      ],
+      "priority": "alta",
+      "audience": [
+        "desenvolvedor",
+        "alpha testers"
+      ],
+      "status": "planejado"
+    },
+    {
+      "id": "PUZ-01",
+      "version": "1.3.x-alpha",
+      "title": "Puzzles e interações futuras autorizadas",
+      "domain": "gameplay futuro",
+      "description": "Somente após nova autorização; não aplicar propostas do dossiê como código nesta integração.",
+      "acceptance": "UI/servidor com frente e alcance aprovados; concorrência, cancelamento, reset, save/restore e recuperação de item essencial; migração se schema mudar.",
+      "references": [
+        "piano",
+        "tiger",
+        "portraits",
+        "herbicide",
+        "shotgun"
+      ],
+      "depends": [
+        "DES-01",
+        "ITM-01"
+      ],
+      "priority": "alta",
+      "audience": [
+        "desenvolvedor",
+        "alpha testers"
+      ],
+      "status": "planejado"
+    },
+    {
+      "id": "ENM-01",
+      "version": "1.3.x-alpha",
+      "title": "Inimigos e encontros do recorte",
+      "domain": "inimigos",
+      "description": "Briefs de silhueta, animação, sons e fases de zumbi/Cerberus/corvo/planta; bosses e Hunters aguardam escopo.",
+      "acceptance": "Evidência distingue referência de spawn atual; arte e áudio próprios; IA não congelada fora da câmera, servidor e respawn aprovados preservados.",
+      "references": [
+        "zombie",
+        "cerberus",
+        "crow",
+        "monster-plant",
+        "hunter"
+      ],
+      "depends": [
+        "DES-01",
+        "AUD-01"
+      ],
+      "priority": "alta",
+      "audience": [
+        "desenvolvedor",
+        "alpha testers"
+      ],
+      "status": "planejado"
+    },
+    {
+      "id": "CHR-01",
+      "version": "1.4.x-alpha",
+      "title": "Cinco personagens e animações",
+      "domain": "personagens",
+      "description": "Revisões PS1 via Blender sem transformar papéis narrativos do original em restrição de jogador.",
+      "acceptance": "Escala, rig/clipes, armas, inventário, escadas e cinco poses no Godot; até quatro humanos distintos, atributos/kit sem mudança implícita.",
+      "references": [
+        "jill",
+        "chris",
+        "wesker",
+        "rebecca",
+        "barry"
+      ],
+      "depends": [
+        "ART-01"
+      ],
+      "priority": "alta",
+      "audience": [
+        "desenvolvedor",
+        "alpha testers"
+      ],
+      "status": "planejado"
+    },
+    {
+      "id": "COOP-01",
+      "version": "1.4.x-alpha",
+      "title": "Fases cooperativas C2 em diante",
+      "domain": "cooperativo",
+      "description": "Usar Docs/ROADMAP-COOP.md como detalhamento; UI/BOT, exploração, gestos, rádio e entregas dependem de escopo próprio.",
+      "acceptance": "Aceitação por fase, rede/concorrência/reconexão/restore; protocolo/save versionados separadamente e MAJOR se quebra distribuída. Não marcar futuros como funcionais.",
+      "references": [
+        "jill",
+        "chris",
+        "barry",
+        "rebecca"
+      ],
+      "depends": [
+        "CHR-01",
+        "PUZ-01"
+      ],
+      "priority": "alta",
+      "audience": [
+        "desenvolvedor",
+        "alpha testers"
+      ],
+      "status": "planejado"
+    },
+    {
+      "id": "NAR-01",
+      "version": "1.5.x-alpha",
+      "title": "Linha do tempo e documentos autorais",
+      "domain": "história",
+      "description": "Confrontar 22 marcos e ramificações com missão própria; não inventar datas ou importar finais/roteiros do remake.",
+      "acceptance": "Timeline por evento/condição/fonte; calendário só com evidência; textos originais, escolhas de adaptação aprovadas e limites das fontes explícitos.",
+      "references": [
+        "jill",
+        "chris",
+        "barry",
+        "rebecca",
+        "wesker"
+      ],
+      "depends": [
+        "DES-01"
+      ],
+      "priority": "alta",
+      "audience": [
+        "desenvolvedor",
+        "apoiadores"
+      ],
+      "status": "planejado"
+    },
+    {
+      "id": "QA-01",
+      "version": "1.5.x-alpha",
+      "title": "Percurso e sessões de alpha",
+      "domain": "testes",
+      "description": "Matriz 1F por rota, câmera, objeto, áudio e multiplayer; publicar evidências reproduzíveis para testers.",
+      "acceptance": "SHA/comando/data e limitações; partida manual separada de fixture, desempenho medido, coop com concorrência/reconexão/restore. Sem atestar qualidade por checks geométricos.",
+      "references": [
+        "M1-main-hall-1f",
+        "M1-roofed-passage"
+      ],
+      "depends": [
+        "CAM-01",
+        "SFX-01",
+        "SFX-02",
+        "MUS-01",
+        "PUZ-01",
+        "ENM-01",
+        "COOP-01",
+        "NAR-01"
+      ],
+      "priority": "alta",
+      "audience": [
+        "desenvolvedor",
+        "alpha testers",
+        "beta testers"
+      ],
+      "status": "planejado"
+    },
+    {
+      "id": "EXP-01",
+      "version": "futuro sem versão",
+      "title": "Completar pesquisa além da Mansão 1F",
+      "domain": "pesquisa",
+      "description": "Expandir a curadoria de 84 entradas restantes: 2F/B1, pátio, residência, cavernas e laboratório, antes de prometer implementação.",
+      "acceptance": "Novo snapshot com hashes, fontes visuais/sonoras por sala, divergências resolvidas e atualização de todos os vínculos/roadmap. Não duplicar escada 1F/B1.",
+      "references": [
+        "M2-attic",
+        "MB-kitchen"
+      ],
+      "depends": [
+        "QA-01"
+      ],
+      "priority": "futura",
+      "audience": [
+        "desenvolvedor",
+        "apoiadores"
+      ],
+      "status": "planejado"
+    },
+    {
+      "id": "BETA-01",
+      "version": "futuro sem versão",
+      "title": "Decisão explícita de beta",
+      "domain": "testes",
+      "description": "Reavaliar escopo, estabilidade, conteúdo e manutenção antes de promover o sufixo.",
+      "acceptance": "Promoção autorizada; gates funcionais, rede, save/migração, licenças, documentação, instalação e evidências completas no recorte aprovado.",
+      "references": [
+        "M1-main-hall-1f"
+      ],
+      "depends": [
+        "QA-01",
+        "EXP-01"
+      ],
+      "priority": "futura",
+      "audience": [
+        "desenvolvedor",
+        "alpha testers",
+        "beta testers",
+        "apoiadores"
+      ],
+      "status": "planejado"
+    }
+  ]
+}

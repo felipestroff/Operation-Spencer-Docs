@@ -99,6 +99,39 @@
                                 <a href="GALERIAS.html" class="nav-link">Galerias</a>
                             </li>
                             <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Pesquisa e roadmap</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="DOSSIE-RE1-1996.html" class="dropdown-item">Dossiê RE1 de 1996</a>
+</li>
+                                    
+<li>
+    <a href="dossie-re1/index.html" class="dropdown-item">Dossiê navegável</a>
+</li>
+                                    
+<li>
+    <a href="MATRIZ-REFERENCIAS-RE1.html" class="dropdown-item">Matriz de referências</a>
+</li>
+                                    
+<li>
+    <a href="AUDITORIA-DOSSIE-RE1-1996.html" class="dropdown-item">Auditoria da pesquisa</a>
+</li>
+                                    
+<li>
+    <a href="ROADMAP.html" class="dropdown-item">Roadmap por versão</a>
+</li>
+                                    
+<li>
+    <a href="planejamento/index.html" class="dropdown-item">Roadmap interativo</a>
+</li>
+                                    
+<li>
+    <a href="BLENDER-E-PRODUCAO-3D.html" class="dropdown-item">Blender e produção 3D</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Desenvolvimento</a>
                                 <ul class="dropdown-menu">
                                     
@@ -157,7 +190,7 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="GALERIAS.html" class="nav-link">
+                                <a rel="prev" href="BLENDER-E-PRODUCAO-3D.html" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
@@ -252,6 +285,10 @@
               </ul>
             </li>
             <li class="nav-item" data-bs-level="2"><a href="#extensões" class="nav-link">Extensões</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#camada-de-pesquisa-e-planejamento" class="nav-link">Camada de pesquisa e planejamento</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -511,7 +548,18 @@ A reconexão não recria kits. Tokens/senhas não devem ir para o repositório.<
 para saves; mudanças de estrutura exigem migrador e incremento de schema.
 Para outro inimigo, adicione dados, estados, regras, modelo/animações e testes.
 Não ligue comportamento autoritativo a <code>VisibleOnScreenNotifier3D</code> ou <code>_Process</code>
-da câmera. Recursos visuais e áudio não podem decidir dano, loot ou progressão.</p></div>
+da câmera. Recursos visuais e áudio não podem decidir dano, loot ou progressão.</p>
+<h2 id="camada-de-pesquisa-e-planejamento">Camada de pesquisa e planejamento</h2>
+<p><code>References/RE1-1996/source/</code> preserva o dossiê completo; <code>snapshot.json</code>
+autentica bytes e <code>integration.json</code> registra vínculos editoriais com o cenário.
+<code>Tools/build_reference_portal.py</code> confere snapshot/catálogo, cobertura do mapa
+e dependências do roadmap, gerando páginas/exports somente a partir do clone.
+<code>Docs/planejamento/roadmap.json</code> e <code>Tools/templates/roadmap.html</code> são fontes
+do roadmap Markdown/HTML. <code>Tools/validate_docs.py</code> exige derivados sincronizados.</p>
+<p>Essa camada não é consumida pelo runtime, não altera Core/Game/Data, rede ou save.
+O MkDocs e o publicador existentes enviam somente site estático ao repositório
+público. Ferramentas Python do dossiê permanecem no repositório privado.
+Ver <a href="DOSSIE-RE1-1996.html">escopo</a> e <a href="BLENDER-E-PRODUCAO-3D.html">produção Blender</a>.</p></div>
             </div>
         </div>
 

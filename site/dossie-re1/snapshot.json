@@ -1,0 +1,148 @@
+{
+  "edition": "1.5-R5",
+  "received": "2026-10-16",
+  "origin": "C:\\dev\\Operation_Spencer_Guia_RE1_1996",
+  "authorship": "Preparado pelo desenvolvedor com ChatGPT 6 / Pro, conforme informado; autoria das fontes externas preservada.",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 18,
+      "sha256": "65fb4f745c5c3bc709a49211e13ebf858e262717a8125d38dd3b807351b9c216"
+    },
+    {
+      "path": "COBERTURA.md",
+      "bytes": 22823,
+      "sha256": "8e3eb5cf0e4525558b02ac92b469612788dd1db89d7014394f89a896241f5b7c"
+    },
+    {
+      "path": "dados/auditoria-audio-r5.json",
+      "bytes": 427,
+      "sha256": "0dc59d3d4b4893d47f84173cac1fd31cc977b4e1ee40af64708d1ace6b1012ab"
+    },
+    {
+      "path": "dados/auditoria-visual-r4.json",
+      "bytes": 22935,
+      "sha256": "c673f54420e71527aa7d7bf76941be36bb4c52ca008bde9938b824719e943a38"
+    },
+    {
+      "path": "dados/catalogo.json",
+      "bytes": 633724,
+      "sha256": "6a58748f0e20191b0e4f3c6a829925f3bd4e8493504d1e5ed26647a6f0fd4c44"
+    },
+    {
+      "path": "dados/cobertura-audio-r5.csv",
+      "bytes": 11766,
+      "sha256": "4b658bdc8d13b730fb9aa442dc4d5e6b4b55c9d06a6172811097b7c9a83c2c4d"
+    },
+    {
+      "path": "dados/cobertura-visual-r4.csv",
+      "bytes": 5938,
+      "sha256": "f28370e0adeb7f453f748df2bbb97f9cec1bdf3c94c0a4d8b980b4443b76672c"
+    },
+    {
+      "path": "dados/referencias-sonoras-r5.json",
+      "bytes": 99314,
+      "sha256": "e6d4c8c3939cf5274bc7f1e7b897377b1b45c14c155a42158213245005123258"
+    },
+    {
+      "path": "dados/referencias-visuais-r4.json",
+      "bytes": 134780,
+      "sha256": "bee211199169f6bbe82734bb08c446945f30adefdd63a0c7899e1a637c136728"
+    },
+    {
+      "path": "FONTES-E-ESCOPO.md",
+      "bytes": 9724,
+      "sha256": "02e1696a3f5c091ed1a1c81ba3b019dd86b7fb0abf5347fc129732cc83c4db37"
+    },
+    {
+      "path": "historico/validacao-interface-v1.json",
+      "bytes": 4473,
+      "sha256": "1af8e034501c22824727c08234203d153f6f4cce4da67a82628c45e678df6ffd"
+    },
+    {
+      "path": "index.html",
+      "bytes": 621401,
+      "sha256": "49ad4d65ad6bbc3c9c8a26eaf4d0979878942bcf27d06c05ff55c6be37eaa91f"
+    },
+    {
+      "path": "LEIA-ME.md",
+      "bytes": 8178,
+      "sha256": "0d6aa8d5ac1f071c8afb9cb83a2f1fbc4ba7124bfec4f8263d748ce800dbf7a5"
+    },
+    {
+      "path": "manifesto.json",
+      "bytes": 5107,
+      "sha256": "c849a5072adc5d09dcd5f53ecab8b5334caa6c9f75e1e7fd2824408c2546e9be"
+    },
+    {
+      "path": "R4-CENARIOS-MANSAO-1F.md",
+      "bytes": 8316,
+      "sha256": "e6956e0a70ac37f3ae0facdd5b50abc03a199d6d8add74023065e9ce059c9b7e"
+    },
+    {
+      "path": "R5-ATLAS-SONORO-MANSAO-1F.md",
+      "bytes": 8967,
+      "sha256": "b65a19e545718698deb1cadf99dc3996e4fc50ac12d2189827922ced5cb6fe24"
+    },
+    {
+      "path": "src/app.js",
+      "bytes": 76483,
+      "sha256": "6ae197c5f36b168feced2ddb81410a0a6066b1e2e9f1e98805be361fc9cd59b6"
+    },
+    {
+      "path": "src/style.css",
+      "bytes": 28495,
+      "sha256": "b09ef891a0667ec1b5de66d17628e808912a9975ee767d1cef84c2e911dcbf46"
+    },
+    {
+      "path": "tools/build_audio_r5.py",
+      "bytes": 23520,
+      "sha256": "b90d3b7fb593b72f8330db3f29bd80bb108201edbcab0dd2b7a59a26bebfb021"
+    },
+    {
+      "path": "tools/rebuild.py",
+      "bytes": 1345,
+      "sha256": "852ebeafb791daf305d8af519dfa3d0135263fe1ec0c1e5fa56e4a9623bdc322"
+    },
+    {
+      "path": "tools/test_audio_r5.py",
+      "bytes": 4965,
+      "sha256": "63f53d480887fa75b1d42f336b04c1c1ed63c33fece535048956aefb04344355"
+    },
+    {
+      "path": "tools/test_interface.py",
+      "bytes": 10434,
+      "sha256": "4c17637f7271ceb810a833e80de652baed7dc04e1e5b85ffda534ffdf2a8a98e"
+    },
+    {
+      "path": "tools/validate.py",
+      "bytes": 1584,
+      "sha256": "6df38e4da0114416f76c4041369385cc685683c2622e40c263017a7f7bc8ceaf"
+    },
+    {
+      "path": "tools/validate_audio_r5.py",
+      "bytes": 3827,
+      "sha256": "07df3a60a44d5df0fcae0b18dca2e879c33f088c0ff9087c7a6e35c58ae0bfd2"
+    },
+    {
+      "path": "tools/validate_visuals.py",
+      "bytes": 3064,
+      "sha256": "a09d63c6669b64e277c916be88e5d134590fb3ef252a4e5d4d621bb3cec04224"
+    },
+    {
+      "path": "validacao-r4-interface.json",
+      "bytes": 10958,
+      "sha256": "8a3c500d279ab9d83d17e1afea8a656e8efc38494003811b953ed284c124c654"
+    },
+    {
+      "path": "validacao-r5-audio.json",
+      "bytes": 264,
+      "sha256": "6edfa84bab97de7ddf454814e16d43dfe9962fb122f667e1141e26614a1ef38e"
+    },
+    {
+      "path": "VALIDACAO.md",
+      "bytes": 4433,
+      "sha256": "4240db3d424ebd8d66cc35ee6ad57ad3a830d2de6258bb76a6fa811909383286"
+    }
+  ]
+}

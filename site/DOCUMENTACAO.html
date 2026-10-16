@@ -99,6 +99,39 @@
                                 <a href="GALERIAS.html" class="nav-link">Galerias</a>
                             </li>
                             <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Pesquisa e roadmap</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="DOSSIE-RE1-1996.html" class="dropdown-item">Dossiê RE1 de 1996</a>
+</li>
+                                    
+<li>
+    <a href="dossie-re1/index.html" class="dropdown-item">Dossiê navegável</a>
+</li>
+                                    
+<li>
+    <a href="MATRIZ-REFERENCIAS-RE1.html" class="dropdown-item">Matriz de referências</a>
+</li>
+                                    
+<li>
+    <a href="AUDITORIA-DOSSIE-RE1-1996.html" class="dropdown-item">Auditoria da pesquisa</a>
+</li>
+                                    
+<li>
+    <a href="ROADMAP.html" class="dropdown-item">Roadmap por versão</a>
+</li>
+                                    
+<li>
+    <a href="planejamento/index.html" class="dropdown-item">Roadmap interativo</a>
+</li>
+                                    
+<li>
+    <a href="BLENDER-E-PRODUCAO-3D.html" class="dropdown-item">Blender e produção 3D</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Desenvolvimento</a>
                                 <ul class="dropdown-menu">
                                     
@@ -239,6 +272,10 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-bs-level="2"><a href="#manter-dossiê-vínculos-e-roadmap-sincronizados" class="nav-link">Manter dossiê, vínculos e roadmap sincronizados</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -274,7 +311,7 @@ datados registram evidências de uma implementação. Consultar o
 <h2 id="regra-obrigatória-atualização-de-todas-as-referências">Regra obrigatória: atualização de todas as referências</h2>
 <p>Qualquer alteração que afete documentação, páginas ou apresentação do jogo deve
 atualizar <strong>todas as referências afetadas na mesma entrega</strong>, conforme a regra
-em <a href="https://github.com/felipestroff/Projeto-Mansao/blob/main/AGENTS.md">AGENTS.md</a>.
+em <a href="https://github.com/felipestroff/Operation-Spencer/blob/main/AGENTS.md">AGENTS.md</a>.
 Isso também se aplica quando uma mudança de código, dados, arte, áudio ou versão
 torna uma descrição, instrução ou captura desatualizada.</p>
 <ol>
@@ -432,7 +469,21 @@ público e a deploy key, mantendo a chave privada apenas em memória e no secret
 criptografado do GitHub. Não imprime nem grava a chave em disco. Após o primeiro
 envio do portal/workflow público para main, <code>python -B Tools/setup_public_docs.py --enable</code>
 habilita Pages e a variável privada de entrega. Rodadas posteriores reutilizam a
-credencial existente; não compartilhar uma chave entre repositórios.</p></div>
+credencial existente; não compartilhar uma chave entre repositórios.</p>
+<h2 id="manter-dossiê-vínculos-e-roadmap-sincronizados">Manter dossiê, vínculos e roadmap sincronizados</h2>
+<p>Consultar <a href="DOSSIE-RE1-1996.html">escopo e regras do dossiê</a>,
+<a href="AUDITORIA-DOSSIE-RE1-1996.html">auditoria</a> e <a href="BLENDER-E-PRODUCAO-3D.html">fluxo Blender</a>.
+Não editar o snapshot recebido. Nova edição exige inventário/hashes, revisão
+integral das diferenças e atualização explícita dos vínculos editoriais.
+Alterações de salas, puzzles, itens e personagens exigem revisar
+<code>References/RE1-1996/integration.json</code>; nomes/IDs não provam equivalência histórica.</p>
+<p>Editar metas, versão planejada, dependências, referências e aceitação em
+<code>Docs/planejamento/roadmap.json</code>; apresentação em <code>Tools/templates/roadmap.html</code>.
+Regenerar com <code>python -B Tools/build_reference_portal.py</code> e conferir com <code>--check</code>.
+O verificador documental usado nos workflows rejeita derivados divergentes.
+Depois: inventário documental, MkDocs strict, links/âncoras, clone limpo e revisão
+desktop/mobile. Publicação continua automática no repositório separado de docs.
+Planejamento não reserva tags nem promove alpha; mudanças documentais não fazem bump.</p></div>
             </div>
         </div>
 
