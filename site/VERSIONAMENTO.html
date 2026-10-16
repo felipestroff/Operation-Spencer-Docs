@@ -8,7 +8,7 @@
         
         <link rel="canonical" href="https://felipestroff.github.io/Operation-Spencer-Docs/VERSIONAMENTO.html">
         <link rel="shortcut icon" href="img/favicon.ico">
-        <title>Versões e publicação - Operation Spencer · 0.2.0-alpha</title>
+        <title>Versões e publicação - Operation Spencer · 1.0.0-alpha</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/fontawesome.min.css" rel="stylesheet">
         <link href="css/brands.min.css" rel="stylesheet">
@@ -25,7 +25,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="index.html">Operation Spencer · 0.2.0-alpha</a>
+                <a class="navbar-brand" href="index.html">Operation Spencer · 1.0.0-alpha</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -51,6 +51,14 @@
 </li>
                                     
 <li>
+    <a href="BAU-ANIMACOES-2026-10-15.html" class="dropdown-item">Baú e interações</a>
+</li>
+                                    
+<li>
+    <a href="INTERACOES-PROXIMAS-2026-10-15.html" class="dropdown-item">Proximidade dos objetos</a>
+</li>
+                                    
+<li>
     <a href="MENU-ESC-2026-10-15.html" class="dropdown-item">Menu Esc</a>
 </li>
                                     
@@ -64,6 +72,22 @@
                                     
 <li>
     <a href="MULTIPLAYER-E-SERVIDOR.html" class="dropdown-item">Cooperativo</a>
+</li>
+                                    
+<li>
+    <a href="BOT-COOP-C0-2026-10-15.html" class="dropdown-item">BOT coop C0</a>
+</li>
+                                    
+<li>
+    <a href="BOT-COOP-C1-2026-10-15.html" class="dropdown-item">BOT coop C1</a>
+</li>
+                                    
+<li>
+    <a href="BOT-COOP-AJUSTES-2026-10-15.html" class="dropdown-item">BOT, áudio e janela</a>
+</li>
+                                    
+<li>
+    <a href="ROADMAP-COOP.html" class="dropdown-item">Roadmap coop</a>
 </li>
                                     
 <li>
@@ -88,6 +112,10 @@
                                     
 <li>
     <a href="ASSETS-E-AUDIO.html" class="dropdown-item">Assets e áudio</a>
+</li>
+                                    
+<li>
+    <a href="ESTATURAS-PERSONAGENS-2026-10-15.html" class="dropdown-item">Estaturas dos personagens</a>
 </li>
                                     
 <li>
@@ -195,6 +223,10 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-bs-level="2"><a href="#compatibilidade-da-entrega-com-protocolo-2" class="nav-link">Compatibilidade da entrega com protocolo 2</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             <li class="nav-item" data-bs-level="2"><a href="#prévia-e-sincronização" class="nav-link">Prévia e sincronização</a>
               <ul class="nav flex-column">
               </ul>
@@ -257,7 +289,21 @@ O check de título também recusa tipos desconhecidos; não infere impacto pelo 
 <p>Exemplo: <code>0.1.0-alpha</code> → fix <code>0.1.1-alpha</code> → feature <code>0.2.0-alpha</code> → quebra
 <code>1.0.0-alpha</code>. <strong>1.0.0-alpha continua experimental.</strong> A promoção para beta/estável
 é uma decisão explícita; a automação não remove <code>-alpha</code>.</p>
+<h2 id="compatibilidade-da-entrega-com-protocolo-2">Compatibilidade da entrega com protocolo 2</h2>
+<p>A consolidação de 16/10/2026 integra o protocolo de rede <strong>2</strong>, incluindo
+o estado autoritativo de abertura/acesso ao baú. Clientes e servidores com
+protocolo <strong>1</strong> (como v0.2.0-alpha) são recusados na autenticação; executar
+clientes e servidor da mesma revisão compatível. Essa alteração é classificada
+como <code>BREAKING CHANGE</code> e exige MAJOR pela política acima, mantendo <code>-alpha</code>.
+O incremento não representa promoção para estável.</p>
+<p>O schema de saves permanece <strong>3</strong>. Sessões/tampas de baú são transitórias e
+não persistidas; a retirada do spray autorado do hall tem normalização explícita,
+preservando itens dinâmicos, inventários e conteúdo dos baús em saves anteriores.
+Os gates de reconexão/restore e as limitações permanecem no guia de testes.</p>
 <h2 id="prévia-e-sincronização">Prévia e sincronização</h2>
+<p>Os gates do Core e de release instalam <code>Tools/requirements-art.txt</code> antes do
+validador numérico dos GLBs; a publicação do portal usa separadamente
+<code>Tools/requirements-docs.txt</code>. Reproduza essas dependências no ambiente local.</p>
 <pre><code class="language-powershell">python -B Tools/release_version.py preview
 python -B Tools/release_version.py apply
 python -B Tools/release_version.py check

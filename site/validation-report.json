@@ -1,6 +1,6 @@
 {
   "kind": "STATIC_ASSET_AND_DATA_VALIDATION_NOT_ENGINE_TEST",
-  "utc": "2026-10-15T16:22:31.182828+00:00",
+  "utc": "2026-10-15T23:12:09.440019+00:00",
   "checks": [
     {
       "check": "exterior_window_facades_and_interior_portals",
@@ -150,9 +150,9 @@
       "status": "pass",
       "detail": {
         "glb": 80,
-        "triangles": 72244,
-        "animation_clips": 416,
-        "png": 765,
+        "triangles": 72536,
+        "animation_clips": 418,
+        "png": 774,
         "wav": 211
       }
     },
@@ -219,9 +219,28 @@
       }
     },
     {
+      "check": "PS1_architecture_albedos_and_source_manifest",
+      "status": "pass",
+      "detail": {
+        "textures": 8,
+        "original_PNG_and_generator_hashes": "matched",
+        "max_size": 128,
+        "visual_check": "requires rendered ArchitectureArtAcceptance"
+      }
+    },
+    {
+      "check": "hero_stature_and_baked_stride",
+      "status": "pass",
+      "detail": {
+        "heroes": 5,
+        "clips": 110,
+        "heights_and_GLB_hashes": "matched developer table; idle t=0"
+      }
+    },
+    {
       "check": "source_delimiters_and_bootstrap",
       "status": "pass",
-      "detail": "56 source files: delimiters and bootstrap references only; NO compiler validation"
+      "detail": "72 source files: delimiters and bootstrap references only; NO compiler validation"
     }
   ],
   "failures": [],

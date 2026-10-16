@@ -8,7 +8,7 @@
         
         <link rel="canonical" href="https://felipestroff.github.io/Operation-Spencer-Docs/CODEX-GODOT-DOTNET.html">
         <link rel="shortcut icon" href="img/favicon.ico">
-        <title>Godot/.NET disponível para testes no Codex - Operation Spencer · 0.2.0-alpha</title>
+        <title>Godot/.NET disponível para testes no Codex - Operation Spencer · 1.0.0-alpha</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/fontawesome.min.css" rel="stylesheet">
         <link href="css/brands.min.css" rel="stylesheet">
@@ -25,7 +25,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="index.html">Operation Spencer · 0.2.0-alpha</a>
+                <a class="navbar-brand" href="index.html">Operation Spencer · 1.0.0-alpha</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -51,6 +51,14 @@
 </li>
                                     
 <li>
+    <a href="BAU-ANIMACOES-2026-10-15.html" class="dropdown-item">Baú e interações</a>
+</li>
+                                    
+<li>
+    <a href="INTERACOES-PROXIMAS-2026-10-15.html" class="dropdown-item">Proximidade dos objetos</a>
+</li>
+                                    
+<li>
     <a href="MENU-ESC-2026-10-15.html" class="dropdown-item">Menu Esc</a>
 </li>
                                     
@@ -64,6 +72,22 @@
                                     
 <li>
     <a href="MULTIPLAYER-E-SERVIDOR.html" class="dropdown-item">Cooperativo</a>
+</li>
+                                    
+<li>
+    <a href="BOT-COOP-C0-2026-10-15.html" class="dropdown-item">BOT coop C0</a>
+</li>
+                                    
+<li>
+    <a href="BOT-COOP-C1-2026-10-15.html" class="dropdown-item">BOT coop C1</a>
+</li>
+                                    
+<li>
+    <a href="BOT-COOP-AJUSTES-2026-10-15.html" class="dropdown-item">BOT, áudio e janela</a>
+</li>
+                                    
+<li>
+    <a href="ROADMAP-COOP.html" class="dropdown-item">Roadmap coop</a>
 </li>
                                     
 <li>
@@ -88,6 +112,10 @@
                                     
 <li>
     <a href="ASSETS-E-AUDIO.html" class="dropdown-item">Assets e áudio</a>
+</li>
+                                    
+<li>
+    <a href="ESTATURAS-PERSONAGENS-2026-10-15.html" class="dropdown-item">Estaturas dos personagens</a>
 </li>
                                     
 <li>
@@ -234,19 +262,28 @@ persistir o caminho. Ele utiliza as ferramentas instaladas; não baixa binários
 Foi verificada a rejeição da edição 4.7.2 sem .NET, com exit 1, e a resolução
 do caminho persistente em um PowerShell sem <code>GODOT_DOTNET</code> no processo.</p>
 <h2 id="executar-os-gates-automáticos">Executar os gates automáticos</h2>
-<pre><code class="language-powershell">powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Tools\Test.ps1
+<p>Desde a consolidação de 16/10/2026, a validação numérica de estaturas usa NumPy.
+Instale as dependências antes de executar <code>Test.ps1</code>, <code>Build.ps1</code> ou <code>Run.ps1</code>
+com validação Python. O CI do Core e de release executa a mesma instalação.
+Isso não adiciona dependências ao runtime Godot/.NET.</p>
+<pre><code class="language-powershell">python -m pip install -r Tools/requirements-art.txt
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Tools\Test.ps1
 </code></pre>
 <p>O comando executa, em ordem: validador do projeto, validador de configuração,
 22 testes PowerShell da toolchain, três testes Python de saúde dos logs,
-31 CoreTests, build C#, importação Godot, smoke real com servidor dedicado e
-quatro clientes ENet e gate de concorrência/reconexão/restore headless. Este
-último usa a porta 27625 e fixtures de teste separadas; o smoke usa <code>-Port</code>.
+CoreTests (117 nos ajustes da C1; 104 na C0 histórica), build C#, importação Godot, smoke real com servidor
+dedicado e quatro clientes ENet, gate de concorrência/reconexão/restore headless
+e os gates C0/C1 do BOT. O gate de rede usa a porta 27625, C0 usa 27632, C1 usa 27636 e o smoke
+usa <code>-Port</code>, sempre com fixtures de teste separadas.
 Cada execução guarda
 logs e <code>report.json</code> em <code>Build/validation/&lt;execução&gt;/</code>; os detalhes do smoke ficam
 em <code>Build/smoke/&lt;id&gt;/</code>. Falha interrompe a sequência e retorna código diferente
 de zero. Erros do Godot e avisos de MTU reprovam os gates de rede mesmo quando
-o processo retorna zero. O gate ENet usa <code>Tools/NetworkAcceptance.tscn</code>;
-seu recorte e os casos ainda pendentes estão em <code>TESTES-E-LIMITACOES.md</code>.</p>
+o processo retorna zero. O gate ENet usa <code>Tools/NetworkAcceptance.tscn</code> e C0 usa
+<code>Tools/CoopBotAcceptance.tscn</code>; C1 usa <code>Tools/CompanionAcceptance.tscn</code> com App
+de produção e argumentos de sessão isolada. Recortes e pendências em
+<a href="TESTES-E-LIMITACOES.html">Testes e limitações</a>, <a href="BOT-COOP-C0-2026-10-15.html">BOT coop C0</a>
+e <a href="BOT-COOP-C1-2026-10-15.html">BOT coop C1</a>.</p>
 <p>Acrescente <code>-Presentation</code> para executar <code>Tools/PresentationAcceptance.tscn</code>
 com renderer real em um desktop disponível. A fixture envia eventos sintéticos
 de teclado/mouse, captura painéis/ambientes e verifica layout, foco, combate no

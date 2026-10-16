@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="pt_BR" data-bs-theme="dark">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://felipestroff.github.io/Operation-Spencer-Docs/BOT-COOP-C1-2026-10-15.html">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>BOT coop C1 - Operation Spencer · 1.0.0-alpha</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/brands.min.css" rel="stylesheet">
+        <link href="css/solid.min.css" rel="stylesheet">
+        <link href="css/v4-font-face.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" disabled>
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" >
+        <link href="stylesheets/spencer.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Operation Spencer · 1.0.0-alpha</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Início</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Jogar</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="INSTALACAO-WINDOWS.html" class="dropdown-item">Instalação</a>
+</li>
+                                    
+<li>
+    <a href="CONTROLES.html" class="dropdown-item">Controles</a>
+</li>
+                                    
+<li>
+    <a href="BAU-ANIMACOES-2026-10-15.html" class="dropdown-item">Baú e interações</a>
+</li>
+                                    
+<li>
+    <a href="INTERACOES-PROXIMAS-2026-10-15.html" class="dropdown-item">Proximidade dos objetos</a>
+</li>
+                                    
+<li>
+    <a href="MENU-ESC-2026-10-15.html" class="dropdown-item">Menu Esc</a>
+</li>
+                                    
+<li>
+    <a href="CONTROLES-EDITAVEIS-2026-10-15.html" class="dropdown-item">Configurações</a>
+</li>
+                                    
+<li>
+    <a href="REGRAS-E-BALANCEAMENTO.html" class="dropdown-item">Regras</a>
+</li>
+                                    
+<li>
+    <a href="MULTIPLAYER-E-SERVIDOR.html" class="dropdown-item">Cooperativo</a>
+</li>
+                                    
+<li>
+    <a href="BOT-COOP-C0-2026-10-15.html" class="dropdown-item">BOT coop C0</a>
+</li>
+                                    
+<li>
+    <a href="BOT-COOP-C1-2026-10-15.html" class="dropdown-item active" aria-current="page">BOT coop C1</a>
+</li>
+                                    
+<li>
+    <a href="BOT-COOP-AJUSTES-2026-10-15.html" class="dropdown-item">BOT, áudio e janela</a>
+</li>
+                                    
+<li>
+    <a href="ROADMAP-COOP.html" class="dropdown-item">Roadmap coop</a>
+</li>
+                                    
+<li>
+    <a href="MANSAO-E-MISSAO.html" class="dropdown-item">Missão (spoilers)</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="GALERIAS.html" class="nav-link">Galerias</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Desenvolvimento</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="ARQUITETURA.html" class="dropdown-item">Arquitetura</a>
+</li>
+                                    
+<li>
+    <a href="TIROS-OBSTACULOS-2026-10-15.html" class="dropdown-item">Tiros e obstáculos</a>
+</li>
+                                    
+<li>
+    <a href="ASSETS-E-AUDIO.html" class="dropdown-item">Assets e áudio</a>
+</li>
+                                    
+<li>
+    <a href="ESTATURAS-PERSONAGENS-2026-10-15.html" class="dropdown-item">Estaturas dos personagens</a>
+</li>
+                                    
+<li>
+    <a href="JILL-PORTRAITS-2026-10-15.html" class="dropdown-item">Portraits de Jill</a>
+</li>
+                                    
+<li>
+    <a href="TEXTURAS-ARQUITETURA-2026-10-15.html" class="dropdown-item">Texturas arquitetônicas</a>
+</li>
+                                    
+<li>
+    <a href="VERSIONAMENTO.html" class="dropdown-item">Versões e publicação</a>
+</li>
+                                    
+<li>
+    <a href="DOCUMENTACAO.html" class="dropdown-item">Documentação</a>
+</li>
+                                    
+<li>
+    <a href="INVENTARIO-DOCUMENTACAO.html" class="dropdown-item">Inventário documental</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="TESTES-E-LIMITACOES.html" class="nav-link">Evidências</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="FONTES-E-ADAPTACOES.html" class="nav-link">Créditos e referências</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="VERSAO.html" class="nav-link">Versão</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="BOT-COOP-C0-2026-10-15.html" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="BOT-COOP-AJUSTES-2026-10-15.html" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/felipestroff/Operation-Spencer-Docs" class="nav-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <button id="theme-menu" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle">
+                                <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                <span class="d-lg-none ms-2">Toggle theme</span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                                    <i class="fa-solid fa-sun fa-fw"></i>
+                                    <span class="ms-2">Light</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="true">
+                                    <i class="fa-solid fa-moon fa-fw"></i>
+                                    <span class="ms-2">Dark</span>
+                                    <i class="fa-solid fa-check ms-auto"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                                    <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                    <span class="ms-2">Auto</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                              </ul>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="js/darkmode.js"></script>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#bot-coop--seguir-e-combater-c1--15102026" class="nav-link">BOT coop · seguir e combater C1 · 15/10/2026</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#entrega" class="nav-link">Entrega</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#executar" class="nav-link">Executar</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#arquitetura-e-limites" class="nav-link">Arquitetura e limites</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#log-do-coop" class="nav-link">Log do coop</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#evidências-locais" class="nav-link">Evidências locais</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="bot-coop--seguir-e-combater-c1--15102026">BOT coop · seguir e combater C1 · 15/10/2026</h1>
+<blockquote>
+<p>Estado atual, etapa 4.1: <a href="MULTIPLAYER-E-SERVIDOR.html#controle-manual-do-bot--etapa-4">controle e áudio por foco, até um humano e três BOTs</a>.
+O launcher não devolve o humano à IA por inatividade. Os comandos diretos
+históricos abaixo usam o modo anterior; acrescente <code>--coop-focus jill</code> em
+todos os participantes para ativar a alternância atual.
+A etapa 4.2 acrescenta disposição Auto no launcher por quantidade de BOTs,
+com <code>-Monitor</code> e opção <code>-Layout Livre</code>; não altera os resultados datados abaixo.
+A IA C1 continua sem operar interfaces/coletar autonomamente; o jogador pode
+fazê-lo manualmente, sem recriar personagem ou consumir uma nova vaga.</p>
+<p>Balanceamento posterior: <a href="REGRAS-E-BALANCEAMENTO.html#combate">faca 8 e pistola 20 de dano-base</a>.
+Contagens de tiros, dano e PV desta rodada são históricas, anteriores à etapa 3;
+a reexecução atual consta em <a href="TESTES-E-LIMITACOES.html">Testes e limitações</a>.</p>
+<p>Revisão posterior nesta data: <a href="BOT-COOP-AJUSTES-2026-10-15.html">áudio exclusivo do humano, movimento contínuo
+e modo de janela</a>. Os resultados abaixo
+preservam a rodada C1 anterior; os comandos agora iniciam em Janela.</p>
+</blockquote>
+<h2 id="entrega">Entrega</h2>
+<p>Recorte C1 do <a href="ROADMAP-COOP.html">roadmap</a>, sobre a <a href="BOT-COOP-C0-2026-10-15.html">base C0</a>:
+seguir o humano desde a entrada, atravessar portas acessíveis e ajudar no combate
+aos três cães do Doghall. IA local por prioridades, sem serviço de linguagem.
+Somente coop explícito de teste; não é ativado no solo ou ao abrir o jogo normal.</p>
+<p>O BOT decide com snapshots, mantém distância variável e histerese, usa rotas
+com colisão e porta/fechadura legítimas, aguarda confirmação da travessia e
+replaneja quando não progride. Líder ausente faz aguardar; caído/morto faz
+guardar o local e enfrentar ameaças próximas, sem socorro automático nesta fase.
+Na apresentação de portas não envia movimento/combate. Após o Doghall continua
+acompanhando: não começa a explorar ou coletar por conta própria.</p>
+<p>Combate seleciona arma realmente disponível, mira baixa nos cães, gira por
+inputs tanque e aguarda pose/mira confirmadas. Usa alcance, linha de tiro,
+cooldown, munição e recarga reais; tenta defesa/recuo sob ameaça. Se acabarem as
+balas, tenta faca possuída; sem arma, recua. Não ganha itens, velocidade,
+invulnerabilidade ou informação oculta. Evitar dano não significa dano zero.
+Não garante vitória se o humano ficar parado ou abandonar o combate.</p>
+<h2 id="executar">Executar</h2>
+<p>Na raiz do projeto com a toolchain configurada:</p>
+<pre><code class="language-powershell">powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Tools\Launch-CoopBot.ps1
+</code></pre>
+<p>Abre humano Jill anfitrião e BOT Chris visual, C1 por padrão. Feche a janela
+humana para encerrar os processos da rodada e mantenha o terminal aberto.
+<code>-Character</code>/<code>-BotCharacter</code> escolhem personagens distintos; <code>-Seed 42</code> fixa a
+semente; <code>-Dedicated</code> separa o servidor; <code>-HeadlessBot</code> remove a janela do BOT.
+<code>-Phase C0</code> seleciona a base neutra; <code>-SkipBuild</code> exige build/import já concluídos.
+<code>-Seconds 12</code> limita a rodada após autenticar o BOT; zero mantém aberta.
+O launcher cria ID novo e perfis/campanhas isolados. Não toca nas campanhas normais.</p>
+<p>Comandos diretos após build/import, em dois terminais:</p>
+<pre><code class="language-powershell">&amp; $env:GODOT_DOTNET --path . -- --coop-test minha-c1 --host --new --character jill --port 27631
+&amp; $env:GODOT_DOTNET --path . -- --coop-test minha-c1 --coop-bot --join 127.0.0.1 --character chris --bot-phase C1 --bot-leader jill --bot-seed 42 --port 27631
+</code></pre>
+<p>Reconecte repetindo só o BOT, mesma sessão/personagem; retome host sem <code>--new</code>.
+Sem <code>--bot-leader</code>, fixa o primeiro outro participante conectado não nomeado
+<code>BOT</code>, ordenado por personagem; não troca silenciosamente de líder após perda.
+O launcher passa o personagem humano explicitamente. Logs/seed/configuração
+ficam em <code>Build/coop-bot-tests/&lt;sessão&gt;/</code>; dados privados de teste em
+<code>user://coop-bot-tests/&lt;sessão&gt;/</code>. Não publique perfis, chaves ou saves.</p>
+<h2 id="arquitetura-e-limites">Arquitetura e limites</h2>
+<p><code>CoopCompanionController</code> produz intenção, não altera o mundo. <code>App</code> envia
+<code>InputFrame</code> e comandos normais por <code>NetSession</code>. Só emite <code>door</code>, <code>attack</code>,
+<code>reload</code>, <code>equip</code> e <code>defend</code>, nunca coleta. Mantém o controlador neutro C0 e o
+smoke antigo separados. Semente varia espaçamento, reação, cooldown adicional
+e revisões; a rede/ordem dos snapshots também influencia o resultado.</p>
+<p>Autenticação isolada C0, quatro vagas/personagens distintos, validações de
+alcance frontal (0,65/±60°), <code>Epoch</code>, sequência, versões, dano autoritativo e
+regra de kits permanecem. Reset/restore limpam rota/alvos/temporizadores e filas.
+Sem mudança de protocolo 2, save schema 3, dados, assets, câmeras ou SFX.</p>
+<p>Pendente C2–C6: consultas de inventário/mapa, socorro e respawn automáticos,
+exploração/coleta, cobertura com até três BOTs, rádio VOIP e gestos compartilhados.
+Os cinco personagens têm checks de intenção/recarga; o percurso completo foi
+exercitado com Jill humana e Chris BOT. Aglomeração na chegada das portas e
+naturalidade precisam de avaliação humana, não são homologadas por esses checks.</p>
+<h2 id="log-do-coop">Log do coop</h2>
+<p>Registro da primeira revisão C1. A seleção posterior de textos removidos e o
+posicionamento atual constam em <a href="MULTIPLAYER-E-SERVIDOR.html#log-e-chat">Log e chat</a>;
+o relato e os resultados abaixo preservam a rodada anterior a essa seleção.</p>
+<p>Por pedido do desenvolvedor, <code>GameUi.OnEvent</code> não acrescenta eventos <code>door</code> ao
+log textual. Assim, nomes como “Corredor das janelas” não aparecem a cada
+travessia humana/BOT. O filtro é por tipo, não por palavras: chat e pings
+explícitos com nomes de locais, coleta, entrada/saída, queda e salvamento
+continuam; feedback de comandos também. Evento de rede, transição, identificação
+na animação e SFX de porta não foram removidos. Vale para coop comum e de teste.</p>
+<h2 id="evidências-locais">Evidências locais</h2>
+<p>Windows x64, Godot <code>4.7.2.stable.mono.official.ed1daf0bf</code>, Compatibility,
+SDK .NET <code>8.0.425</code>, Python 3.11. Fonte sobre HEAD
+<code>79eeef35d26221a76c9ff75e3c3e33da91ec8c37</code>, árvore dirty de C0/baú/alcance
+preservada, sem commit. Logs completos e capturas em <code>Build/</code>, não publicados.</p>
+<table>
+<thead>
+<tr>
+<th>Rodada</th>
+<th>Resultado observado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Tools/Test.ps1</code>, <code>Build/validation/20261015-190141-a343829b/report.json</code></td>
+<td>Todos os 11 estágios aprovados: validadores, 22 PowerShell, 3 Python de logs, 115 CoreTests, build sem avisos/erros, importação, smoke real de quatro clientes por 35 s, 53 ENet de concorrência/reconexão/restore, 33 C0 e 12 C1 headless</td>
+</tr>
+<tr>
+<td>Core C1, <code>Build/coop-c1-core.log</code></td>
+<td>Cinco testes novos: configuração, líder/morte/transição/épocas, rota bloqueada e sem coleta, intenção/recarga nos cinco personagens, simulação completa com inputs normais e snapshots a cada três ticks. Encontro eliminado, BOT 130 PV, humano 40 PV; três tentativas de ataque do BOT</td>
+</tr>
+<tr>
+<td>Core final, <code>Build/coop-c1-core-final.log</code></td>
+<td>116 aprovados, incluindo regressão adicional para manter mira alinhada no cooldown e antes do tiro, sem ciclo de defesa/recuo que cancele a mira</td>
+</tr>
+<tr>
+<td>ENet dedicado headless, semente 42, porta 27636</td>
+<td>12 checks; BOT 130 PV, humano 25 PV; três tiros/três impactos confirmados do BOT; percurso hall/eastgallery/doghall, sem coleta, reconexão sem kit e restore</td>
+</tr>
+<tr>
+<td>ENet host headless, semente 7, porta 27637</td>
+<td>11 checks (não cria cliente humano separado); BOT 130 PV, humano 55 PV; dois tiros/dois impactos confirmados do BOT; mesmos contratos</td>
+</tr>
+<tr>
+<td>Dedicado renderizado, semente 42, porta 27638</td>
+<td>Percurso e combate com App real, capturas de galeria/Doghall após a animação de porta; dois tiros/dois impactos do BOT, BOT 130 PV e humano 70 PV na rodada anterior ao filtro de log</td>
+</tr>
+<tr>
+<td>Render final <code>c1-render-aim</code>, <code>Build/coop-c1-rendered-final.log</code></td>
+<td>23 checks aprovados, incluindo oito de log: sem nomes de travessia, demais mensagens preservadas. Três tiros/três impactos do BOT, BOT 130 PV, humano 70 PV; três cães eliminados. Capturas <code>eastgallery.png</code>, <code>doghall-combat.png</code> e <code>doghall-cleared.png</code> conferidas no Godot, sem logs automáticos de localização</td>
+</tr>
+<tr>
+<td>Launcher, <code>3d8b3af2eff7</code> / <code>057fdc3eb1e3</code></td>
+<td>C1 dedicado com BOT headless e C0 anfitrião com BOT headless, humano visual, duração 8 s, exit 0; logs/configuração isolados sob <code>Build/coop-bot-tests/</code></td>
+</tr>
+<tr>
+<td>Host final <code>c1-host-final</code>, <code>Build/coop-c1-host-final.log</code></td>
+<td>11 checks aprovados após correção de mira; semente 7, dois tiros/dois impactos, BOT 130 PV e humano 55 PV</td>
+</tr>
+<tr>
+<td>Dedicado final <code>c1-ded-final</code>, <code>Build/coop-c1-dedicated-final.log</code></td>
+<td>12 checks aprovados após correção de mira; semente 42, três tiros/três impactos, BOT 130 PV e humano 70 PV; logs sem erros/avisos de MTU</td>
+</tr>
+<tr>
+<td>Regressão final <code>Build/validation/20261015-191326-45b280d7/report.json</code></td>
+<td>Interrompida no validador Python: <code>Chest generator hash</code>. O gerador/GLBs estavam recebendo alterações externas ao BOT; não foram corrigidos nem revertidos aqui. Os estágios seguintes dessa execução não rodaram; os resultados completos anteriores não homologam esse estado posterior da árvore</td>
+</tr>
+</tbody>
+</table>
+<p>A fixture <code>Tools/CompanionAcceptance.tscn</code> usa App de produção para o BOT,
+ENet real e humano dirigido por inputs/comandos, também lutando. Não teleporta
+o BOT nem edita HP, inimigos, munição ou estado do mundo para garantir vitória.
+Snapshots de loot são comparados; nova instância App reconecta com carregador
+gasto preservado; restore confirma nova época sem inputs antigos.
+Os números de tiros/impactos vêm de eventos autoritativos; dano não é inferido
+apenas da animação. Checks de log injetam eventos na UI real, preservando textos
+com nomes de locais quando não são eventos <code>door</code>.</p>
+<p>Reproduzir C1 (headless; retire <code>--headless</code> para renderização):</p>
+<pre><code class="language-powershell">&amp; $env:GODOT_DOTNET --headless --path . res://Tools/CompanionAcceptance.tscn -- --coop-test c1-check --coop-bot --join 127.0.0.1 --character chris --bot-leader jill --bot-seed 42 --port 27636
+</code></pre>
+<p>Adicione <code>--host-case</code> para autoridade anfitriã. A fixture exige Jill/Chris;
+para escolher outros personagens use o launcher e registre a rodada.</p>
+<p>Tentativas exploratórias iniciais falharam: mira/recuo antes da confirmação
+impediram contribuição, e cenários com humano passivo terminaram em derrota.
+A prioridade de tiro confirmado e retenção do alvo próximo foram corrigidas;
+a aceitação cobre dupla cooperando, não um BOT que vence sozinho. Capturas
+iniciais ocorreram no fundo preto da transição; a fixture passou a aguardar o
+fim da animação e as capturas foram refeitas. Não se ocultam essas limitações.</p>
+<p>A repetição <code>c1-render-log</code> aprovou os oito checks do filtro de log, mas falhou
+na contribuição de tiro: a dupla derrotou os cães enquanto o BOT alternava
+defesa/recuo, sem disparar. Log preservado em <code>Build/coop-c1-rendered.log</code>.
+A decisão de defesa deixou de substituir a mira de uma arma carregada já
+alinhada, e cooldown não força recuo nessa condição. Corrigido no controlador,
+sem afrouxar mira/alcance autoritativos ou retirar o check de contribuição.</p>
+<p>Durante o encerramento, surgiram alterações concorrentes em GLBs dos personagens,
+<code>Tools/generate_assets.py</code> e <code>Tools/actor_stature.py</code>, fora desta entrega.
+A divergência de hash do baú é uma pendência do gate geral, não uma falha ocultada
+ou contornada no launcher. A captura C1 documenta o estado renderizado daquela
+rodada, não aprova a arte posteriormente modificada.</p>
+<p>Não executados: controles físicos, LAN/Internet, quatro humanos, missão inteira,
+múltiplos BOTs, todas as combinações no percurso, avaliações de áudio/naturalidade,
+Linux/exports ou medições de FPS/latência. A fixture renderizada dirigida não
+substitui essa aceitação manual nem homologa multiplayer completo.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js"></script>
+        <script src="search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

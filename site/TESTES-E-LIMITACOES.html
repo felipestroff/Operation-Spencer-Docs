@@ -8,7 +8,7 @@
         
         <link rel="canonical" href="https://felipestroff.github.io/Operation-Spencer-Docs/TESTES-E-LIMITACOES.html">
         <link rel="shortcut icon" href="img/favicon.ico">
-        <title>Evidências - Operation Spencer · 0.2.0-alpha</title>
+        <title>Evidências - Operation Spencer · 1.0.0-alpha</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/fontawesome.min.css" rel="stylesheet">
         <link href="css/brands.min.css" rel="stylesheet">
@@ -25,7 +25,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="index.html">Operation Spencer · 0.2.0-alpha</a>
+                <a class="navbar-brand" href="index.html">Operation Spencer · 1.0.0-alpha</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -51,6 +51,14 @@
 </li>
                                     
 <li>
+    <a href="BAU-ANIMACOES-2026-10-15.html" class="dropdown-item">Baú e interações</a>
+</li>
+                                    
+<li>
+    <a href="INTERACOES-PROXIMAS-2026-10-15.html" class="dropdown-item">Proximidade dos objetos</a>
+</li>
+                                    
+<li>
     <a href="MENU-ESC-2026-10-15.html" class="dropdown-item">Menu Esc</a>
 </li>
                                     
@@ -64,6 +72,22 @@
                                     
 <li>
     <a href="MULTIPLAYER-E-SERVIDOR.html" class="dropdown-item">Cooperativo</a>
+</li>
+                                    
+<li>
+    <a href="BOT-COOP-C0-2026-10-15.html" class="dropdown-item">BOT coop C0</a>
+</li>
+                                    
+<li>
+    <a href="BOT-COOP-C1-2026-10-15.html" class="dropdown-item">BOT coop C1</a>
+</li>
+                                    
+<li>
+    <a href="BOT-COOP-AJUSTES-2026-10-15.html" class="dropdown-item">BOT, áudio e janela</a>
+</li>
+                                    
+<li>
+    <a href="ROADMAP-COOP.html" class="dropdown-item">Roadmap coop</a>
 </li>
                                     
 <li>
@@ -88,6 +112,10 @@
                                     
 <li>
     <a href="ASSETS-E-AUDIO.html" class="dropdown-item">Assets e áudio</a>
+</li>
+                                    
+<li>
+    <a href="ESTATURAS-PERSONAGENS-2026-10-15.html" class="dropdown-item">Estaturas dos personagens</a>
 </li>
                                     
 <li>
@@ -229,6 +257,58 @@ Godot, fixtures renderizadas e smoke ENet em localhost. Isso não equivale a
 homologação de gameplay, quatro pessoas jogando, Internet, Linux ou desempenho.
 A primeira entrega não tinha build confirmado; esse estado inicial permanece
 registrado no histórico e não deve ser confundido com os testes posteriores.</p>
+<h3 id="consolidação-para-protocolo-2--16102026">Consolidação para protocolo 2 · 16/10/2026</h3>
+<p>Os <strong>20 primeiros gates</strong> de <code>Tools/Test.ps1 -Presentation</code> passaram na árvore
+consolidada em <code>1100676</code>: 142 CoreTests, build sem avisos/erros, importação,
+smoke ENet com quatro clientes por 35 s, 53 checks ENet, 33 C0, 13 C1, foco
+em host/dedicado (24/25), chat (36), controle manual legado (52), foco nativo
+em quatro janelas (36) e layout com duas/três/quatro janelas (21/31/43), além
+dos validadores e testes de ferramentas. Relatório original preservado em
+<code>Build/validation/20261016-013707-5eac2f00/report.json</code>.</p>
+<p>A fixture de apresentação falhou inicialmente: dois Enters não encerravam a
+abertura atual; duas expectativas ainda descreviam os detalhes sem fundo preto
+e uma ação de baú já removida do contexto. Corrigida em <code>746c61c</code>, passou com
+<strong>634 checks</strong>. O hall passou com <strong>143 checks</strong> em câmeras de produção.
+As fixtures antigas de inspeção precisaram preparar alvos no alcance de 0,65
+unidade e à frente do personagem; ajuste somente nos testes em <code>553e6e6</code>.
+Essa preparação explícita não introduz rotação automática no jogo.</p>
+<p>Resultados complementares: <strong>680 checks de inspeção</strong>, <strong>176 de chuva</strong> e
+<strong>158 de baú</strong>, todos aprovados. A rodada de coleta concorrente também prepara
+o segundo cliente de frente para o item; o cenário foi repetido na inspeção
+completa. O baú usa os argumentos <code>--offline --new</code> documentados para inicializar
+a sessão da fixture. Logs e relatórios locais em
+<code>Build/consolidation-2026-10-16/</code>, incluindo <code>render-report.json</code>,
+<code>render-followup-report.json</code> e <code>inspection-confirmed-report.json</code>; os primeiros
+preservam as falhas e os seguintes registram os retestes, sem apagar evidências.
+Comandos completos constam nesses relatórios. Revisão visual amostral de
+inventário e hall; não equivale à matriz manual completa.</p>
+<p>Passaram ainda 25 testes Python de release/publicação, clone limpo com hashes
+dos geradores, MkDocs strict, links/âncoras de 83 páginas e 579 registros de mídia
+(193,44 MiB). O clone detectou CRLF ausente em dois geradores autenticados;
+<code>3606182</code> preserva seus bytes originais. O CI detectou NumPy ausente; <code>a0f7ef4</code>
+instala <code>Tools/requirements-art.txt</code> no Core e na release. Nenhum desses ajustes
+muda o comportamento do jogo. A <a href="VERSIONAMENTO.html#compatibilidade-da-entrega-com-protocolo-2">compatibilidade da entrega</a>
+exige protocolo 2, mantendo schema de save 3 e estágio alpha.</p>
+<p>São fixtures dirigidas em Windows/localhost, com inputs sintéticos e revisão de
+capturas. Permanecem pendentes controles físicos, quatro pessoas em campanha,
+Internet/LAN, Linux/exportações, audição crítica e medições de desempenho.</p>
+<p>Regressão complementar da etapa 4.2: <strong>190 checks da UI normal</strong> em solo,
+host e cliente ENet aprovados (<code>Build/layout-normal-ui.log</code>), sem argumentos
+de layout. Não substituem a matriz de aceitação manual ou testes em outros
+monitores/DPI.</p>
+<p>Gates completos da etapa 4.2: <strong>14 aprovados</strong>, incluindo Python/toolchain,
+22 checks PowerShell de toolchain, 22 de roster, três testes de logs,
+142 CoreTests, build C# sem avisos/erros, importação Godot, smoke ENet de
+quatro clientes por 35 s, 53 checks ENet, 33 C0, 13 C1 e foco em host/dedicado
+(24/25). Relatório: <code>Build/validation/20261016-012639-3c4ab5b1/report.json</code>;
+log agregado: <code>Build/layout-gates.log</code>. Evidências locais dirigidas, não
+homologação de Internet, Linux ou multiplayer completo.</p>
+<p>Regressão complementar da etapa 4.1: <strong>190 checks da UI normal</strong> em solo,
+host e cliente ENet (<code>Build/focus-normal-ui.log</code>) e <strong>52 checks da alternância
+manual legada</strong>, sem <code>--coop-focus</code> (<code>Build/focus-legacy-manual.log</code>), aprovados.
+Launcher C0 dedicado com três BOTs headless também aprovado: sessão
+<code>98384c0f7599</code>, <code>Build/focus-headless-launcher.log</code>. São fixtures dirigidas,
+não controles físicos ou homologação da experiência completa.</p>
 <table>
 <thead>
 <tr>
@@ -238,6 +318,96 @@ registrado no histórico e não deve ser confundido com os testes posteriores.</
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>Etapa 4.2: layout automático por quantidade · 16/10/2026</td>
+<td><a href="MULTIPLAYER-E-SERVIDOR.html#etapa-42--layout-automático-por-quantidade">Regras e comandos</a>; <code>Build/layout-{core,build,import,four,two,three,free,one,focus,launcher-1,launcher-2,launcher-3,launcher-headless}.log</code>; <code>Build/coop-layout/</code></td>
+<td>142 CoreTests, build e importação aprovados. 140 checks em processos renderizados: quatro Auto 43, dois Auto no monitor 1 23, três Auto 31, quatro Livre 31 e janela única 12. Conferem bordas/título, área útil sem lacunas/sobreposição, inventário/mapa/configurações dentro do viewport, foco/áudio exclusivos e resize/movimento manual persistente. Mais 36 checks C1 de foco/áudio/porta/reconexão/restore com quatro quadrantes (<code>fw-c4199bab7e</code>). Launcher real confirmou 1/2/3 BOTs e dedicado com três headless, estes sem células. Argumentos fora do coop, monitor indisponível e layout em headless recusados. Capturas de hall e inventário largo/alto revisadas. Monitor real disponível: 1920×1080, área útil 1920×1040, DPI 96; outros monitores/escalas não comprovados fisicamente. Origens negativas e divisões ímpares cobertas apenas por cálculo puro. Inputs dirigidos; sem controles físicos, LAN/Internet, Linux, desempenho ou homologação multiplayer completa</td>
+</tr>
+<tr>
+<td>Etapa 4.1: foco, áudio exclusivo e até três BOTs · 16/10/2026</td>
+<td><a href="MULTIPLAYER-E-SERVIDOR.html#controle-manual-do-bot--etapa-4">Regras e comandos atuais</a>; <code>Build/focus-{core,build,import,gates,network-host,network-dedicated,windows-host,windows-dedicated,windows-c0,launcher,docs,mkdocs}.log</code>; <code>Build/validation/20261016-004813-b0b40779/report.json</code></td>
+<td>14 gates aprovados: Python/toolchain, 22 PowerShell de toolchain + 22 de roster, 3 testes de logs, 138 CoreTests, build sem avisos/erros, importação, quatro clientes ENet por 35 s, 53 ENet, 33 C0, 13 C1, 24 de foco host e 25 dedicado. Mais 107 checks em quatro processos renderizados: C1 host 36 (<code>fw-5ad66f7a55</code>), C1 dedicado 36 (<code>fw-580a472b47</code>) e C0 host 35 (<code>fw-75d7607829</code>), sob <code>Build/coop-focus/</code>. Cobrem posse/áudio exclusivos, inatividade, três seguidores, interfaces, SFX existente reproduzido no mixer real/WASAPI em cada janela, volumes preservados, foco externo, porta em curso, comando antigo rejeitado, reconexão sem kit e restore. Launcher real com <code>-BotCount 3</code> aprovado (<code>9d276a2bc77f</code>). A reprodução inicial encontrou focos Godot simultâneos; corrigida pela checagem do foreground nativo. Inputs/foco dirigidos; sem controles físicos, audição humana homologada, LAN/Internet, Linux ou desempenho. Rodada da etapa 4 abaixo permanece histórica; launcher atual não usa timeout de 1 s</td>
+</tr>
+<tr>
+<td>Etapa 4: controle manual pela janela do BOT · 16/10/2026</td>
+<td><a href="MULTIPLAYER-E-SERVIDOR.html#controle-manual-do-bot--etapa-4">Comportamento e reprodução</a>; <code>Build/bot-control-{core,build,render,render-dedicated,normal-ui,gates,docs,mkdocs}.log</code>; <code>Build/validation/20261016-000012-a7fd67fc/report.json</code></td>
+<td>11 gates aprovados: Python/toolchain, 22 PowerShell, 3 testes de logs, 133 CoreTests, build sem avisos/erros, importação, quatro clientes ENet por 35 s, 53 ENet, 33 C0 e 13 C1. Mais 52 checks renderizados em host e 53 em dedicado: teclas mantidas, retomada em 1 s, inventário/equipamento, mapa, chat, configurações, mira/disparo/recarga, remapeamento, giro, inspeção, perda/retorno de foco nativo, Doghall, reconexão sem kit e restore limpando posse manual. BOT permanece mudo e coop ativo. Regressão da UI normal solo/host/cliente: 190 checks aprovados; capturas de inventário/mapa revistas. Inputs sintéticos; sem controles físicos, quatro janelas simultâneas, LAN/Internet, desempenho ou homologação de naturalidade/multiplayer completo</td>
+</tr>
+<tr>
+<td>Etapa 3: faca 8 / pistola 20 · 15/10/2026</td>
+<td><a href="REGRAS-E-BALANCEAMENTO.html#combate">Regras atuais</a>; <code>Build/balance-stage3-{core,gates,render-final,docs,mkdocs}.log</code></td>
+<td>129 CoreTests aprovados: dano real dos cinco personagens, bônus de Chris, modificadores de mira, quatro tiros normais por cão de 65 PV, aparo 12 e faca defensiva 40. Comparação antes/depois do JSON confirmou somente os dois campos Damage. Mais 25 checks renderizados C1 em host ENet: três cães derrotados, BOT contribuiu com quatro disparos/quatro impactos, BOT 130 PV e humano 40 PV, sem coleta, reconexão sem kit e restore. Captura final revisada; inputs sintéticos, não controles físicos, garantia de vitória/naturalidade ou homologação de balanceamento completo. Rodadas C1 anteriores preservam dano e métricas históricos</td>
+</tr>
+<tr>
+<td>Etapa 2 revisada: máquina/móvel à esquerda da escadaria · 15/10/2026</td>
+<td><a href="MANSAO-E-MISSAO.html#hall-revisado--etapa-2-de-15102026">Layout atual e migração</a>; <code>Build/hall-writer-{core,build,import,render,services,gates,style,docs,mkdocs}.log</code></td>
+<td>125 CoreTests, build sem avisos/erros, importação e 143 checks renderizados aprovados: 70 vistas/14 câmeras/cinco humanos, máquina fora do footprint da escada, baú/spray ausentes. Vistas 2 e 10 revisadas visualmente; 24 checks reais de inspeção/salvamento no novo ponto, recuperação e baú restante aprovados. Mesmo modelo PS1/ID, sem novos assets. A rodada sem máquina abaixo é histórica e foi substituída a pedido do desenvolvedor. Sem controles físicos, Internet ou aprovação visual irrestrita de todas as posições</td>
+</tr>
+<tr>
+<td>Etapa 2: hall sem máquina/móvel, baú e spray · 15/10/2026</td>
+<td><a href="MANSAO-E-MISSAO.html#hall-sem-serviços-iniciais--etapa-2-de-15102026">Escopo e migração</a>; <code>Build/hall-stage2-{core,validator,build-final,import,render,services-final,gates-final,docs,mkdocs}.log</code>; <code>Build/validation/20261015-230024-41e6ad53/report.json</code></td>
+<td>11 gates aprovados: 125 CoreTests, Python/toolchain, 22 PowerShell, 3 testes de logs, build sem avisos/erros, importação, quatro clientes ENet por 35 s, 53 ENet, 33 C0 e 13 C1. Core cobre save antigo, migração idempotente, restore, drops/kits preservados e retirada do conteúdo legado em um baú restante. 142 checks renderizados, 70 vistas do hall (14 câmeras × cinco humanos), duas vistas principais revisadas; 24 checks de serviços na sala de medicamentos aprovados. Captura pública renovada e anterior arquivada. Sem controles físicos, LAN/Internet ou homologação completa; contagens/capturas anteriores de três baús permanecem históricas</td>
+</tr>
+<tr>
+<td>Etapa 1: seis mensagens e R11/R26/R30 silenciosos · 15/10/2026</td>
+<td><a href="MULTIPLAYER-E-SERVIDOR.html#log-e-chat">Escopo atual</a>; <code>Build/chat-stage1-{validator,core,build,import,render,network-smoke,network,docs,mkdocs}.log</code></td>
+<td>Validador Python, 123 CoreTests, build sem avisos/erros, importação e 36 checks renderizados aprovados. Recusas de ação em andamento, disparo sem mira e recarga desnecessária continuam sem alterar o mundo. UI confirma seis mensagens recentes (sétima descarta a mais antiga), altura mínima de 360, quebra sem corte, azul/verde, margens, campo separado e expiração em 1024×768, 1280×720 e 720×900. Captura larga revisada visualmente; fixture sem cenário, sem controles físicos ou homologação de contraste em todas as câmeras. Rodadas anteriores de três mensagens abaixo permanecem históricas</td>
+</tr>
+<tr>
+<td>Chat com azul/verde do inventário · 15/10/2026</td>
+<td><a href="MULTIPLAYER-E-SERVIDOR.html#log-e-chat">Estilo atual</a>; <code>Build/chat-colors-{validator,core,build,import,render,docs,mkdocs}.log</code></td>
+<td>Validador Python, build sem avisos/erros, importação e 33 checks renderizados aprovados: estilos compartilhados, pixels do fundo azul e mensagens verdes, posição, quebra de linha, foco e expiração em 1024×768, 1280×720 e 720×900. Captura larga revisada visualmente. Fixture de UI sem cenário; sem controles físicos ou comprovação de contraste em todas as câmeras. Rede/save não alterados; matriz ENet não reexecutada nesta revisão de cores</td>
+</tr>
+<tr>
+<td>Textos selecionados removidos e log/chat na borda · 15/10/2026</td>
+<td><a href="MULTIPLAYER-E-SERVIDOR.html#log-e-chat">Escopo e reprodução</a>; <code>Build/chat-log-{validator,core,build,import,render,full-gates,docs,mkdocs}.log</code>; regressão <code>Build/validation/20261015-212445-2b726e8c/report.json</code></td>
+<td>11 gates completos aprovados: Python, toolchain, 22 PowerShell, 3 testes de logs, 122 CoreTests, build sem avisos/erros, importação, smoke ENet de quatro clientes por 35 s, 53 ENet, 33 C0 e 13 C1 com reconexão/restore. Mais 24 checks renderizados: solo sem log, eventos silenciosos, filtro de travessia, três mensagens com quebra sem corte, borda real, campo sem sobreposição e expiração. Capturas dirigidas em 1024×768, 1280×720 e 720×900 revisadas; fixture de UI sem cenário, não aprovação de contraste em todas as câmeras ou controles físicos. Documentação/hashes e MkDocs strict aprovados; sem homologar multiplayer completo</td>
+</tr>
+<tr>
+<td>Título FILTROS em VÍDEO · 15/10/2026</td>
+<td><code>Build/filters-title-{validator,core,build,import,render,docs,mkdocs}.log</code> e <a href="media/settings-options.png">captura atual</a></td>
+<td>Python, 117 CoreTests, build sem avisos/erros, importação Godot, 248 checks renderizados solo/host/cliente ENet local, hashes/documentação e MkDocs strict aprovados. Captura revisada visualmente: título antes das duas opções, sem sobreposição. Inputs sintéticos; sem controles físicos ou homologação multiplayer</td>
+</tr>
+<tr>
+<td>BOT silencioso, movimento e modo de janela</td>
+<td><a href="BOT-COOP-AJUSTES-2026-10-15.html">Ajustes de 15/10/2026</a></td>
+<td>117 CoreTests, reprodução de 84 → 0 pausas em 180 frames dirigidos, 248 checks UI solo/host/cliente ENet e 27 do BOT renderizado; launcher confirma humano WASAPI não mudo, BOT Dummy mudo, ambos Windowed/redimensionáveis e preferências normais intactas. Gates completos e limites no relatório; sem controles físicos, quatro janelas renderizadas ou homologação de naturalidade</td>
+</tr>
+<tr>
+<td>Estaturas e animações dos cinco humanos</td>
+<td><a href="ESTATURAS-PERSONAGENS-2026-10-15.html">Rodada de 15/10/2026</a></td>
+<td>116 CoreTests, Python/build/import, comparação uniforme dos GLBs; 111 checks de altura/armas/recuperação, 593 de movimento/110 clipes, 264 de escadas e 711 de arte; 925 capturas nas 185 câmeras. Galeria/MkDocs/links aprovados; sem controles físicos, multiplayer ou desempenho</td>
+</tr>
+<tr>
+<td>BOT coop C1, seguir e apoiar Doghall</td>
+<td><a href="BOT-COOP-C1-2026-10-15.html">Rodada de 15/10/2026</a></td>
+<td>116 CoreTests, 11/12 checks host/dedicado e 23 renderizados: percurso inicial, dano nos cães, sem coleta, reconexão sem kit, restore e filtro só de locais no log. Regressão anterior: 53 ENet, 33 C0, smoke de quatro clientes por 35 s. Gate geral posterior bloqueado por hash do gerador de baú divergente em alteração externa ao BOT. Sem controles físicos, LAN/Internet, homologação de naturalidade ou dano zero</td>
+</tr>
+<tr>
+<td>Inicialização normal após ajuste de alcance</td>
+<td><a href="CORRECAO-INICIO-ALCANCE-2026-10-15.html">Correção de 15/10/2026</a></td>
+<td>Run.ps1 completo, 110 CoreTests, validador Python, build/import, abertura normal e smoke ENet de quatro clientes por 35 s aprovados; alcance preservado; sem homologar a revisão completa das interações</td>
+</tr>
+<tr>
+<td>Proximidade dos demais objetos</td>
+<td><a href="INTERACOES-PROXIMAS-2026-10-15.html">Rodada de 15/10/2026</a></td>
+<td>110 CoreTests, 188 sítios geometricamente acessíveis, 208 checks App solo/host/cliente ENet para nove tipos e tecla E, 53 ENet, smoke de quatro clientes por 35 s, 16 Python e build/import. Inputs sintéticos; sem controles físicos/Internet/desempenho</td>
+</tr>
+<tr>
+<td>BOT coop C0, sessão isolada</td>
+<td><a href="BOT-COOP-C0-2026-10-15.html">Rodada de 15/10/2026</a></td>
+<td>104 CoreTests, 33 checks C0 ENet e 3 renderizados; regressão de 53 checks ENet e smoke de quatro clientes. BOT neutro; sem acompanhamento/combate, controles físicos, LAN/Internet ou desempenho</td>
+</tr>
+<tr>
+<td>Alcance curto do baú</td>
+<td><a href="BAU-ANIMACOES-2026-10-15.html#alcance-curto--ajuste-de-1510">Ajuste de 15/10/2026</a></td>
+<td>107 CoreTests e 138 checks App solo/host/cliente ENet: distância à borda, três baús/quatro faces, prompt, recusa de abertura/transferência distante e cancelamento. Rodada local com inputs sintéticos; sem controles físicos/Internet</td>
+</tr>
+<tr>
+<td>Baú animado e interação somente de frente</td>
+<td><a href="BAU-ANIMACOES-2026-10-15.html">Rodada de 15/10/2026</a></td>
+<td>123 checks App solo/host/cliente ENet, sete tipos de alvo na UI, oito vistas do GLB e três baús em câmeras de produção; 72 checks de regressão, 102 CoreTests, 16 Python, build/import, 53 ENet e smoke de quatro clientes por 35 s. Inputs sintéticos; sem controles físicos, Internet ou audição crítica</td>
+</tr>
 <tr>
 <td>Enter guarda e retira no baú</td>
 <td><a href="BAU-LISTA-DETALHES-2026-10-15.html#transferência-por-enter--complemento-de-1510">Complemento de 15/10/2026</a></td>
@@ -336,6 +506,26 @@ registrado no histórico e não deve ser confundido com os testes posteriores.</
 </tbody>
 </table>
 <h2 id="gates-reexecutáveis">Gates reexecutáveis</h2>
+<p>Etapa 3: 11 gates aprovados em
+<code>Build/validation/20261015-232936-1d3e7170/report.json</code>, com Python/toolchain,
+129 CoreTests, build/import, quatro clientes ENet por 35 s, 53 ENet, 33 C0 e
+13 C1 com reconexão/restore. A rodada renderizada adicional teve 25 checks
+aprovados (<code>Build/balance-stage3-render-final.log</code>). Documentação/hashes e
+MkDocs strict validados; sem controles físicos, Internet ou métricas de desempenho.</p>
+<p>Revisão final da máquina à esquerda da escadaria: 11 gates aprovados em
+<code>Build/validation/20261015-232056-d48447da/report.json</code>, incluindo 125 CoreTests,
+smoke de quatro clientes por 35 s, 53 ENet, 33 C0 e 13 C1 com reconexão/restore.
+Mais 190 checks de UI solo/host/cliente ENet aprovados em
+<code>Build/hall-writer-style.log</code>; 143 de render e 24 de serviços nos logs da linha
+atual da tabela. Python, build/import, documentação/hashes e MkDocs strict
+aprovados; evidência dirigida, não controles físicos ou homologação completa.</p>
+<p>Regressão ENet da etapa 1 de 15/10/2026: smoke de quatro clientes por 35 segundos
+e 53 checks de <code>NetworkAcceptance</code>, incluindo concorrência, reconexão e restore,
+aprovados em localhost (<code>Build/chat-stage1-network-smoke.log</code> e
+<code>Build/chat-stage1-network.log</code>). Isso não homologa Internet ou partida completa.</p>
+<p>Para repetir o layout atual do log/chat no renderer:
+<code>&amp; $env:GODOT_DOTNET --path . res://Tools/ChatLogAcceptance.tscn</code>.
+Capturas locais em <code>Build/chat-log/</code>; não substituem a aceitação com pessoas.</p>
 <pre><code class="language-powershell">python -B Tools/validate_project.py --report Build/validation-current.json
 python -B Tools/validate_toolchain.py
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Tools\Test-Toolchain.ps1
@@ -357,6 +547,10 @@ Aplicar os casos correspondentes ao comportamento alterado. Novas versões não
 validam automaticamente os cenários pendentes das anteriores.</p>
 <h2 id="limitações-que-permanecem">Limitações que permanecem</h2>
 <ul>
+<li>A <a href="BOT-COOP-C1-2026-10-15.html">C1 do BOT</a> cobre acompanhamento e apoio contra
+  cães no trajeto inicial em testes locais dirigidos; não garante vitória ou
+  naturalidade. Exploração, UI pelo BOT, socorro/respawn automático, rádio VOIP
+  e gestos compartilhados continuam no <a href="ROADMAP-COOP.html">roadmap coop</a>.</li>
 <li>Multiplayer completo, partidas por Internet/LAN e exportações não são
   certificados por testes Core ou pelo smoke de localhost.</li>
 <li>Sem métricas atuais de FPS, memória, RTT, perdas ou promessa de desempenho.</li>

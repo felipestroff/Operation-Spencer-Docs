@@ -8,7 +8,7 @@
         
         <link rel="canonical" href="https://felipestroff.github.io/Operation-Spencer-Docs/ASSETS-E-AUDIO.html">
         <link rel="shortcut icon" href="img/favicon.ico">
-        <title>Assets e áudio - Operation Spencer · 0.2.0-alpha</title>
+        <title>Assets e áudio - Operation Spencer · 1.0.0-alpha</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/fontawesome.min.css" rel="stylesheet">
         <link href="css/brands.min.css" rel="stylesheet">
@@ -25,7 +25,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="index.html">Operation Spencer · 0.2.0-alpha</a>
+                <a class="navbar-brand" href="index.html">Operation Spencer · 1.0.0-alpha</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -51,6 +51,14 @@
 </li>
                                     
 <li>
+    <a href="BAU-ANIMACOES-2026-10-15.html" class="dropdown-item">Baú e interações</a>
+</li>
+                                    
+<li>
+    <a href="INTERACOES-PROXIMAS-2026-10-15.html" class="dropdown-item">Proximidade dos objetos</a>
+</li>
+                                    
+<li>
     <a href="MENU-ESC-2026-10-15.html" class="dropdown-item">Menu Esc</a>
 </li>
                                     
@@ -64,6 +72,22 @@
                                     
 <li>
     <a href="MULTIPLAYER-E-SERVIDOR.html" class="dropdown-item">Cooperativo</a>
+</li>
+                                    
+<li>
+    <a href="BOT-COOP-C0-2026-10-15.html" class="dropdown-item">BOT coop C0</a>
+</li>
+                                    
+<li>
+    <a href="BOT-COOP-C1-2026-10-15.html" class="dropdown-item">BOT coop C1</a>
+</li>
+                                    
+<li>
+    <a href="BOT-COOP-AJUSTES-2026-10-15.html" class="dropdown-item">BOT, áudio e janela</a>
+</li>
+                                    
+<li>
+    <a href="ROADMAP-COOP.html" class="dropdown-item">Roadmap coop</a>
 </li>
                                     
 <li>
@@ -88,6 +112,10 @@
                                     
 <li>
     <a href="ASSETS-E-AUDIO.html" class="dropdown-item active" aria-current="page">Assets e áudio</a>
+</li>
+                                    
+<li>
+    <a href="ESTATURAS-PERSONAGENS-2026-10-15.html" class="dropdown-item">Estaturas dos personagens</a>
 </li>
                                     
 <li>
@@ -134,7 +162,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="JILL-PORTRAITS-2026-10-15.html" class="nav-link">
+                                <a rel="next" href="ESTATURAS-PERSONAGENS-2026-10-15.html" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -247,6 +275,18 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="assets-estilo-e-áudio">Assets, estilo e áudio</h1>
+<p><strong>Hall revisado · etapa 2 de 15/10/2026.</strong> A máquina com seu móvel fica à
+esquerda da escadaria, seguindo as referências fornecidas. Baú e spray do
+cenário permanecem removidos em <code>Tools/generate_data.py</code>.
+Nenhum GLB, textura, SFX, câmera ou luz foi alterado. Os modelos continuam usados
+nas demais salas. A <a href="media/hall.png">captura atual</a> substitui a anterior,
+preservada no histórico e manifesto; <a href="DOCUMENTACAO.html">reprodução</a>.</p>
+<p><strong>Baú articulado · 15/10/2026.</strong> O gerador <code>--chest</code> preserva madeira, ferragens,
+silhueta facetada e texturas de 64 px/nearest; separa corpo oco e tampa com
+dobradiça traseira. O GLB contém abertura de 1,1 s e fechamento de 0,8 s.
+Hashes em <code>Assets/Models/chest-art-manifest.json</code>; SFX existentes acompanham
+a tampa no cenário, inclusive para observadores, sem novos áudios. Nenhuma
+miniatura de inventário usa esse prop. <a href="BAU-ANIMACOES-2026-10-15.html">Vistas e validação</a>.</p>
 <p><strong>Arquitetura e pisos revisados · 15/10/2026.</strong> As oito texturas iniciais ainda
 em uso foram substituídas por albedos originais PS1 de 64/128 px com nearest e
 UVs em metros, começando por patamar e colunas. Fonte em
@@ -505,7 +545,14 @@ os 366 nomes de clipes anteriores foram mantidos, com os movimentos refeitos;
 45 ações rastejantes e cinco clipes de levantar completam 416. A pose base foi ajustada, assim como o
 braço de apoio ao mirar. <code>ActorView.Equip</code> alinha o ponto da empunhadura à palma.
 Ausência de braço/dedos é arte estática; desmembramento por tiros não foi adicionado.</p>
-<p>Regeneração seletiva: <code>python -B Tools/generate_assets.py --actors</code>.
+<p><strong>Estaturas dos cinco humanos · 15/10/2026.</strong> Jill 1,66 m, Chris 1,81 m,
+Wesker 1,83 m, Rebecca 1,61 m e Barry 1,86 m, pela tabela fornecida pelo
+desenvolvedor. Bake uniforme em <code>Tools/actor_stature.py</code>, manifesto de fontes,
+GLBs e fatores em <code>Assets/Models/hero-stature-manifest.json</code>. Medida: sola ao
+topo visível, incluindo cabelo/boina, em idle t=0. Passada/cadência e palma
+acompanham o bake; armas preservam o tamanho. <a href="ESTATURAS-PERSONAGENS-2026-10-15.html">Galeria e validação</a>.</p>
+<p>Regeneração dos cinco humanos: <code>python -B Tools/generate_assets.py --heroes</code>.
+Regeneração de todos os atores: <code>python -B Tools/generate_assets.py --actors</code>.
 Após build/importação, executar <code>res://Tools/ActorArtPreview.tscn</code> com renderer
 Compatibility e <code>python -B Tools/build_actor_gallery.py</code>. Galeria comparativa
 local em <code>Build/actors-ps1/index.html</code>, capturas sem retoque em <code>views/</code>,
@@ -534,6 +581,11 @@ reais em <code>Build/actors-ps1/motion/</code>. Aceita <code>--quick</code>, <co
 O modo de métricas preserva a galeria anterior. Capturas do runtime usam
 alvos sintéticos e não equivalem a uma partida manual. Apoio em plano e
 integridade dos loops não comprovam naturalidade nem igualdade às pranchas.</p>
+<p>Para os cinco humanos atuais, usar <code>--heroes --all-clips</code> e
+<code>--output=res://Build/hero-stature-2026-10-15/motion</code>; a mesma cena confere todos
+os clipes e o runtime dos cinco. <code>HeroStatureAcceptance.tscn</code> mede alturas,
+armas/recuperação e captura os humanos nas câmeras de produção. A comparação
+anterior em <code>actors-ps1/motion</code> permanece histórica até nova execução explícita.</p>
 <h2 id="regra-de-arte-ps1-para-novos-itens-e-objetos">Regra de arte PS1 para novos itens e objetos</h2>
 <p><strong>Tetos aprovados e integrados · 14/10/2026.</strong> Caixotões de madeira,
 reboco envelhecido, forro de serviço e alvenaria escurecida nas 33 salas internas;
@@ -573,6 +625,9 @@ Galeria e limites em <a href="CLARAO-TROVAO-2026-10-14.html">Clarão do trovão<
 uniforme pela aparência, aplicada por <code>RoomView</code> em vez da variante de combate.
 GLBs/texturas/clips e geradores foram preservados. Os nove zumbis ficam próximos
 da altura de Jill em repouso, mantendo curvatura, proporções e detalhes PS1.
+Essa comparação datada usava Jill antes da revisão de estaturas de 15/10;
+os zumbis não foram redimensionados novamente. As alturas atuais dos humanos
+estão no <a href="ESTATURAS-PERSONAGENS-2026-10-15.html">relatório de estaturas</a>.
 <code>ActorView</code> já considera <code>Scale.X</code> na passada/cadência; essa lógica não mudou.
 Validação integrada: <code>res://Tools/ZombieScalePreview.tscn</code>; galeria:
 <code>python -B Tools/zombie_scale_gallery.py</code>. <code>--baseline</code> foi executado antes
@@ -854,8 +909,11 @@ do Godot acima.</p>
 O shader opcional de quantização de vértices e o efeito CRT podem ser desligados.
 Não foi implementada emulação completa de distorção afim ou de hardware do PS1.</p>
 <h2 id="regeneração-opcional">Regeneração opcional</h2>
-<p>O jogo já recebe os assets prontos; Python/Pillow/NumPy não são necessários para
-jogar ou compilar. Para editar o pipeline de arte, em um ambiente virtual:</p>
+<p>O jogo já recebe os assets prontos; seu runtime e a compilação direta por
+Godot/.NET não dependem de Python. Os validadores dos scripts de desenvolvimento
+também verificam numericamente os GLBs e precisam de NumPy; instale
+<code>Tools/requirements-art.txt</code> para validação e geração de arte. Para editar o
+pipeline, em um ambiente virtual:</p>
 <pre><code class="language-bash">python -m venv .venv
 # Ative o ambiente conforme o sistema operacional.
 python -m pip install -r Tools/requirements-art.txt

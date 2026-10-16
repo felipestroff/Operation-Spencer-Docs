@@ -8,7 +8,7 @@
         
         <link rel="canonical" href="https://felipestroff.github.io/Operation-Spencer-Docs/CONTROLES.html">
         <link rel="shortcut icon" href="img/favicon.ico">
-        <title>Controles - Operation Spencer · 0.2.0-alpha</title>
+        <title>Controles - Operation Spencer · 1.0.0-alpha</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/fontawesome.min.css" rel="stylesheet">
         <link href="css/brands.min.css" rel="stylesheet">
@@ -25,7 +25,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="index.html">Operation Spencer · 0.2.0-alpha</a>
+                <a class="navbar-brand" href="index.html">Operation Spencer · 1.0.0-alpha</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -51,6 +51,14 @@
 </li>
                                     
 <li>
+    <a href="BAU-ANIMACOES-2026-10-15.html" class="dropdown-item">Baú e interações</a>
+</li>
+                                    
+<li>
+    <a href="INTERACOES-PROXIMAS-2026-10-15.html" class="dropdown-item">Proximidade dos objetos</a>
+</li>
+                                    
+<li>
     <a href="MENU-ESC-2026-10-15.html" class="dropdown-item">Menu Esc</a>
 </li>
                                     
@@ -64,6 +72,22 @@
                                     
 <li>
     <a href="MULTIPLAYER-E-SERVIDOR.html" class="dropdown-item">Cooperativo</a>
+</li>
+                                    
+<li>
+    <a href="BOT-COOP-C0-2026-10-15.html" class="dropdown-item">BOT coop C0</a>
+</li>
+                                    
+<li>
+    <a href="BOT-COOP-C1-2026-10-15.html" class="dropdown-item">BOT coop C1</a>
+</li>
+                                    
+<li>
+    <a href="BOT-COOP-AJUSTES-2026-10-15.html" class="dropdown-item">BOT, áudio e janela</a>
+</li>
+                                    
+<li>
+    <a href="ROADMAP-COOP.html" class="dropdown-item">Roadmap coop</a>
 </li>
                                     
 <li>
@@ -88,6 +112,10 @@
                                     
 <li>
     <a href="ASSETS-E-AUDIO.html" class="dropdown-item">Assets e áudio</a>
+</li>
+                                    
+<li>
+    <a href="ESTATURAS-PERSONAGENS-2026-10-15.html" class="dropdown-item">Estaturas dos personagens</a>
 </li>
                                     
 <li>
@@ -134,7 +162,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="MENU-ESC-2026-10-15.html" class="nav-link">
+                                <a rel="next" href="BAU-ANIMACOES-2026-10-15.html" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -281,22 +309,43 @@ servidor retorna diretamente. Nas confirmações, setas/Tab alternam,
 Enter/Espaço ativam e Esc cancela; CANCELAR tem foco inicial. Clique
 esquerdo confirma o botão escolhido. No cooperativo em partida, o fundo
 fica apenas escurecido; nas demais confirmações, também fica desfocado.</p>
-<p>O jogo inicia em tela cheia na resolução do monitor. O cenário preenche a tela
+<p>O padrão continua sendo tela cheia na resolução do monitor; a preferência
+<strong>VÍDEO → MODO DE JANELA → Tela cheia / Janela</strong> é aplicada ao iniciar e pode
+ser alterada ao vivo. Janela é redimensionável, permitindo encaixe lado a lado
+ou em quadrantes pelo Windows. A sessão de teste com BOT inicia os dois clientes
+em Janela, sem substituir a preferência normal. O cenário preenche a tela
 mantendo a proporção; a interface permanece centralizada e proporcional.
 As opções <strong>Retrô limpo</strong> e <strong>Pixels maiores</strong> mudam a densidade de pixels 3D,
-sem alterar o tamanho dos controles. <a href="TELA-CHEIA-2026-10-14.html">Validação e limites</a>.</p>
+sem alterar o tamanho dos controles. <a href="BOT-COOP-AJUSTES-2026-10-15.html">Modo de janela e limites</a>.</p>
 <h2 id="interface-durante-a-partida">Interface durante a partida</h2>
 <p>No singleplayer não há HUD permanente ou log. No multiplayer,
 apenas o log do servidor aparece no canto inferior esquerdo: texto discreto,
-sem painel de fundo, com até três mensagens e desaparecimento após seis
+sem painel de fundo, com até seis mensagens e desaparecimento após seis
 segundos sem atualização (fade no último segundo). Snapshots sem mensagem
-não renovam esse prazo. Eventos e respostas do servidor alimentam esse log.
+não renovam esse prazo. Eventos e respostas do servidor alimentam esse log,
+com as <a href="MULTIPLAYER-E-SERVIDOR.html#log-e-chat">remoções selecionadas de textos</a>.
+O log e a entrada do chat usam a borda real inferior esquerda da tela, inclusive
+em janelas largas; cada mensagem pode ocupar várias linhas visuais.
+Há margem inferior e o log sobe enquanto o campo de escrita está aberto.
+O campo usa o azul padrão do inventário/configurações; mensagens enviadas
+usam o verde padrão das quantidades de itens, mantendo o histórico sem fundo.
+Identificação na animação e SFX de portas não mudam.
 Os nomes dos aliados não ficam sobre os personagens; continuam disponíveis nos
 painéis abertos por comando e nas mensagens do servidor.</p>
 <p>Inventário, mapa, puzzles, baú, máquina de escrever e menu Esc continuam
 disponíveis por comando. O chat abre por T somente no multiplayer. As
 transições de porta mantêm a animação, sem legenda sobreposta.</p>
 <h2 id="menu-esc">Menu Esc</h2>
+<p>Na sessão de testes com BOTs, focar uma janela já transfere controle humano e
+áudio para ela. Até quatro janelas: um humano e três BOTs; os demais acompanham
+o humano atual. A anterior fecha seus painéis e reassume IA, sem trocar perfil
+ou inventário. Inatividade não devolve o humano à IA. Fora do jogo, mantém-se
+o último humano, sem comandos/áudio e sem pausar o coop. Não há alternância
+de personagem dentro da mesma janela. <a href="MULTIPLAYER-E-SERVIDOR.html#controle-manual-do-bot--etapa-4">Detalhes</a>.
+O launcher encaixa as janelas automaticamente conforme a quantidade, somente
+na abertura. Depois pode movê-las/redimensioná-las livremente; trocar foco não
+reorganiza a grade. <code>-Layout Livre</code> desativa o encaixe e <code>-Monitor</code> escolhe o
+monitor. <a href="MULTIPLAYER-E-SERVIDOR.html#etapa-42--layout-automático-por-quantidade">Layouts e opções</a>.</p>
 <p>Esc abre um overlay de tela inteira sem painel sólido, título ou texto
 explicativo. CONTINUAR, CONFIGURAÇÕES e SAIR usam o mesmo estilo dos menus
 iniciais: texto cinza com sombra preta e destaque mais claro na seleção.
@@ -312,16 +361,20 @@ mantém o menu; continuar/desconectar restaura os efeitos.
 <a href="MENU-ESC-2026-10-15.html">Capturas, testes e limites</a>.</p>
 <h2 id="configurações">Configurações</h2>
 <p>O painel metálico abre em CONTROLES, com teclado/mouse ilustrados e tabelas dos
-comandos reais do jogo. VÍDEO contém resolução interna, filtro CRT,
+comandos reais do jogo. VÍDEO contém resolução interna, modo de janela, filtro CRT,
 instabilidade dos vértices e brilho; SOM contém música e efeitos.
 Setas esquerda/direita alternam as abas quando o cabeçalho tem foco.
 Tab ou cima/baixo navegam pelos campos; esquerda/direita ajustam sliders e
 Enter ativa a seleção. O mouse também permite clicar e arrastar os ajustes.
 Os ajustes são aplicados ao vivo; tanto SAIR quanto Esc salvam e voltam ao menu
-Esc. VÍDEO mostra apenas os campos, com o rótulo RESOLUÇÃO INTERNA; SOM contém
+Esc. VÍDEO mostra RESOLUÇÃO INTERNA, MODO DE JANELA e o título FILTROS acima
+das opções de televisão e instabilidade de vértices; SOM contém
 apenas os volumes. A pausa/desfoque/abafamento seguem ativos
 somente no solo; o cooperativo continua rodando com fundo apenas escurecido.
-<a href="INTERFACE-AZUL-2026-10-15.html">Capturas e evidências atuais</a>.</p>
+<a href="INTERFACE-AZUL-2026-10-15.html">Capturas e evidências atuais</a>.
+O <a href="BOT-COOP-AJUSTES-2026-10-15.html">seletor de janela</a> foi acrescentado antes do
+título FILTROS. No cliente BOT, todo áudio permanece silenciado mesmo ao mudar os volumes;
+o cliente humano continua com seu áudio normal, inclusive sons do personagem BOT.</p>
 <p>Campos de vídeo e trilhas usam o azul do inventário, containers escuros o fundo
 do visor e confirmações o estilo das ações de contexto. Percentuais usam o
 contador verde; os campos de teclas usam esse verde sem preenchimento.
@@ -351,7 +404,12 @@ pausa apenas no solo e o cooperativo ativo.
 <p>E age diretamente no primeiro objeto da lista de proximidade, mesmo com vários
 alvos ao alcance. Empates mantêm a ordem da fila; não há seleção intermediária
 de objetos. Se o alvo for uma porta destrancada,
-inicia a passagem diretamente; se for baú, abre o inventário sem caixa de texto.
+inicia a passagem diretamente; se for baú, anima a tampa e depois abre o inventário,
+sem caixa de texto. O personagem precisa estar de frente para qualquer interação,
+com margem de 60° para cada lado, e a até 0,65 unidade do objeto: borda dos
+móveis, superfície de portas/janelas ou ponto dos itens, puzzles e corpos.
+A distância é da posição do personagem; visada e altura também precisam ser
+compatíveis. <a href="INTERACOES-PROXIMAS-2026-10-15.html">Critérios e evidências</a>.
 Nas demais inspeções, mostra as informações do alvo diretamente
 no canto inferior esquerdo. Fonte branca com sombra preta, sem fundo
 ou borda na caixa de texto. O log multiplayer fica oculto durante a inspeção.
@@ -372,7 +430,7 @@ real da fachada. Ambas têm enquadramento frontal fixo por objeto, independente
 da posição ou orientação do personagem. Fechar ou interromper a leitura
 restaura a câmera fixa.</p>
 <p>Móveis, quadros, notas, puzzles, cadáveres de zumbis, máquina de escrever
-e portas principais têm descrições. Baú abre o inventário diretamente; salvar
+e portas principais têm descrições. Baú anima a tampa antes do inventário; salvar
 e recuperar sobreviventes pedem confirmação. A saída explica os requisitos;
 a regra existente de extração automática após oito segundos continua válida.</p>
 <p>Somente offline a leitura pausa simulação, relógio e animação dos atores;
@@ -560,7 +618,17 @@ o tiro quando estão na trajetória. <a href="TIROS-OBSTACULOS-2026-10-15.html">
 <p>A rolagem do inventário acompanha o foco; seleção/foco usam cantos vermelhos,
 sem borda amarela. O estado de saúde continua atualizando com dano durante o painel.</p>
 <h3 id="baú">Baú</h3>
-<p>E no baú abre o mesmo layout do inventário, com a lista no visor de inspeção.
+<p>O acesso ao baú exige estar de frente (até 60° para cada lado) e próximo:
+no máximo 0,65 unidade entre a posição do personagem e a borda
+do móvel. O mesmo alcance vale para abrir, manter a HUD e guardar/retirar itens.
+Fora dele, o baú não aparece entre as interações e o servidor recusa a ação.
+Dentro desse alcance, E bloqueia somente o personagem e abre a tampa em 1,1 s;
+a HUD aguarda o término. Fechar a HUD libera o personagem
+imediatamente enquanto a tampa fecha em 0,8 s. Esc durante a abertura cancela.
+No solo, a simulação continua durante as animações e pausa apenas dentro da HUD;
+no cooperativo, a partida continua durante todo o fluxo. A tampa compartilhada
+só fecha quando o último usuário sai. <a href="BAU-ANIMACOES-2026-10-15.html">Animações e testes</a>.</p>
+<p>A HUD usa o mesmo layout do inventário, com a lista no visor de inspeção.
 MAPA, ARQUIVOS e RÁDIO ficam bloqueados, inclusive o atalho M; SAIR, I/Tab
 ou Esc fecham. Não há título acima da lista nem preview/modelo do item.
 Um clique no inventário seleciona e mostra nome/descrição no painel preto inferior,

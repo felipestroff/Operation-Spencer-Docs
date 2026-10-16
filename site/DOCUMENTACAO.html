@@ -8,7 +8,7 @@
         
         <link rel="canonical" href="https://felipestroff.github.io/Operation-Spencer-Docs/DOCUMENTACAO.html">
         <link rel="shortcut icon" href="img/favicon.ico">
-        <title>Documentação - Operation Spencer · 0.2.0-alpha</title>
+        <title>Documentação - Operation Spencer · 1.0.0-alpha</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/fontawesome.min.css" rel="stylesheet">
         <link href="css/brands.min.css" rel="stylesheet">
@@ -25,7 +25,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="index.html">Operation Spencer · 0.2.0-alpha</a>
+                <a class="navbar-brand" href="index.html">Operation Spencer · 1.0.0-alpha</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -51,6 +51,14 @@
 </li>
                                     
 <li>
+    <a href="BAU-ANIMACOES-2026-10-15.html" class="dropdown-item">Baú e interações</a>
+</li>
+                                    
+<li>
+    <a href="INTERACOES-PROXIMAS-2026-10-15.html" class="dropdown-item">Proximidade dos objetos</a>
+</li>
+                                    
+<li>
     <a href="MENU-ESC-2026-10-15.html" class="dropdown-item">Menu Esc</a>
 </li>
                                     
@@ -64,6 +72,22 @@
                                     
 <li>
     <a href="MULTIPLAYER-E-SERVIDOR.html" class="dropdown-item">Cooperativo</a>
+</li>
+                                    
+<li>
+    <a href="BOT-COOP-C0-2026-10-15.html" class="dropdown-item">BOT coop C0</a>
+</li>
+                                    
+<li>
+    <a href="BOT-COOP-C1-2026-10-15.html" class="dropdown-item">BOT coop C1</a>
+</li>
+                                    
+<li>
+    <a href="BOT-COOP-AJUSTES-2026-10-15.html" class="dropdown-item">BOT, áudio e janela</a>
+</li>
+                                    
+<li>
+    <a href="ROADMAP-COOP.html" class="dropdown-item">Roadmap coop</a>
 </li>
                                     
 <li>
@@ -88,6 +112,10 @@
                                     
 <li>
     <a href="ASSETS-E-AUDIO.html" class="dropdown-item">Assets e áudio</a>
+</li>
+                                    
+<li>
+    <a href="ESTATURAS-PERSONAGENS-2026-10-15.html" class="dropdown-item">Estaturas dos personagens</a>
 </li>
                                     
 <li>
@@ -219,6 +247,27 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="manutenção-da-documentação-visual">Manutenção da documentação visual</h1>
+<p>Para recapturar o hall com a máquina/móvel à esquerda da escadaria e sem baú/spray, execute
+<code>Tools/HeroStatureAcceptance.tscn -- --hall-only</code> no Godot renderizado e
+<code>python -B Tools/build_public_galleries.py --refresh-hall-layout</code>.
+A fixture grava 70 vistas (14 câmeras × cinco humanos) em <code>Build/hall-layout/</code>;
+o exportador troca somente a imagem pública do hall, arquiva a anterior em
+<code>media/history/pre-hall-layout-2026-10-15</code> e a rodada intermediária sem máquina
+em <code>media/history/pre-hall-writer-2026-10-15</code>, atualizando acervo/manifesto.
+Não usar a rodada anterior de estaturas como captura atual do layout do hall.</p>
+<p>A captura de VÍDEO inclui o título FILTROS. Depois da fixture
+<code>PauseMenuAcceptance.tscn -- --offline --new --character jill --profile filters-video --campaign filters-video --settings-suite</code>,
+executar <code>python -B Tools/build_public_galleries.py --refresh-filters</code>.
+O gerador preserva a vista anterior em <code>media/history/pre-filters-2026-10-15/</code>
+e atualiza a captura, o acervo e os hashes sem reescrever as evidências antigas.</p>
+<p>Estaturas atuais, clipes e escadaria dos cinco humanos:
+<a href="ESTATURAS-PERSONAGENS-2026-10-15.html">relatório</a> e
+<a href="galerias/estaturas/index.html">galeria</a>. Após os testes no Godot, regenerar com
+<code>python -B Tools/build_public_galleries.py --refresh-hero-stature</code> e
+<code>python -B Tools/build_actor_gallery.py</code>. O primeiro preserva as quatro cenas
+anteriores em <code>media/history/pre-stature-2026-10-15</code>, recopia os PNGs atuais,
+gera a seleção de clipes/escadas e atualiza hashes/índice. Interfaces e galerias
+datadas anteriores continuam históricas e não comprovam a escala atual.</p>
 <p>O README apresenta o jogo; os guias explicam como executar e manter; documentos
 datados registram evidências de uma implementação. Consultar o
 <a href="INVENTARIO-DOCUMENTACAO.html">inventário documental</a> e o <a href="TESTES-E-LIMITACOES.html">estado dos testes</a>.</p>
@@ -248,7 +297,28 @@ torna uma descrição, instrução ou captura desatualizada.</p>
 <p>A entrega só está completa quando as referências afetadas estão coerentes com
 o estado descrito. Alterações exclusivamente documentais continuam sem incremento
 da versão do jogo.</p>
+<p>O alcance curto de todos os objetos está registrado em
+<a href="INTERACOES-PROXIMAS-2026-10-15.html">Proximidade dos objetos</a>, com contrato,
+reprodução e evidências locais. As capturas históricas de inspeção permanecem
+identificadas como anteriores à regra; as novas amostras ficam em <code>Build/</code>.</p>
 <h2 id="gerar-o-portal">Gerar o portal</h2>
+<p>Para recapturar VÍDEO com Tela cheia/Janela e FILTROS, use <code>--settings-suite</code>
+e <code>--refresh-filters</code> conforme o início deste guia. A antiga rodada
+<code>--window-suite</code> / <code>--refresh-window-mode</code> dos
+<a href="BOT-COOP-AJUSTES-2026-10-15.html">ajustes do BOT</a> permanece histórica;
+as curadorias completas usam agora a fonte com FILTROS.</p>
+<p>O <a href="ROADMAP-COOP.html">roadmap coop</a> e o <a href="BOT-COOP-C1-2026-10-15.html">relatório C1</a>
+registram acompanhamento/combate e a primeira remoção dos logs de travessia.
+A seleção posterior de mensagens e o layout atual estão em
+<a href="MULTIPLAYER-E-SERVIDOR.html#log-e-chat">Log e chat</a>.
+As capturas locais C1 ficam em <code>Build/coop-c1/</code>; não substituem as galerias
+públicas nem homologam fases futuras. O relatório C0 mantém seus resultados
+históricos e indica a opção explícita para reproduzir o antigo BOT neutro.</p>
+<p>Para publicar as vistas da tampa, execute a fixture indicada em
+<a href="BAU-ANIMACOES-2026-10-15.html">Animações do baú</a> e
+<code>python -B Tools/build_public_galleries.py --refresh-chest-animation</code>.
+As novas imagens têm registros próprios; capturas anteriores da HUD são
+preservadas como evidência das rodadas anteriores à animação.</p>
 <pre><code class="language-powershell">python -m pip install -r Tools/requirements-docs.txt
 python -B Tools/release_version.py check
 python -B Tools/build_public_galleries.py

@@ -8,7 +8,7 @@
         
         <link rel="canonical" href="https://felipestroff.github.io/Operation-Spencer-Docs/ARQUITETURA.html">
         <link rel="shortcut icon" href="img/favicon.ico">
-        <title>Arquitetura - Operation Spencer · 0.2.0-alpha</title>
+        <title>Arquitetura - Operation Spencer · 1.0.0-alpha</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/fontawesome.min.css" rel="stylesheet">
         <link href="css/brands.min.css" rel="stylesheet">
@@ -25,7 +25,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="index.html">Operation Spencer · 0.2.0-alpha</a>
+                <a class="navbar-brand" href="index.html">Operation Spencer · 1.0.0-alpha</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -51,6 +51,14 @@
 </li>
                                     
 <li>
+    <a href="BAU-ANIMACOES-2026-10-15.html" class="dropdown-item">Baú e interações</a>
+</li>
+                                    
+<li>
+    <a href="INTERACOES-PROXIMAS-2026-10-15.html" class="dropdown-item">Proximidade dos objetos</a>
+</li>
+                                    
+<li>
     <a href="MENU-ESC-2026-10-15.html" class="dropdown-item">Menu Esc</a>
 </li>
                                     
@@ -64,6 +72,22 @@
                                     
 <li>
     <a href="MULTIPLAYER-E-SERVIDOR.html" class="dropdown-item">Cooperativo</a>
+</li>
+                                    
+<li>
+    <a href="BOT-COOP-C0-2026-10-15.html" class="dropdown-item">BOT coop C0</a>
+</li>
+                                    
+<li>
+    <a href="BOT-COOP-C1-2026-10-15.html" class="dropdown-item">BOT coop C1</a>
+</li>
+                                    
+<li>
+    <a href="BOT-COOP-AJUSTES-2026-10-15.html" class="dropdown-item">BOT, áudio e janela</a>
+</li>
+                                    
+<li>
+    <a href="ROADMAP-COOP.html" class="dropdown-item">Roadmap coop</a>
 </li>
                                     
 <li>
@@ -88,6 +112,10 @@
                                     
 <li>
     <a href="ASSETS-E-AUDIO.html" class="dropdown-item">Assets e áudio</a>
+</li>
+                                    
+<li>
+    <a href="ESTATURAS-PERSONAGENS-2026-10-15.html" class="dropdown-item">Estaturas dos personagens</a>
 </li>
                                     
 <li>
@@ -191,6 +219,18 @@
             
             <li class="nav-item" data-bs-level="1"><a href="#arquitetura-técnica" class="nav-link">Arquitetura técnica</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#migração-de-conteúdo-do-hall" class="nav-link">Migração de conteúdo do hall</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#baú-animado-e-orientação-das-interações" class="nav-link">Baú animado e orientação das interações</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#bot-de-teste-coop-c0" class="nav-link">BOT de teste coop C0</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             <li class="nav-item" data-bs-level="2"><a href="#organização" class="nav-link">Organização</a>
               <ul class="nav flex-column">
               </ul>
@@ -223,6 +263,106 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="arquitetura-técnica">Arquitetura técnica</h1>
+<h2 id="migração-de-conteúdo-do-hall">Migração de conteúdo do hall</h2>
+<p>Na etapa 2 revisada de 15/10/2026, <code>Tools/generate_data.py</code> retira o baú e o spray
+do hall e move a máquina/móvel para a esquerda da escadaria, preservando seu
+ID <code>hall_prop_3</code>. O ID do baú <code>hall_prop_4</code> não é reutilizado. <code>Simulation.Validate</code>
+aplica <code>MigrateRetiredHallPickup</code> no carregamento e no restore: remove apenas
+o registro estático <code>spray_hall</code> ausente no catálogo. Migração idempotente,
+sem mudança do schema 3, sem remoção de inventários/baú global ou drops
+dinâmicos e sem resetar kits. As sessões antigas de baú já são normalizadas
+pelo carregamento; os dois baús restantes acessam o mesmo armazenamento.</p>
+<h2 id="baú-animado-e-orientação-das-interações">Baú animado e orientação das interações</h2>
+<p><code>Simulation</code> controla sessões efêmeras do baú e progresso de abertura/fechamento;
+snapshots incluem tampa e prontidão do usuário. <code>ChestInteraction</code> só abre a HUD
+depois da confirmação final, sem pausar a abertura solo ou o cooperativo.
+<code>ChestLid</code> busca os clipes do GLB, interpola snapshots e reutiliza os SFX existentes.
+Fechar a HUD libera a sessão imediatamente; o último usuário inicia o fechamento.
+Restore/desconexão/dano cancelam acessos, sem salvar travas ou tampas abertas.
+Protocolo 2; schema de campanha 3 preservado, sem migração.</p>
+<p><code>InteractionGeometry</code> resolve um <code>InteractionSite</code> puro do Core, com alcance
+horizontal de 0,65 unidade, visada e diferença de altura inferior a 1,2 unidade.
+Props usam a borda do footprint; portas a face da folha montada na parede,
+considerando a largura simples/dupla; janelas a faixa da vidraça; itens,
+puzzles e corpos o ponto autorado. A altura das portas usa seu piso de chegada,
+preservando os patamares. <code>GameUi.Nearby</code>, comandos autoritativos, manutenção
+do baú e exposição do conteúdo usam o mesmo contrato. <code>Geometry.ChestInReach</code>
+permanece como helper geométrico da borda, sem substituir as checagens completas.
+O driver de smoke se aproxima da folha e vira por inputs normais antes de enviar
+<code>door</code>. <a href="INTERACOES-PROXIMAS-2026-10-15.html">Critérios e comprovação</a>.</p>
+<p><code>Geometry.Faces</code> define o cone frontal de ±60°. <code>GameUi.Nearby</code> filtra todos os
+alvos oferecidos, e <code>InteractionFacing</code> valida os comandos autoritativos de
+portas/coleta/puzzles/baú/máquina/socorro. Movimento e predição também respeitam
+sessões do baú. <a href="BAU-ANIMACOES-2026-10-15.html">Implementação, clipes e evidências</a>.</p>
+<h2 id="bot-de-teste-coop-c0">BOT de teste coop C0</h2>
+<p><code>CoopTestContext</code> valida ativação explícita por <code>--coop-test</code> e <code>--coop-bot</code>,
+recusando solo, modos ambíguos e overrides de perfil/campanha. <code>App</code> mantém
+o BOT antigo de smoke separado; <code>CoopBotController</code> observa snapshots e gera
+decisões neutras com semente e intervalos reproduzíveis, sem comandos de mundo.
+O BOT usa <code>NetSession.SendInput</code> e as mesmas validações da autoridade.</p>
+<p><code>NetSession.CoopTestSession</code> fixa a raiz de campanhas em
+<code>user://coop-bot-tests/&lt;sessão&gt;/campaigns</code>; perfis usam o diretório irmão
+<code>profiles</code>, mantido por <code>Profile.StorageRoot</code> e omitido da serialização.
+O campo opcional <code>Auth.TestSession</code> estende o texto assinado somente quando
+preenchido; deve coincidir com o servidor antes de admitir um participante.
+Clientes comuns mantêm o texto assinado anterior e protocolo 2; o teste não
+se conecta silenciosamente a servidores comuns/antigos. O identificador é um
+contexto de isolamento, não substitui senha ou assinatura de perfil.</p>
+<p>Saída/reconexão e troca de <code>Epoch</code> reutilizam a limpeza de filas de <code>NetSession</code>;
+o controlador reinicia suas decisões ao desconectar/restaurar. Sem campos novos
+de save, migração, alteração de regras ou percepção do mundo completo pelo BOT.
+<a href="BOT-COOP-C0-2026-10-15.html">Uso, aceitação e limites</a>.</p>
+<h3 id="acompanhamento-e-combate-c1">Acompanhamento e combate C1</h3>
+<p>O padrão atual é <code>--bot-phase C1</code>; <code>C0</code> preserva a base neutra acima.
+<code>CoopCompanionController</code> é C# puro, testado também no CoreTests, mas pertence
+à camada Game. Decide só com snapshots e inputs pendentes: líder explícito por
+<code>--bot-leader</code> ou primeiro outro participante não nomeado BOT, rota por portas
+acessíveis, espaçamento com histerese e reação com semente. Usa navegação tanque
+normal e verifica pose confirmada antes de interagir/atacar. Nenhum teleporte.
+Mira baixa nos cães, alcance/linha de tiro, arma equipada, munição, recarga,
+defesa e recuo usam <code>SendInput</code>/<code>Send</code>, nunca escrita na simulação autoritativa.
+Não coleta, consulta UI ou respawna; líder ausente faz aguardar, líder caído
+faz guardar o local, e morte/transição bloqueiam ações. Reset/restore limpam
+alvos, rota e temporizadores. Protocolo 2 e schema 3 preservados.
+<a href="BOT-COOP-C1-2026-10-15.html">Evidências e limites da C1</a>.</p>
+<p>Na <a href="BOT-COOP-AJUSTES-2026-10-15.html">revisão de movimento/vídeo</a>, só o companheiro
+ativa <code>SmokeBotNavigation(smooth:true)</code>: olha adiante por segmentos caminháveis
+com raio do personagem, sem zerar input em cada célula à espera do snapshot.
+Progresso continua confirmado pelo servidor; não há teleporte ou mudança de
+colisão. Alvo atualiza a cada três ticks, caminhada acompanha caminhada e corrida
+tem histerese para alcançar o líder. O smoke legado mantém a política anterior.</p>
+<p><code>GameOptions.Fullscreen</code> é aditivo, padrão true em arquivos antigos, sem mudança
+de schema de campanha. <code>App</code> aplica <code>Window.Mode</code>, deferindo a aplicação das
+mudanças de UI para depois do callback do popup nativo. Sessões coop-test forçam
+Janela apenas ao iniciar e usam arquivo de opções separado por papel/personagem,
+herdando preferências comuns quando ainda não existe arquivo isolado.
+Na etapa 4.2, <code>CoopWindowPlacement</code> calcula células inteiras sobre a área útil
+do monitor. <code>AppWindowPlacement</code> mede decorações no monitor selecionado e
+ajusta a área cliente em até três confirmações de frame, apenas na abertura.
+Não há callback de foco/resize que reencaixe depois disso, nem alteração de
+<code>ScreenLayout</code>, câmeras, opções persistidas, Core ou rede. O launcher passa
+contagem/índice só às janelas renderizadas; headless/dedicado não ocupam células.
+Dois clientes dividem a largura; três dão metade esquerda à inicial e empilham
+os demais à direita; quatro usam 2×2. <code>Livre</code> não força célula/tamanho.
+Na etapa 4.1, o launcher usa <code>--coop-focus &lt;humano inicial&gt;</code> em todos os
+participantes. <code>CoopFocusControl</code> serializa a posse no servidor; o modo e a
+capacidade de janela integram a autenticação assinada. Inputs/comandos de teste
+carregam Epoch/revisão de posse e não aceitam envelopes antigos ou sem marca.
+Trocas neutralizam buffers antigos sem resetar sequências/versões e atribuem
+o novo líder a todos os companheiros. A antiga janela humana fecha interfaces;
+transições de porta concluem antes de a IA continuar. Não há timeout manual.
+O foco nativo de foreground é conferido no Windows: apenas <code>Window.HasFocus</code>
+pode ficar verdadeiro em mais de um processo após uma tentativa de ativação.
+O modo comum não usa essa regra nem muda sua política de controles/áudio.</p>
+<p>Clientes renderizados usam driver real; Master fica mudo exceto no humano
+com foco. Fora do jogo, mantém-se a designação humana, mas sem comandos/áudio.
+Não zerar volumes salvos nem silenciar eventos no servidor. Headless continua
+IA/Dummy e não pode tomar posse. O mute anterior do mixer é restaurado ao
+liberar App nas fixtures. Sem <code>--coop-focus</code>, comandos diretos preservam o
+modo manual experimental anterior, com BOT sempre mudo e timeout de 1 s.</p>
+<p><code>GameUi.OnEvent</code> omite apenas eventos <code>door</code> do log textual do coop, evitando
+nomes de cômodos repetidos. O evento continua disponível à apresentação/áudio
+e às fixtures; chat, pings e feedback de comandos não são filtrados por texto.</p>
 <h2 id="organização">Organização</h2>
 <p><code>Core/</code> não referencia Godot. Ele concentra DTOs serializados, geometria 2D de
 colisão, inventário, IA simplificada, regras e persistência. <code>Game/</code> faz adaptação
@@ -233,6 +373,12 @@ determinística, build, execução e validação; <code>Tests/</code> possui tes
 Andares são unidades espaciais diferentes conectadas por transições. No saguão,
 a altura visual acompanha a escada. Não há física 3D global contínua de todos os
 andares sobrepostos. O layout dos props sólidos compartilha os dados de colisão.</p>
+<p>Os <a href="ESTATURAS-PERSONAGENS-2026-10-15.html">cinco GLBs humanos têm estaturas próprias</a>,
+com vértices e translações dos clipes em metros. <code>ActorView</code> lê o fator autorado
+do manifesto para a cadência e a empunhadura; <code>StairLocomotion</code> usa os comprimentos
+reais das pernas e acomoda botas maiores que um degrau. A ancoragem retém X/Z
+alcançáveis e Y sobre a superfície. Esta escala de apresentação não altera
+volumes/alturas autoritativos de combate nem formatos de rede/save.</p>
 <p><code>Ballistics.HasLineOfFire</code> testa o segmento 3D entre alturas de arma/alvo contra
 os volumes finitos dos props sólidos (<code>W/D/H</code>), acrescidos da elevação de
 <code>HallSurface</code>. A seleção de disparos em <code>Simulation.Attack</code> usa esse teste na

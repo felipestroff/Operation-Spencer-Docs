@@ -8,7 +8,7 @@
         
         <link rel="canonical" href="https://felipestroff.github.io/Operation-Spencer-Docs/REGRAS-E-BALANCEAMENTO.html">
         <link rel="shortcut icon" href="img/favicon.ico">
-        <title>Regras - Operation Spencer · 0.2.0-alpha</title>
+        <title>Regras - Operation Spencer · 1.0.0-alpha</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/fontawesome.min.css" rel="stylesheet">
         <link href="css/brands.min.css" rel="stylesheet">
@@ -25,7 +25,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="index.html">Operation Spencer · 0.2.0-alpha</a>
+                <a class="navbar-brand" href="index.html">Operation Spencer · 1.0.0-alpha</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -51,6 +51,14 @@
 </li>
                                     
 <li>
+    <a href="BAU-ANIMACOES-2026-10-15.html" class="dropdown-item">Baú e interações</a>
+</li>
+                                    
+<li>
+    <a href="INTERACOES-PROXIMAS-2026-10-15.html" class="dropdown-item">Proximidade dos objetos</a>
+</li>
+                                    
+<li>
     <a href="MENU-ESC-2026-10-15.html" class="dropdown-item">Menu Esc</a>
 </li>
                                     
@@ -64,6 +72,22 @@
                                     
 <li>
     <a href="MULTIPLAYER-E-SERVIDOR.html" class="dropdown-item">Cooperativo</a>
+</li>
+                                    
+<li>
+    <a href="BOT-COOP-C0-2026-10-15.html" class="dropdown-item">BOT coop C0</a>
+</li>
+                                    
+<li>
+    <a href="BOT-COOP-C1-2026-10-15.html" class="dropdown-item">BOT coop C1</a>
+</li>
+                                    
+<li>
+    <a href="BOT-COOP-AJUSTES-2026-10-15.html" class="dropdown-item">BOT, áudio e janela</a>
+</li>
+                                    
+<li>
+    <a href="ROADMAP-COOP.html" class="dropdown-item">Roadmap coop</a>
 </li>
                                     
 <li>
@@ -88,6 +112,10 @@
                                     
 <li>
     <a href="ASSETS-E-AUDIO.html" class="dropdown-item">Assets e áudio</a>
+</li>
+                                    
+<li>
+    <a href="ESTATURAS-PERSONAGENS-2026-10-15.html" class="dropdown-item">Estaturas dos personagens</a>
 </li>
                                     
 <li>
@@ -195,6 +223,10 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-bs-level="2"><a href="#interação-somente-de-frente" class="nav-link">Interação somente de frente</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             <li class="nav-item" data-bs-level="2"><a href="#movimento-nas-escadas" class="nav-link">Movimento nas escadas</a>
               <ul class="nav flex-column">
               </ul>
@@ -230,6 +262,10 @@
 <p>Tudo nesta página descreve as regras escritas no código/dados, ainda pendentes
 de testes no engine. Não são kits canônicos nem uma transcrição do jogo original.</p>
 <h2 id="personagens">Personagens</h2>
+<p>Estaturas de apresentação, conforme tabela fornecida pelo desenvolvedor:
+Jill 1,66 m, Chris 1,81 m, Wesker 1,83 m, Rebecca 1,61 m e Barry 1,86 m.
+<a href="ESTATURAS-PERSONAGENS-2026-10-15.html">Convenção, galeria e testes no Godot</a>.
+A escala visual não altera os atributos, volumes de combate ou kits abaixo.</p>
 <table>
 <thead>
 <tr>
@@ -282,6 +318,15 @@ de testes no engine. Não são kits canônicos nem uma transcrição do jogo ori
 Capacidades não aumentam durante essa missão. Balas carregadas ficam na arma;
 munição de reserva ocupa slots e tem limite de pilha: 60 para 9 mm, 24 para .357 e
 24 para cartuchos. Facas defensivas empilham até três. Ervas são unitárias.</p>
+<h2 id="interação-somente-de-frente">Interação somente de frente</h2>
+<p>Todas as interações exigem que o alvo esteja à frente, em um cone de 120°
+(60° para cada lado), inclusive baús, portas, coleta e puzzles. Objetos pelas
+costas não são oferecidos na interface e o servidor recusa a ação equivalente.
+Não há giro automático para o alvo. Objetos exigem até 0,65 unidade da borda
+(móveis), superfície (portas/janelas) ou ponto autorado (itens/puzzles/corpos),
+com visada e piso compatíveis. UI e autoridade compartilham esse critério.
+Socorro e entrega entre personagens mantêm o alcance de 1,8 unidade.
+<a href="INTERACOES-PROXIMAS-2026-10-15.html">Fluxo e evidências</a>.</p>
 <h2 id="movimento-nas-escadas">Movimento nas escadas</h2>
 <p>Humanos caminham obrigatoriamente nos degraus da escadaria central do saguão,
 subindo ou descendo, mesmo com o comando de corrida pressionado. A entrada no
@@ -342,11 +387,17 @@ infecção progressiva ou erva azul nesta primeira missão.</p>
 respeita o máximo do personagem. O bônus de Rebecca se aplica à cura consumida;
 a combinação é uma tabela explícita, não uma multiplicação universal sem limite.</p>
 <h2 id="combate">Combate</h2>
-<p>Faca reutilizável: dano-base 22, alcance 1,65 m, intervalo 0,7 s. Pistola: dano-base
-28, carregador 15. Revólver: dano-base 85, carregador 6. Espingarda: dano-base 95,
+<p>Faca reutilizável: dano-base 8, alcance 1,65 m, intervalo 0,7 s. Pistola: dano-base
+20, carregador 15. Revólver: dano-base 85, carregador 6. Espingarda: dano-base 95,
 alcance 8 m, carregador 6, até três alvos na seleção de disparo. Assistência de
 mira respeita direção e obstáculos. Mirar alto aumenta dano quando aplicável;
 mirar baixo pode derrubar zumbis. Não há fogo amigo nesta implementação.</p>
+<p>Etapa 3 de 15/10/2026: faca reduzida de 22 para 8 e pistola de 28 para 20,
+no solo e coop. Chris mantém +25% na faca (10 de dano-base efetivo). Alcance,
+cadência, recarga, capacidade, kits, loot e modificadores de mira não mudam.
+O dano de aparo continua 12 e o da faca defensiva consumível continua 40.
+O dano vem do catálogo atual, não do save; campanhas existentes usam os novos
+valores sem recriar equipamentos, alterar munição salva ou mudar schema.</p>
 <p>Disparos consideram a altura da arma, o nível de mira, a postura do alvo e a
 elevação do piso. Passam acima de banheiras e móveis baixos quando há trajetória
 livre; relógios, armários e outros objetos altos bloqueiam quando atravessados
@@ -414,7 +465,9 @@ componentes de missão e armas especiais não se renovam. Inimigos não fornecem
 munição ilimitada por morte. O balanceamento precisa de partidas medidas.</p>
 <h2 id="campanha-e-cooperação">Campanha e cooperação</h2>
 <p>Portas abertas, puzzles e objetivos são compartilhados; itens do mundo são únicos.
-O baú é coletivo, com 64 slots. Chaves são físicas e necessárias ao destrancar;
+O baú é coletivo, com 64 slots. O acesso exige proximidade de até 0,65 unidade
+da borda e orientação frontal; o limite vale para abertura e transferências.
+Chaves são físicas e necessárias ao destrancar;
 o desbloqueio vale para todos. Saída do portador não deve bloquear o avanço.
 Toda ação de inventário passa por validação de versão, origem e proximidade.</p>
 <p>Save manual nas máquinas de escrever sem fitas consumíveis; checkpoint coletivo.

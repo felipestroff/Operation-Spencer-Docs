@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="pt_BR" data-bs-theme="dark">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://felipestroff.github.io/Operation-Spencer-Docs/BOT-COOP-AJUSTES-2026-10-15.html">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>BOT, áudio e janela - Operation Spencer · 1.0.0-alpha</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/brands.min.css" rel="stylesheet">
+        <link href="css/solid.min.css" rel="stylesheet">
+        <link href="css/v4-font-face.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" disabled>
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" >
+        <link href="stylesheets/spencer.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Operation Spencer · 1.0.0-alpha</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Início</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Jogar</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="INSTALACAO-WINDOWS.html" class="dropdown-item">Instalação</a>
+</li>
+                                    
+<li>
+    <a href="CONTROLES.html" class="dropdown-item">Controles</a>
+</li>
+                                    
+<li>
+    <a href="BAU-ANIMACOES-2026-10-15.html" class="dropdown-item">Baú e interações</a>
+</li>
+                                    
+<li>
+    <a href="INTERACOES-PROXIMAS-2026-10-15.html" class="dropdown-item">Proximidade dos objetos</a>
+</li>
+                                    
+<li>
+    <a href="MENU-ESC-2026-10-15.html" class="dropdown-item">Menu Esc</a>
+</li>
+                                    
+<li>
+    <a href="CONTROLES-EDITAVEIS-2026-10-15.html" class="dropdown-item">Configurações</a>
+</li>
+                                    
+<li>
+    <a href="REGRAS-E-BALANCEAMENTO.html" class="dropdown-item">Regras</a>
+</li>
+                                    
+<li>
+    <a href="MULTIPLAYER-E-SERVIDOR.html" class="dropdown-item">Cooperativo</a>
+</li>
+                                    
+<li>
+    <a href="BOT-COOP-C0-2026-10-15.html" class="dropdown-item">BOT coop C0</a>
+</li>
+                                    
+<li>
+    <a href="BOT-COOP-C1-2026-10-15.html" class="dropdown-item">BOT coop C1</a>
+</li>
+                                    
+<li>
+    <a href="BOT-COOP-AJUSTES-2026-10-15.html" class="dropdown-item active" aria-current="page">BOT, áudio e janela</a>
+</li>
+                                    
+<li>
+    <a href="ROADMAP-COOP.html" class="dropdown-item">Roadmap coop</a>
+</li>
+                                    
+<li>
+    <a href="MANSAO-E-MISSAO.html" class="dropdown-item">Missão (spoilers)</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="GALERIAS.html" class="nav-link">Galerias</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Desenvolvimento</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="ARQUITETURA.html" class="dropdown-item">Arquitetura</a>
+</li>
+                                    
+<li>
+    <a href="TIROS-OBSTACULOS-2026-10-15.html" class="dropdown-item">Tiros e obstáculos</a>
+</li>
+                                    
+<li>
+    <a href="ASSETS-E-AUDIO.html" class="dropdown-item">Assets e áudio</a>
+</li>
+                                    
+<li>
+    <a href="ESTATURAS-PERSONAGENS-2026-10-15.html" class="dropdown-item">Estaturas dos personagens</a>
+</li>
+                                    
+<li>
+    <a href="JILL-PORTRAITS-2026-10-15.html" class="dropdown-item">Portraits de Jill</a>
+</li>
+                                    
+<li>
+    <a href="TEXTURAS-ARQUITETURA-2026-10-15.html" class="dropdown-item">Texturas arquitetônicas</a>
+</li>
+                                    
+<li>
+    <a href="VERSIONAMENTO.html" class="dropdown-item">Versões e publicação</a>
+</li>
+                                    
+<li>
+    <a href="DOCUMENTACAO.html" class="dropdown-item">Documentação</a>
+</li>
+                                    
+<li>
+    <a href="INVENTARIO-DOCUMENTACAO.html" class="dropdown-item">Inventário documental</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="TESTES-E-LIMITACOES.html" class="nav-link">Evidências</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="FONTES-E-ADAPTACOES.html" class="nav-link">Créditos e referências</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="VERSAO.html" class="nav-link">Versão</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="BOT-COOP-C1-2026-10-15.html" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="ROADMAP-COOP.html" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/felipestroff/Operation-Spencer-Docs" class="nav-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <button id="theme-menu" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle">
+                                <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                <span class="d-lg-none ms-2">Toggle theme</span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                                    <i class="fa-solid fa-sun fa-fw"></i>
+                                    <span class="ms-2">Light</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="true">
+                                    <i class="fa-solid fa-moon fa-fw"></i>
+                                    <span class="ms-2">Dark</span>
+                                    <i class="fa-solid fa-check ms-auto"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                                    <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                    <span class="ms-2">Auto</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                              </ul>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="js/darkmode.js"></script>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#bot-coop--áudio-movimento-e-janela--15102026" class="nav-link">BOT coop · áudio, movimento e janela · 15/10/2026</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#ajustes-entregues" class="nav-link">Ajustes entregues</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#executar-e-preferências" class="nav-link">Executar e preferências</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#implementação" class="nav-link">Implementação</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#evidências-locais" class="nav-link">Evidências locais</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="bot-coop--áudio-movimento-e-janela--15102026">BOT coop · áudio, movimento e janela · 15/10/2026</h1>
+<p><strong>Estado posterior, etapa 4.1:</strong> <a href="MULTIPLAYER-E-SERVIDOR.html#controle-manual-do-bot--etapa-4">controle e áudio pelo foco da janela</a>.
+O launcher suporta um humano e até três BOTs, sem retorno por inatividade;
+clientes renderizados usam driver real, com áudio apenas no humano focado.
+Os demais ficam mudos, com preferências isoladas. Dummy fica restrito aos
+BOTs headless. Métricas, comandos e capturas abaixo são históricos e preservam
+a rodada anterior de BOT sempre silencioso.
+<strong>Etapa 4.2:</strong> <a href="MULTIPLAYER-E-SERVIDOR.html#etapa-42--layout-automático-por-quantidade">layout automático por quantidade de BOTs</a>,
+seletor de monitor e modo Livre. O encaixe só ocorre na abertura; os comandos
+históricos abaixo agora usam Auto no launcher, sem reescrever suas evidências.</p>
+<h2 id="ajustes-entregues">Ajustes entregues</h2>
+<ul>
+<li>Todo áudio do <strong>processo do BOT</strong> é silenciado no Master antes da apresentação,
+  incluindo música, ambiente, portas, passos e interface. Aplicar opções mantém
+  esse mute. O launcher também usa driver Dummy somente no BOT. O humano mantém
+  seu áudio, inclusive os sons do personagem BOT que ouviria na partida:
+  eventos/SFX não foram retirados do mundo nem tiveram os volumes salvos zerados.</li>
+<li>Acompanhamento C1 usa look-ahead por segmentos caminháveis, sem soltar movimento
+  em cada célula esperando o snapshot. Destino atualiza a cada três ticks,
+  caminhada segue caminhada e corrida para alcançar o líder tem histerese.
+  Curvas reduzem avanço gradualmente. Portas, perigo, líder parado e bloqueios
+  ainda justificam parar; não há promessa de movimento contínuo em todo cenário.</li>
+<li><strong>Configurações → VÍDEO → MODO DE JANELA</strong> oferece exatamente <strong>Tela cheia</strong> e
+  <strong>Janela</strong>, aplicadas ao vivo e salvas por Esc/SAIR. Janela é redimensionável;
+  Tela cheia mantém o modo exclusivo anterior. Resolução interna 640/320, CRT,
+  vértices e brilho continuam separados do modo de janela.</li>
+<li>O launcher inicia humano e BOT em Janela. Use o encaixe do Windows para
+  colocar lado a lado ou em quadrantes. Sem mosaico automático nem mais BOTs
+  nesta entrega; essa ampliação continua na C4 do <a href="ROADMAP-COOP.html">roadmap</a>.</li>
+</ul>
+<p>Preservados: alcance 0,65/±60°, dano autoritativo, colisões/velocidades,
+protocolo 2, schema 3, kits e coleta. C0 continua neutro e smoke legado mantém
+navegação anterior. Sem assets/SFX novos ou implementação C2.</p>
+<h2 id="executar-e-preferências">Executar e preferências</h2>
+<pre><code class="language-powershell">powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Tools\Launch-CoopBot.ps1
+</code></pre>
+<p>Mesmos argumentos do <a href="MULTIPLAYER-E-SERVIDOR.html#testar-com-um-bot">guia</a>: Jill
+humana/Chris BOT C1 por padrão, C0 opcional, dedicado, headless e semente.
+Feche a janela humana para encerrar a rodada. A abertura normal não ativa BOTs
+nem é silenciada; sem preferência salva, continua em tela cheia.</p>
+<p><code>GameOptions.Fullscreen</code> é aditivo, padrão true em arquivos antigos; os demais
+valores são preservados, sem mudar campanha/schema. No teste, opções são herdadas
+do arquivo normal inicialmente e gravadas separadamente em
+<code>user://coop-bot-tests/&lt;sessão&gt;/settings/&lt;papel&gt;-&lt;personagem&gt;.json</code>. Ambos começam
+em Janela mesmo herdando Tela cheia; o humano pode mudar depois pela UI.
+Não grava sobre <code>user://settings.json</code> normal. O destino é configuração local
+não serializada; volumes não são zerados/salvos para simular mute.</p>
+<h2 id="implementação">Implementação</h2>
+<p><code>GameOptions</code> aplica <code>Window.Mode</code>; <code>SettingsPanel</code> oferece o seletor azul.
+<code>App</code> aplica mudanças de UI depois do callback do popup nativo. O launcher passa
+<code>--windowed</code> aos clientes visuais e <code>--audio-driver Dummy</code> só ao BOT.
+<code>App</code> também aplica Master mute em comandos diretos <code>--coop-bot</code>. Ao liberar App
+em fixtures, restaura o mute anterior. Processos não compartilham o mixer.
+Logs <code>COOP_TEST presentation</code> registram modo, driver, mute e redimensionamento.</p>
+<p>Só <code>CoopCompanionController</code> ativa <code>SmokeBotNavigation(smooth:true)</code>. Look-ahead
+testa o raio caminhável em todo o segmento, não só visada visual, e não avança
+índice de rota pela previsão não confirmada. Inputs tanque e comandos ENet
+continuam normais; não há teleporte, alteração de colisão ou autoridade extra.</p>
+<h2 id="evidências-locais">Evidências locais</h2>
+<p>Windows x64, Godot 4.7.2 .NET Compatibility, SDK .NET 8.0.425. Árvore dirty
+anterior de C0/C1, alcance/baú e estaturas preservada, sem commit/push.
+Versão 0.2.0-alpha sobre HEAD <code>79eeef35d26221a76c9ff75e3c3e33da91ec8c37</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Check</th>
+<th>Evidência</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reprodução anterior</td>
+<td><code>Build/coop-polish-before.log</code>: 84 inputs neutros em 180 frames retilíneos; teste falhou como o sintoma relatado</td>
+</tr>
+<tr>
+<td>Core após correção</td>
+<td><code>Build/coop-polish-core.log</code>: 117 aprovados; mesmo cenário a 10 Hz com inputs pendentes: zero pausas em 180 frames, distância final 2,52; percurso/combate C1 e smoke sob atraso sintético preservados</td>
+</tr>
+<tr>
+<td>Build/import/Python</td>
+<td><code>Build/coop-polish-{build,import,validator}.log</code>: aprovados, compilação sem avisos/erros</td>
+</tr>
+<tr>
+<td>UI real</td>
+<td><code>Build/coop-polish-video-fixed.log</code>: 242 checks solo/host/cliente ENet, mouse/teclado, Janela → Tela cheia → Janela, sete preferências, arquivo antigo e simulação online ativa</td>
+</tr>
+<tr>
+<td>UI final, com pixels</td>
+<td><code>Build/coop-polish-video-final-all-fields.log</code>: 248 checks aprovados; seletor visível/enquadrado e os quatro campos azuis conferidos no mesmo frame salvo em PNG, em solo/host/cliente. Capturas finais revisadas, incluindo o título FILTROS integrado em paralelo</td>
+</tr>
+<tr>
+<td>Regressão completa</td>
+<td><code>Build/validation/20261015-195648-f97a6214/report.json</code>: 11 estágios aprovados, incluindo Python, 22 PowerShell, 3 testes de logs, 117 CoreTests, build/import, smoke de quatro clientes por 35 s, 53 ENet, 33 C0 e 13 C1 headless. O hash de baú pendente na rodada C1 histórica já não bloqueou esta execução</td>
+</tr>
+<tr>
+<td>BOT renderizado</td>
+<td><code>Build/coop-polish-render.log</code>: 27 checks aprovados; Master mudo ao criar/reaplicar opções, Janela redimensionável, destino de opções isolado, percurso/combate real no Doghall, sem coleta, reconexão sem kit e restore</td>
+</tr>
+<tr>
+<td>Launcher real</td>
+<td>Sessão <code>3f77103e7ba9</code>, C1/seed42/8 s, exit 0. Humano: Windowed, redimensionável, Master não mudo, WASAPI. BOT: Windowed, redimensionável, Master mudo, Dummy. Hash do arquivo normal de preferências inalterado antes/depois; logs em <code>Build/coop-bot-tests/3f77103e7ba9/</code></td>
+</tr>
+</tbody>
+</table>
+<p><img alt="VÍDEO com modo de janela, antes do título FILTROS" src="media/history/pre-filters-2026-10-15/settings-options.png" /></p>
+<p>Revisão posterior: o painel atual inclui FILTROS acima das duas opções visuais;
+consulte <a href="CONTROLES.html#configurações">Controles</a>. A captura acima preserva esta rodada.</p>
+<p>A imagem anterior está preservada no histórico do manifesto.
+<code>Tools/build_public_galleries.py --refresh-window-mode</code> atualiza só essa vista,
+hashes e acervo usando a fixture abaixo (perfil/campanha de teste):</p>
+<pre><code class="language-powershell">&amp; $env:GODOT_DOTNET --path . res://Tools/PauseMenuAcceptance.tscn -- --offline --new --character jill --profile polish-video --campaign polish-video --window-suite
+</code></pre>
+<p>Tentativas intermediárias preservadas: a primeira invocação omitiu <code>--offline</code>
+e não iniciou a campanha; outra usou Home no popup nativo sem selecionar a
+entrada desejada e falhou, com crash do engine no encerramento. O teste usa
+setas e confere foco; aplicação de opções foi deferida para fora do callback.
+A rodada posterior passou sem erros/crash. Nenhuma opção de teste foi removida
+para esconder a falha.</p>
+<p>A visualização repetida de um mesmo caminho de PNG mostrou uma prévia antiga
+sem os campos. Conferência dos pixels RGBA em disco e cópia binária com nome
+novo confirmaram o painel completo. A fixture passou a conferir os quatro
+campos e salvar a mesma imagem verificada. Uma hipótese de invalidar globalmente
+o desenho da janela foi descartada e essa alteração desnecessária foi removida;
+a rodada final acima passa sem ela. A revisão paralela do título FILTROS e sua
+fonte/gerador/captura pública foram preservados.</p>
+<p>Métricas de continuidade são do cenário dirigido, não de todos os percursos.
+Sem homologação de naturalidade subjetiva, controles físicos, audição crítica,
+quatro clientes renderizados em mosaico, LAN/Internet ou desempenho.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js"></script>
+        <script src="search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

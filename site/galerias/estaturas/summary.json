@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-15",
+  "heights": [
+    {
+      "id": "jill",
+      "targetMeters": 1.66,
+      "measuredMeters": 1.66,
+      "AuthoredMotionScale": 0.9669758
+    },
+    {
+      "id": "chris",
+      "targetMeters": 1.81,
+      "measuredMeters": 1.8099982,
+      "AuthoredMotionScale": 1.0794888
+    },
+    {
+      "id": "wesker",
+      "targetMeters": 1.83,
+      "measuredMeters": 1.83,
+      "AuthoredMotionScale": 1.0850015
+    },
+    {
+      "id": "rebecca",
+      "targetMeters": 1.61,
+      "measuredMeters": 1.6099977,
+      "AuthoredMotionScale": 0.9601132
+    },
+    {
+      "id": "barry",
+      "targetMeters": 1.86,
+      "measuredMeters": 1.86,
+      "AuthoredMotionScale": 1.1186279
+    }
+  ],
+  "studio": {
+    "checks": 111,
+    "failed": 0
+  },
+  "motion": {
+    "checks": 593,
+    "failed": 0,
+    "clips": 110
+  },
+  "stairs": {
+    "checks": 264,
+    "failed": 0
+  },
+  "rooms": {
+    "checks": 1850,
+    "failed": 0
+  },
+  "limits": "Synthetic inputs/poses. No physical playtest, network, performance or complete visual approval."
+}

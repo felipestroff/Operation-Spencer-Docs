@@ -8,7 +8,7 @@
         
         <link rel="canonical" href="https://felipestroff.github.io/Operation-Spencer-Docs/MULTIPLAYER-E-SERVIDOR.html">
         <link rel="shortcut icon" href="img/favicon.ico">
-        <title>Cooperativo - Operation Spencer · 0.2.0-alpha</title>
+        <title>Cooperativo - Operation Spencer · 1.0.0-alpha</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/fontawesome.min.css" rel="stylesheet">
         <link href="css/brands.min.css" rel="stylesheet">
@@ -25,7 +25,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="index.html">Operation Spencer · 0.2.0-alpha</a>
+                <a class="navbar-brand" href="index.html">Operation Spencer · 1.0.0-alpha</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -51,6 +51,14 @@
 </li>
                                     
 <li>
+    <a href="BAU-ANIMACOES-2026-10-15.html" class="dropdown-item">Baú e interações</a>
+</li>
+                                    
+<li>
+    <a href="INTERACOES-PROXIMAS-2026-10-15.html" class="dropdown-item">Proximidade dos objetos</a>
+</li>
+                                    
+<li>
     <a href="MENU-ESC-2026-10-15.html" class="dropdown-item">Menu Esc</a>
 </li>
                                     
@@ -64,6 +72,22 @@
                                     
 <li>
     <a href="MULTIPLAYER-E-SERVIDOR.html" class="dropdown-item active" aria-current="page">Cooperativo</a>
+</li>
+                                    
+<li>
+    <a href="BOT-COOP-C0-2026-10-15.html" class="dropdown-item">BOT coop C0</a>
+</li>
+                                    
+<li>
+    <a href="BOT-COOP-C1-2026-10-15.html" class="dropdown-item">BOT coop C1</a>
+</li>
+                                    
+<li>
+    <a href="BOT-COOP-AJUSTES-2026-10-15.html" class="dropdown-item">BOT, áudio e janela</a>
+</li>
+                                    
+<li>
+    <a href="ROADMAP-COOP.html" class="dropdown-item">Roadmap coop</a>
 </li>
                                     
 <li>
@@ -88,6 +112,10 @@
                                     
 <li>
     <a href="ASSETS-E-AUDIO.html" class="dropdown-item">Assets e áudio</a>
+</li>
+                                    
+<li>
+    <a href="ESTATURAS-PERSONAGENS-2026-10-15.html" class="dropdown-item">Estaturas dos personagens</a>
 </li>
                                     
 <li>
@@ -134,7 +162,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="MANSAO-E-MISSAO.html" class="nav-link">
+                                <a rel="next" href="BOT-COOP-C0-2026-10-15.html" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -195,6 +223,18 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-bs-level="2"><a href="#testar-com-um-bot" class="nav-link">Testar com um BOT</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#controle-manual-do-bot--etapa-4" class="nav-link">Controle manual do BOT · etapa 4</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#log-e-chat" class="nav-link">Log e chat</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             <li class="nav-item" data-bs-level="2"><a href="#quatro-janelas-no-mesmo-windows" class="nav-link">Quatro janelas no mesmo Windows</a>
               <ul class="nav flex-column">
               </ul>
@@ -219,6 +259,20 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="multiplayer-e-servidor">Multiplayer e servidor</h1>
+<p>A máquina/móvel do hall fica à esquerda da escadaria; baú e spray de cenário
+continuam removidos. Os dois baús de <code>medicine</code> e <code>saveeast</code> mantêm o mesmo
+armazenamento compartilhado. <a href="MANSAO-E-MISSAO.html#hall-revisado--etapa-2-de-15102026">Migração e escopo</a>.</p>
+<p>O <a href="BAU-ANIMACOES-2026-10-15.html">baú animado</a> bloqueia só seu usuário e compartilha
+a tampa pelo servidor; fechar uma HUD libera esse personagem imediatamente, e
+o último usuário inicia o fechamento. A simulação continua em todas as etapas.
+Interações exigem alvo de frente (±60°), com validação na interface e autoridade.
+O <a href="INTERACOES-PROXIMAS-2026-10-15.html">alcance dos objetos</a> é de 0,65 unidade da
+borda/superfície/ponto conforme o alvo. Comandos de porta, coleta, puzzle,
+salvamento, recuperação e baú são recusados à distância antes de alterar o
+mundo. Interface e servidor também conferem visada e altura.
+Esta revisão usa protocolo 2; clientes anteriores são recusados na autenticação.
+O baú exige estar a até 0,65 unidade da borda; a autoridade aplica o alcance à
+abertura, manutenção da sessão, conteúdo enviado e transferências.</p>
 <p>O <a href="MENU-ESC-2026-10-15.html">menu Esc</a> bloqueia apenas o controle local e escurece
 o cenário. Não aplica desfoque, não abafa a música e não pausa autoridade,
 outros jogadores, inimigos ou relógio. SAIR confirma antes de desconectar;
@@ -229,7 +283,184 @@ Esses registros não homologam uma partida completa. Consulte <a href="TESTES-E-
 Primeiro aprove build/importação, depois teste local, LAN e por último Internet.
 O transporte é ENet/UDP, porta padrão <strong>27591</strong>, até quatro participantes.
 Use a mesma versão do pacote nos clientes e servidor. Não há matchmaking, relay,
-convites por código, migração de anfitrião, voz, split-screen ou jogadores de IA.</p>
+convites por código, migração de anfitrião, voz ou split-screen. Há um cliente BOT
+de teste C1, com acompanhamento e apoio no combate inicial do Doghall.</p>
+<p>O <a href="ROADMAP-COOP.html">roadmap do coop</a> começa pela <a href="BOT-COOP-C0-2026-10-15.html">base C0</a>,
+com sessão explícita e perfis/campanhas isolados. A <a href="BOT-COOP-C1-2026-10-15.html">C1</a>
+acrescenta acompanhamento por portas e combate com recursos reais; consultar
+inventário/mapa autonomamente, explorar/coletar e respawn automático são fases futuras. Rádio VOIP e gestos
+compartilhados vêm depois dos testes. O BOT antigo de smoke continua separado.</p>
+<h2 id="testar-com-um-bot">Testar com um BOT</h2>
+<pre><code class="language-powershell">powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Tools\Launch-CoopBot.ps1
+</code></pre>
+<p>O launcher compila/importa e abre duas janelas por padrão: humano inicial Jill
+como anfitrião e BOT Chris. <code>-BotCount 3</code> abre quatro janelas; focar qualquer
+uma define o único humano, transferindo áudio e liderança dos demais BOTs.
+Por padrão usa C1: segue o humano atual desde o hall, atravessa portas acessíveis,
+mira, atira/recarrega e recua diante dos cães, sem coletar itens. Registra decisões
+com semente; não garante sobrevivência nem substitui a participação do humano.
+<code>-Phase C0</code> mantém o BOT neutro antigo. <code>-HeadlessBot</code> remove sua janela; <code>-Dedicated</code> abre um servidor
+separado, e o humano vira cliente. <code>-Character</code>, <code>-BotCharacter</code>, <code>-BotCount</code>,
+<code>-BotCharacters</code>, <code>-Seed</code> e <code>-Port</code> personalizam a rodada; os personagens devem
+ser diferentes. Feche qualquer janela para encerrar os processos do launcher.</p>
+<p>Humano e BOT iniciam automaticamente em janelas redimensionáveis e encaixadas
+conforme a quantidade: duas lado a lado, três com a inicial na metade esquerda
+e duas à direita, quatro em grade 2×2. <code>-Layout Livre</code> desativa o mosaico.
+VÍDEO permite alternar Tela cheia/Janela durante a partida. Somente a janela
+humana com foco tem áudio; as demais ficam mudas, sem remover sons do mundo.
+Driver Dummy fica restrito aos BOTs headless. Preferências de teste
+ficam em <code>user://coop-bot-tests/&lt;sessão&gt;/settings/&lt;papel&gt;-&lt;personagem&gt;.json</code>:
+herdam as opções normais inicialmente, mas não gravam sobre <code>settings.json</code> normal.
+<a href="BOT-COOP-AJUSTES-2026-10-15.html">Movimento contínuo, configuração e evidências</a>.</p>
+<h2 id="controle-manual-do-bot--etapa-4">Controle manual do BOT · etapa 4</h2>
+<h3 id="etapa-41--foco-exclusivo-e-até-quatro-janelas">Etapa 4.1 · foco exclusivo e até quatro janelas</h3>
+<p>O launcher de testes agora abre <strong>um humano e de um a três BOTs</strong>, em C0/C1,
+com personagens distintos. <strong>Focar uma janela já transfere o controle humano
+e o áudio para ela</strong>, sem exigir outra tecla. A anterior fecha inventário,
+mapa, chat, inspeção, baú, confirmação e configurações, reassumindo a IA.
+Não há troca de personagem dentro da mesma janela nem recriação de cliente,
+perfil, inventário ou kit. Os BOTs C1 acompanham o humano atual.</p>
+<ul>
+<li>A janela humana usa todos os controles normais, inclusive remapeamentos,
+  movimento contínuo, combate, interações e interfaces. Coleta manual segue as
+  regras comuns; IA C1 continua sem coletar enquanto acompanha.</li>
+<li>Não há timeout de inatividade: parar ou abrir interfaces não torna o humano BOT.
+  Focar outra janela de jogo é que transfere a posse, mesmo com painéis abertos.</li>
+<li>Fora das janelas de jogo, o último personagem permanece designado humano,
+  sem comandos e com áudio silenciado. A partida coop nunca pausa.</li>
+<li>Apenas a janela humana com foco reproduz áudio; demais processos ficam mudos.
+  Clientes renderizados usam driver real, respeitando seus volumes configurados;
+  o mute transitório não modifica opções salvas. Aplicar configurações não pode
+  reativar áudio de uma janela BOT. Música/SFX seguem a cena do novo humano.</li>
+<li>Transição de porta em curso conclui normalmente antes de a IA voltar a mover
+  o personagem anterior. Troca de líder replaneja a rota sem apagar progresso
+  confirmado do Doghall. Não há novas animações de portas nesta etapa.</li>
+<li>Servidor serializa a posse e rejeita inputs/comandos de revisões anteriores.
+  Epoch, sequências, versões de slots, alcance frontal e autoridade continuam
+  válidos; restore preserva o humano designado com nova Epoch/revisão, e
+  reconexão não recria kits. Se o humano desconectar, uma janela renderizada
+  conectada assume a designação, priorizando o humano inicial.</li>
+<li><code>-HeadlessBot</code> mantém esses BOTs exclusivamente automáticos e mudos/Dummy;
+  sem janela, não podem tomar a posse. O launcher encerra sua sessão ao fechar
+  qualquer participante. Não altera o coop comum ou o solo.</li>
+</ul>
+<pre><code class="language-powershell"># Duas janelas: humano + um BOT (padrão)
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File Tools/Launch-CoopBot.ps1
+# Quatro janelas: humano + três BOTs
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File Tools/Launch-CoopBot.ps1 -BotCount 3
+# Seleção personalizada em uma sessão PowerShell
+&amp; ./Tools/Launch-CoopBot.ps1 -Character jill -BotCharacters chris,barry,rebecca -Dedicated
+</code></pre>
+<p>Para comandos diretos, acrescente <strong>o mesmo</strong> <code>--coop-focus jill</code> ao servidor,
+ao humano e a todos os BOTs da sessão <code>--coop-test</code>; <code>jill</code> representa o humano
+inicial e pode ser outro personagem válido. Cada BOT usa um <code>--character</code>
+distinto e <code>--coop-bot --join 127.0.0.1</code>. Não use <code>--audio-driver Dummy</code> em
+janelas que deseja controlar com áudio. O modo de foco faz parte da
+autenticação assinada; misturar clientes com/sem esse modo é recusado.
+Use a mesma build em todos os processos. O foreground nativo foi validado
+no Windows; o caminho alternativo do engine em outros sistemas não foi homologado.</p>
+<p>Esta etapa não implementa consultas autônomas C2, exploração/coleta autônoma C3,
+respawn automático, oferta animada de itens ou novas animações de portas.
+Sem <code>--coop-focus</code>, comandos diretos mantêm a etapa 4 histórica: somente BOTs
+aceitam controle por comando, com retorno após 1 s e áudio sempre mudo.</p>
+<p>Testes: <code>Tools/FocusNetworkAcceptance.tscn</code> (host e <code>--dedicated-case</code>) e
+<code>Tools/Test-CoopFocus.ps1</code> (quatro processos renderizados; <code>-Dedicated</code> opcional).
+Executar estes testes de foco isoladamente, sem outras janelas/testes disputando
+o foreground. A fixture manual anterior <code>Tools/CompanionAcceptance.tscn</code>
+com <code>--manual-case</code> continua cobrindo a compatibilidade da etapa 4.
+Evidências e limites em <a href="TESTES-E-LIMITACOES.html">Testes e limitações</a>.</p>
+<h3 id="etapa-42--layout-automático-por-quantidade">Etapa 4.2 · layout automático por quantidade</h3>
+<p><code>-Layout Auto</code> é o padrão do launcher. A distribuição usa a <strong>área útil</strong> do
+monitor, excluindo a barra de tarefas. Mede título/bordas depois de selecionar
+o monitor, descontando-os da área cliente; não pressupõe margens fixas de DPI.</p>
+<table>
+<thead>
+<tr>
+<th>BOTs renderizados</th>
+<th>Janelas</th>
+<th>Distribuição inicial</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>2</td>
+<td>Metades esquerda e direita</td>
+</tr>
+<tr>
+<td>2</td>
+<td>3</td>
+<td>Inicial na metade esquerda; BOTs no topo e embaixo à direita</td>
+</tr>
+<tr>
+<td>3</td>
+<td>4</td>
+<td>Grade 2×2, tamanhos iguais salvo arredondamento de até 1 pixel</td>
+</tr>
+</tbody>
+</table>
+<p><code>-Monitor 0</code> (padrão) escolhe o principal. <code>-Monitor 1</code>, <code>2</code> etc. escolhem um
+monitor detectado pelo engine, com índices começando em 1; índice indisponível
+é recusado, sem iniciar uma partida desalinhada. A numeração pode diferir da
+apresentada pelo painel do sistema. Monitores com origem negativa são aceitos.</p>
+<p><code>-Layout Livre</code> não força tamanho ou célula; com <code>-Monitor</code> explícito, apenas
+seleciona o monitor. A janela permanece ajustável manualmente. O mosaico não
+é reaplicado ao trocar foco, abrir interfaces, aplicar opções ou redimensionar.
+O humano inicial fica na janela maior do layout de três; trocar controle por
+foco não troca o tamanho/localização das janelas. Tela cheia/Janela continua
+disponível em VÍDEO, sem forçar um retorno à grade depois da configuração.</p>
+<p>O servidor dedicado e BOTs <code>-HeadlessBot</code> não ocupam células. Com todos os BOTs
+headless, só a janela humana ocupa a área útil inteira. Se título/bordas e
+tamanho mínimo não couberem, o launcher informa falha; não corta silenciosamente.
+O tamanho da área útil não é gravado nas preferências normais de vídeo.</p>
+<pre><code class="language-powershell">powershell.exe -NoProfile -ExecutionPolicy Bypass -File Tools/Launch-CoopBot.ps1 -BotCount 2
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File Tools/Launch-CoopBot.ps1 -BotCount 3 -Monitor 1
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File Tools/Launch-CoopBot.ps1 -BotCount 3 -Layout Livre
+</code></pre>
+<p>Comandos diretos podem usar <code>--coop-layout auto|livre --coop-window-count N
+--coop-window-index I --coop-monitor M</code> após <code>--</code>, apenas junto de <code>--coop-test</code>.
+N conta somente janelas renderizadas (1..4); I é 0-based e único por janela,
+M usa a mesma numeração do launcher. Não passar essas opções para headless ou
+servidor. Não altera autenticação, controle/áudio por foco, câmera, mapa ou save.
+Teste dirigido: <code>Tools/Test-CoopLayout.ps1 -Windows 2|3|4</code>, com opções <code>-Layout</code>
+e <code>-Monitor</code>; <code>Tools/Test-CoopFocus.ps1</code> também usa grade Auto por padrão.</p>
+<p>Cada rodada recebe um identificador novo, com logs/metadados em
+<code>Build/coop-bot-tests/&lt;sessão&gt;/</code> e armazenamento em
+<code>user://coop-bot-tests/&lt;sessão&gt;/</code>, separado dos perfis/campanhas normais.
+O contexto de teste é assinado na autenticação: servidores comuns e sessões
+de teste diferentes recusam a conexão. Solo recusa a ativação antes de criar
+perfil/campanha. Não é um novo botão nos menus; a abertura normal não ativa BOTs.
+Consulte <a href="BOT-COOP-C1-2026-10-15.html">comandos diretos, critérios e limites</a>.</p>
+<h2 id="log-e-chat">Log e chat</h2>
+<p>O log do coop não mostra nomes de cômodos a cada travessia de porta. Em 15/10/2026,
+foram retirados também os textos selecionados no inventário pelo desenvolvedor:</p>
+<ul>
+<li>E10/E12/E13/E14/E18: coleta, aparo, agarrão, consumo de faca defensiva e mistura.</li>
+<li>R15/R16/R19/R24: instrução sobre gerador, nome da chave da porta, exigência de
+  chave de serviço/gazua e nome do item faltante no puzzle.</li>
+<li>R38/R40/R42/R46: confirmações de equipar, desequipar, tratamento e descarte.</li>
+<li>R11/R26/R30 (etapa 1): ação em andamento, instrução para mirar antes do
+  disparo e aviso de recarga desnecessária. Os bloqueios permanecem ativos.</li>
+</ul>
+<p>Esses textos deixam de ser produzidos na simulação compartilhada, inclusive
+para o solo e painéis que exibem respostas de comandos. Bloqueios por energia,
+chave e requisito de puzzle continuam ativos; eventos, sons, animações e ações
+não foram removidos. Textos descritivos próprios da inspeção não foram alterados.
+Chat, pings explícitos, progresso de puzzles, queda/morte, socorro, salvamento,
+erros e os demais avisos não selecionados permanecem.</p>
+<p>Log e campo de escrita ficam junto à borda real inferior esquerda do viewport,
+com margens de 12 unidades à esquerda, 16 abaixo do log e 12 abaixo do campo.
+O log mantém seis mensagens, permite várias linhas visuais por mensagem e
+sobe acima do campo enquanto o chat está aberto. A largura acompanha a janela,
+até 960 unidades; a área inicial de texto tem 360 unidades de altura e cresce
+para cima quando necessário. O prazo de seis segundos/fade não muda.
+O campo de escrita reutiliza o azul e as bordas/foco dos inputs de inventário
+e configurações (<code>InventoryField</code> / <code>InventoryBlue</code>, <code>#0b0861</code>). As mensagens
+já enviadas e os demais textos do log usam o verde das quantidades
+(<code>QuantityGreen</code>, <code>#24ee23</code>), sem painel de fundo no histórico.</p>
+<p>Regressão: <code>Tests/LogFeedbackTests.cs</code>; apresentação dirigida:
+<code>Tools/ChatLogAcceptance.tscn</code>, também executada por <code>Tools/Test.ps1 -Presentation</code>.
+Evidências e limites em <a href="TESTES-E-LIMITACOES.html">Testes e limitações</a>.</p>
 <p>Um servidor dedicado não ocupa uma vaga. No modo anfitrião-jogador, o anfitrião
 ocupa uma das quatro vagas e sua saída encerra a sessão. Em servidor dedicado,
 os clientes podem sair sem encerrar o processo. Sem participantes conectados,

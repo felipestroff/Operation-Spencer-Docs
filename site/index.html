@@ -8,7 +8,7 @@
         
         <link rel="canonical" href="https://felipestroff.github.io/Operation-Spencer-Docs/index.html">
         <link rel="shortcut icon" href="img/favicon.ico">
-        <title>Operation Spencer · 0.2.0-alpha</title>
+        <title>Operation Spencer · 1.0.0-alpha</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/fontawesome.min.css" rel="stylesheet">
         <link href="css/brands.min.css" rel="stylesheet">
@@ -25,7 +25,7 @@
     <body class="homepage">
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="index.html">Operation Spencer · 0.2.0-alpha</a>
+                <a class="navbar-brand" href="index.html">Operation Spencer · 1.0.0-alpha</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -51,6 +51,14 @@
 </li>
                                     
 <li>
+    <a href="BAU-ANIMACOES-2026-10-15.html" class="dropdown-item">Baú e interações</a>
+</li>
+                                    
+<li>
+    <a href="INTERACOES-PROXIMAS-2026-10-15.html" class="dropdown-item">Proximidade dos objetos</a>
+</li>
+                                    
+<li>
     <a href="MENU-ESC-2026-10-15.html" class="dropdown-item">Menu Esc</a>
 </li>
                                     
@@ -64,6 +72,22 @@
                                     
 <li>
     <a href="MULTIPLAYER-E-SERVIDOR.html" class="dropdown-item">Cooperativo</a>
+</li>
+                                    
+<li>
+    <a href="BOT-COOP-C0-2026-10-15.html" class="dropdown-item">BOT coop C0</a>
+</li>
+                                    
+<li>
+    <a href="BOT-COOP-C1-2026-10-15.html" class="dropdown-item">BOT coop C1</a>
+</li>
+                                    
+<li>
+    <a href="BOT-COOP-AJUSTES-2026-10-15.html" class="dropdown-item">BOT, áudio e janela</a>
+</li>
+                                    
+<li>
+    <a href="ROADMAP-COOP.html" class="dropdown-item">Roadmap coop</a>
 </li>
                                     
 <li>
@@ -88,6 +112,10 @@
                                     
 <li>
     <a href="ASSETS-E-AUDIO.html" class="dropdown-item">Assets e áudio</a>
+</li>
+                                    
+<li>
+    <a href="ESTATURAS-PERSONAGENS-2026-10-15.html" class="dropdown-item">Estaturas dos personagens</a>
 </li>
                                     
 <li>
@@ -189,7 +217,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#operation-spencer--020-alpha" class="nav-link">Operation Spencer · 0.2.0-alpha</a>
+            <li class="nav-item" data-bs-level="1"><a href="#operation-spencer--100-alpha" class="nav-link">Operation Spencer · 1.0.0-alpha</a>
               <ul class="nav flex-column">
             <li class="nav-item" data-bs-level="2"><a href="#a-mansão-em-jogo" class="nav-link">A mansão em jogo</a>
               <ul class="nav flex-column">
@@ -218,21 +246,44 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="operation-spencer--020-alpha">Operation Spencer · <!-- game-version -->0.2.0-alpha<!-- /game-version --></h1>
+<h1 id="operation-spencer--100-alpha">Operation Spencer · <!-- game-version -->1.0.0-alpha<!-- /game-version --></h1>
 <p>Terror de sobrevivência com estética PS1, controles tanque e câmeras fixas.
 Explore uma mansão adaptada para jogar sozinho ou cooperar com até quatro
 pessoas, escolhendo entre cinco personagens distintos.</p>
 <p><img alt="Jill no saguão, em câmera fixa do Godot" src="media/hall.png" /></p>
-<p><em>Cena real de gameplay renderizada no Godot por fixture dirigida. Captura do
-rodada de 15/10/2026, com arquitetura revisada; não comprova controles físicos.</em></p>
+<p><em>Cena real de gameplay renderizada no Godot por fixture dirigida. Captura de
+15/10/2026, com arquitetura e estaturas revisadas; não comprova controles físicos.</em></p>
 <p><strong>Alpha experimental.</strong> Há evidências locais de compilação, importação,
 fixtures renderizadas e smoke ENet. Isso não homologa a experiência completa,
 Internet, desempenho ou todas as condições de multiplayer. Os resultados e
 suas datas estão em <a href="TESTES-E-LIMITACOES.html">Testes e limitações</a>.
 As releases automáticas distribuem tags, notas e fontes; sem binários nesta etapa.</p>
+<p>A <a href="BOT-COOP-C1-2026-10-15.html">fase C1 do BOT coop</a> acompanha o humano desde
+o hall e ajuda contra os cães do Doghall numa sessão de teste isolada por ENet.
+Consultas autônomas de inventário/mapa, exploração e respawn automático seguem no roadmap.
+O <a href="BOT-COOP-AJUSTES-2026-10-15.html">modo de teste</a> abre humano/BOT em janelas
+redimensionáveis; VÍDEO permite Tela cheia/Janela. Na etapa 4.1, focar uma janela
+transfere o controle humano e o áudio para ela; os demais personagens usam IA
+e ficam mudos. Até quatro participantes locais: <code>-BotCount 3</code> abre um humano e
+três BOTs. O humano ocioso não volta à IA; os BOTs seguem o humano atual.
+O launcher organiza duas janelas lado a lado, três com a inicial à esquerda
+e duas empilhadas à direita, ou quatro em grade 2×2. Usa a área útil do monitor
+principal; <code>-Monitor</code> escolhe outro e <code>-Layout Livre</code> desativa o encaixe.
+<a href="MULTIPLAYER-E-SERVIDOR.html#controle-manual-do-bot--etapa-4">Regras da alternância</a>.
+O <a href="MULTIPLAYER-E-SERVIDOR.html#log-e-chat">log/chat do coop</a> ocupa a borda
+inferior esquerda, com quebra de linha e sem as mensagens selecionadas de
+coleta, aparo/agarrão, mistura, confirmações de inventário e dicas de requisitos.
+Campo de chat azul padrão do inventário/configurações e mensagens enviadas verdes.
+O histórico comporta seis mensagens, com área inicial de texto de altura dobrada.
+A máquina de escrever com seu móvel fica à esquerda do pé da escadaria do hall.
+O baú e o spray de cenário do hall continuam removidos. Os baús restantes ficam
+nas salas de medicamentos e de salvamento leste, preservando kits e conteúdo.
+O <a href="REGRAS-E-BALANCEAMENTO.html#combate">balanceamento atual</a> usa dano-base 8
+na faca de combate e 20 na pistola 9 mm, no solo e no cooperativo.</p>
 <p><a href="https://felipestroff.github.io/Operation-Spencer-Docs/">Portal público</a> ·
 <a href="INSTALACAO-WINDOWS.html">Começar no Windows</a> ·
 <a href="CONTROLES.html">Controles</a> · <a href="MULTIPLAYER-E-SERVIDOR.html">Cooperativo</a> ·
+<a href="ROADMAP-COOP.html">Roadmap coop: BOTs, rádio e animações</a> ·
 <a href="GALERIAS.html">Galerias e processo visual</a> ·
 <a href="https://github.com/felipestroff/Projeto-Mansao/releases">Versões e releases</a></p>
 <h2 id="a-mansão-em-jogo">A mansão em jogo</h2>
@@ -265,6 +316,13 @@ com foco; duplo clique e arraste continuam disponíveis.
 <a href="BAU-LISTA-DETALHES-2026-10-15.html">Seleção da lista</a>.
 ←/→ alternam entre lista do baú e inventário; ↑/↓ navegam e atualizam os detalhes.
 <a href="DESTAQUES-E-BAU-2026-10-15.html">Interface e evidências</a>.</p>
+<p>O baú <a href="BAU-ANIMACOES-2026-10-15.html">anima a tampa antes de abrir a HUD</a>,
+bloqueando somente seu usuário; fechar a HUD libera o personagem durante o
+fechamento. O cooperativo continua ativo. Toda interação exige que o personagem
+esteja de frente para o alvo, inclusive baús, portas, itens e puzzles.
+Todos os objetos exigem proximidade: até 0,65 unidade da borda/superfície ou
+do ponto de interação dos itens e puzzles. A regra vale na interface e no
+servidor. <a href="INTERACOES-PROXIMAS-2026-10-15.html">Critérios e evidências</a>.</p>
 <p><img alt="Barry na sala de jantar" src="media/dining.png" /></p>
 <p><em>Jantar · cena de gameplay, fixture Godot com câmera de produção.</em></p>
 <p><img alt="Chris no Doghall" src="media/doghall.png" /></p>
@@ -274,6 +332,9 @@ com foco; duplo clique e arraste continuam disponíveis.
 <h2 id="personagens-e-interfaces">Personagens e interfaces</h2>
 <p>Jill, Chris, Wesker, Rebecca e Barry têm aparências e kits próprios. O jogo
 permite até quatro humanos com personagens distintos; reconectar não recria kits.
+As <a href="ESTATURAS-PERSONAGENS-2026-10-15.html">estaturas seguem a tabela fornecida de Resident Evil 1 (1996)</a>:
+Jill 1,66 m, Chris 1,81 m, Wesker 1,83 m, Rebecca 1,61 m e Barry 1,86 m.
+Proporções e clipes preservados, com passadas e apoios revisados no Godot.
 A abertura leva aos modos solo/cooperativo, seleção de personagem e campanhas.
 VOLTAR e Esc entre essas telas e os saves usam fade de 0,4 segundo com o clique
 do inventário; a interação fica bloqueada até o retorno terminar.</p>
@@ -282,9 +343,9 @@ do inventário; a interação fica bloqueada até o retorno terminar.</p>
 <p>Jill recebeu <a href="JILL-PORTRAITS-2026-10-15.html">retratos revisados</a>, com olhos semicerrados
 e expressão séria no inventário, incluindo Cuidado e Perigo.</p>
 <p><img alt="Cartão de seleção de Jill" src="media/cards.png" /></p>
-<p><em>Cartões de personagem · interface no Godot, com estados dirigidos.</em></p>
+<p><em>Cartões de personagem · interface no Godot, com estados dirigidos; captura anterior à revisão de estaturas.</em></p>
 <p><img alt="Inventário de Jill" src="media/inventory.png" /></p>
-<p><em>Inventário · interface no Godot. Arraste, combinações, equipamentos e baú coletivo.</em></p>
+<p><em>Inventário · interface no Godot. Arraste, combinações, equipamentos e baú coletivo; captura anterior à revisão de estaturas.</em></p>
 <p><img alt="Mapa integrado ao inventário" src="media/map.png" /></p>
 <p><em>Mapa · interface no Godot. O guia da missão contém spoilers.</em></p>
 <h2 id="direção-ps1-e-processo-de-criação">Direção PS1 e processo de criação</h2>
@@ -308,8 +369,10 @@ A coleção versionada funciona em clone limpo; o acervo completo de <code>Build
 permanece local. <a href="DOCUMENTACAO.html">Proveniência e manutenção</a>.</p>
 <h2 id="executar-a-fonte">Executar a fonte</h2>
 <p>Requisitos: <strong>Godot 4.7.2 stable .NET</strong>, <strong>SDK .NET 8 x64</strong>, C# 12, renderizador
-Compatibility. No PowerShell, dentro da raiz, ajuste o caminho do engine:</p>
-<pre><code class="language-powershell">powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Tools\Run.ps1 -Godot &quot;C:\Ferramentas\Godot\Godot_v4.7.2-stable_mono_win64_console.exe&quot;
+Compatibility. Para os validadores dos scripts, use <strong>Python 3.10+</strong> com as
+dependências de arte. No PowerShell, dentro da raiz, ajuste o caminho do engine:</p>
+<pre><code class="language-powershell">python -m pip install -r Tools/requirements-art.txt
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Tools\Run.ps1 -Godot &quot;C:\Ferramentas\Godot\Godot_v4.7.2-stable_mono_win64_console.exe&quot;
 </code></pre>
 <p>O script verifica a toolchain, compila, executa testes Core e importa os recursos.
 A primeira restauração requer internet. Consulte a <a href="INSTALACAO-WINDOWS.html">instalação</a>
@@ -438,5 +501,5 @@ A erva amarela melhora combinações e <strong>não aumenta a vida máxima</stro
 
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2026-10-15 20:11:26.808244+00:00
+Build Date UTC : 2026-10-16 05:23:14.002174+00:00
 -->
